@@ -49,3 +49,12 @@ export const textStyles = {
   displaySmall: { fontFamily: fonts.sohne, fontSize: 24, lineHeight: 32 },
   displayBase: { fontFamily: fonts.sohne, fontSize: 28, lineHeight: 36 },
 };
+
+// MDS icon view sizes (mds-iconview spec from mint-ds-groww-invest-v0.18.md)
+export const iconSizes = {
+  xsmall: 12,
+  small: 16,
+  medium: 20,
+  large: 24,
+  xlarge: 28,
+};

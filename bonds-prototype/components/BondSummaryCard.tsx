@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
-import { colors, textStyles } from '../theme/tokens';
+import { colors, textStyles, iconSizes } from '../theme/tokens';
 import { useHideValues } from '../hooks/useHideValues';
 
 interface BondSummaryCardProps {
@@ -118,9 +118,9 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
   },
   infoIcon: {
-    fontSize: 12,
+    fontSize: iconSizes.xsmall,
     color: colors.contentSecondary,
-    lineHeight: 14,
+    lineHeight: iconSizes.small,
   },
   totalValue: {
     ...textStyles.headingLarge,
@@ -141,9 +141,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   iconCircleText: {
-    fontSize: 16,
+    fontSize: iconSizes.medium,
     color: colors.contentSecondary,
-    lineHeight: 18,
+    lineHeight: iconSizes.large,
   },
   divider: {
     height: 1,

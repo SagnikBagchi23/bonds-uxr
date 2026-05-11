@@ -1,7 +1,7 @@
 import { Stack, useRouter, usePathname } from 'expo-router';
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { colors, textStyles } from '../../../theme/tokens';
+import { colors, textStyles, iconSizes } from '../../../theme/tokens';
 
 const SUB_TABS = [
   { label: 'Explore', path: '/(tabs)/stocks/explore' },
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   iconText: {
-    fontSize: 20,
+    fontSize: iconSizes.large,
     color: colors.contentPrimary,
   },
   avatarBtn: {

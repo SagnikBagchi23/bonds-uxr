@@ -2,7 +2,7 @@ import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-nati
 import { useState } from 'react';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { colors, textStyles } from '../theme/tokens';
+import { colors, textStyles, iconSizes } from '../theme/tokens';
 import { useHideValues } from '../hooks/useHideValues';
 import { upcomingPayouts, receivedPayouts, groupPayoutsByMonth } from '../data/payouts';
 
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   backIcon: {
-    fontSize: 20,
+    fontSize: iconSizes.medium,
     color: colors.contentPrimary,
   },
   headerTitle: {

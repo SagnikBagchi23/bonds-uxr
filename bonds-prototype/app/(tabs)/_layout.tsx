@@ -1,6 +1,6 @@
 import { Tabs } from 'expo-router';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { colors, textStyles } from '../../theme/tokens';
+import { colors, textStyles, iconSizes } from '../../theme/tokens';
 
 const TABS = [
   { name: 'stocks', label: 'Stocks', icon: '↗' },
@@ -65,17 +65,15 @@ const styles = StyleSheet.create({
     height: '100%',
   },
   tabIcon: {
-    fontSize: 22,
+    fontSize: iconSizes.large,
     color: colors.contentSecondary,
-    lineHeight: 26,
+    lineHeight: iconSizes.xlarge,
   },
   tabIconActive: {
     color: colors.contentAccentSecondary,
   },
   tabLabel: {
     ...textStyles.bodySmall,
-    fontSize: 10,
-    lineHeight: 12,
     color: colors.contentSecondary,
     textAlign: 'center',
   },

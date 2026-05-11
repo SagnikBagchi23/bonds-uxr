@@ -2,7 +2,7 @@ import { View, Text, ScrollView, TouchableOpacity, Modal, StyleSheet } from 'rea
 import { useState } from 'react';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { colors, textStyles } from '../../theme/tokens';
+import { colors, textStyles, iconSizes } from '../../theme/tokens';
 import { useHideValues } from '../../hooks/useHideValues';
 import { bonds } from '../../data/bonds';
 import { bondFinancials, allPayouts } from '../../data/payouts';
@@ -226,7 +226,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   backIcon: {
-    fontSize: 20,
+    fontSize: iconSizes.medium,
     color: colors.contentPrimary,
   },
   headerTitle: {
@@ -328,7 +328,7 @@ const styles = StyleSheet.create({
     padding: 2,
   },
   infoIcon: {
-    fontSize: 14,
+    fontSize: textStyles.bodyBase.fontSize,
     color: colors.contentDisabled,
   },
   payoutRow: {
@@ -368,7 +368,6 @@ const styles = StyleSheet.create({
   receivedLabel: {
     ...textStyles.bodySmall,
     color: colors.contentSecondary,
-    fontSize: 11,
   },
   modalOverlay: {
     flex: 1,

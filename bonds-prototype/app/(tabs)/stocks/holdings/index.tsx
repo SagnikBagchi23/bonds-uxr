@@ -1,6 +1,6 @@
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { useState } from 'react';
-import { colors, textStyles } from '../../../../theme/tokens';
+import { colors, textStyles, iconSizes } from '../../../../theme/tokens';
 import { BondSummaryCard } from '../../../../components/BondSummaryCard';
 import { BondCard } from '../../../../components/BondCard';
 import { activeBonds } from '../../../../data/bonds';
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   sortIcon: {
-    fontSize: 18,
+    fontSize: iconSizes.large,
     color: colors.contentSecondary,
   },
   cycleBtn: {

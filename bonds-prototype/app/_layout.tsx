@@ -5,9 +5,18 @@ import { View, ActivityIndicator, StyleSheet, Platform, Text, useWindowDimension
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { HideValuesProvider } from '../hooks/useHideValues';
-import { colors } from '../theme/tokens';
+import { colors, textStyles } from '../theme/tokens';
 
 const isWeb = Platform.OS === 'web';
+
+// Physical phone hardware colors — not DS tokens
+const PHONE_CASE = '#1C1C1E';
+const PHONE_BUTTON = '#2D2D2F';
+const PHONE_ISLAND = '#000000';
+const WEB_FRAME_BG = '#E8EAF0';
+// Physical phone chrome font sizes — iOS system UI, no DS equivalents
+const IOS_STATUS_BAR_FONT_SIZE = 15;
+const IOS_STATUS_ICON_FONT_SIZE = 10;
 
 // iPhone 14 logical dimensions
 const SCREEN_W = 390;
@@ -110,17 +119,17 @@ function PhoneMockup({ children }: { children: React.ReactNode }) {
 const styles = StyleSheet.create({
   webBg: {
     flex: 1,
-    backgroundColor: '#E8EAF0',
+    backgroundColor: WEB_FRAME_BG,
     alignItems: 'center',
     justifyContent: 'center',
   },
   phoneOuter: {
     width: PHONE_W,
     height: PHONE_H,
-    backgroundColor: '#1C1C1E',
+    backgroundColor: PHONE_CASE,
     borderRadius: 54,
     position: 'relative',
-    shadowColor: '#000',
+    shadowColor: PHONE_ISLAND,
     shadowOffset: { width: 0, height: 24 },
     shadowOpacity: 0.45,
     shadowRadius: 48,
@@ -129,7 +138,7 @@ const styles = StyleSheet.create({
   // Side buttons (absolute, outside screen but inside the scaled frame)
   sideBtn: {
     position: 'absolute',
-    backgroundColor: '#2D2D2F',
+    backgroundColor: PHONE_BUTTON,
     borderRadius: 3,
   },
   silentSwitch: {
@@ -181,13 +190,13 @@ const styles = StyleSheet.create({
     left: (SCREEN_W - 120) / 2,
     width: 120,
     height: 37,
-    backgroundColor: '#000',
+    backgroundColor: PHONE_ISLAND,
     borderRadius: 20,
   },
   timeText: {
-    fontSize: 15,
+    fontSize: IOS_STATUS_BAR_FONT_SIZE,
     fontWeight: '600',
-    color: '#F2F5F7',
+    color: colors.contentPrimary,
     letterSpacing: -0.3,
   },
   statusRight: {
@@ -197,8 +206,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   statusIcon: {
-    fontSize: 10,
-    color: '#F2F5F7',
+    fontSize: IOS_STATUS_ICON_FONT_SIZE,
+    color: colors.contentPrimary,
     fontWeight: '600',
   },
   homeIndicatorArea: {
@@ -209,15 +218,14 @@ const styles = StyleSheet.create({
   homeIndicator: {
     width: 134,
     height: 5,
-    backgroundColor: '#1C1C1E',
+    backgroundColor: PHONE_CASE,
     borderRadius: 3,
     opacity: 0.2,
   },
   label: {
     marginTop: 20,
-    fontSize: 12,
-    color: '#8A8A8A',
+    ...textStyles.bodySmallHeavy,
+    color: colors.contentSecondary,
     letterSpacing: 0.5,
-    fontWeight: '500',
   },
 });
