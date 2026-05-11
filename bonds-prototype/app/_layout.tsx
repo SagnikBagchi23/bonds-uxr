@@ -14,7 +14,7 @@ const isWeb = Platform.OS === 'web';
 const PHONE_CASE = '#1C1C1E';
 const PHONE_BUTTON = '#2D2D2F';
 const PHONE_ISLAND = '#000000';
-const WEB_FRAME_BG = '#E8EAF0';
+const WEB_FRAME_BG = '#111111';
 // Physical phone chrome font sizes — iOS system UI, no DS equivalents
 const IOS_STATUS_BAR_FONT_SIZE = 15;
 const IOS_STATUS_ICON_FONT_SIZE = 10;
@@ -119,7 +119,6 @@ function PhoneMockup({ children }: { children: React.ReactNode }) {
         </View>
       </View>
 
-      <Text style={styles.label}>Bonds Holdings · Prototype</Text>
     </View>
   );
 }
@@ -137,11 +136,6 @@ const styles = StyleSheet.create({
     backgroundColor: PHONE_CASE,
     borderRadius: 54,
     position: 'relative',
-    shadowColor: PHONE_ISLAND,
-    shadowOffset: { width: 0, height: 24 },
-    shadowOpacity: 0.45,
-    shadowRadius: 48,
-    elevation: 24,
   },
   // Side buttons (absolute, outside screen but inside the scaled frame)
   sideBtn: {
@@ -229,11 +223,5 @@ const styles = StyleSheet.create({
     height: 5,
     backgroundColor: colors.contentDisabled,
     borderRadius: 3,
-  },
-  label: {
-    marginTop: 20,
-    ...textStyles.bodySmallHeavy,
-    color: colors.contentSecondary,
-    letterSpacing: 0.5,
   },
 });
