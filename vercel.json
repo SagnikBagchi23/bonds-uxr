@@ -1,0 +1,9 @@
+{
+  "installCommand": "cd bonds-prototype && npm install",
+  "buildCommand": "cd bonds-prototype && npx expo export --platform web",
+  "outputDirectory": "bonds-prototype/dist",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
