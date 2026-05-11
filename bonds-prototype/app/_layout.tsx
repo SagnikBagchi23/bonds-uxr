@@ -29,14 +29,11 @@ const STATUS_BAR_H = 59;
 const HOME_INDICATOR_H = 34;
 
 export default function RootLayout() {
-  // OTF fonts are CFF-flavored and fail in browsers — skip on web, use system fonts
-  const [fontsLoaded, fontError] = useFonts(
-    isWeb ? {} : {
-      'Sohne-Kraftig': require('../assets/fonts/Sohne-Kraftig.otf'),
-      'GrowwSans-Regular': require('../assets/fonts/GrowwSans-Regular.otf'),
-      'GrowwSans-Medium': require('../assets/fonts/GrowwSans-Medium.otf'),
-    }
-  );
+  const [fontsLoaded, fontError] = useFonts({
+    'Sohne-Kraftig': require('../assets/fonts/Sohne-Kraftig.ttf'),
+    'GrowwSans-Regular': require('../assets/fonts/GrowwSans-Regular.ttf'),
+    'GrowwSans-Medium': require('../assets/fonts/GrowwSans-Medium.ttf'),
+  });
 
   const appContent = (fontsLoaded || fontError) ? (
     <GestureHandlerRootView style={{ flex: 1 }}>
