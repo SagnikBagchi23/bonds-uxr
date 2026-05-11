@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import { useState } from 'react';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { Sorting01Icon, Search01Icon, QrCodeIcon } from '@hugeicons/core-free-icons';
+import { Sorting01Icon, Search01Icon, QrCodeIcon, ChevronDoubleCloseIcon } from '@hugeicons/core-free-icons';
 import { colors, textStyles, iconSizes } from '../../../../theme/tokens';
 import { BondSummaryCard } from '../../../../components/BondSummaryCard';
 import { BondCard } from '../../../../components/BondCard';
@@ -23,8 +23,7 @@ const HEADER_LABELS: Record<DataState, string> = {
 export default function HoldingsScreen() {
   const [activeChip, setActiveChip] = useState<'stocks' | 'bonds'>('bonds');
   const [dataState, setDataState] = useState<DataState>(0);
-  const [scrolledPastHeader, setScrolledPastHeader] = useState(false);
-  const { setHasContentBelow } = useScrollBottom();
+  const { setHasContentBelow, scrolledPastHeader, setScrolledPastHeader } = useScrollBottom();
   const summary = portfolioSummary();
   const sortedBonds = [...activeBonds].sort(
     (a, b) => bondFinancials[b.id].totalValue - bondFinancials[a.id].totalValue
@@ -142,10 +141,10 @@ export default function HoldingsScreen() {
               {/* Bond list header */}
               <View style={styles.listHeader}>
                 <TouchableOpacity style={styles.sortBtn} activeOpacity={0.7}>
-                  <HugeiconsIcon icon={Sorting01Icon} size={iconSizes.medium} color={colors.contentSecondary} />
+                  <HugeiconsIcon icon={Sorting01Icon} size={iconSizes.small} color={colors.contentSecondary} />
                 </TouchableOpacity>
                 <TouchableOpacity onPress={cycleDataState} activeOpacity={0.7} style={styles.cycleBtn}>
-                  <HugeiconsIcon icon={Sorting01Icon} size={iconSizes.small} color={colors.contentPrimary} />
+                  <HugeiconsIcon icon={ChevronDoubleCloseIcon} size={iconSizes.small} color={colors.contentPrimary} />
                   <View style={styles.cycleBtnLabelFrame}>
                     <Text style={styles.cycleBtnText}>{HEADER_LABELS[dataState]}</Text>
                   </View>
@@ -303,9 +302,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   sortBtn: {
-    width: 36,
+    paddingRight: 16,
     height: 36,
-    alignItems: 'center',
     justifyContent: 'center',
   },
   cycleBtn: {

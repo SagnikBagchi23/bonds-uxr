@@ -5,7 +5,7 @@ import { View, ActivityIndicator, StyleSheet, Platform, Text, useWindowDimension
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { HideValuesProvider } from '../hooks/useHideValues';
-import { ScrollBottomProvider } from '../hooks/useScrollBottom';
+import { ScrollBottomProvider, useScrollBottom } from '../hooks/useScrollBottom';
 import { colors, textStyles } from '../theme/tokens';
 
 const isWeb = Platform.OS === 'web';
@@ -36,9 +36,8 @@ export default function RootLayout() {
     'GrowwSans-Medium': require('../assets/fonts/GrowwSans-Medium.ttf'),
   });
 
-  const appContent = (fontsLoaded || fontError) ? (
+  const innerContent = (fontsLoaded || fontError) ? (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <ScrollBottomProvider>
       <HideValuesProvider>
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" />
@@ -49,7 +48,6 @@ export default function RootLayout() {
         </Stack>
         <StatusBar style="light" />
       </HideValuesProvider>
-      </ScrollBottomProvider>
     </GestureHandlerRootView>
   ) : (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.backgroundPrimary }}>
@@ -58,23 +56,30 @@ export default function RootLayout() {
   );
 
   if (!isWeb) {
-    return appContent;
+    return (
+      <ScrollBottomProvider>
+        {innerContent}
+      </ScrollBottomProvider>
+    );
   }
 
   return (
-    <SafeAreaProvider
-      initialMetrics={{
-        insets: { top: STATUS_BAR_H, right: 0, bottom: HOME_INDICATOR_H, left: 0 },
-        frame: { width: SCREEN_W, height: SCREEN_H, x: 0, y: 0 },
-      }}
-    >
-      <PhoneMockup>{appContent}</PhoneMockup>
-    </SafeAreaProvider>
+    <ScrollBottomProvider>
+      <SafeAreaProvider
+        initialMetrics={{
+          insets: { top: STATUS_BAR_H, right: 0, bottom: HOME_INDICATOR_H, left: 0 },
+          frame: { width: SCREEN_W, height: SCREEN_H, x: 0, y: 0 },
+        }}
+      >
+        <PhoneMockup>{innerContent}</PhoneMockup>
+      </SafeAreaProvider>
+    </ScrollBottomProvider>
   );
 }
 
 function PhoneMockup({ children }: { children: React.ReactNode }) {
   const { height: winH, width: winW } = useWindowDimensions();
+  const { scrolledPastHeader } = useScrollBottom();
 
   const scaleH = (winH - 40) / PHONE_H;
   const scaleW = (winW - 60) / PHONE_W;
@@ -92,7 +97,7 @@ function PhoneMockup({ children }: { children: React.ReactNode }) {
         {/* Screen */}
         <View style={styles.screen}>
           {/* Status bar */}
-          <View style={styles.statusBar}>
+          <View style={[styles.statusBar, scrolledPastHeader && { backgroundColor: colors.backgroundSurfaceZ1 }]}>
             <View style={styles.dynamicIsland} />
             <Text style={styles.timeText}>9:41</Text>
             <View style={styles.statusRight}>
@@ -217,13 +222,13 @@ const styles = StyleSheet.create({
     height: HOME_INDICATOR_H,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: colors.backgroundPrimary,
   },
   homeIndicator: {
     width: 134,
     height: 5,
-    backgroundColor: PHONE_CASE,
+    backgroundColor: colors.contentDisabled,
     borderRadius: 3,
-    opacity: 0.2,
   },
   label: {
     marginTop: 20,
