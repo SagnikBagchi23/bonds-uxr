@@ -28,10 +28,15 @@ export const colors = {
   contentAccentSecondary: '#617BFF',
 };
 
+import { Platform } from 'react-native';
+
+const isWeb = Platform.OS === 'web';
+
+// OTF fonts fail on web (CFF-flavored); fall back to system fonts
 export const fonts = {
-  sohne: 'Sohne-Kraftig',
-  growwSansRegular: 'GrowwSans-Regular',
-  growwSansMedium: 'GrowwSans-Medium',
+  sohne: isWeb ? 'Georgia, serif' : 'Sohne-Kraftig',
+  growwSansRegular: isWeb ? 'system-ui, sans-serif' : 'GrowwSans-Regular',
+  growwSansMedium: isWeb ? 'system-ui, sans-serif' : 'GrowwSans-Medium',
 };
 
 export const textStyles = {
