@@ -102,17 +102,19 @@ export function BondSummaryCard({
           <Text style={styles.listLabel}>Interest earned</Text>
           <Text style={styles.listValuePositive}>+{mask(formatINR(totalInterest))}</Text>
         </View>
+      </View>
 
-        {hasStaggered && (
-          <>
-            <View style={styles.divider} />
+      {hasStaggered && (
+        <>
+          <View style={styles.divider} />
+          <View style={styles.listContainer}>
             <View style={styles.listRow}>
               <Text style={styles.listLabel}>Principal returned</Text>
               <Text style={styles.listValuePrimary}>{mask(formatINR(principalReturned))}</Text>
             </View>
-          </>
-        )}
-      </View>
+          </View>
+        </>
+      )}
     </View>
   );
 }
