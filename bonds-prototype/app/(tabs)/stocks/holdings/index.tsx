@@ -1,5 +1,7 @@
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { useState } from 'react';
+import { HugeiconsIcon } from '@hugeicons/react-native';
+import { Sorting01Icon } from '@hugeicons/core-free-icons';
 import { colors, textStyles, iconSizes } from '../../../../theme/tokens';
 import { BondSummaryCard } from '../../../../components/BondSummaryCard';
 import { BondCard } from '../../../../components/BondCard';
@@ -71,10 +73,10 @@ export default function HoldingsScreen() {
           {/* Bond list header */}
           <View style={styles.listHeader}>
             <TouchableOpacity style={styles.sortBtn} activeOpacity={0.7}>
-              <Text style={styles.sortIcon}>≡</Text>
+              <HugeiconsIcon icon={Sorting01Icon} size={iconSizes.medium} color={colors.contentSecondary} />
             </TouchableOpacity>
             <TouchableOpacity onPress={cycleDataState} activeOpacity={0.7} style={styles.cycleBtn}>
-              <Text style={styles.cycleBtnText}>◇ {HEADER_LABELS[dataState]}</Text>
+              <Text style={styles.cycleBtnText}>{HEADER_LABELS[dataState]}</Text>
             </TouchableOpacity>
           </View>
 
@@ -148,16 +150,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  sortIcon: {
-    fontSize: iconSizes.large,
-    color: colors.contentSecondary,
-  },
   cycleBtn: {
-    paddingVertical: 4,
+    height: 24,
+    justifyContent: 'center',
   },
   cycleBtnText: {
-    ...textStyles.bodySmall,
-    color: colors.contentAccentSecondary,
+    ...textStyles.bodySmallHeavy,
+    color: colors.contentPrimary,
   },
   bondList: {
     backgroundColor: colors.backgroundPrimary,

@@ -1,12 +1,19 @@
 import { Tabs } from 'expo-router';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { HugeiconsIcon } from '@hugeicons/react-native';
+import {
+  Activity01Icon,
+  PieChart09Icon,
+  LoyaltyCardIcon,
+  Money03Icon,
+} from '@hugeicons/core-free-icons';
 import { colors, textStyles, iconSizes } from '../../theme/tokens';
 
 const TABS = [
-  { name: 'stocks', label: 'Stocks', icon: '↗' },
-  { name: 'mf', label: 'Mutual Funds', icon: '◉' },
-  { name: 'fno', label: 'F&O', icon: '⊠' },
-  { name: 'loans', label: 'Money', icon: '₹' },
+  { name: 'stocks', label: 'Stocks', icon: Activity01Icon },
+  { name: 'mf', label: 'Mutual Funds', icon: PieChart09Icon },
+  { name: 'fno', label: 'F&O', icon: LoyaltyCardIcon },
+  { name: 'loans', label: 'Loans', icon: Money03Icon },
 ];
 
 export default function TabsLayout() {
@@ -35,9 +42,11 @@ function CustomTabBar({ state, navigation }: any) {
             onPress={() => navigation.navigate(tab.name)}
             activeOpacity={0.8}
           >
-            <Text style={[styles.tabIcon, isFocused && styles.tabIconActive]}>
-              {tab.icon}
-            </Text>
+            <HugeiconsIcon
+              icon={tab.icon}
+              size={iconSizes.large}
+              color={isFocused ? colors.contentAccentSecondary : colors.contentSecondary}
+            />
             <Text style={[styles.tabLabel, isFocused && styles.tabLabelActive]}>
               {tab.label}
             </Text>
@@ -63,14 +72,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 4,
     height: '100%',
-  },
-  tabIcon: {
-    fontSize: iconSizes.large,
-    color: colors.contentSecondary,
-    lineHeight: iconSizes.xlarge,
-  },
-  tabIconActive: {
-    color: colors.contentAccentSecondary,
   },
   tabLabel: {
     ...textStyles.bodySmall,
