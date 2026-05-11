@@ -43,6 +43,7 @@ export default function HoldingsScreen() {
   return (
     <ScrollView
       style={styles.container}
+      contentContainerStyle={styles.contentContainer}
       showsVerticalScrollIndicator={false}
       stickyHeaderIndices={[1]}
       onScroll={handleScroll}
@@ -176,6 +177,9 @@ export default function HoldingsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: colors.backgroundPrimary,
+  },
+  contentContainer: {
     backgroundColor: colors.backgroundPrimary,
   },
   // App bar
