@@ -58,7 +58,7 @@ export function BondSummaryCard({
             <Text style={styles.eyebrow}>TOTAL VALUE ({bondCount})</Text>
             <HugeiconsIcon
               icon={InformationCircleIcon}
-              size={iconSizes.small}
+              size={iconSizes.xsmall}
               color={colors.contentSecondary}
             />
           </View>
@@ -68,21 +68,21 @@ export function BondSummaryCard({
           <IconCircleBtn onPress={toggle}>
             <HugeiconsIcon
               icon={hidden ? ViewOffSlashIcon : EyeIcon}
-              size={iconSizes.medium}
+              size={iconSizes.small}
               color={colors.contentSecondary}
             />
           </IconCircleBtn>
           <IconCircleBtn onPress={() => router.push('/payout-schedule')}>
             <HugeiconsIcon
               icon={Calendar03Icon}
-              size={iconSizes.medium}
+              size={iconSizes.small}
               color={colors.contentSecondary}
             />
           </IconCircleBtn>
           <IconCircleBtn>
             <HugeiconsIcon
               icon={MoreVerticalIcon}
-              size={iconSizes.medium}
+              size={iconSizes.small}
               color={colors.contentSecondary}
             />
           </IconCircleBtn>

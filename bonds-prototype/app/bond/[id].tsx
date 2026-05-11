@@ -44,7 +44,7 @@ function InfoTooltip({ id }: { id: string }) {
   return (
     <>
       <TouchableOpacity onPress={() => setVisible(true)} style={styles.infoBtn} activeOpacity={0.7}>
-        <HugeiconsIcon icon={InformationCircleIcon} size={iconSizes.small} color={colors.contentDisabled} />
+        <HugeiconsIcon icon={InformationCircleIcon} size={iconSizes.xsmall} color={colors.contentDisabled} />
       </TouchableOpacity>
       <Modal visible={visible} transparent animationType="fade">
         <TouchableOpacity style={styles.modalOverlay} onPress={() => setVisible(false)} activeOpacity={1}>

@@ -1,6 +1,8 @@
 import { Stack, useRouter, usePathname } from 'expo-router';
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { HugeiconsIcon } from '@hugeicons/react-native';
+import { Search01Icon, QrCodeIcon } from '@hugeicons/core-free-icons';
 import { colors, textStyles, iconSizes } from '../../../theme/tokens';
 
 const SUB_TABS = [
@@ -34,10 +36,10 @@ export default function StocksLayout() {
           {/* Trailing: search, QR, avatar */}
           <View style={styles.trailingIcons}>
             <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
-              <Text style={styles.iconText}>⌕</Text>
+              <HugeiconsIcon icon={Search01Icon} size={iconSizes.medium} color={colors.contentPrimary} />
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
-              <Text style={styles.iconText}>⊞</Text>
+              <HugeiconsIcon icon={QrCodeIcon} size={iconSizes.medium} color={colors.contentPrimary} />
             </TouchableOpacity>
             <TouchableOpacity style={styles.avatarBtn} activeOpacity={0.7}>
               <Text style={styles.avatarInitial}>A</Text>
