@@ -1,0 +1,7297 @@
+{
+  "font": "hugeicons-twotone-rounded.otf",
+  "entries": 5497,
+  "ligatures": 11120,
+  "ligature_targets": 10954,
+  "centered_targets": 0,
+  "color_pairs": 5454,
+  "vertical_drift_count": 0,
+  "vertical_metrics_match": true,
+  "errors": {
+    "missing_primary_glyph": [],
+    "missing_secondary_glyph": [],
+    "empty_primary_svg": [],
+    "empty_secondary_svg": [],
+    "missing_cmap": [],
+    "invalid_ligature_name": [],
+    "ligature_conflicts": [],
+    "invalid_primary_resolution": [],
+    "color_pair_conflicts": [],
+    "uncentered_targets": [],
+    "vertical_metric_drift": []
+  },
+  "warnings": {
+    "secondary_fallbacks": [
+      "accident",
+      "add-02",
+      "b-backpack-02",
+      "b-berlin-tower",
+      "b-bluetooth",
+      "badge",
+      "book-key",
+      "c-chat",
+      "datev",
+      "e-exclamation-mark",
+      "f-forgot-password",
+      "file-spreadsheet",
+      "full-signal",
+      "input-text",
+      "m-microwave",
+      "m-more-horizontal",
+      "m-move-to",
+      "n-nintendo",
+      "no-signal",
+      "p-pool-table",
+      "printer-check",
+      "printer-x",
+      "progress-01",
+      "proportions",
+      "rotate-ccw-badge",
+      "s-smartphone-lost-wifi",
+      "s-sushi-03",
+      "self-transfer",
+      "solid-line-02",
+      "tally-1",
+      "touchpad-off",
+      "tropical-storm",
+      "truck-return",
+      "unfold-more",
+      "user-star-01",
+      "w-wifi-error-02",
+      "wattpad",
+      "wifi-pen",
+      "wifi-sync",
+      "wise"
+    ],
+    "deduped_primary": [
+      {
+        "name": "a-alert-02",
+        "resolved": "a-alert-01",
+        "alias": "a-alert-02"
+      },
+      {
+        "name": "a-arrow-up",
+        "resolved": "a-arrow-down",
+        "alias": "a-arrow-up"
+      },
+      {
+        "name": "abacus",
+        "resolved": "2-border-all-02",
+        "alias": "abacus"
+      },
+      {
+        "name": "activity-03",
+        "resolved": "activity-01",
+        "alias": "activity-03"
+      },
+      {
+        "name": "activity-04",
+        "resolved": "activity-02",
+        "alias": "activity-04"
+      },
+      {
+        "name": "activity-circle",
+        "resolved": "a-alert-circle",
+        "alias": "activity-circle"
+      },
+      {
+        "name": "add-01",
+        "resolved": "2-previous",
+        "alias": "add-01"
+      },
+      {
+        "name": "add-square",
+        "resolved": "abacus",
+        "alias": "add-square"
+      },
+      {
+        "name": "adobe-after-effect",
+        "resolved": "abacus",
+        "alias": "adobe-after-effect"
+      },
+      {
+        "name": "adobe-illustrator",
+        "resolved": "abacus",
+        "alias": "adobe-illustrator"
+      },
+      {
+        "name": "adobe-indesign",
+        "resolved": "abacus",
+        "alias": "adobe-indesign"
+      },
+      {
+        "name": "adobe-photoshop",
+        "resolved": "abacus",
+        "alias": "adobe-photoshop"
+      },
+      {
+        "name": "adobe-premier",
+        "resolved": "abacus",
+        "alias": "adobe-premier"
+      },
+      {
+        "name": "adobe-xd",
+        "resolved": "abacus",
+        "alias": "adobe-xd"
+      },
+      {
+        "name": "ai-brain-04",
+        "resolved": "ai-brain-01",
+        "alias": "ai-brain-04"
+      },
+      {
+        "name": "ai-innovation-03",
+        "resolved": "ai-innovation-02",
+        "alias": "ai-innovation-03"
+      },
+      {
+        "name": "alert-02",
+        "resolved": "alert-01",
+        "alias": "alert-02"
+      },
+      {
+        "name": "align-box-bottom-left",
+        "resolved": "align-box-bottom-center",
+        "alias": "align-box-bottom-left"
+      },
+      {
+        "name": "align-box-bottom-right",
+        "resolved": "align-box-bottom-center",
+        "alias": "align-box-bottom-right"
+      },
+      {
+        "name": "align-box-middle-center",
+        "resolved": "align-box-bottom-center",
+        "alias": "align-box-middle-center"
+      },
+      {
+        "name": "align-box-middle-left",
+        "resolved": "align-box-bottom-center",
+        "alias": "align-box-middle-left"
+      },
+      {
+        "name": "align-box-middle-right",
+        "resolved": "align-box-bottom-center",
+        "alias": "align-box-middle-right"
+      },
+      {
+        "name": "align-box-top-center",
+        "resolved": "align-box-bottom-center",
+        "alias": "align-box-top-center"
+      },
+      {
+        "name": "align-box-top-left",
+        "resolved": "align-box-bottom-center",
+        "alias": "align-box-top-left"
+      },
+      {
+        "name": "align-box-top-right",
+        "resolved": "align-box-bottom-center",
+        "alias": "align-box-top-right"
+      },
+      {
+        "name": "align-horizontal-distribute-start",
+        "resolved": "align-horizontal-distribute-end",
+        "alias": "align-horizontal-distribute-start"
+      },
+      {
+        "name": "align-horizontal-justify-end",
+        "resolved": "2-align-left",
+        "alias": "align-horizontal-justify-end"
+      },
+      {
+        "name": "align-horizontal-justify-start",
+        "resolved": "align-horizontal-justify-end",
+        "alias": "align-horizontal-justify-start"
+      },
+      {
+        "name": "align-horizontal-space-between",
+        "resolved": "align-horizontal-space-around",
+        "alias": "align-horizontal-space-between"
+      },
+      {
+        "name": "alpha-circle",
+        "resolved": "2-circle",
+        "alias": "alpha-circle"
+      },
+      {
+        "name": "api",
+        "resolved": "abacus",
+        "alias": "api"
+      },
+      {
+        "name": "app-store",
+        "resolved": "abacus",
+        "alias": "app-store"
+      },
+      {
+        "name": "apple-reminder",
+        "resolved": "abacus",
+        "alias": "apple-reminder"
+      },
+      {
+        "name": "approximately-equal-circle",
+        "resolved": "alpha-circle",
+        "alias": "approximately-equal-circle"
+      },
+      {
+        "name": "approximately-equal-square",
+        "resolved": "abacus",
+        "alias": "approximately-equal-square"
+      },
+      {
+        "name": "arrange-by-letters-a-z",
+        "resolved": "2-sorting-a-z-02",
+        "alias": "arrange-by-letters-a-z"
+      },
+      {
+        "name": "arrange-by-letters-z-a",
+        "resolved": "2-sorting-z-a-01",
+        "alias": "arrange-by-letters-z-a"
+      },
+      {
+        "name": "arrow-down-one-0",
+        "resolved": "arrow-down-a-z",
+        "alias": "arrow-down-one-0"
+      },
+      {
+        "name": "arrow-down-zero-1",
+        "resolved": "arrow-down-a-z",
+        "alias": "arrow-down-zero-1"
+      },
+      {
+        "name": "arrow-left-double",
+        "resolved": "2-arrow-left-01",
+        "alias": "arrow-left-double"
+      },
+      {
+        "name": "arrow-up-one-0",
+        "resolved": "arrow-up-narrow-wide",
+        "alias": "arrow-up-one-0"
+      },
+      {
+        "name": "arrow-up-z-a",
+        "resolved": "arrow-up-wide-narrow",
+        "alias": "arrow-up-z-a"
+      },
+      {
+        "name": "arrow-up-zero-1",
+        "resolved": "arrow-up-wide-narrow",
+        "alias": "arrow-up-zero-1"
+      },
+      {
+        "name": "artificial-intelligence-05",
+        "resolved": "account-setting-02",
+        "alias": "artificial-intelligence-05"
+      },
+      {
+        "name": "attachment-circle",
+        "resolved": "alpha-circle",
+        "alias": "attachment-circle"
+      },
+      {
+        "name": "attachment-square",
+        "resolved": "abacus",
+        "alias": "attachment-square"
+      },
+      {
+        "name": "audio-book-02",
+        "resolved": "audio-book-01",
+        "alias": "audio-book-02"
+      },
+      {
+        "name": "audio-book-03",
+        "resolved": "audio-book-01",
+        "alias": "audio-book-03"
+      },
+      {
+        "name": "automotive-battery-02",
+        "resolved": "automotive-battery-01",
+        "alias": "automotive-battery-02"
+      },
+      {
+        "name": "b-bitcoin-smartphone-02",
+        "resolved": "b-biometric-device",
+        "alias": "b-bitcoin-smartphone-02"
+      },
+      {
+        "name": "b-bowling-ball",
+        "resolved": "alert-circle",
+        "alias": "b-bowling-ball"
+      },
+      {
+        "name": "b-browser",
+        "resolved": "album",
+        "alias": "b-browser"
+      },
+      {
+        "name": "b-bubble-chat",
+        "resolved": "b-bubble-chat-question",
+        "alias": "b-bubble-chat"
+      },
+      {
+        "name": "backward-02",
+        "resolved": "2-backward-02",
+        "alias": "backward-02"
+      },
+      {
+        "name": "badge",
+        "resolved": "badge-alert",
+        "alias": "badge"
+      },
+      {
+        "name": "badge-dollar-sign",
+        "resolved": "badge-cent",
+        "alias": "badge-dollar-sign"
+      },
+      {
+        "name": "badge-euro",
+        "resolved": "badge-cent",
+        "alias": "badge-euro"
+      },
+      {
+        "name": "badge-japanese-yen",
+        "resolved": "badge-indian-rupee",
+        "alias": "badge-japanese-yen"
+      },
+      {
+        "name": "badge-pound-sterling",
+        "resolved": "badge-indian-rupee",
+        "alias": "badge-pound-sterling"
+      },
+      {
+        "name": "badge-russian-ruble",
+        "resolved": "badge-indian-rupee",
+        "alias": "badge-russian-ruble"
+      },
+      {
+        "name": "badge-swiss-franc",
+        "resolved": "badge-indian-rupee",
+        "alias": "badge-swiss-franc"
+      },
+      {
+        "name": "badge-turkish-lira",
+        "resolved": "badge-indian-rupee",
+        "alias": "badge-turkish-lira"
+      },
+      {
+        "name": "baseball",
+        "resolved": "alpha-circle",
+        "alias": "baseball"
+      },
+      {
+        "name": "basketball-01",
+        "resolved": "alpha-circle",
+        "alias": "basketball-01"
+      },
+      {
+        "name": "basketball-02",
+        "resolved": "alpha-circle",
+        "alias": "basketball-02"
+      },
+      {
+        "name": "battery-empty",
+        "resolved": "battery-charging-01",
+        "alias": "battery-empty"
+      },
+      {
+        "name": "battery-full",
+        "resolved": "battery-charging-01",
+        "alias": "battery-full"
+      },
+      {
+        "name": "battery-low",
+        "resolved": "battery-charging-01",
+        "alias": "battery-low"
+      },
+      {
+        "name": "battery-medium-01",
+        "resolved": "battery-charging-01",
+        "alias": "battery-medium-01"
+      },
+      {
+        "name": "battery-medium-02",
+        "resolved": "battery-charging-01",
+        "alias": "battery-medium-02"
+      },
+      {
+        "name": "battery-warning",
+        "resolved": "battery-plus",
+        "alias": "battery-warning"
+      },
+      {
+        "name": "behance-02",
+        "resolved": "abacus",
+        "alias": "behance-02"
+      },
+      {
+        "name": "billiard-02",
+        "resolved": "alpha-circle",
+        "alias": "billiard-02"
+      },
+      {
+        "name": "bitcoin-circle",
+        "resolved": "alpha-circle",
+        "alias": "bitcoin-circle"
+      },
+      {
+        "name": "bitcoin-ellipse",
+        "resolved": "alpha-circle",
+        "alias": "bitcoin-ellipse"
+      },
+      {
+        "name": "bitcoin-lock",
+        "resolved": "biometric-access",
+        "alias": "bitcoin-lock"
+      },
+      {
+        "name": "bitcoin-mind",
+        "resolved": "artificial-intelligence-02",
+        "alias": "bitcoin-mind"
+      },
+      {
+        "name": "bitcoin-rectangle",
+        "resolved": "abacus",
+        "alias": "bitcoin-rectangle"
+      },
+      {
+        "name": "bitcoin-send",
+        "resolved": "bitcoin-receive",
+        "alias": "bitcoin-send"
+      },
+      {
+        "name": "bitcoin-setting",
+        "resolved": "artificial-intelligence-06",
+        "alias": "bitcoin-setting"
+      },
+      {
+        "name": "bitcoin-square",
+        "resolved": "analytics-01",
+        "alias": "bitcoin-square"
+      },
+      {
+        "name": "blocked",
+        "resolved": "2-shield-01",
+        "alias": "blocked"
+      },
+      {
+        "name": "blood-type",
+        "resolved": "2-rain-drop",
+        "alias": "blood-type"
+      },
+      {
+        "name": "bluetooth-circle",
+        "resolved": "alpha-circle",
+        "alias": "bluetooth-circle"
+      },
+      {
+        "name": "bluetooth-square",
+        "resolved": "abacus",
+        "alias": "bluetooth-square"
+      },
+      {
+        "name": "book-02",
+        "resolved": "audio-book-04",
+        "alias": "book-02"
+      },
+      {
+        "name": "book-03",
+        "resolved": "audio-book-04",
+        "alias": "book-03"
+      },
+      {
+        "name": "book-a",
+        "resolved": "audio-book-01",
+        "alias": "book-a"
+      },
+      {
+        "name": "book-alert",
+        "resolved": "audio-book-01",
+        "alias": "book-alert"
+      },
+      {
+        "name": "book-download",
+        "resolved": "audio-book-04",
+        "alias": "book-download"
+      },
+      {
+        "name": "book-heart",
+        "resolved": "audio-book-01",
+        "alias": "book-heart"
+      },
+      {
+        "name": "book-image",
+        "resolved": "audio-book-01",
+        "alias": "book-image"
+      },
+      {
+        "name": "book-minus",
+        "resolved": "audio-book-01",
+        "alias": "book-minus"
+      },
+      {
+        "name": "book-plus",
+        "resolved": "audio-book-01",
+        "alias": "book-plus"
+      },
+      {
+        "name": "book-type",
+        "resolved": "audio-book-01",
+        "alias": "book-type"
+      },
+      {
+        "name": "book-upload",
+        "resolved": "audio-book-04",
+        "alias": "book-upload"
+      },
+      {
+        "name": "book-user",
+        "resolved": "audio-book-01",
+        "alias": "book-user"
+      },
+      {
+        "name": "book-x",
+        "resolved": "audio-book-01",
+        "alias": "book-x"
+      },
+      {
+        "name": "bookmark-01",
+        "resolved": "2-bookmark-02",
+        "alias": "bookmark-01"
+      },
+      {
+        "name": "bookmark-minus-01",
+        "resolved": "bookmark-add-01",
+        "alias": "bookmark-minus-01"
+      },
+      {
+        "name": "bookmark-off-02",
+        "resolved": "bookmark-off-01",
+        "alias": "bookmark-off-02"
+      },
+      {
+        "name": "border-all-01",
+        "resolved": "abacus",
+        "alias": "border-all-01"
+      },
+      {
+        "name": "border-full",
+        "resolved": "align-box-bottom-center",
+        "alias": "border-full"
+      },
+      {
+        "name": "border-horizontal",
+        "resolved": "2-border-none-02",
+        "alias": "border-horizontal"
+      },
+      {
+        "name": "border-inner",
+        "resolved": "border-horizontal",
+        "alias": "border-inner"
+      },
+      {
+        "name": "border-none-01",
+        "resolved": "border-horizontal",
+        "alias": "border-none-01"
+      },
+      {
+        "name": "border-vertical",
+        "resolved": "border-horizontal",
+        "alias": "border-vertical"
+      },
+      {
+        "name": "briefcase-05",
+        "resolved": "briefcase-03",
+        "alias": "briefcase-05"
+      },
+      {
+        "name": "briefcase-06",
+        "resolved": "briefcase-03",
+        "alias": "briefcase-06"
+      },
+      {
+        "name": "briefcase-08",
+        "resolved": "briefcase-07",
+        "alias": "briefcase-08"
+      },
+      {
+        "name": "briefcase-09",
+        "resolved": "briefcase-07",
+        "alias": "briefcase-09"
+      },
+      {
+        "name": "browser",
+        "resolved": "abacus",
+        "alias": "browser"
+      },
+      {
+        "name": "bubble-chat",
+        "resolved": "bubble-chat-done",
+        "alias": "bubble-chat"
+      },
+      {
+        "name": "bubble-chat-cancel",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-cancel"
+      },
+      {
+        "name": "bubble-chat-delay",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-delay"
+      },
+      {
+        "name": "bubble-chat-download-01",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-download-01"
+      },
+      {
+        "name": "bubble-chat-download-02",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-download-02"
+      },
+      {
+        "name": "bubble-chat-edit",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-edit"
+      },
+      {
+        "name": "bubble-chat-favourite",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-favourite"
+      },
+      {
+        "name": "bubble-chat-income",
+        "resolved": "bubble-chat",
+        "alias": "bubble-chat-income"
+      },
+      {
+        "name": "bubble-chat-lock",
+        "resolved": "bubble-chat",
+        "alias": "bubble-chat-lock"
+      },
+      {
+        "name": "bubble-chat-outcome",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-outcome"
+      },
+      {
+        "name": "bubble-chat-search",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-search"
+      },
+      {
+        "name": "bubble-chat-secure",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-secure"
+      },
+      {
+        "name": "bubble-chat-spark",
+        "resolved": "bubble-chat-question",
+        "alias": "bubble-chat-spark"
+      },
+      {
+        "name": "bubble-chat-translate",
+        "resolved": "bubble-chat-question",
+        "alias": "bubble-chat-translate"
+      },
+      {
+        "name": "bubble-chat-unlock",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-unlock"
+      },
+      {
+        "name": "bubble-chat-upload",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-upload"
+      },
+      {
+        "name": "bubble-chat-user",
+        "resolved": "bubble-chat-add",
+        "alias": "bubble-chat-user"
+      },
+      {
+        "name": "c-camera-night-mode-01",
+        "resolved": "c-camera-01",
+        "alias": "c-camera-night-mode-01"
+      },
+      {
+        "name": "c-camera-smile-01",
+        "resolved": "c-camera-01",
+        "alias": "c-camera-smile-01"
+      },
+      {
+        "name": "c-car-time",
+        "resolved": "c-car-alert",
+        "alias": "c-car-time"
+      },
+      {
+        "name": "c-chart-medium",
+        "resolved": "c-chart-maximum",
+        "alias": "c-chart-medium"
+      },
+      {
+        "name": "c-chart-minimum",
+        "resolved": "c-chart-maximum",
+        "alias": "c-chart-minimum"
+      },
+      {
+        "name": "c-chart-scatter",
+        "resolved": "c-chart-maximum",
+        "alias": "c-chart-scatter"
+      },
+      {
+        "name": "c-chat-upload-01",
+        "resolved": "c-chat-download-01",
+        "alias": "c-chat-upload-01"
+      },
+      {
+        "name": "c-circle-password",
+        "resolved": "c-circle-lock-01",
+        "alias": "c-circle-password"
+      },
+      {
+        "name": "c-cloud-snow",
+        "resolved": "c-cloud-hailstone",
+        "alias": "c-cloud-snow"
+      },
+      {
+        "name": "c-code-circle",
+        "resolved": "alert-circle",
+        "alias": "c-code-circle"
+      },
+      {
+        "name": "c-code-square",
+        "resolved": "a-alert-square",
+        "alias": "c-code-square"
+      },
+      {
+        "name": "c-command-line",
+        "resolved": "activity-05",
+        "alias": "c-command-line"
+      },
+      {
+        "name": "c-programming",
+        "resolved": "abacus",
+        "alias": "c-programming"
+      },
+      {
+        "name": "calendar-02",
+        "resolved": "calendar-01",
+        "alias": "calendar-02"
+      },
+      {
+        "name": "calendar-05",
+        "resolved": "c-calendar-03",
+        "alias": "calendar-05"
+      },
+      {
+        "name": "calendar-add-02",
+        "resolved": "appointment-02",
+        "alias": "calendar-add-02"
+      },
+      {
+        "name": "calendar-analysis",
+        "resolved": "c-calendar-03",
+        "alias": "calendar-analysis"
+      },
+      {
+        "name": "calendar-download-01",
+        "resolved": "calendar-add-01",
+        "alias": "calendar-download-01"
+      },
+      {
+        "name": "calendar-download-02",
+        "resolved": "appointment-02",
+        "alias": "calendar-download-02"
+      },
+      {
+        "name": "calendar-lock-02",
+        "resolved": "appointment-02",
+        "alias": "calendar-lock-02"
+      },
+      {
+        "name": "calendar-minus-02",
+        "resolved": "calendar-love-02",
+        "alias": "calendar-minus-02"
+      },
+      {
+        "name": "calendar-upload-02",
+        "resolved": "appointment-02",
+        "alias": "calendar-upload-02"
+      },
+      {
+        "name": "call-add",
+        "resolved": "2-call-locked",
+        "alias": "call-add"
+      },
+      {
+        "name": "call-add-02",
+        "resolved": "2-call-02",
+        "alias": "call-add-02"
+      },
+      {
+        "name": "call-blocked",
+        "resolved": "call-add",
+        "alias": "call-blocked"
+      },
+      {
+        "name": "call-done",
+        "resolved": "call-add",
+        "alias": "call-done"
+      },
+      {
+        "name": "call-done-02",
+        "resolved": "call-add-02",
+        "alias": "call-done-02"
+      },
+      {
+        "name": "call-end-01",
+        "resolved": "call-add",
+        "alias": "call-end-01"
+      },
+      {
+        "name": "call-end-03",
+        "resolved": "call-add-02",
+        "alias": "call-end-03"
+      },
+      {
+        "name": "call-incoming-01",
+        "resolved": "call-add",
+        "alias": "call-incoming-01"
+      },
+      {
+        "name": "call-incoming-02",
+        "resolved": "call-add",
+        "alias": "call-incoming-02"
+      },
+      {
+        "name": "call-incoming-03",
+        "resolved": "call-add-02",
+        "alias": "call-incoming-03"
+      },
+      {
+        "name": "call-incoming-04",
+        "resolved": "call-add-02",
+        "alias": "call-incoming-04"
+      },
+      {
+        "name": "call-internal",
+        "resolved": "call-add",
+        "alias": "call-internal"
+      },
+      {
+        "name": "call-internal-02",
+        "resolved": "call-add-02",
+        "alias": "call-internal-02"
+      },
+      {
+        "name": "call-locked-02",
+        "resolved": "call-add-02",
+        "alias": "call-locked-02"
+      },
+      {
+        "name": "call-minus",
+        "resolved": "call-add",
+        "alias": "call-minus"
+      },
+      {
+        "name": "call-minus-02",
+        "resolved": "call-add-02",
+        "alias": "call-minus-02"
+      },
+      {
+        "name": "call-missed-01",
+        "resolved": "call-add",
+        "alias": "call-missed-01"
+      },
+      {
+        "name": "call-missed-03",
+        "resolved": "call-add-02",
+        "alias": "call-missed-03"
+      },
+      {
+        "name": "call-outgoing-01",
+        "resolved": "call-add",
+        "alias": "call-outgoing-01"
+      },
+      {
+        "name": "call-outgoing-02",
+        "resolved": "call-add",
+        "alias": "call-outgoing-02"
+      },
+      {
+        "name": "call-outgoing-03",
+        "resolved": "call-add-02",
+        "alias": "call-outgoing-03"
+      },
+      {
+        "name": "call-outgoing-04",
+        "resolved": "call-add-02",
+        "alias": "call-outgoing-04"
+      },
+      {
+        "name": "call-paused",
+        "resolved": "call-add",
+        "alias": "call-paused"
+      },
+      {
+        "name": "call-paused-02",
+        "resolved": "call-add-02",
+        "alias": "call-paused-02"
+      },
+      {
+        "name": "call-received-02",
+        "resolved": "call-add-02",
+        "alias": "call-received-02"
+      },
+      {
+        "name": "call-ringing-01",
+        "resolved": "call-missed-02",
+        "alias": "call-ringing-01"
+      },
+      {
+        "name": "call-ringing-02",
+        "resolved": "call-add",
+        "alias": "call-ringing-02"
+      },
+      {
+        "name": "call-ringing-03",
+        "resolved": "call-missed-04",
+        "alias": "call-ringing-03"
+      },
+      {
+        "name": "call-ringing-04",
+        "resolved": "call-add-02",
+        "alias": "call-ringing-04"
+      },
+      {
+        "name": "call-unlocked",
+        "resolved": "call-add",
+        "alias": "call-unlocked"
+      },
+      {
+        "name": "call-unlocked-02",
+        "resolved": "call-add-02",
+        "alias": "call-unlocked-02"
+      },
+      {
+        "name": "calling",
+        "resolved": "call-add",
+        "alias": "calling"
+      },
+      {
+        "name": "calling-02",
+        "resolved": "call-add-02",
+        "alias": "calling-02"
+      },
+      {
+        "name": "camera-microphone-01",
+        "resolved": "camera-automatically-01",
+        "alias": "camera-microphone-01"
+      },
+      {
+        "name": "camera-microphone-02",
+        "resolved": "camera-automatically-02",
+        "alias": "camera-microphone-02"
+      },
+      {
+        "name": "camera-night-mode-01",
+        "resolved": "camera-automatically-01",
+        "alias": "camera-night-mode-01"
+      },
+      {
+        "name": "camera-rotated-02",
+        "resolved": "camera-night-mode-02",
+        "alias": "camera-rotated-02"
+      },
+      {
+        "name": "camera-smile-01",
+        "resolved": "camera-automatically-01",
+        "alias": "camera-smile-01"
+      },
+      {
+        "name": "cancel-01",
+        "resolved": "2-unavailable",
+        "alias": "cancel-01"
+      },
+      {
+        "name": "cancel-circle",
+        "resolved": "add-circle",
+        "alias": "cancel-circle"
+      },
+      {
+        "name": "car-time",
+        "resolved": "car-alert",
+        "alias": "car-time"
+      },
+      {
+        "name": "cards-02",
+        "resolved": "cards-01",
+        "alias": "cards-02"
+      },
+      {
+        "name": "cashback-pound",
+        "resolved": "cashback-euro",
+        "alias": "cashback-pound"
+      },
+      {
+        "name": "chart-03",
+        "resolved": "bar-chart-horizontal",
+        "alias": "chart-03"
+      },
+      {
+        "name": "chart-area",
+        "resolved": "axis-three-d",
+        "alias": "chart-area"
+      },
+      {
+        "name": "chart-bar-big",
+        "resolved": "axis-three-d",
+        "alias": "chart-bar-big"
+      },
+      {
+        "name": "chart-bar-decreasing",
+        "resolved": "axis-three-d",
+        "alias": "chart-bar-decreasing"
+      },
+      {
+        "name": "chart-bar-increasing",
+        "resolved": "axis-three-d",
+        "alias": "chart-bar-increasing"
+      },
+      {
+        "name": "chart-column",
+        "resolved": "axis-three-d",
+        "alias": "chart-column"
+      },
+      {
+        "name": "chart-column-big",
+        "resolved": "axis-three-d",
+        "alias": "chart-column-big"
+      },
+      {
+        "name": "chart-column-decreasing",
+        "resolved": "axis-three-d",
+        "alias": "chart-column-decreasing"
+      },
+      {
+        "name": "chart-evaluation",
+        "resolved": "chart-bubble-01",
+        "alias": "chart-evaluation"
+      },
+      {
+        "name": "chart-gantt",
+        "resolved": "axis-three-d",
+        "alias": "chart-gantt"
+      },
+      {
+        "name": "chart-high-low",
+        "resolved": "chart-bubble-01",
+        "alias": "chart-high-low"
+      },
+      {
+        "name": "chart-increase",
+        "resolved": "chart-decrease",
+        "alias": "chart-increase"
+      },
+      {
+        "name": "chart-line-data-01",
+        "resolved": "chart-bubble-01",
+        "alias": "chart-line-data-01"
+      },
+      {
+        "name": "chart-line-data-03",
+        "resolved": "chart-bubble-01",
+        "alias": "chart-line-data-03"
+      },
+      {
+        "name": "chart-medium",
+        "resolved": "chart-average",
+        "alias": "chart-medium"
+      },
+      {
+        "name": "chart-ring",
+        "resolved": "alpha-circle",
+        "alias": "chart-ring"
+      },
+      {
+        "name": "chart-scatter",
+        "resolved": "chart-bubble-01",
+        "alias": "chart-scatter"
+      },
+      {
+        "name": "chat",
+        "resolved": "chat-01",
+        "alias": "chat"
+      },
+      {
+        "name": "chat-cancel",
+        "resolved": "chat-add",
+        "alias": "chat-cancel"
+      },
+      {
+        "name": "chat-delay",
+        "resolved": "chat-add",
+        "alias": "chat-delay"
+      },
+      {
+        "name": "chat-done",
+        "resolved": "chat-add",
+        "alias": "chat-done"
+      },
+      {
+        "name": "chat-edit",
+        "resolved": "chat-add",
+        "alias": "chat-edit"
+      },
+      {
+        "name": "chat-favourite",
+        "resolved": "chat-add",
+        "alias": "chat-favourite"
+      },
+      {
+        "name": "chat-income",
+        "resolved": "chat-add",
+        "alias": "chat-income"
+      },
+      {
+        "name": "chat-lock",
+        "resolved": "chat-download",
+        "alias": "chat-lock"
+      },
+      {
+        "name": "chat-search",
+        "resolved": "chat-download",
+        "alias": "chat-search"
+      },
+      {
+        "name": "chat-secure",
+        "resolved": "chat-download",
+        "alias": "chat-secure"
+      },
+      {
+        "name": "chat-spark",
+        "resolved": "chat-question",
+        "alias": "chat-spark"
+      },
+      {
+        "name": "chat-translate",
+        "resolved": "chat-question",
+        "alias": "chat-translate"
+      },
+      {
+        "name": "chat-translate-01",
+        "resolved": "c-chat-delay-01",
+        "alias": "chat-translate-01"
+      },
+      {
+        "name": "chat-unlock",
+        "resolved": "chat-download",
+        "alias": "chat-unlock"
+      },
+      {
+        "name": "chat-unlock-01",
+        "resolved": "chat-lock-01",
+        "alias": "chat-unlock-01"
+      },
+      {
+        "name": "chat-upload",
+        "resolved": "chat-download",
+        "alias": "chat-upload"
+      },
+      {
+        "name": "chat-upload-01",
+        "resolved": "chat-download-01",
+        "alias": "chat-upload-01"
+      },
+      {
+        "name": "chat-user",
+        "resolved": "chat-download",
+        "alias": "chat-user"
+      },
+      {
+        "name": "check-unread-01",
+        "resolved": "cancel-01",
+        "alias": "check-unread-01"
+      },
+      {
+        "name": "check-unread-02",
+        "resolved": "cancel-01",
+        "alias": "check-unread-02"
+      },
+      {
+        "name": "check-unread-03",
+        "resolved": "cancel-01",
+        "alias": "check-unread-03"
+      },
+      {
+        "name": "check-unread-04",
+        "resolved": "cancel-01",
+        "alias": "check-unread-04"
+      },
+      {
+        "name": "checkmark-circle-01",
+        "resolved": "2-eight-circle",
+        "alias": "checkmark-circle-01"
+      },
+      {
+        "name": "checkmark-circle-02",
+        "resolved": "add-circle",
+        "alias": "checkmark-circle-02"
+      },
+      {
+        "name": "checkmark-square-02",
+        "resolved": "abacus",
+        "alias": "checkmark-square-02"
+      },
+      {
+        "name": "chip",
+        "resolved": "bitcoin-cpu",
+        "alias": "chip"
+      },
+      {
+        "name": "circle-arrow-data-transfer-diagonal",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-data-transfer-diagonal"
+      },
+      {
+        "name": "circle-arrow-data-transfer-horizontal",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-data-transfer-horizontal"
+      },
+      {
+        "name": "circle-arrow-data-transfer-vertical",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-data-transfer-vertical"
+      },
+      {
+        "name": "circle-arrow-diagonal-01",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-diagonal-01"
+      },
+      {
+        "name": "circle-arrow-diagonal-02",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-diagonal-02"
+      },
+      {
+        "name": "circle-arrow-down-01",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-down-01"
+      },
+      {
+        "name": "circle-arrow-down-02",
+        "resolved": "alert-circle",
+        "alias": "circle-arrow-down-02"
+      },
+      {
+        "name": "circle-arrow-down-03",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-down-03"
+      },
+      {
+        "name": "circle-arrow-down-double",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-down-double"
+      },
+      {
+        "name": "circle-arrow-down-left",
+        "resolved": "alert-circle",
+        "alias": "circle-arrow-down-left"
+      },
+      {
+        "name": "circle-arrow-down-right",
+        "resolved": "alert-circle",
+        "alias": "circle-arrow-down-right"
+      },
+      {
+        "name": "circle-arrow-expand-01",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-expand-01"
+      },
+      {
+        "name": "circle-arrow-expand-02",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-expand-02"
+      },
+      {
+        "name": "circle-arrow-horizontal",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-horizontal"
+      },
+      {
+        "name": "circle-arrow-left-01",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-left-01"
+      },
+      {
+        "name": "circle-arrow-left-02",
+        "resolved": "alert-circle",
+        "alias": "circle-arrow-left-02"
+      },
+      {
+        "name": "circle-arrow-left-03",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-left-03"
+      },
+      {
+        "name": "circle-arrow-left-double",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-left-double"
+      },
+      {
+        "name": "circle-arrow-left-right",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-left-right"
+      },
+      {
+        "name": "circle-arrow-move-down-left",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-move-down-left"
+      },
+      {
+        "name": "circle-arrow-move-down-right",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-move-down-right"
+      },
+      {
+        "name": "circle-arrow-move-left-down",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-move-left-down"
+      },
+      {
+        "name": "circle-arrow-move-right-down",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-move-right-down"
+      },
+      {
+        "name": "circle-arrow-move-up-left",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-move-up-left"
+      },
+      {
+        "name": "circle-arrow-move-up-right",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-move-up-right"
+      },
+      {
+        "name": "circle-arrow-reload-01",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-reload-01"
+      },
+      {
+        "name": "circle-arrow-reload-02",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-reload-02"
+      },
+      {
+        "name": "circle-arrow-right-01",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-right-01"
+      },
+      {
+        "name": "circle-arrow-right-02",
+        "resolved": "alert-circle",
+        "alias": "circle-arrow-right-02"
+      },
+      {
+        "name": "circle-arrow-right-03",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-right-03"
+      },
+      {
+        "name": "circle-arrow-right-double",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-right-double"
+      },
+      {
+        "name": "circle-arrow-shrink-01",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-shrink-01"
+      },
+      {
+        "name": "circle-arrow-shrink-02",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-shrink-02"
+      },
+      {
+        "name": "circle-arrow-up-01",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-up-01"
+      },
+      {
+        "name": "circle-arrow-up-02",
+        "resolved": "alert-circle",
+        "alias": "circle-arrow-up-02"
+      },
+      {
+        "name": "circle-arrow-up-03",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-up-03"
+      },
+      {
+        "name": "circle-arrow-up-double",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-up-double"
+      },
+      {
+        "name": "circle-arrow-up-down",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-up-down"
+      },
+      {
+        "name": "circle-arrow-up-left",
+        "resolved": "alert-circle",
+        "alias": "circle-arrow-up-left"
+      },
+      {
+        "name": "circle-arrow-up-right",
+        "resolved": "alert-circle",
+        "alias": "circle-arrow-up-right"
+      },
+      {
+        "name": "circle-arrow-vertical",
+        "resolved": "alpha-circle",
+        "alias": "circle-arrow-vertical"
+      },
+      {
+        "name": "circle-lock-01",
+        "resolved": "2-bitcoin-02",
+        "alias": "circle-lock-01"
+      },
+      {
+        "name": "circle-lock-02",
+        "resolved": "circle-lock-01",
+        "alias": "circle-lock-02"
+      },
+      {
+        "name": "circle-lock-minus-02",
+        "resolved": "circle-lock-add-02",
+        "alias": "circle-lock-minus-02"
+      },
+      {
+        "name": "circle-lock-remove-02",
+        "resolved": "circle-lock-add-02",
+        "alias": "circle-lock-remove-02"
+      },
+      {
+        "name": "circle-password",
+        "resolved": "circle-lock-01",
+        "alias": "circle-password"
+      },
+      {
+        "name": "circle-unlock-01",
+        "resolved": "circle-lock-01",
+        "alias": "circle-unlock-01"
+      },
+      {
+        "name": "circle-unlock-02",
+        "resolved": "circle-lock-01",
+        "alias": "circle-unlock-02"
+      },
+      {
+        "name": "clock-01",
+        "resolved": "alpha-circle",
+        "alias": "clock-01"
+      },
+      {
+        "name": "clock-arrow-up",
+        "resolved": "clock-arrow-down",
+        "alias": "clock-arrow-up"
+      },
+      {
+        "name": "closed-caption-alt",
+        "resolved": "ai-chat-02",
+        "alias": "closed-caption-alt"
+      },
+      {
+        "name": "cloud-little-rain",
+        "resolved": "cloud-angled-rain",
+        "alias": "cloud-little-rain"
+      },
+      {
+        "name": "cloud-little-snow",
+        "resolved": "cloud-hailstone",
+        "alias": "cloud-little-snow"
+      },
+      {
+        "name": "cloud-mid-rain",
+        "resolved": "cloud-hailstone",
+        "alias": "cloud-mid-rain"
+      },
+      {
+        "name": "cloud-slow-wind",
+        "resolved": "cloud-angled-rain",
+        "alias": "cloud-slow-wind"
+      },
+      {
+        "name": "cloud-snow",
+        "resolved": "cloud-hailstone",
+        "alias": "cloud-snow"
+      },
+      {
+        "name": "cloud-upload",
+        "resolved": "cloud-download",
+        "alias": "cloud-upload"
+      },
+      {
+        "name": "code-circle",
+        "resolved": "alpha-circle",
+        "alias": "code-circle"
+      },
+      {
+        "name": "code-square",
+        "resolved": "abacus",
+        "alias": "code-square"
+      },
+      {
+        "name": "coins-dollar",
+        "resolved": "coins-02",
+        "alias": "coins-dollar"
+      },
+      {
+        "name": "coins-euro",
+        "resolved": "coins-02",
+        "alias": "coins-euro"
+      },
+      {
+        "name": "coins-pound",
+        "resolved": "coins-02",
+        "alias": "coins-pound"
+      },
+      {
+        "name": "coins-yen",
+        "resolved": "coins-02",
+        "alias": "coins-yen"
+      },
+      {
+        "name": "comment-block-01",
+        "resolved": "comment-add-01",
+        "alias": "comment-block-01"
+      },
+      {
+        "name": "comment-remove-01",
+        "resolved": "comment-add-01",
+        "alias": "comment-remove-01"
+      },
+      {
+        "name": "comment-remove-02",
+        "resolved": "comment-add-02",
+        "alias": "comment-remove-02"
+      },
+      {
+        "name": "computer-arrow-down",
+        "resolved": "c-computer-programming-01",
+        "alias": "computer-arrow-down"
+      },
+      {
+        "name": "computer-chart-down",
+        "resolved": "computer-activity",
+        "alias": "computer-chart-down"
+      },
+      {
+        "name": "computer-chart-up",
+        "resolved": "computer-activity",
+        "alias": "computer-chart-up"
+      },
+      {
+        "name": "computer-check",
+        "resolved": "computer-add",
+        "alias": "computer-check"
+      },
+      {
+        "name": "computer-cloud",
+        "resolved": "computer-add",
+        "alias": "computer-cloud"
+      },
+      {
+        "name": "computer-remove",
+        "resolved": "computer-add",
+        "alias": "computer-remove"
+      },
+      {
+        "name": "computer-screen-share",
+        "resolved": "computer-activity",
+        "alias": "computer-screen-share"
+      },
+      {
+        "name": "computer-settings",
+        "resolved": "computer-activity",
+        "alias": "computer-settings"
+      },
+      {
+        "name": "computer-user",
+        "resolved": "computer-activity",
+        "alias": "computer-user"
+      },
+      {
+        "name": "computer-video",
+        "resolved": "computer-add",
+        "alias": "computer-video"
+      },
+      {
+        "name": "computer-video-call",
+        "resolved": "computer-dollar",
+        "alias": "computer-video-call"
+      },
+      {
+        "name": "confused",
+        "resolved": "angry",
+        "alias": "confused"
+      },
+      {
+        "name": "congruent-to-circle",
+        "resolved": "alpha-circle",
+        "alias": "congruent-to-circle"
+      },
+      {
+        "name": "congruent-to-square",
+        "resolved": "abacus",
+        "alias": "congruent-to-square"
+      },
+      {
+        "name": "container-truck-02",
+        "resolved": "container-truck-01",
+        "alias": "container-truck-02"
+      },
+      {
+        "name": "copyleft",
+        "resolved": "a-alert-circle",
+        "alias": "copyleft"
+      },
+      {
+        "name": "coupon-percent",
+        "resolved": "2-coupon-03",
+        "alias": "coupon-percent"
+      },
+      {
+        "name": "covid-info",
+        "resolved": "alpha-circle",
+        "alias": "covid-info"
+      },
+      {
+        "name": "crazy",
+        "resolved": "angry",
+        "alias": "crazy"
+      },
+      {
+        "name": "creative-commons",
+        "resolved": "a-alert-circle",
+        "alias": "creative-commons"
+      },
+      {
+        "name": "csv-01",
+        "resolved": "2-file-shredder",
+        "alias": "csv-01"
+      },
+      {
+        "name": "cursor-rectangle-selection-02",
+        "resolved": "2-cursor-rectangle-selection-01",
+        "alias": "cursor-rectangle-selection-02"
+      },
+      {
+        "name": "d-dice-faces-02",
+        "resolved": "d-dice-faces-01",
+        "alias": "d-dice-faces-02"
+      },
+      {
+        "name": "d-dice-faces-03",
+        "resolved": "d-dice-faces-01",
+        "alias": "d-dice-faces-03"
+      },
+      {
+        "name": "d-dice-faces-04",
+        "resolved": "c-computer-terminal-01",
+        "alias": "d-dice-faces-04"
+      },
+      {
+        "name": "d-dice-faces-05",
+        "resolved": "d-dice-faces-01",
+        "alias": "d-dice-faces-05"
+      },
+      {
+        "name": "d-dice-faces-06",
+        "resolved": "c-computer-terminal-01",
+        "alias": "d-dice-faces-06"
+      },
+      {
+        "name": "d-dirham",
+        "resolved": "angry",
+        "alias": "d-dirham"
+      },
+      {
+        "name": "dashboard-browsing",
+        "resolved": "command-line",
+        "alias": "dashboard-browsing"
+      },
+      {
+        "name": "dashboard-speed-01",
+        "resolved": "abacus",
+        "alias": "dashboard-speed-01"
+      },
+      {
+        "name": "database",
+        "resolved": "database-02",
+        "alias": "database"
+      },
+      {
+        "name": "database-export",
+        "resolved": "bitcoin-database",
+        "alias": "database-export"
+      },
+      {
+        "name": "database-import",
+        "resolved": "bitcoin-database",
+        "alias": "database-import"
+      },
+      {
+        "name": "dead",
+        "resolved": "angry",
+        "alias": "dead"
+      },
+      {
+        "name": "delivery-delay-02",
+        "resolved": "delivery-delay-01",
+        "alias": "delivery-delay-02"
+      },
+      {
+        "name": "delivery-sent-02",
+        "resolved": "delivery-sent-01",
+        "alias": "delivery-sent-02"
+      },
+      {
+        "name": "delivery-truck-02",
+        "resolved": "delivery-truck-01",
+        "alias": "delivery-truck-02"
+      },
+      {
+        "name": "diameter",
+        "resolved": "alpha-circle",
+        "alias": "diameter"
+      },
+      {
+        "name": "dice-faces-02",
+        "resolved": "dice-faces-01",
+        "alias": "dice-faces-02"
+      },
+      {
+        "name": "dice-faces-03",
+        "resolved": "dice-faces-01",
+        "alias": "dice-faces-03"
+      },
+      {
+        "name": "dice-faces-04",
+        "resolved": "dice-faces-01",
+        "alias": "dice-faces-04"
+      },
+      {
+        "name": "dice-faces-05",
+        "resolved": "dice-faces-01",
+        "alias": "dice-faces-05"
+      },
+      {
+        "name": "dice-faces-06",
+        "resolved": "dice-faces-01",
+        "alias": "dice-faces-06"
+      },
+      {
+        "name": "dirham",
+        "resolved": "checkmark-circle-01",
+        "alias": "dirham"
+      },
+      {
+        "name": "disc",
+        "resolved": "a-alert-circle",
+        "alias": "disc"
+      },
+      {
+        "name": "disc-3",
+        "resolved": "2-t-target-03",
+        "alias": "disc-3"
+      },
+      {
+        "name": "discount-tag-02",
+        "resolved": "bitcoin-tag",
+        "alias": "discount-tag-02"
+      },
+      {
+        "name": "discover-circle",
+        "resolved": "alpha-circle",
+        "alias": "discover-circle"
+      },
+      {
+        "name": "discover-square",
+        "resolved": "abacus",
+        "alias": "discover-square"
+      },
+      {
+        "name": "displeased",
+        "resolved": "angry",
+        "alias": "displeased"
+      },
+      {
+        "name": "divide-sign-circle",
+        "resolved": "alpha-circle",
+        "alias": "divide-sign-circle"
+      },
+      {
+        "name": "divide-sign-square",
+        "resolved": "abacus",
+        "alias": "divide-sign-square"
+      },
+      {
+        "name": "dna",
+        "resolved": "2-centralized",
+        "alias": "dna"
+      },
+      {
+        "name": "doc-01",
+        "resolved": "csv-01",
+        "alias": "doc-01"
+      },
+      {
+        "name": "doc-02",
+        "resolved": "csv-02",
+        "alias": "doc-02"
+      },
+      {
+        "name": "dollar-circle",
+        "resolved": "alpha-circle",
+        "alias": "dollar-circle"
+      },
+      {
+        "name": "dollar-receive-02",
+        "resolved": "dollar-receive-01",
+        "alias": "dollar-receive-02"
+      },
+      {
+        "name": "dollar-send-01",
+        "resolved": "dollar-receive-01",
+        "alias": "dollar-send-01"
+      },
+      {
+        "name": "dollar-send-02",
+        "resolved": "dollar-receive-01",
+        "alias": "dollar-send-02"
+      },
+      {
+        "name": "download-circle-01",
+        "resolved": "alert-circle",
+        "alias": "download-circle-01"
+      },
+      {
+        "name": "drag-drop-vertical",
+        "resolved": "2-drag-drop-vertical",
+        "alias": "drag-drop-vertical"
+      },
+      {
+        "name": "drawing-mode",
+        "resolved": "copy-01",
+        "alias": "drawing-mode"
+      },
+      {
+        "name": "dribbble",
+        "resolved": "alpha-circle",
+        "alias": "dribbble"
+      },
+      {
+        "name": "droplet",
+        "resolved": "blood-type",
+        "alias": "droplet"
+      },
+      {
+        "name": "eight-square",
+        "resolved": "eight-circle",
+        "alias": "eight-square"
+      },
+      {
+        "name": "energy-ellipse",
+        "resolved": "alpha-circle",
+        "alias": "energy-ellipse"
+      },
+      {
+        "name": "equal-sign-circle",
+        "resolved": "alpha-circle",
+        "alias": "equal-sign-circle"
+      },
+      {
+        "name": "equal-sign-square",
+        "resolved": "abacus",
+        "alias": "equal-sign-square"
+      },
+      {
+        "name": "eraser-add",
+        "resolved": "eraser-01",
+        "alias": "eraser-add"
+      },
+      {
+        "name": "ethereum-ellipse",
+        "resolved": "alpha-circle",
+        "alias": "ethereum-ellipse"
+      },
+      {
+        "name": "ethereum-rectangle",
+        "resolved": "abacus",
+        "alias": "ethereum-rectangle"
+      },
+      {
+        "name": "euro-circle",
+        "resolved": "alpha-circle",
+        "alias": "euro-circle"
+      },
+      {
+        "name": "euro-send",
+        "resolved": "euro-receive",
+        "alias": "euro-send"
+      },
+      {
+        "name": "facebook-01",
+        "resolved": "capcut-rectangle",
+        "alias": "facebook-01"
+      },
+      {
+        "name": "favourite-circle",
+        "resolved": "checkmark-circle-01",
+        "alias": "favourite-circle"
+      },
+      {
+        "name": "file-add",
+        "resolved": "2-bookmark-add-02",
+        "alias": "file-add"
+      },
+      {
+        "name": "file-braces",
+        "resolved": "file-axis-three-d",
+        "alias": "file-braces"
+      },
+      {
+        "name": "file-chart-column",
+        "resolved": "file-axis-three-d",
+        "alias": "file-chart-column"
+      },
+      {
+        "name": "file-chart-column-increasing",
+        "resolved": "file-axis-three-d",
+        "alias": "file-chart-column-increasing"
+      },
+      {
+        "name": "file-code",
+        "resolved": "file-axis-three-d",
+        "alias": "file-code"
+      },
+      {
+        "name": "file-down",
+        "resolved": "file-axis-three-d",
+        "alias": "file-down"
+      },
+      {
+        "name": "file-euro",
+        "resolved": "file-bitcoin",
+        "alias": "file-euro"
+      },
+      {
+        "name": "file-exclamation-point",
+        "resolved": "file-axis-three-d",
+        "alias": "file-exclamation-point"
+      },
+      {
+        "name": "file-image",
+        "resolved": "file-axis-three-d",
+        "alias": "file-image"
+      },
+      {
+        "name": "file-minus",
+        "resolved": "2-bookmark-minus-02",
+        "alias": "file-minus"
+      },
+      {
+        "name": "file-play",
+        "resolved": "file-axis-three-d",
+        "alias": "file-play"
+      },
+      {
+        "name": "file-plus",
+        "resolved": "file-axis-three-d",
+        "alias": "file-plus"
+      },
+      {
+        "name": "file-pound",
+        "resolved": "file-bitcoin",
+        "alias": "file-pound"
+      },
+      {
+        "name": "file-search",
+        "resolved": "file-axis-three-d",
+        "alias": "file-search"
+      },
+      {
+        "name": "file-sliders",
+        "resolved": "file-axis-three-d",
+        "alias": "file-sliders"
+      },
+      {
+        "name": "file-yen",
+        "resolved": "file-bitcoin",
+        "alias": "file-yen"
+      },
+      {
+        "name": "filter-mail-circle",
+        "resolved": "add-circle",
+        "alias": "filter-mail-circle"
+      },
+      {
+        "name": "finger-print-minus",
+        "resolved": "finger-print-add",
+        "alias": "finger-print-minus"
+      },
+      {
+        "name": "finger-print-remove",
+        "resolved": "finger-print-add",
+        "alias": "finger-print-remove"
+      },
+      {
+        "name": "fingerprint-scan",
+        "resolved": "face-id",
+        "alias": "fingerprint-scan"
+      },
+      {
+        "name": "first-bracket-circle",
+        "resolved": "alpha-circle",
+        "alias": "first-bracket-circle"
+      },
+      {
+        "name": "first-bracket-square",
+        "resolved": "abacus",
+        "alias": "first-bracket-square"
+      },
+      {
+        "name": "flickr",
+        "resolved": "alpha-circle",
+        "alias": "flickr"
+      },
+      {
+        "name": "flushed",
+        "resolved": "angry",
+        "alias": "flushed"
+      },
+      {
+        "name": "folder-management",
+        "resolved": "2-mail-setting-01",
+        "alias": "folder-management"
+      },
+      {
+        "name": "folder-minus",
+        "resolved": "folder-add",
+        "alias": "folder-minus"
+      },
+      {
+        "name": "folder-remove",
+        "resolved": "2-wifi-disconnected-04",
+        "alias": "folder-remove"
+      },
+      {
+        "name": "forward-02",
+        "resolved": "2-forward-02",
+        "alias": "forward-02"
+      },
+      {
+        "name": "function-circle",
+        "resolved": "alpha-circle",
+        "alias": "function-circle"
+      },
+      {
+        "name": "function-square",
+        "resolved": "abacus",
+        "alias": "function-square"
+      },
+      {
+        "name": "git-commit",
+        "resolved": "2-gps-01",
+        "alias": "git-commit"
+      },
+      {
+        "name": "github-01",
+        "resolved": "alpha-circle",
+        "alias": "github-01"
+      },
+      {
+        "name": "give-pill",
+        "resolved": "give-blood",
+        "alias": "give-pill"
+      },
+      {
+        "name": "global",
+        "resolved": "add-circle",
+        "alias": "global"
+      },
+      {
+        "name": "go-backward-five-sec",
+        "resolved": "go-backward-30-sec",
+        "alias": "go-backward-five-sec"
+      },
+      {
+        "name": "go-forward-15-sec",
+        "resolved": "go-forward-10-sec",
+        "alias": "go-forward-15-sec"
+      },
+      {
+        "name": "go-forward-60-sec",
+        "resolved": "go-forward-30-sec",
+        "alias": "go-forward-60-sec"
+      },
+      {
+        "name": "google",
+        "resolved": "alpha-circle",
+        "alias": "google"
+      },
+      {
+        "name": "google-sheet",
+        "resolved": "google-doc",
+        "alias": "google-sheet"
+      },
+      {
+        "name": "gps-off-02",
+        "resolved": "gps-02",
+        "alias": "gps-off-02"
+      },
+      {
+        "name": "gps-signal-01",
+        "resolved": "gps-disconnected",
+        "alias": "gps-signal-01"
+      },
+      {
+        "name": "gps-signal-02",
+        "resolved": "gps-disconnected",
+        "alias": "gps-signal-02"
+      },
+      {
+        "name": "greater-than-circle",
+        "resolved": "alpha-circle",
+        "alias": "greater-than-circle"
+      },
+      {
+        "name": "greater-than-square",
+        "resolved": "abacus",
+        "alias": "greater-than-square"
+      },
+      {
+        "name": "grimacing",
+        "resolved": "angry",
+        "alias": "grimacing"
+      },
+      {
+        "name": "grok",
+        "resolved": "energy-rectangle",
+        "alias": "grok"
+      },
+      {
+        "name": "h-help-circle",
+        "resolved": "a-alert-circle",
+        "alias": "h-help-circle"
+      },
+      {
+        "name": "h-help-square",
+        "resolved": "a-alert-square",
+        "alias": "h-help-square"
+      },
+      {
+        "name": "halal",
+        "resolved": "allah",
+        "alias": "halal"
+      },
+      {
+        "name": "happy",
+        "resolved": "angry",
+        "alias": "happy"
+      },
+      {
+        "name": "happy-01",
+        "resolved": "angry",
+        "alias": "happy-01"
+      },
+      {
+        "name": "hard-drive-upload",
+        "resolved": "hard-drive-download",
+        "alias": "hard-drive-upload"
+      },
+      {
+        "name": "heading-02",
+        "resolved": "heading-01",
+        "alias": "heading-02"
+      },
+      {
+        "name": "heading-03",
+        "resolved": "heading-01",
+        "alias": "heading-03"
+      },
+      {
+        "name": "heading-04",
+        "resolved": "heading-01",
+        "alias": "heading-04"
+      },
+      {
+        "name": "heading-05",
+        "resolved": "heading-01",
+        "alias": "heading-05"
+      },
+      {
+        "name": "heading-06",
+        "resolved": "heading-01",
+        "alias": "heading-06"
+      },
+      {
+        "name": "health",
+        "resolved": "cardiogram-02",
+        "alias": "health"
+      },
+      {
+        "name": "help-circle",
+        "resolved": "alpha-circle",
+        "alias": "help-circle"
+      },
+      {
+        "name": "help-square",
+        "resolved": "alert-square",
+        "alias": "help-square"
+      },
+      {
+        "name": "home-02",
+        "resolved": "home-01",
+        "alias": "home-02"
+      },
+      {
+        "name": "home-04",
+        "resolved": "home-03",
+        "alias": "home-04"
+      },
+      {
+        "name": "home-05",
+        "resolved": "home-03",
+        "alias": "home-05"
+      },
+      {
+        "name": "home-06",
+        "resolved": "home-03",
+        "alias": "home-06"
+      },
+      {
+        "name": "home-08",
+        "resolved": "home-03",
+        "alias": "home-08"
+      },
+      {
+        "name": "home-13",
+        "resolved": "home-11",
+        "alias": "home-13"
+      },
+      {
+        "name": "honour-star",
+        "resolved": "honor",
+        "alias": "honour-star"
+      },
+      {
+        "name": "house-wifi",
+        "resolved": "house-heart",
+        "alias": "house-wifi"
+      },
+      {
+        "name": "humidity",
+        "resolved": "blood-type",
+        "alias": "humidity"
+      },
+      {
+        "name": "hydro-power",
+        "resolved": "eco-energy",
+        "alias": "hydro-power"
+      },
+      {
+        "name": "i-important-book",
+        "resolved": "audio-book-01",
+        "alias": "i-important-book"
+      },
+      {
+        "name": "i-information-circle",
+        "resolved": "a-alert-circle",
+        "alias": "i-information-circle"
+      },
+      {
+        "name": "i-information-diamond",
+        "resolved": "a-alert-diamond",
+        "alias": "i-information-diamond"
+      },
+      {
+        "name": "i-information-square",
+        "resolved": "a-alert-square",
+        "alias": "i-information-square"
+      },
+      {
+        "name": "ico",
+        "resolved": "alpha-circle",
+        "alias": "ico"
+      },
+      {
+        "name": "important-book",
+        "resolved": "address-book",
+        "alias": "important-book"
+      },
+      {
+        "name": "inbox",
+        "resolved": "abacus",
+        "alias": "inbox"
+      },
+      {
+        "name": "inequality-circle-01",
+        "resolved": "alpha-circle",
+        "alias": "inequality-circle-01"
+      },
+      {
+        "name": "inequality-circle-02",
+        "resolved": "alpha-circle",
+        "alias": "inequality-circle-02"
+      },
+      {
+        "name": "inequality-square-02",
+        "resolved": "inequality-square-01",
+        "alias": "inequality-square-02"
+      },
+      {
+        "name": "infinity-02",
+        "resolved": "absolute",
+        "alias": "infinity-02"
+      },
+      {
+        "name": "infinity-circle",
+        "resolved": "alpha-circle",
+        "alias": "infinity-circle"
+      },
+      {
+        "name": "infinity-square",
+        "resolved": "abacus",
+        "alias": "infinity-square"
+      },
+      {
+        "name": "information-circle",
+        "resolved": "add-circle",
+        "alias": "information-circle"
+      },
+      {
+        "name": "information-diamond",
+        "resolved": "alert-diamond",
+        "alias": "information-diamond"
+      },
+      {
+        "name": "insert-center-image",
+        "resolved": "carousel-vertical",
+        "alias": "insert-center-image"
+      },
+      {
+        "name": "insert-column",
+        "resolved": "delete-column",
+        "alias": "insert-column"
+      },
+      {
+        "name": "insert-row",
+        "resolved": "delete-row",
+        "alias": "insert-row"
+      },
+      {
+        "name": "insert-row-down",
+        "resolved": "delete-row",
+        "alias": "insert-row-down"
+      },
+      {
+        "name": "instagram",
+        "resolved": "abacus",
+        "alias": "instagram"
+      },
+      {
+        "name": "internet",
+        "resolved": "alpha-circle",
+        "alias": "internet"
+      },
+      {
+        "name": "java-script",
+        "resolved": "abacus",
+        "alias": "java-script"
+      },
+      {
+        "name": "join-round",
+        "resolved": "join-bevel",
+        "alias": "join-round"
+      },
+      {
+        "name": "join-straight",
+        "resolved": "join-bevel",
+        "alias": "join-straight"
+      },
+      {
+        "name": "jsx-01",
+        "resolved": "abacus",
+        "alias": "jsx-01"
+      },
+      {
+        "name": "keyframe-align-horizontal",
+        "resolved": "keyframe-align-center",
+        "alias": "keyframe-align-horizontal"
+      },
+      {
+        "name": "keyframe-align-vertical",
+        "resolved": "keyframe-align-center",
+        "alias": "keyframe-align-vertical"
+      },
+      {
+        "name": "keyframe-remove",
+        "resolved": "keyframe-add",
+        "alias": "keyframe-remove"
+      },
+      {
+        "name": "keyframes-multiple-remove",
+        "resolved": "keyframes-multiple-add",
+        "alias": "keyframes-multiple-remove"
+      },
+      {
+        "name": "kickstarter-02",
+        "resolved": "abacus",
+        "alias": "kickstarter-02"
+      },
+      {
+        "name": "l-location-update-02",
+        "resolved": "l-location-update-01",
+        "alias": "l-location-update-02"
+      },
+      {
+        "name": "language-circle",
+        "resolved": "alpha-circle",
+        "alias": "language-circle"
+      },
+      {
+        "name": "language-square",
+        "resolved": "abacus",
+        "alias": "language-square"
+      },
+      {
+        "name": "laptop-check",
+        "resolved": "laptop-add",
+        "alias": "laptop-check"
+      },
+      {
+        "name": "laptop-issue",
+        "resolved": "laptop-add",
+        "alias": "laptop-issue"
+      },
+      {
+        "name": "laptop-remove",
+        "resolved": "laptop-add",
+        "alias": "laptop-remove"
+      },
+      {
+        "name": "laptop-settings",
+        "resolved": "laptop-add",
+        "alias": "laptop-settings"
+      },
+      {
+        "name": "laptop-video",
+        "resolved": "laptop-performance",
+        "alias": "laptop-video"
+      },
+      {
+        "name": "last-fm",
+        "resolved": "abacus",
+        "alias": "last-fm"
+      },
+      {
+        "name": "latitude",
+        "resolved": "add-circle",
+        "alias": "latitude"
+      },
+      {
+        "name": "layer-add",
+        "resolved": "copy-01",
+        "alias": "layer-add"
+      },
+      {
+        "name": "layer-mask-02",
+        "resolved": "alpha-circle",
+        "alias": "layer-mask-02"
+      },
+      {
+        "name": "layout-03",
+        "resolved": "layout-01",
+        "alias": "layout-03"
+      },
+      {
+        "name": "layout-05",
+        "resolved": "layout-01",
+        "alias": "layout-05"
+      },
+      {
+        "name": "layout-06",
+        "resolved": "layout-04",
+        "alias": "layout-06"
+      },
+      {
+        "name": "layout-align-left",
+        "resolved": "layout-align-bottom",
+        "alias": "layout-align-left"
+      },
+      {
+        "name": "layout-align-right",
+        "resolved": "layout-align-bottom",
+        "alias": "layout-align-right"
+      },
+      {
+        "name": "layout-align-top",
+        "resolved": "layout-align-bottom",
+        "alias": "layout-align-top"
+      },
+      {
+        "name": "layout-right",
+        "resolved": "abacus",
+        "alias": "layout-right"
+      },
+      {
+        "name": "layout-table-01",
+        "resolved": "layout-01",
+        "alias": "layout-table-01"
+      },
+      {
+        "name": "layout-table-02",
+        "resolved": "layout-04",
+        "alias": "layout-table-02"
+      },
+      {
+        "name": "layout-three-column",
+        "resolved": "abacus",
+        "alias": "layout-three-column"
+      },
+      {
+        "name": "layout-three-row",
+        "resolved": "layout-bottom",
+        "alias": "layout-three-row"
+      },
+      {
+        "name": "layout-two-column",
+        "resolved": "abacus",
+        "alias": "layout-two-column"
+      },
+      {
+        "name": "layout-two-row",
+        "resolved": "abacus",
+        "alias": "layout-two-row"
+      },
+      {
+        "name": "leaving-geo-fence",
+        "resolved": "entering-geo-fence",
+        "alias": "leaving-geo-fence"
+      },
+      {
+        "name": "left-to-right-list-dash",
+        "resolved": "left-to-right-list-bullet",
+        "alias": "left-to-right-list-dash"
+      },
+      {
+        "name": "left-to-right-list-star",
+        "resolved": "left-to-right-list-star-01",
+        "alias": "left-to-right-list-star"
+      },
+      {
+        "name": "less-than-circle",
+        "resolved": "alpha-circle",
+        "alias": "less-than-circle"
+      },
+      {
+        "name": "less-than-square",
+        "resolved": "abacus",
+        "alias": "less-than-square"
+      },
+      {
+        "name": "link-01",
+        "resolved": "2-unlink-01",
+        "alias": "link-01"
+      },
+      {
+        "name": "linkedin-01",
+        "resolved": "abacus",
+        "alias": "linkedin-01"
+      },
+      {
+        "name": "list-indent-increase",
+        "resolved": "list-indent-decrease",
+        "alias": "list-indent-increase"
+      },
+      {
+        "name": "litecoin",
+        "resolved": "alpha-circle",
+        "alias": "litecoin"
+      },
+      {
+        "name": "location-01",
+        "resolved": "2-location-02",
+        "alias": "location-01"
+      },
+      {
+        "name": "location-06",
+        "resolved": "2-location-07",
+        "alias": "location-06"
+      },
+      {
+        "name": "location-09",
+        "resolved": "location-08",
+        "alias": "location-09"
+      },
+      {
+        "name": "location-10",
+        "resolved": "location-08",
+        "alias": "location-10"
+      },
+      {
+        "name": "location-add-01",
+        "resolved": "location-01",
+        "alias": "location-add-01"
+      },
+      {
+        "name": "location-add-02",
+        "resolved": "location-06",
+        "alias": "location-add-02"
+      },
+      {
+        "name": "location-check-01",
+        "resolved": "location-01",
+        "alias": "location-check-01"
+      },
+      {
+        "name": "location-check-02",
+        "resolved": "location-06",
+        "alias": "location-check-02"
+      },
+      {
+        "name": "location-favourite-01",
+        "resolved": "location-01",
+        "alias": "location-favourite-01"
+      },
+      {
+        "name": "location-favourite-02",
+        "resolved": "location-06",
+        "alias": "location-favourite-02"
+      },
+      {
+        "name": "location-remove-01",
+        "resolved": "location-01",
+        "alias": "location-remove-01"
+      },
+      {
+        "name": "location-remove-02",
+        "resolved": "location-06",
+        "alias": "location-remove-02"
+      },
+      {
+        "name": "location-update-02",
+        "resolved": "location-update-01",
+        "alias": "location-update-02"
+      },
+      {
+        "name": "location-user-03",
+        "resolved": "location-user-02",
+        "alias": "location-user-03"
+      },
+      {
+        "name": "location-user-04",
+        "resolved": "location-user-02",
+        "alias": "location-user-04"
+      },
+      {
+        "name": "lock",
+        "resolved": "alpha-circle",
+        "alias": "lock"
+      },
+      {
+        "name": "lock-password",
+        "resolved": "biometric-access",
+        "alias": "lock-password"
+      },
+      {
+        "name": "logout-circle-02",
+        "resolved": "login-circle-02",
+        "alias": "logout-circle-02"
+      },
+      {
+        "name": "logout-square-02",
+        "resolved": "login-square-02",
+        "alias": "logout-square-02"
+      },
+      {
+        "name": "look-bottom",
+        "resolved": "angry",
+        "alias": "look-bottom"
+      },
+      {
+        "name": "look-left",
+        "resolved": "angry",
+        "alias": "look-left"
+      },
+      {
+        "name": "look-right",
+        "resolved": "angry",
+        "alias": "look-right"
+      },
+      {
+        "name": "look-top",
+        "resolved": "angry",
+        "alias": "look-top"
+      },
+      {
+        "name": "lottiefiles",
+        "resolved": "abacus",
+        "alias": "lottiefiles"
+      },
+      {
+        "name": "m-message-incoming-02",
+        "resolved": "m-message-favourite-02",
+        "alias": "m-message-incoming-02"
+      },
+      {
+        "name": "m-message-notification-02",
+        "resolved": "m-message-cancel-02",
+        "alias": "m-message-notification-02"
+      },
+      {
+        "name": "m-message-outgoing-02",
+        "resolved": "m-message-favourite-02",
+        "alias": "m-message-outgoing-02"
+      },
+      {
+        "name": "m-message-question",
+        "resolved": "m-message-02",
+        "alias": "m-message-question"
+      },
+      {
+        "name": "m-message-unlock-02",
+        "resolved": "m-message-lock-02",
+        "alias": "m-message-unlock-02"
+      },
+      {
+        "name": "m-message-upload-02",
+        "resolved": "m-message-download-02",
+        "alias": "m-message-upload-02"
+      },
+      {
+        "name": "m-message-user-02",
+        "resolved": "m-message-secure-02",
+        "alias": "m-message-user-02"
+      },
+      {
+        "name": "m-modern-tv-issue",
+        "resolved": "m-modern-tv-four-k",
+        "alias": "m-modern-tv-issue"
+      },
+      {
+        "name": "m-moon",
+        "resolved": "a-alert-circle",
+        "alias": "m-moon"
+      },
+      {
+        "name": "m-more-horizontal-circle-02",
+        "resolved": "a-alert-circle",
+        "alias": "m-more-horizontal-circle-02"
+      },
+      {
+        "name": "m-more-horizontal-square-02",
+        "resolved": "a-alert-square",
+        "alias": "m-more-horizontal-square-02"
+      },
+      {
+        "name": "m-more-vertical-circle-01",
+        "resolved": "m-more-horizontal-circle-01",
+        "alias": "m-more-vertical-circle-01"
+      },
+      {
+        "name": "m-more-vertical-circle-02",
+        "resolved": "a-alert-circle",
+        "alias": "m-more-vertical-circle-02"
+      },
+      {
+        "name": "m-more-vertical-square-01",
+        "resolved": "m-more-horizontal-square-01",
+        "alias": "m-more-vertical-square-01"
+      },
+      {
+        "name": "mail-reply-02",
+        "resolved": "mail-remove-02",
+        "alias": "mail-reply-02"
+      },
+      {
+        "name": "mail-send-02",
+        "resolved": "mail-receive-02",
+        "alias": "mail-send-02"
+      },
+      {
+        "name": "mail-upload-02",
+        "resolved": "mail-download-02",
+        "alias": "mail-upload-02"
+      },
+      {
+        "name": "male-02",
+        "resolved": "female-02",
+        "alias": "male-02"
+      },
+      {
+        "name": "maps",
+        "resolved": "maping",
+        "alias": "maps"
+      },
+      {
+        "name": "maps-circle-01",
+        "resolved": "checkmark-circle-01",
+        "alias": "maps-circle-01"
+      },
+      {
+        "name": "maps-circle-02",
+        "resolved": "alpha-circle",
+        "alias": "maps-circle-02"
+      },
+      {
+        "name": "maps-square-01",
+        "resolved": "alpha-square",
+        "alias": "maps-square-01"
+      },
+      {
+        "name": "maps-square-02",
+        "resolved": "abacus",
+        "alias": "maps-square-02"
+      },
+      {
+        "name": "math",
+        "resolved": "abacus",
+        "alias": "math"
+      },
+      {
+        "name": "matrix",
+        "resolved": "absolute",
+        "alias": "matrix"
+      },
+      {
+        "name": "medal-04",
+        "resolved": "medal-03",
+        "alias": "medal-04"
+      },
+      {
+        "name": "medal-second-place",
+        "resolved": "medal-first-place",
+        "alias": "medal-second-place"
+      },
+      {
+        "name": "medal-third-place",
+        "resolved": "medal-first-place",
+        "alias": "medal-third-place"
+      },
+      {
+        "name": "medicine-01",
+        "resolved": "give-blood",
+        "alias": "medicine-01"
+      },
+      {
+        "name": "medicine-syrup",
+        "resolved": "medicine-bottle-01",
+        "alias": "medicine-syrup"
+      },
+      {
+        "name": "medium-square",
+        "resolved": "abacus",
+        "alias": "medium-square"
+      },
+      {
+        "name": "meh",
+        "resolved": "angry",
+        "alias": "meh"
+      },
+      {
+        "name": "menu-06",
+        "resolved": "menu-01",
+        "alias": "menu-06"
+      },
+      {
+        "name": "message-cancel-01",
+        "resolved": "message-add-01",
+        "alias": "message-cancel-01"
+      },
+      {
+        "name": "message-circle-code",
+        "resolved": "b-bubble-chat",
+        "alias": "message-circle-code"
+      },
+      {
+        "name": "message-circle-reply",
+        "resolved": "b-bubble-chat",
+        "alias": "message-circle-reply"
+      },
+      {
+        "name": "message-outgoing-02",
+        "resolved": "message-incoming-02",
+        "alias": "message-outgoing-02"
+      },
+      {
+        "name": "message-square-diff",
+        "resolved": "message-square-code",
+        "alias": "message-square-diff"
+      },
+      {
+        "name": "message-translate",
+        "resolved": "ai-chat-02",
+        "alias": "message-translate"
+      },
+      {
+        "name": "message-unlock-02",
+        "resolved": "message-lock-02",
+        "alias": "message-unlock-02"
+      },
+      {
+        "name": "message-upload-02",
+        "resolved": "message-download-02",
+        "alias": "message-upload-02"
+      },
+      {
+        "name": "mic-02",
+        "resolved": "mic-01",
+        "alias": "mic-02"
+      },
+      {
+        "name": "microsoft-admin",
+        "resolved": "blocked",
+        "alias": "microsoft-admin"
+      },
+      {
+        "name": "minus-plus-02",
+        "resolved": "call-disabled-02",
+        "alias": "minus-plus-02"
+      },
+      {
+        "name": "minus-plus-circle-01",
+        "resolved": "alpha-circle",
+        "alias": "minus-plus-circle-01"
+      },
+      {
+        "name": "minus-plus-circle-02",
+        "resolved": "alpha-circle",
+        "alias": "minus-plus-circle-02"
+      },
+      {
+        "name": "minus-plus-square-01",
+        "resolved": "abacus",
+        "alias": "minus-plus-square-01"
+      },
+      {
+        "name": "minus-plus-square-02",
+        "resolved": "abacus",
+        "alias": "minus-plus-square-02"
+      },
+      {
+        "name": "minus-sign",
+        "resolved": "2-remove-circle",
+        "alias": "minus-sign"
+      },
+      {
+        "name": "minus-sign-circle",
+        "resolved": "alpha-circle",
+        "alias": "minus-sign-circle"
+      },
+      {
+        "name": "minus-sign-square",
+        "resolved": "abacus",
+        "alias": "minus-sign-square"
+      },
+      {
+        "name": "money-bag-01",
+        "resolved": "2-bitcoin-bag",
+        "alias": "money-bag-01"
+      },
+      {
+        "name": "monitor-pause",
+        "resolved": "c-computer-programming-01",
+        "alias": "monitor-pause"
+      },
+      {
+        "name": "monitor-stop",
+        "resolved": "c-computer-programming-01",
+        "alias": "monitor-stop"
+      },
+      {
+        "name": "moon",
+        "resolved": "alpha-circle",
+        "alias": "moon"
+      },
+      {
+        "name": "moon-cloud-big-rain",
+        "resolved": "moon-cloud-angled-zap",
+        "alias": "moon-cloud-big-rain"
+      },
+      {
+        "name": "moon-cloud-snow",
+        "resolved": "moon-cloud-little-snow",
+        "alias": "moon-cloud-snow"
+      },
+      {
+        "name": "moon-eclipse",
+        "resolved": "alpha-circle",
+        "alias": "moon-eclipse"
+      },
+      {
+        "name": "more-horizontal-circle-02",
+        "resolved": "add-circle",
+        "alias": "more-horizontal-circle-02"
+      },
+      {
+        "name": "more-horizontal-square-02",
+        "resolved": "abacus",
+        "alias": "more-horizontal-square-02"
+      },
+      {
+        "name": "more-or-less-circle",
+        "resolved": "alpha-circle",
+        "alias": "more-or-less-circle"
+      },
+      {
+        "name": "more-or-less-square",
+        "resolved": "alpha-square",
+        "alias": "more-or-less-square"
+      },
+      {
+        "name": "more-vertical-circle-02",
+        "resolved": "add-circle",
+        "alias": "more-vertical-circle-02"
+      },
+      {
+        "name": "mouse-03",
+        "resolved": "mouse-01",
+        "alias": "mouse-03"
+      },
+      {
+        "name": "mouse-21",
+        "resolved": "mouse-19",
+        "alias": "mouse-21"
+      },
+      {
+        "name": "mouse-22",
+        "resolved": "mouse-10",
+        "alias": "mouse-22"
+      },
+      {
+        "name": "mouse-23",
+        "resolved": "mouse-01",
+        "alias": "mouse-23"
+      },
+      {
+        "name": "mouse-right-click-03",
+        "resolved": "mouse-left-click-03",
+        "alias": "mouse-right-click-03"
+      },
+      {
+        "name": "mouse-scroll-02",
+        "resolved": "mouse-09",
+        "alias": "mouse-scroll-02"
+      },
+      {
+        "name": "muhammad",
+        "resolved": "allah",
+        "alias": "muhammad"
+      },
+      {
+        "name": "multiplication-sign-circle",
+        "resolved": "alpha-circle",
+        "alias": "multiplication-sign-circle"
+      },
+      {
+        "name": "multiplication-sign-square",
+        "resolved": "abacus",
+        "alias": "multiplication-sign-square"
+      },
+      {
+        "name": "music-note-square-01",
+        "resolved": "abacus",
+        "alias": "music-note-square-01"
+      },
+      {
+        "name": "music-note-square-02",
+        "resolved": "abacus",
+        "alias": "music-note-square-02"
+      },
+      {
+        "name": "mute",
+        "resolved": "angry",
+        "alias": "mute"
+      },
+      {
+        "name": "n-th-root-circle",
+        "resolved": "alpha-circle",
+        "alias": "n-th-root-circle"
+      },
+      {
+        "name": "n-th-root-square",
+        "resolved": "alpha-square",
+        "alias": "n-th-root-square"
+      },
+      {
+        "name": "navigation-04",
+        "resolved": "alpha-circle",
+        "alias": "navigation-04"
+      },
+      {
+        "name": "nerd",
+        "resolved": "angry",
+        "alias": "nerd"
+      },
+      {
+        "name": "neutral",
+        "resolved": "angry",
+        "alias": "neutral"
+      },
+      {
+        "name": "new-job",
+        "resolved": "job-search",
+        "alias": "new-job"
+      },
+      {
+        "name": "new-twitter-ellipse",
+        "resolved": "alpha-circle",
+        "alias": "new-twitter-ellipse"
+      },
+      {
+        "name": "new-twitter-rectangle",
+        "resolved": "abacus",
+        "alias": "new-twitter-rectangle"
+      },
+      {
+        "name": "next",
+        "resolved": "forward-01",
+        "alias": "next"
+      },
+      {
+        "name": "nine-square",
+        "resolved": "nine-circle",
+        "alias": "nine-square"
+      },
+      {
+        "name": "not-equal-sign-circle",
+        "resolved": "alpha-circle",
+        "alias": "not-equal-sign-circle"
+      },
+      {
+        "name": "not-equal-sign-square",
+        "resolved": "abacus",
+        "alias": "not-equal-sign-square"
+      },
+      {
+        "name": "note",
+        "resolved": "clipboard",
+        "alias": "note"
+      },
+      {
+        "name": "note-03",
+        "resolved": "note-01",
+        "alias": "note-03"
+      },
+      {
+        "name": "notebook-02",
+        "resolved": "notebook-01",
+        "alias": "notebook-02"
+      },
+      {
+        "name": "notion-01",
+        "resolved": "abacus",
+        "alias": "notion-01"
+      },
+      {
+        "name": "npm",
+        "resolved": "abacus",
+        "alias": "npm"
+      },
+      {
+        "name": "o-online-learning-02",
+        "resolved": "audio-book-01",
+        "alias": "o-online-learning-02"
+      },
+      {
+        "name": "online-learning-02",
+        "resolved": "audio-book-04",
+        "alias": "online-learning-02"
+      },
+      {
+        "name": "options-call",
+        "resolved": "brick-wall",
+        "alias": "options-call"
+      },
+      {
+        "name": "p-power-socket-02",
+        "resolved": "p-power-socket-01",
+        "alias": "p-power-socket-02"
+      },
+      {
+        "name": "p-property-edit",
+        "resolved": "p-property-add",
+        "alias": "p-property-edit"
+      },
+      {
+        "name": "p-property-search",
+        "resolved": "p-property-delete",
+        "alias": "p-property-search"
+      },
+      {
+        "name": "package-add-01",
+        "resolved": "delivery-return-01",
+        "alias": "package-add-01"
+      },
+      {
+        "name": "package-remove-01",
+        "resolved": "package-receive-01",
+        "alias": "package-remove-01"
+      },
+      {
+        "name": "package-search-01",
+        "resolved": "package-receive-01",
+        "alias": "package-search-01"
+      },
+      {
+        "name": "panel-left",
+        "resolved": "layout-align-bottom",
+        "alias": "panel-left"
+      },
+      {
+        "name": "panel-left-dashed",
+        "resolved": "layout-align-bottom",
+        "alias": "panel-left-dashed"
+      },
+      {
+        "name": "panel-left-open",
+        "resolved": "panel-left-close",
+        "alias": "panel-left-open"
+      },
+      {
+        "name": "panel-right",
+        "resolved": "layout-align-bottom",
+        "alias": "panel-right"
+      },
+      {
+        "name": "panel-right-dashed",
+        "resolved": "layout-align-bottom",
+        "alias": "panel-right-dashed"
+      },
+      {
+        "name": "panel-right-open",
+        "resolved": "panel-right-close",
+        "alias": "panel-right-open"
+      },
+      {
+        "name": "panel-top-bottom-dashed",
+        "resolved": "album",
+        "alias": "panel-top-bottom-dashed"
+      },
+      {
+        "name": "parabola-03",
+        "resolved": "parabola-02",
+        "alias": "parabola-03"
+      },
+      {
+        "name": "parking-area-circle",
+        "resolved": "alpha-circle",
+        "alias": "parking-area-circle"
+      },
+      {
+        "name": "parking-area-square",
+        "resolved": "energy-rectangle",
+        "alias": "parking-area-square"
+      },
+      {
+        "name": "path",
+        "resolved": "abacus",
+        "alias": "path"
+      },
+      {
+        "name": "pathfinder-trim",
+        "resolved": "pathfinder-divide",
+        "alias": "pathfinder-trim"
+      },
+      {
+        "name": "pathfinder-unite",
+        "resolved": "pathfinder-merge",
+        "alias": "pathfinder-unite"
+      },
+      {
+        "name": "pen-connect-wifi",
+        "resolved": "pen-connect-bluetooth",
+        "alias": "pen-connect-wifi"
+      },
+      {
+        "name": "pen-tool-01",
+        "resolved": "alpha-circle",
+        "alias": "pen-tool-01"
+      },
+      {
+        "name": "pensive",
+        "resolved": "angry",
+        "alias": "pensive"
+      },
+      {
+        "name": "percent",
+        "resolved": "2-american-football",
+        "alias": "percent"
+      },
+      {
+        "name": "percent-circle",
+        "resolved": "alpha-circle",
+        "alias": "percent-circle"
+      },
+      {
+        "name": "percent-square",
+        "resolved": "abacus",
+        "alias": "percent-square"
+      },
+      {
+        "name": "perspective",
+        "resolved": "2-calculator",
+        "alias": "perspective"
+      },
+      {
+        "name": "pexels",
+        "resolved": "energy-rectangle",
+        "alias": "pexels"
+      },
+      {
+        "name": "phone-arrow-up",
+        "resolved": "phone-arrow-down",
+        "alias": "phone-arrow-up"
+      },
+      {
+        "name": "php",
+        "resolved": "abacus",
+        "alias": "php"
+      },
+      {
+        "name": "pi-circle",
+        "resolved": "alpha-circle",
+        "alias": "pi-circle"
+      },
+      {
+        "name": "pi-square",
+        "resolved": "abacus",
+        "alias": "pi-square"
+      },
+      {
+        "name": "picasa",
+        "resolved": "alpha-circle",
+        "alias": "picasa"
+      },
+      {
+        "name": "pinterest",
+        "resolved": "alpha-circle",
+        "alias": "pinterest"
+      },
+      {
+        "name": "play-circle",
+        "resolved": "alpha-circle",
+        "alias": "play-circle"
+      },
+      {
+        "name": "play-circle-02",
+        "resolved": "alpha-circle",
+        "alias": "play-circle-02"
+      },
+      {
+        "name": "play-list-remove",
+        "resolved": "play-list-add",
+        "alias": "play-list-remove"
+      },
+      {
+        "name": "play-square",
+        "resolved": "analytics-01",
+        "alias": "play-square"
+      },
+      {
+        "name": "play-store",
+        "resolved": "abacus",
+        "alias": "play-store"
+      },
+      {
+        "name": "plus-minus-02",
+        "resolved": "call-disabled-02",
+        "alias": "plus-minus-02"
+      },
+      {
+        "name": "plus-minus-circle-01",
+        "resolved": "alpha-circle",
+        "alias": "plus-minus-circle-01"
+      },
+      {
+        "name": "plus-minus-circle-02",
+        "resolved": "alpha-circle",
+        "alias": "plus-minus-circle-02"
+      },
+      {
+        "name": "plus-minus-square-01",
+        "resolved": "abacus",
+        "alias": "plus-minus-square-01"
+      },
+      {
+        "name": "plus-minus-square-02",
+        "resolved": "abacus",
+        "alias": "plus-minus-square-02"
+      },
+      {
+        "name": "plus-sign",
+        "resolved": "add-01",
+        "alias": "plus-sign"
+      },
+      {
+        "name": "plus-sign-circle",
+        "resolved": "alpha-circle",
+        "alias": "plus-sign-circle"
+      },
+      {
+        "name": "plus-sign-square",
+        "resolved": "abacus",
+        "alias": "plus-sign-square"
+      },
+      {
+        "name": "pound-circle",
+        "resolved": "alpha-circle",
+        "alias": "pound-circle"
+      },
+      {
+        "name": "pound-square",
+        "resolved": "dollar-square",
+        "alias": "pound-square"
+      },
+      {
+        "name": "power-socket-02",
+        "resolved": "power-socket-01",
+        "alias": "power-socket-02"
+      },
+      {
+        "name": "presentation-07",
+        "resolved": "presentation-04",
+        "alias": "presentation-07"
+      },
+      {
+        "name": "previous",
+        "resolved": "backward-01",
+        "alias": "previous"
+      },
+      {
+        "name": "profile",
+        "resolved": "abacus",
+        "alias": "profile"
+      },
+      {
+        "name": "profile-02",
+        "resolved": "passport",
+        "alias": "profile-02"
+      },
+      {
+        "name": "progress",
+        "resolved": "alert-circle",
+        "alias": "progress"
+      },
+      {
+        "name": "progress-03",
+        "resolved": "checkmark-circle-01",
+        "alias": "progress-03"
+      },
+      {
+        "name": "progress-04",
+        "resolved": "checkmark-circle-01",
+        "alias": "progress-04"
+      },
+      {
+        "name": "pulse-rectangle-02",
+        "resolved": "pulse-rectangle-01",
+        "alias": "pulse-rectangle-02"
+      },
+      {
+        "name": "pyramid-structure-02",
+        "resolved": "pyramid-maslowo",
+        "alias": "pyramid-structure-02"
+      },
+      {
+        "name": "qq-plot",
+        "resolved": "covariate",
+        "alias": "qq-plot"
+      },
+      {
+        "name": "qr-code-scan",
+        "resolved": "barcode-scan",
+        "alias": "qr-code-scan"
+      },
+      {
+        "name": "quran-03",
+        "resolved": "quran-02",
+        "alias": "quran-03"
+      },
+      {
+        "name": "qwen",
+        "resolved": "component-1",
+        "alias": "qwen"
+      },
+      {
+        "name": "radar-02",
+        "resolved": "add-circle",
+        "alias": "radar-02"
+      },
+      {
+        "name": "radius",
+        "resolved": "alpha-circle",
+        "alias": "radius"
+      },
+      {
+        "name": "re",
+        "resolved": "abacus",
+        "alias": "re"
+      },
+      {
+        "name": "receipt-indian-rupee",
+        "resolved": "receipt-euro",
+        "alias": "receipt-indian-rupee"
+      },
+      {
+        "name": "receipt-japanese-yen",
+        "resolved": "receipt-euro",
+        "alias": "receipt-japanese-yen"
+      },
+      {
+        "name": "receipt-pound-sterling",
+        "resolved": "receipt-euro",
+        "alias": "receipt-pound-sterling"
+      },
+      {
+        "name": "receipt-swiss-franc",
+        "resolved": "receipt-russian-ruble",
+        "alias": "receipt-swiss-franc"
+      },
+      {
+        "name": "receipt-text",
+        "resolved": "receipt-russian-ruble",
+        "alias": "receipt-text"
+      },
+      {
+        "name": "receipt-turkish-lira",
+        "resolved": "receipt-russian-ruble",
+        "alias": "receipt-turkish-lira"
+      },
+      {
+        "name": "register",
+        "resolved": "copyright",
+        "alias": "register"
+      },
+      {
+        "name": "registered",
+        "resolved": "alpha-circle",
+        "alias": "registered"
+      },
+      {
+        "name": "relieved-01",
+        "resolved": "angry",
+        "alias": "relieved-01"
+      },
+      {
+        "name": "relieved-02",
+        "resolved": "angry",
+        "alias": "relieved-02"
+      },
+      {
+        "name": "remove-01",
+        "resolved": "2-minus-sign-circle",
+        "alias": "remove-01"
+      },
+      {
+        "name": "remove-circle",
+        "resolved": "add-circle",
+        "alias": "remove-circle"
+      },
+      {
+        "name": "remove-circle-half-dot",
+        "resolved": "2-diamond-minus",
+        "alias": "remove-circle-half-dot"
+      },
+      {
+        "name": "remove-pi",
+        "resolved": "insert-pi",
+        "alias": "remove-pi"
+      },
+      {
+        "name": "remove-square",
+        "resolved": "abacus",
+        "alias": "remove-square"
+      },
+      {
+        "name": "renewable-energy",
+        "resolved": "eco-energy",
+        "alias": "renewable-energy"
+      },
+      {
+        "name": "repeat",
+        "resolved": "repeat-off",
+        "alias": "repeat"
+      },
+      {
+        "name": "repeat-one-01",
+        "resolved": "repeat",
+        "alias": "repeat-one-01"
+      },
+      {
+        "name": "resize-02",
+        "resolved": "drag-03",
+        "alias": "resize-02"
+      },
+      {
+        "name": "resources-remove",
+        "resolved": "resources-add",
+        "alias": "resources-remove"
+      },
+      {
+        "name": "right-to-left-block-quote",
+        "resolved": "left-to-right-block-quote",
+        "alias": "right-to-left-block-quote"
+      },
+      {
+        "name": "right-to-left-list-bullet",
+        "resolved": "left-to-right-list-bullet",
+        "alias": "right-to-left-list-bullet"
+      },
+      {
+        "name": "right-to-left-list-dash",
+        "resolved": "left-to-right-list-bullet",
+        "alias": "right-to-left-list-dash"
+      },
+      {
+        "name": "right-to-left-list-number",
+        "resolved": "left-to-right-list-number",
+        "alias": "right-to-left-list-number"
+      },
+      {
+        "name": "right-to-left-list-triangle",
+        "resolved": "left-to-right-list-triangle",
+        "alias": "right-to-left-list-triangle"
+      },
+      {
+        "name": "ripple",
+        "resolved": "alpha-circle",
+        "alias": "ripple"
+      },
+      {
+        "name": "riyal",
+        "resolved": "dark-mode",
+        "alias": "riyal"
+      },
+      {
+        "name": "root-circle",
+        "resolved": "alpha-circle",
+        "alias": "root-circle"
+      },
+      {
+        "name": "rotate-01",
+        "resolved": "circle",
+        "alias": "rotate-01"
+      },
+      {
+        "name": "route-block",
+        "resolved": "route-01",
+        "alias": "route-block"
+      },
+      {
+        "name": "rss-unlocked",
+        "resolved": "rss-locked",
+        "alias": "rss-unlocked"
+      },
+      {
+        "name": "rupee-shield",
+        "resolved": "2-s-security-wifi",
+        "alias": "rupee-shield"
+      },
+      {
+        "name": "s-security-warning",
+        "resolved": "rupee-shield",
+        "alias": "s-security-warning"
+      },
+      {
+        "name": "s-square-unlock-01",
+        "resolved": "s-square-lock-01",
+        "alias": "s-square-unlock-01"
+      },
+      {
+        "name": "s-sun-cloud-hailstone-02",
+        "resolved": "m-moon-cloud-hailstone",
+        "alias": "s-sun-cloud-hailstone-02"
+      },
+      {
+        "name": "s-sun-cloud-snow-01",
+        "resolved": "s-sun-cloud-hailstone-01",
+        "alias": "s-sun-cloud-snow-01"
+      },
+      {
+        "name": "sad-01",
+        "resolved": "angry",
+        "alias": "sad-01"
+      },
+      {
+        "name": "sad-02",
+        "resolved": "angry",
+        "alias": "sad-02"
+      },
+      {
+        "name": "sad-dizzy",
+        "resolved": "angry",
+        "alias": "sad-dizzy"
+      },
+      {
+        "name": "safety-pin-02",
+        "resolved": "safety-pin-01",
+        "alias": "safety-pin-02"
+      },
+      {
+        "name": "sale-tag-02",
+        "resolved": "bitcoin-tag",
+        "alias": "sale-tag-02"
+      },
+      {
+        "name": "school-report-card",
+        "resolved": "align-box-bottom-center",
+        "alias": "school-report-card"
+      },
+      {
+        "name": "scissor-01",
+        "resolved": "abacus",
+        "alias": "scissor-01"
+      },
+      {
+        "name": "scissor-rectangle",
+        "resolved": "abacus",
+        "alias": "scissor-rectangle"
+      },
+      {
+        "name": "search-circle",
+        "resolved": "checkmark-circle-01",
+        "alias": "search-circle"
+      },
+      {
+        "name": "search-minus",
+        "resolved": "search-focus",
+        "alias": "search-minus"
+      },
+      {
+        "name": "search-remove",
+        "resolved": "search-focus",
+        "alias": "search-remove"
+      },
+      {
+        "name": "second-bracket-circle",
+        "resolved": "alpha-circle",
+        "alias": "second-bracket-circle"
+      },
+      {
+        "name": "second-bracket-square",
+        "resolved": "abacus",
+        "alias": "second-bracket-square"
+      },
+      {
+        "name": "security",
+        "resolved": "money-security",
+        "alias": "security"
+      },
+      {
+        "name": "security-check",
+        "resolved": "blocked",
+        "alias": "security-check"
+      },
+      {
+        "name": "security-lock",
+        "resolved": "blocked",
+        "alias": "security-lock"
+      },
+      {
+        "name": "security-warning",
+        "resolved": "rupee-shield",
+        "alias": "security-warning"
+      },
+      {
+        "name": "senseless",
+        "resolved": "angry",
+        "alias": "senseless"
+      },
+      {
+        "name": "setting-07",
+        "resolved": "account-setting-03",
+        "alias": "setting-07"
+      },
+      {
+        "name": "settings-01",
+        "resolved": "account-setting-02",
+        "alias": "settings-01"
+      },
+      {
+        "name": "settings-02",
+        "resolved": "artificial-intelligence-06",
+        "alias": "settings-02"
+      },
+      {
+        "name": "settings-03",
+        "resolved": "setting-06",
+        "alias": "settings-03"
+      },
+      {
+        "name": "settings-04",
+        "resolved": "abacus",
+        "alias": "settings-04"
+      },
+      {
+        "name": "settings-05",
+        "resolved": "abacus",
+        "alias": "settings-05"
+      },
+      {
+        "name": "setup-02",
+        "resolved": "setup-01",
+        "alias": "setup-02"
+      },
+      {
+        "name": "share-02",
+        "resolved": "hierarchy-circle-01",
+        "alias": "share-02"
+      },
+      {
+        "name": "share-06",
+        "resolved": "share-05",
+        "alias": "share-06"
+      },
+      {
+        "name": "shield-ban",
+        "resolved": "rupee-shield",
+        "alias": "shield-ban"
+      },
+      {
+        "name": "shield-blockchain",
+        "resolved": "bitcoin-shield",
+        "alias": "shield-blockchain"
+      },
+      {
+        "name": "shield-energy",
+        "resolved": "bitcoin-shield",
+        "alias": "shield-energy"
+      },
+      {
+        "name": "shield-half",
+        "resolved": "rupee-shield",
+        "alias": "shield-half"
+      },
+      {
+        "name": "shield-key",
+        "resolved": "blocked",
+        "alias": "shield-key"
+      },
+      {
+        "name": "shield-minus",
+        "resolved": "rupee-shield",
+        "alias": "shield-minus"
+      },
+      {
+        "name": "shield-plus",
+        "resolved": "rupee-shield",
+        "alias": "shield-plus"
+      },
+      {
+        "name": "shield-question-mark",
+        "resolved": "rupee-shield",
+        "alias": "shield-question-mark"
+      },
+      {
+        "name": "shield-user",
+        "resolved": "blocked",
+        "alias": "shield-user"
+      },
+      {
+        "name": "shipping-truck-02",
+        "resolved": "shipping-truck-01",
+        "alias": "shipping-truck-02"
+      },
+      {
+        "name": "shocked",
+        "resolved": "angry",
+        "alias": "shocked"
+      },
+      {
+        "name": "shopping-bag-favorite",
+        "resolved": "shopping-bag-add",
+        "alias": "shopping-bag-favorite"
+      },
+      {
+        "name": "shopping-basket-check-out-03",
+        "resolved": "shopping-basket-check-in-03",
+        "alias": "shopping-basket-check-out-03"
+      },
+      {
+        "name": "shopping-cart-check-out-01",
+        "resolved": "shopping-cart-check-in-01",
+        "alias": "shopping-cart-check-out-01"
+      },
+      {
+        "name": "shuffle-square",
+        "resolved": "abacus",
+        "alias": "shuffle-square"
+      },
+      {
+        "name": "shutterstock",
+        "resolved": "abacus",
+        "alias": "shutterstock"
+      },
+      {
+        "name": "signal-low-medium",
+        "resolved": "signal-full-01",
+        "alias": "signal-low-medium"
+      },
+      {
+        "name": "signal-medium-01",
+        "resolved": "signal-full-01",
+        "alias": "signal-medium-01"
+      },
+      {
+        "name": "silence",
+        "resolved": "angry",
+        "alias": "silence"
+      },
+      {
+        "name": "simcard-02",
+        "resolved": "simcard-01",
+        "alias": "simcard-02"
+      },
+      {
+        "name": "sing-left",
+        "resolved": "angry",
+        "alias": "sing-left"
+      },
+      {
+        "name": "sing-right",
+        "resolved": "angry",
+        "alias": "sing-right"
+      },
+      {
+        "name": "six-square",
+        "resolved": "six-circle",
+        "alias": "six-square"
+      },
+      {
+        "name": "smart",
+        "resolved": "angry",
+        "alias": "smart"
+      },
+      {
+        "name": "smart-watch-01",
+        "resolved": "2-power-socket-01",
+        "alias": "smart-watch-01"
+      },
+      {
+        "name": "smartphone-wifi",
+        "resolved": "smartphone-lost-wifi",
+        "alias": "smartphone-wifi"
+      },
+      {
+        "name": "smile",
+        "resolved": "angry",
+        "alias": "smile"
+      },
+      {
+        "name": "smile-dizzy",
+        "resolved": "angry",
+        "alias": "smile-dizzy"
+      },
+      {
+        "name": "software-license",
+        "resolved": "command-line",
+        "alias": "software-license"
+      },
+      {
+        "name": "soil-temperature-field",
+        "resolved": "soil-moisture-field",
+        "alias": "soil-temperature-field"
+      },
+      {
+        "name": "sorting-a-z-02",
+        "resolved": "2-arrange-by-letters-a-z",
+        "alias": "sorting-a-z-02"
+      },
+      {
+        "name": "sorting-nine-1",
+        "resolved": "sorting-a-z-02",
+        "alias": "sorting-nine-1"
+      },
+      {
+        "name": "sorting-one-9",
+        "resolved": "sorting-a-z-02",
+        "alias": "sorting-one-9"
+      },
+      {
+        "name": "sorting-z-a-01",
+        "resolved": "sorting-a-z-02",
+        "alias": "sorting-z-a-01"
+      },
+      {
+        "name": "source-code-circle",
+        "resolved": "alpha-circle",
+        "alias": "source-code-circle"
+      },
+      {
+        "name": "source-code-square",
+        "resolved": "abacus",
+        "alias": "source-code-square"
+      },
+      {
+        "name": "speed-train-02",
+        "resolved": "speed-train-01",
+        "alias": "speed-train-02"
+      },
+      {
+        "name": "spotify",
+        "resolved": "alpha-circle",
+        "alias": "spotify"
+      },
+      {
+        "name": "sql",
+        "resolved": "abacus",
+        "alias": "sql"
+      },
+      {
+        "name": "square-arrow-data-transfer-diagonal",
+        "resolved": "abacus",
+        "alias": "square-arrow-data-transfer-diagonal"
+      },
+      {
+        "name": "square-arrow-data-transfer-horizontal",
+        "resolved": "abacus",
+        "alias": "square-arrow-data-transfer-horizontal"
+      },
+      {
+        "name": "square-arrow-data-transfer-vertical",
+        "resolved": "abacus",
+        "alias": "square-arrow-data-transfer-vertical"
+      },
+      {
+        "name": "square-arrow-diagonal-01",
+        "resolved": "abacus",
+        "alias": "square-arrow-diagonal-01"
+      },
+      {
+        "name": "square-arrow-diagonal-02",
+        "resolved": "abacus",
+        "alias": "square-arrow-diagonal-02"
+      },
+      {
+        "name": "square-arrow-down-01",
+        "resolved": "abacus",
+        "alias": "square-arrow-down-01"
+      },
+      {
+        "name": "square-arrow-down-03",
+        "resolved": "abacus",
+        "alias": "square-arrow-down-03"
+      },
+      {
+        "name": "square-arrow-down-double",
+        "resolved": "abacus",
+        "alias": "square-arrow-down-double"
+      },
+      {
+        "name": "square-arrow-down-left",
+        "resolved": "square-arrow-down-02",
+        "alias": "square-arrow-down-left"
+      },
+      {
+        "name": "square-arrow-expand-01",
+        "resolved": "abacus",
+        "alias": "square-arrow-expand-01"
+      },
+      {
+        "name": "square-arrow-expand-02",
+        "resolved": "abacus",
+        "alias": "square-arrow-expand-02"
+      },
+      {
+        "name": "square-arrow-horizontal",
+        "resolved": "abacus",
+        "alias": "square-arrow-horizontal"
+      },
+      {
+        "name": "square-arrow-left-01",
+        "resolved": "abacus",
+        "alias": "square-arrow-left-01"
+      },
+      {
+        "name": "square-arrow-left-02",
+        "resolved": "square-arrow-down-02",
+        "alias": "square-arrow-left-02"
+      },
+      {
+        "name": "square-arrow-left-03",
+        "resolved": "abacus",
+        "alias": "square-arrow-left-03"
+      },
+      {
+        "name": "square-arrow-left-double",
+        "resolved": "abacus",
+        "alias": "square-arrow-left-double"
+      },
+      {
+        "name": "square-arrow-left-right",
+        "resolved": "abacus",
+        "alias": "square-arrow-left-right"
+      },
+      {
+        "name": "square-arrow-move-down-left",
+        "resolved": "abacus",
+        "alias": "square-arrow-move-down-left"
+      },
+      {
+        "name": "square-arrow-move-down-right",
+        "resolved": "abacus",
+        "alias": "square-arrow-move-down-right"
+      },
+      {
+        "name": "square-arrow-move-left-down",
+        "resolved": "abacus",
+        "alias": "square-arrow-move-left-down"
+      },
+      {
+        "name": "square-arrow-move-left-up",
+        "resolved": "abacus",
+        "alias": "square-arrow-move-left-up"
+      },
+      {
+        "name": "square-arrow-move-right-down",
+        "resolved": "abacus",
+        "alias": "square-arrow-move-right-down"
+      },
+      {
+        "name": "square-arrow-move-right-up",
+        "resolved": "abacus",
+        "alias": "square-arrow-move-right-up"
+      },
+      {
+        "name": "square-arrow-reload-01",
+        "resolved": "abacus",
+        "alias": "square-arrow-reload-01"
+      },
+      {
+        "name": "square-arrow-reload-02",
+        "resolved": "abacus",
+        "alias": "square-arrow-reload-02"
+      },
+      {
+        "name": "square-arrow-right-01",
+        "resolved": "abacus",
+        "alias": "square-arrow-right-01"
+      },
+      {
+        "name": "square-arrow-right-03",
+        "resolved": "abacus",
+        "alias": "square-arrow-right-03"
+      },
+      {
+        "name": "square-arrow-right-double",
+        "resolved": "abacus",
+        "alias": "square-arrow-right-double"
+      },
+      {
+        "name": "square-arrow-shrink-01",
+        "resolved": "abacus",
+        "alias": "square-arrow-shrink-01"
+      },
+      {
+        "name": "square-arrow-shrink-02",
+        "resolved": "abacus",
+        "alias": "square-arrow-shrink-02"
+      },
+      {
+        "name": "square-arrow-up-01",
+        "resolved": "abacus",
+        "alias": "square-arrow-up-01"
+      },
+      {
+        "name": "square-arrow-up-02",
+        "resolved": "square-arrow-down-02",
+        "alias": "square-arrow-up-02"
+      },
+      {
+        "name": "square-arrow-up-03",
+        "resolved": "abacus",
+        "alias": "square-arrow-up-03"
+      },
+      {
+        "name": "square-arrow-up-double",
+        "resolved": "abacus",
+        "alias": "square-arrow-up-double"
+      },
+      {
+        "name": "square-arrow-up-down",
+        "resolved": "abacus",
+        "alias": "square-arrow-up-down"
+      },
+      {
+        "name": "square-arrow-up-left",
+        "resolved": "square-arrow-right-02",
+        "alias": "square-arrow-up-left"
+      },
+      {
+        "name": "square-arrow-up-right",
+        "resolved": "square-arrow-right-02",
+        "alias": "square-arrow-up-right"
+      },
+      {
+        "name": "square-arrow-vertical",
+        "resolved": "abacus",
+        "alias": "square-arrow-vertical"
+      },
+      {
+        "name": "square-asterisk",
+        "resolved": "a-alert-square",
+        "alias": "square-asterisk"
+      },
+      {
+        "name": "square-chart-gantt",
+        "resolved": "a-alert-square",
+        "alias": "square-chart-gantt"
+      },
+      {
+        "name": "square-circle",
+        "resolved": "alpha-circle",
+        "alias": "square-circle"
+      },
+      {
+        "name": "square-f",
+        "resolved": "brick-wall",
+        "alias": "square-f"
+      },
+      {
+        "name": "square-lock-02",
+        "resolved": "square-lock-01",
+        "alias": "square-lock-02"
+      },
+      {
+        "name": "square-lock-minus-02",
+        "resolved": "square-lock-add-02",
+        "alias": "square-lock-minus-02"
+      },
+      {
+        "name": "square-lock-password",
+        "resolved": "square-lock-01",
+        "alias": "square-lock-password"
+      },
+      {
+        "name": "square-lock-remove-01",
+        "resolved": "square-lock-minus-01",
+        "alias": "square-lock-remove-01"
+      },
+      {
+        "name": "square-lock-remove-02",
+        "resolved": "square-lock-add-02",
+        "alias": "square-lock-remove-02"
+      },
+      {
+        "name": "square-m",
+        "resolved": "a-alert-square",
+        "alias": "square-m"
+      },
+      {
+        "name": "square-root-square",
+        "resolved": "alpha-square",
+        "alias": "square-root-square"
+      },
+      {
+        "name": "square-square",
+        "resolved": "album",
+        "alias": "square-square"
+      },
+      {
+        "name": "square-unlock-01",
+        "resolved": "square-lock-01",
+        "alias": "square-unlock-01"
+      },
+      {
+        "name": "square-unlock-02",
+        "resolved": "square-lock-01",
+        "alias": "square-unlock-02"
+      },
+      {
+        "name": "star-circle",
+        "resolved": "add-circle",
+        "alias": "star-circle"
+      },
+      {
+        "name": "steering",
+        "resolved": "alpha-circle",
+        "alias": "steering"
+      },
+      {
+        "name": "stop-circle",
+        "resolved": "siri-new",
+        "alias": "stop-circle"
+      },
+      {
+        "name": "stroke-left",
+        "resolved": "2-paragraph",
+        "alias": "stroke-left"
+      },
+      {
+        "name": "stroke-right",
+        "resolved": "stroke-left",
+        "alias": "stroke-right"
+      },
+      {
+        "name": "stumbleupon",
+        "resolved": "abacus",
+        "alias": "stumbleupon"
+      },
+      {
+        "name": "subtitle",
+        "resolved": "abacus",
+        "alias": "subtitle"
+      },
+      {
+        "name": "summation-circle",
+        "resolved": "alpha-circle",
+        "alias": "summation-circle"
+      },
+      {
+        "name": "summation-square",
+        "resolved": "abacus",
+        "alias": "summation-square"
+      },
+      {
+        "name": "sun-01",
+        "resolved": "dna",
+        "alias": "sun-01"
+      },
+      {
+        "name": "sun-02",
+        "resolved": "dna",
+        "alias": "sun-02"
+      },
+      {
+        "name": "sun-03",
+        "resolved": "dna",
+        "alias": "sun-03"
+      },
+      {
+        "name": "sun-cloud-02",
+        "resolved": "moon-cloud",
+        "alias": "sun-cloud-02"
+      },
+      {
+        "name": "sun-cloud-angled-rain-01",
+        "resolved": "cloud-angled-rain",
+        "alias": "sun-cloud-angled-rain-01"
+      },
+      {
+        "name": "sun-cloud-angled-rain-02",
+        "resolved": "moon-cloud-angled-rain",
+        "alias": "sun-cloud-angled-rain-02"
+      },
+      {
+        "name": "sun-cloud-angled-rain-zap-01",
+        "resolved": "cloud-angled-rain-zap",
+        "alias": "sun-cloud-angled-rain-zap-01"
+      },
+      {
+        "name": "sun-cloud-angled-rain-zap-02",
+        "resolved": "moon-angled-rain-zap",
+        "alias": "sun-cloud-angled-rain-zap-02"
+      },
+      {
+        "name": "sun-cloud-angled-zap-02",
+        "resolved": "moon-cloud-angled-zap",
+        "alias": "sun-cloud-angled-zap-02"
+      },
+      {
+        "name": "sun-cloud-big-rain-02",
+        "resolved": "moon-cloud-angled-zap",
+        "alias": "sun-cloud-big-rain-02"
+      },
+      {
+        "name": "sun-cloud-hailstone-02",
+        "resolved": "moon-cloud-hailstone",
+        "alias": "sun-cloud-hailstone-02"
+      },
+      {
+        "name": "sun-cloud-little-rain-02",
+        "resolved": "moon-cloud-little-rain",
+        "alias": "sun-cloud-little-rain-02"
+      },
+      {
+        "name": "sun-cloud-little-snow-01",
+        "resolved": "sun-cloud-hailstone-01",
+        "alias": "sun-cloud-little-snow-01"
+      },
+      {
+        "name": "sun-cloud-mid-rain-01",
+        "resolved": "sun-cloud-hailstone-01",
+        "alias": "sun-cloud-mid-rain-01"
+      },
+      {
+        "name": "sun-cloud-mid-rain-02",
+        "resolved": "moon-cloud-mid-rain",
+        "alias": "sun-cloud-mid-rain-02"
+      },
+      {
+        "name": "sun-cloud-mid-snow-01",
+        "resolved": "sun-cloud-hailstone-01",
+        "alias": "sun-cloud-mid-snow-01"
+      },
+      {
+        "name": "sun-cloud-slow-wind-01",
+        "resolved": "cloud-angled-rain",
+        "alias": "sun-cloud-slow-wind-01"
+      },
+      {
+        "name": "sun-cloud-slow-wind-02",
+        "resolved": "moon-cloud-slow-wind",
+        "alias": "sun-cloud-slow-wind-02"
+      },
+      {
+        "name": "sun-cloud-snow-01",
+        "resolved": "sun-cloud-hailstone-01",
+        "alias": "sun-cloud-snow-01"
+      },
+      {
+        "name": "sunglasses",
+        "resolved": "angry",
+        "alias": "sunglasses"
+      },
+      {
+        "name": "surprise",
+        "resolved": "angry",
+        "alias": "surprise"
+      },
+      {
+        "name": "suspicious",
+        "resolved": "angry",
+        "alias": "suspicious"
+      },
+      {
+        "name": "swipe-left-03",
+        "resolved": "swipe-down-03",
+        "alias": "swipe-left-03"
+      },
+      {
+        "name": "swipe-left-04",
+        "resolved": "swipe-down-04",
+        "alias": "swipe-left-04"
+      },
+      {
+        "name": "swipe-left-05",
+        "resolved": "swipe-down-05",
+        "alias": "swipe-left-05"
+      },
+      {
+        "name": "swipe-left-07",
+        "resolved": "swipe-down-07",
+        "alias": "swipe-left-07"
+      },
+      {
+        "name": "swipe-right-02",
+        "resolved": "swipe-left-02",
+        "alias": "swipe-right-02"
+      },
+      {
+        "name": "swipe-right-03",
+        "resolved": "swipe-down-03",
+        "alias": "swipe-right-03"
+      },
+      {
+        "name": "swipe-right-04",
+        "resolved": "swipe-down-04",
+        "alias": "swipe-right-04"
+      },
+      {
+        "name": "swipe-right-05",
+        "resolved": "swipe-down-05",
+        "alias": "swipe-right-05"
+      },
+      {
+        "name": "swipe-right-06",
+        "resolved": "swipe-left-06",
+        "alias": "swipe-right-06"
+      },
+      {
+        "name": "swipe-right-07",
+        "resolved": "swipe-down-07",
+        "alias": "swipe-right-07"
+      },
+      {
+        "name": "swipe-right-09",
+        "resolved": "swipe-left-09",
+        "alias": "swipe-right-09"
+      },
+      {
+        "name": "swipe-up-03",
+        "resolved": "swipe-down-03",
+        "alias": "swipe-up-03"
+      },
+      {
+        "name": "swipe-up-04",
+        "resolved": "swipe-down-04",
+        "alias": "swipe-up-04"
+      },
+      {
+        "name": "swipe-up-05",
+        "resolved": "swipe-down-05",
+        "alias": "swipe-up-05"
+      },
+      {
+        "name": "swipe-up-06",
+        "resolved": "swipe-left-06",
+        "alias": "swipe-up-06"
+      },
+      {
+        "name": "swipe-up-07",
+        "resolved": "swipe-down-07",
+        "alias": "swipe-up-07"
+      },
+      {
+        "name": "system-update-02",
+        "resolved": "artificial-intelligence-06",
+        "alias": "system-update-02"
+      },
+      {
+        "name": "tablet-02",
+        "resolved": "tablet-01",
+        "alias": "tablet-02"
+      },
+      {
+        "name": "taco-02",
+        "resolved": "taco-01",
+        "alias": "taco-02"
+      },
+      {
+        "name": "tally-1",
+        "resolved": "2-tally-2",
+        "alias": "tally-1"
+      },
+      {
+        "name": "tally-2",
+        "resolved": "tally-1",
+        "alias": "tally-2"
+      },
+      {
+        "name": "tally-3",
+        "resolved": "2-tally-4",
+        "alias": "tally-3"
+      },
+      {
+        "name": "tally-4",
+        "resolved": "tally-3",
+        "alias": "tally-4"
+      },
+      {
+        "name": "task-daily-01",
+        "resolved": "task-01",
+        "alias": "task-daily-01"
+      },
+      {
+        "name": "teamviewer",
+        "resolved": "abacus",
+        "alias": "teamviewer"
+      },
+      {
+        "name": "tennis-ball",
+        "resolved": "alpha-circle",
+        "alias": "tennis-ball"
+      },
+      {
+        "name": "text-align-justify-left",
+        "resolved": "text-align-justify-center",
+        "alias": "text-align-justify-left"
+      },
+      {
+        "name": "text-align-justify-right",
+        "resolved": "text-align-justify-center",
+        "alias": "text-align-justify-right"
+      },
+      {
+        "name": "text-circle",
+        "resolved": "dark-mode",
+        "alias": "text-circle"
+      },
+      {
+        "name": "text-select",
+        "resolved": "square-dashed-kanban",
+        "alias": "text-select"
+      },
+      {
+        "name": "thermometer-warm",
+        "resolved": "thermometer-cold",
+        "alias": "thermometer-warm"
+      },
+      {
+        "name": "third-bracket-circle",
+        "resolved": "alpha-circle",
+        "alias": "third-bracket-circle"
+      },
+      {
+        "name": "third-bracket-square",
+        "resolved": "abacus",
+        "alias": "third-bracket-square"
+      },
+      {
+        "name": "threads-ellipse",
+        "resolved": "alpha-circle",
+        "alias": "threads-ellipse"
+      },
+      {
+        "name": "threads-rectangle",
+        "resolved": "abacus",
+        "alias": "threads-rectangle"
+      },
+      {
+        "name": "three-d-rotate",
+        "resolved": "dark-mode",
+        "alias": "three-d-rotate"
+      },
+      {
+        "name": "three-square",
+        "resolved": "three-circle",
+        "alias": "three-square"
+      },
+      {
+        "name": "thumbs-down-ellipse",
+        "resolved": "add-circle",
+        "alias": "thumbs-down-ellipse"
+      },
+      {
+        "name": "thumbs-down-rectangle",
+        "resolved": "abacus",
+        "alias": "thumbs-down-rectangle"
+      },
+      {
+        "name": "thumbs-up-ellipse",
+        "resolved": "add-circle",
+        "alias": "thumbs-up-ellipse"
+      },
+      {
+        "name": "thumbs-up-rectangle",
+        "resolved": "abacus",
+        "alias": "thumbs-up-rectangle"
+      },
+      {
+        "name": "ticket-01",
+        "resolved": "coupon-percent",
+        "alias": "ticket-01"
+      },
+      {
+        "name": "time-02",
+        "resolved": "alpha-circle",
+        "alias": "time-02"
+      },
+      {
+        "name": "time-03",
+        "resolved": "analytics-01",
+        "alias": "time-03"
+      },
+      {
+        "name": "time-04",
+        "resolved": "alpha-circle",
+        "alias": "time-04"
+      },
+      {
+        "name": "time-setting-01",
+        "resolved": "account-setting-01",
+        "alias": "time-setting-01"
+      },
+      {
+        "name": "time-setting-02",
+        "resolved": "account-setting-02",
+        "alias": "time-setting-02"
+      },
+      {
+        "name": "time-setting-03",
+        "resolved": "account-setting-03",
+        "alias": "time-setting-03"
+      },
+      {
+        "name": "tired-01",
+        "resolved": "angry",
+        "alias": "tired-01"
+      },
+      {
+        "name": "tired-02",
+        "resolved": "angry",
+        "alias": "tired-02"
+      },
+      {
+        "name": "toggle-on",
+        "resolved": "toggle-off",
+        "alias": "toggle-on"
+      },
+      {
+        "name": "token-circle",
+        "resolved": "siri-new",
+        "alias": "token-circle"
+      },
+      {
+        "name": "tongue-01",
+        "resolved": "angry",
+        "alias": "tongue-01"
+      },
+      {
+        "name": "trade-mark",
+        "resolved": "checkmark-circle-01",
+        "alias": "trade-mark"
+      },
+      {
+        "name": "treatment",
+        "resolved": "save-energy-01",
+        "alias": "treatment"
+      },
+      {
+        "name": "tree-02",
+        "resolved": "tree-01",
+        "alias": "tree-02"
+      },
+      {
+        "name": "tree-03",
+        "resolved": "tree-01",
+        "alias": "tree-03"
+      },
+      {
+        "name": "tree-04",
+        "resolved": "tree-01",
+        "alias": "tree-04"
+      },
+      {
+        "name": "tree-06",
+        "resolved": "tree-01",
+        "alias": "tree-06"
+      },
+      {
+        "name": "trello",
+        "resolved": "abacus",
+        "alias": "trello"
+      },
+      {
+        "name": "tv-issue",
+        "resolved": "tv-fix",
+        "alias": "tv-issue"
+      },
+      {
+        "name": "twitter-square",
+        "resolved": "abacus",
+        "alias": "twitter-square"
+      },
+      {
+        "name": "typescript-01",
+        "resolved": "abacus",
+        "alias": "typescript-01"
+      },
+      {
+        "name": "umbrella",
+        "resolved": "umbrella-dollar",
+        "alias": "umbrella"
+      },
+      {
+        "name": "unamused",
+        "resolved": "angry",
+        "alias": "unamused"
+      },
+      {
+        "name": "unavailable",
+        "resolved": "add-circle",
+        "alias": "unavailable"
+      },
+      {
+        "name": "ungroup-layers",
+        "resolved": "ungroup-items",
+        "alias": "ungroup-layers"
+      },
+      {
+        "name": "unhappy",
+        "resolved": "angry",
+        "alias": "unhappy"
+      },
+      {
+        "name": "universal-access-circle",
+        "resolved": "bowling-ball",
+        "alias": "universal-access-circle"
+      },
+      {
+        "name": "unlink-02",
+        "resolved": "link-02",
+        "alias": "unlink-02"
+      },
+      {
+        "name": "unlink-05",
+        "resolved": "link-05",
+        "alias": "unlink-05"
+      },
+      {
+        "name": "upload-02",
+        "resolved": "download-04",
+        "alias": "upload-02"
+      },
+      {
+        "name": "upload-03",
+        "resolved": "download-03",
+        "alias": "upload-03"
+      },
+      {
+        "name": "upload-05",
+        "resolved": "download-05",
+        "alias": "upload-05"
+      },
+      {
+        "name": "upload-circle-02",
+        "resolved": "a-alert-circle",
+        "alias": "upload-circle-02"
+      },
+      {
+        "name": "upload-square-01",
+        "resolved": "download-square-02",
+        "alias": "upload-square-01"
+      },
+      {
+        "name": "upload-square-02",
+        "resolved": "download-square-02",
+        "alias": "upload-square-02"
+      },
+      {
+        "name": "user-02",
+        "resolved": "2-user-warning-02",
+        "alias": "user-02"
+      },
+      {
+        "name": "user-03",
+        "resolved": "2-user-warning-03",
+        "alias": "user-03"
+      },
+      {
+        "name": "user-arrow-left-right",
+        "resolved": "edit-user-02",
+        "alias": "user-arrow-left-right"
+      },
+      {
+        "name": "user-block-02",
+        "resolved": "user-add-02",
+        "alias": "user-block-02"
+      },
+      {
+        "name": "user-check-02",
+        "resolved": "edit-user-02",
+        "alias": "user-check-02"
+      },
+      {
+        "name": "user-circle-02",
+        "resolved": "alpha-circle",
+        "alias": "user-circle-02"
+      },
+      {
+        "name": "user-lock-02",
+        "resolved": "user-add-02",
+        "alias": "user-lock-02"
+      },
+      {
+        "name": "user-love-02",
+        "resolved": "user-add-02",
+        "alias": "user-love-02"
+      },
+      {
+        "name": "user-minus-02",
+        "resolved": "user-add-02",
+        "alias": "user-minus-02"
+      },
+      {
+        "name": "user-question-02",
+        "resolved": "user-add-02",
+        "alias": "user-question-02"
+      },
+      {
+        "name": "user-search-02",
+        "resolved": "edit-user-02",
+        "alias": "user-search-02"
+      },
+      {
+        "name": "user-settings-01",
+        "resolved": "user-search-01",
+        "alias": "user-settings-01"
+      },
+      {
+        "name": "user-star-02",
+        "resolved": "edit-user-02",
+        "alias": "user-star-02"
+      },
+      {
+        "name": "user-time-02",
+        "resolved": "user-time-01",
+        "alias": "user-time-02"
+      },
+      {
+        "name": "user-unlock-01",
+        "resolved": "user-lock-01",
+        "alias": "user-unlock-01"
+      },
+      {
+        "name": "user-unlock-02",
+        "resolved": "user-add-02",
+        "alias": "user-unlock-02"
+      },
+      {
+        "name": "uv-03",
+        "resolved": "uv-02",
+        "alias": "uv-03"
+      },
+      {
+        "name": "v-variable",
+        "resolved": "d-dashboard-browsing",
+        "alias": "v-variable"
+      },
+      {
+        "name": "variable",
+        "resolved": "command-line",
+        "alias": "variable"
+      },
+      {
+        "name": "video-02",
+        "resolved": "video-01",
+        "alias": "video-02"
+      },
+      {
+        "name": "view-sidebar-left",
+        "resolved": "panel-left-close",
+        "alias": "view-sidebar-left"
+      },
+      {
+        "name": "view-sidebar-right",
+        "resolved": "panel-right-close",
+        "alias": "view-sidebar-right"
+      },
+      {
+        "name": "vine-square",
+        "resolved": "abacus",
+        "alias": "vine-square"
+      },
+      {
+        "name": "virtual-reality-vr-02",
+        "resolved": "augmented-reality-ar",
+        "alias": "virtual-reality-vr-02"
+      },
+      {
+        "name": "vk-square",
+        "resolved": "abacus",
+        "alias": "vk-square"
+      },
+      {
+        "name": "voice",
+        "resolved": "abacus",
+        "alias": "voice"
+      },
+      {
+        "name": "voice-id",
+        "resolved": "face-id",
+        "alias": "voice-id"
+      },
+      {
+        "name": "volume-low",
+        "resolved": "volume-high",
+        "alias": "volume-low"
+      },
+      {
+        "name": "volume-minus",
+        "resolved": "volume-high",
+        "alias": "volume-minus"
+      },
+      {
+        "name": "volume-mute-02",
+        "resolved": "volume-high",
+        "alias": "volume-mute-02"
+      },
+      {
+        "name": "volume-up",
+        "resolved": "volume-high",
+        "alias": "volume-up"
+      },
+      {
+        "name": "vynil-01",
+        "resolved": "alpha-circle",
+        "alias": "vynil-01"
+      },
+      {
+        "name": "w-web-design-01",
+        "resolved": "d-dashboard-browsing",
+        "alias": "w-web-design-01"
+      },
+      {
+        "name": "w-web-programming",
+        "resolved": "d-dashboard-browsing",
+        "alias": "w-web-programming"
+      },
+      {
+        "name": "w-wifi-circle",
+        "resolved": "a-alert-circle",
+        "alias": "w-wifi-circle"
+      },
+      {
+        "name": "w-wifi-square",
+        "resolved": "a-alert-square",
+        "alias": "w-wifi-square"
+      },
+      {
+        "name": "wallet-remove-01",
+        "resolved": "wallet-add-01",
+        "alias": "wallet-remove-01"
+      },
+      {
+        "name": "walpaper",
+        "resolved": "c-computer-programming-01",
+        "alias": "walpaper"
+      },
+      {
+        "name": "wardrobe-04",
+        "resolved": "wardrobe-02",
+        "alias": "wardrobe-04"
+      },
+      {
+        "name": "washing-machine",
+        "resolved": "w-washing-machine",
+        "alias": "washing-machine"
+      },
+      {
+        "name": "water-energy",
+        "resolved": "sustainable-energy",
+        "alias": "water-energy"
+      },
+      {
+        "name": "wattpad-square",
+        "resolved": "abacus",
+        "alias": "wattpad-square"
+      },
+      {
+        "name": "web-programming",
+        "resolved": "command-line",
+        "alias": "web-programming"
+      },
+      {
+        "name": "whatsapp",
+        "resolved": "messenger",
+        "alias": "whatsapp"
+      },
+      {
+        "name": "whatsapp-business",
+        "resolved": "messenger",
+        "alias": "whatsapp-business"
+      },
+      {
+        "name": "wifi-circle",
+        "resolved": "alpha-circle",
+        "alias": "wifi-circle"
+      },
+      {
+        "name": "wifi-location",
+        "resolved": "location-06",
+        "alias": "wifi-location"
+      },
+      {
+        "name": "wifi-low-signal",
+        "resolved": "wifi-full-signal",
+        "alias": "wifi-low-signal"
+      },
+      {
+        "name": "wifi-medium-signal",
+        "resolved": "wifi-full-signal",
+        "alias": "wifi-medium-signal"
+      },
+      {
+        "name": "wifi-square",
+        "resolved": "abacus",
+        "alias": "wifi-square"
+      },
+      {
+        "name": "wikipedia",
+        "resolved": "abacus",
+        "alias": "wikipedia"
+      },
+      {
+        "name": "wink",
+        "resolved": "angry",
+        "alias": "wink"
+      },
+      {
+        "name": "winking",
+        "resolved": "angry",
+        "alias": "winking"
+      },
+      {
+        "name": "woman",
+        "resolved": "man",
+        "alias": "woman"
+      },
+      {
+        "name": "work-history",
+        "resolved": "work-alert",
+        "alias": "work-history"
+      },
+      {
+        "name": "workflow-circle-03",
+        "resolved": "hierarchy-circle-01",
+        "alias": "workflow-circle-03"
+      },
+      {
+        "name": "workflow-circle-05",
+        "resolved": "workflow-circle-04",
+        "alias": "workflow-circle-05"
+      },
+      {
+        "name": "worry",
+        "resolved": "angry",
+        "alias": "worry"
+      },
+      {
+        "name": "wps-office-rectangle",
+        "resolved": "abacus",
+        "alias": "wps-office-rectangle"
+      },
+      {
+        "name": "wudu",
+        "resolved": "save-energy-01",
+        "alias": "wudu"
+      },
+      {
+        "name": "x-variable-circle",
+        "resolved": "checkmark-circle-01",
+        "alias": "x-variable-circle"
+      },
+      {
+        "name": "x-variable-square",
+        "resolved": "alpha-square",
+        "alias": "x-variable-square"
+      },
+      {
+        "name": "yen-circle",
+        "resolved": "alpha-circle",
+        "alias": "yen-circle"
+      },
+      {
+        "name": "yen-send",
+        "resolved": "yen-receive",
+        "alias": "yen-send"
+      },
+      {
+        "name": "yen-square",
+        "resolved": "energy-rectangle",
+        "alias": "yen-square"
+      },
+      {
+        "name": "yoga-ball",
+        "resolved": "alpha-circle",
+        "alias": "yoga-ball"
+      },
+      {
+        "name": "zakat",
+        "resolved": "save-energy-01",
+        "alias": "zakat"
+      },
+      {
+        "name": "zero-square",
+        "resolved": "zero-circle",
+        "alias": "zero-square"
+      },
+      {
+        "name": "zoom-circle",
+        "resolved": "alpha-circle",
+        "alias": "zoom-circle"
+      },
+      {
+        "name": "zoom-square",
+        "resolved": "abacus",
+        "alias": "zoom-square"
+      }
+    ],
+    "deduped_secondary": [
+      {
+        "name": "2-a-alert-diamond",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-a-alert-diamond"
+      },
+      {
+        "name": "2-a-alert-square",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-a-alert-square"
+      },
+      {
+        "name": "2-add-square",
+        "resolved": "2-add-circle",
+        "alias": "2-add-square"
+      },
+      {
+        "name": "2-ai-mail-02",
+        "resolved": "2-ai-mail-01",
+        "alias": "2-ai-mail-02"
+      },
+      {
+        "name": "2-ai-programming",
+        "resolved": "2-ai-eraser",
+        "alias": "2-ai-programming"
+      },
+      {
+        "name": "2-ai-security-02",
+        "resolved": "2-ai-brain-03",
+        "alias": "2-ai-security-02"
+      },
+      {
+        "name": "2-ai-smartwatch",
+        "resolved": "2-ai-phone-02",
+        "alias": "2-ai-smartwatch"
+      },
+      {
+        "name": "2-ai-user",
+        "resolved": "2-ai-eraser",
+        "alias": "2-ai-user"
+      },
+      {
+        "name": "2-ai-video",
+        "resolved": "2-ai-eraser",
+        "alias": "2-ai-video"
+      },
+      {
+        "name": "2-airplane-landing-02",
+        "resolved": "2-airplane-landing-01",
+        "alias": "2-airplane-landing-02"
+      },
+      {
+        "name": "2-airplane-take-off-01",
+        "resolved": "2-airplane-landing-01",
+        "alias": "2-airplane-take-off-01"
+      },
+      {
+        "name": "2-airplane-take-off-02",
+        "resolved": "2-airplane-landing-01",
+        "alias": "2-airplane-take-off-02"
+      },
+      {
+        "name": "2-alert-diamond",
+        "resolved": "2-alert-circle",
+        "alias": "2-alert-diamond"
+      },
+      {
+        "name": "2-alert-square",
+        "resolved": "2-alert-circle",
+        "alias": "2-alert-square"
+      },
+      {
+        "name": "2-align-horizontal-distribute-start",
+        "resolved": "2-align-horizontal-distribute-end",
+        "alias": "2-align-horizontal-distribute-start"
+      },
+      {
+        "name": "2-align-horizontal-space-between",
+        "resolved": "2-align-horizontal-distribute-end",
+        "alias": "2-align-horizontal-space-between"
+      },
+      {
+        "name": "2-align-right",
+        "resolved": "2-align-left",
+        "alias": "2-align-right"
+      },
+      {
+        "name": "2-align-vertical-distribute-end",
+        "resolved": "2-align-vertical-distribute-center",
+        "alias": "2-align-vertical-distribute-end"
+      },
+      {
+        "name": "2-align-vertical-distribute-start",
+        "resolved": "2-align-vertical-distribute-center",
+        "alias": "2-align-vertical-distribute-start"
+      },
+      {
+        "name": "2-align-vertical-justify-start",
+        "resolved": "2-align-vertical-distribute-center",
+        "alias": "2-align-vertical-justify-start"
+      },
+      {
+        "name": "2-align-vertical-space-between",
+        "resolved": "2-align-vertical-distribute-center",
+        "alias": "2-align-vertical-space-between"
+      },
+      {
+        "name": "2-approximately-equal-square",
+        "resolved": "2-approximately-equal-circle",
+        "alias": "2-approximately-equal-square"
+      },
+      {
+        "name": "2-archive-arrow-up",
+        "resolved": "2-archive-arrow-down",
+        "alias": "2-archive-arrow-up"
+      },
+      {
+        "name": "2-arrange-by-letters-z-a",
+        "resolved": "2-arrange-by-letters-a-z",
+        "alias": "2-arrange-by-letters-z-a"
+      },
+      {
+        "name": "2-arrow-down-05",
+        "resolved": "2-arrow-down-03",
+        "alias": "2-arrow-down-05"
+      },
+      {
+        "name": "2-arrow-left-05",
+        "resolved": "2-arrow-left-03",
+        "alias": "2-arrow-left-05"
+      },
+      {
+        "name": "2-arrow-right-05",
+        "resolved": "2-arrow-right-03",
+        "alias": "2-arrow-right-05"
+      },
+      {
+        "name": "2-arrow-right-from-line",
+        "resolved": "2-arrow-left-from-line",
+        "alias": "2-arrow-right-from-line"
+      },
+      {
+        "name": "2-arrow-up-05",
+        "resolved": "2-arrow-up-03",
+        "alias": "2-arrow-up-05"
+      },
+      {
+        "name": "2-arrow-up-one-0",
+        "resolved": "2-arrow-down-one-0",
+        "alias": "2-arrow-up-one-0"
+      },
+      {
+        "name": "2-arrow-vertical",
+        "resolved": "2-align-left",
+        "alias": "2-arrow-vertical"
+      },
+      {
+        "name": "2-artificial-intelligence-02",
+        "resolved": "2-ai-book",
+        "alias": "2-artificial-intelligence-02"
+      },
+      {
+        "name": "2-artificial-intelligence-06",
+        "resolved": "2-ai-brain-03",
+        "alias": "2-artificial-intelligence-06"
+      },
+      {
+        "name": "2-artificial-intelligence-07",
+        "resolved": "2-ai-brain-04",
+        "alias": "2-artificial-intelligence-07"
+      },
+      {
+        "name": "2-attachment-square",
+        "resolved": "2-attachment-circle",
+        "alias": "2-attachment-square"
+      },
+      {
+        "name": "2-b-bubble-chat",
+        "resolved": "2-b-bubble-chat-notification",
+        "alias": "2-b-bubble-chat"
+      },
+      {
+        "name": "2-battery-warning",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-battery-warning"
+      },
+      {
+        "name": "2-bed-single-02",
+        "resolved": "2-bed-single-01",
+        "alias": "2-bed-single-02"
+      },
+      {
+        "name": "2-bitcoin-pie-chart",
+        "resolved": "2-bitcoin-money-01",
+        "alias": "2-bitcoin-pie-chart"
+      },
+      {
+        "name": "2-bitcoin-rectangle",
+        "resolved": "2-bitcoin-ellipse",
+        "alias": "2-bitcoin-rectangle"
+      },
+      {
+        "name": "2-bitcoin-setting",
+        "resolved": "2-bitcoin-cpu",
+        "alias": "2-bitcoin-setting"
+      },
+      {
+        "name": "2-bitcoin-square",
+        "resolved": "2-bitcoin-circle",
+        "alias": "2-bitcoin-square"
+      },
+      {
+        "name": "2-bitcoin-target",
+        "resolved": "2-bitcoin-money-01",
+        "alias": "2-bitcoin-target"
+      },
+      {
+        "name": "2-bitcoin-transaction",
+        "resolved": "2-bitcoin-money-01",
+        "alias": "2-bitcoin-transaction"
+      },
+      {
+        "name": "2-bitcoin-up-01",
+        "resolved": "2-bitcoin-down-02",
+        "alias": "2-bitcoin-up-01"
+      },
+      {
+        "name": "2-bitcoin-up-02",
+        "resolved": "2-bitcoin-down-02",
+        "alias": "2-bitcoin-up-02"
+      },
+      {
+        "name": "2-bluetooth-square",
+        "resolved": "2-bluetooth-circle",
+        "alias": "2-bluetooth-square"
+      },
+      {
+        "name": "2-border-full",
+        "resolved": "2-align-box-middle-left",
+        "alias": "2-border-full"
+      },
+      {
+        "name": "2-border-none-01",
+        "resolved": "2-border-all-01",
+        "alias": "2-border-none-01"
+      },
+      {
+        "name": "2-briefcase-02",
+        "resolved": "2-briefcase-01",
+        "alias": "2-briefcase-02"
+      },
+      {
+        "name": "2-c-camera-smile-02",
+        "resolved": "2-c-camera-smile-01",
+        "alias": "2-c-camera-smile-02"
+      },
+      {
+        "name": "2-c-code-square",
+        "resolved": "2-c-code-circle",
+        "alias": "2-c-code-square"
+      },
+      {
+        "name": "2-call-spark-02",
+        "resolved": "2-call-spark-01",
+        "alias": "2-call-spark-02"
+      },
+      {
+        "name": "2-cap-round",
+        "resolved": "2-cap-projecting",
+        "alias": "2-cap-round"
+      },
+      {
+        "name": "2-car-alert",
+        "resolved": "2-c-car-alert",
+        "alias": "2-car-alert"
+      },
+      {
+        "name": "2-car-time",
+        "resolved": "2-c-car-time",
+        "alias": "2-car-time"
+      },
+      {
+        "name": "2-chart-bar-stacked",
+        "resolved": "2-chart-bar-big",
+        "alias": "2-chart-bar-stacked"
+      },
+      {
+        "name": "2-chart-column-stacked",
+        "resolved": "2-chart-column-big",
+        "alias": "2-chart-column-stacked"
+      },
+      {
+        "name": "2-chat-blocked",
+        "resolved": "2-chat-blocked-01",
+        "alias": "2-chat-blocked"
+      },
+      {
+        "name": "2-chat-feedback-01",
+        "resolved": "2-chat-01",
+        "alias": "2-chat-feedback-01"
+      },
+      {
+        "name": "2-checkmark-square-02",
+        "resolved": "2-checkmark-circle-02",
+        "alias": "2-checkmark-square-02"
+      },
+      {
+        "name": "2-chemistry-03",
+        "resolved": "2-chemistry-02",
+        "alias": "2-chemistry-03"
+      },
+      {
+        "name": "2-clock-02",
+        "resolved": "2-clock-01",
+        "alias": "2-clock-02"
+      },
+      {
+        "name": "2-clock-03",
+        "resolved": "2-clock-01",
+        "alias": "2-clock-03"
+      },
+      {
+        "name": "2-code-square",
+        "resolved": "2-code-circle",
+        "alias": "2-code-square"
+      },
+      {
+        "name": "2-coins-swap",
+        "resolved": "2-card-exchange-01",
+        "alias": "2-coins-swap"
+      },
+      {
+        "name": "2-comment-block-03",
+        "resolved": "2-comment-add-03",
+        "alias": "2-comment-block-03"
+      },
+      {
+        "name": "2-comment-remove-03",
+        "resolved": "2-comment-add-03",
+        "alias": "2-comment-remove-03"
+      },
+      {
+        "name": "2-computer-desk-03",
+        "resolved": "2-computer-desk-02",
+        "alias": "2-computer-desk-03"
+      },
+      {
+        "name": "2-copy",
+        "resolved": "2-copy-check",
+        "alias": "2-copy"
+      },
+      {
+        "name": "2-copy-minus",
+        "resolved": "2-copy",
+        "alias": "2-copy-minus"
+      },
+      {
+        "name": "2-copy-plus",
+        "resolved": "2-copy",
+        "alias": "2-copy-plus"
+      },
+      {
+        "name": "2-copy-slash",
+        "resolved": "2-copy",
+        "alias": "2-copy-slash"
+      },
+      {
+        "name": "2-curvy-right-direction",
+        "resolved": "2-curvy-left-right-direction",
+        "alias": "2-curvy-right-direction"
+      },
+      {
+        "name": "2-d-discount",
+        "resolved": "2-c-coupon-02",
+        "alias": "2-d-discount"
+      },
+      {
+        "name": "2-dashboard-circle",
+        "resolved": "2-dashboard-circle-add",
+        "alias": "2-dashboard-circle"
+      },
+      {
+        "name": "2-dashboard-circle-edit",
+        "resolved": "2-dashboard-circle",
+        "alias": "2-dashboard-circle-edit"
+      },
+      {
+        "name": "2-dashboard-square-add",
+        "resolved": "2-dashboard-square-01",
+        "alias": "2-dashboard-square-add"
+      },
+      {
+        "name": "2-dashboard-square-edit",
+        "resolved": "2-dashboard-square-01",
+        "alias": "2-dashboard-square-edit"
+      },
+      {
+        "name": "2-dashboard-square-remove",
+        "resolved": "2-dashboard-square-01",
+        "alias": "2-dashboard-square-remove"
+      },
+      {
+        "name": "2-delivery-sent-01",
+        "resolved": "2-container-truck-01",
+        "alias": "2-delivery-sent-01"
+      },
+      {
+        "name": "2-delivery-sent-02",
+        "resolved": "2-container-truck-02",
+        "alias": "2-delivery-sent-02"
+      },
+      {
+        "name": "2-diamond-percent",
+        "resolved": "2-badge-percent",
+        "alias": "2-diamond-percent"
+      },
+      {
+        "name": "2-direction-right-02",
+        "resolved": "2-direction-left-02",
+        "alias": "2-direction-right-02"
+      },
+      {
+        "name": "2-disc-2",
+        "resolved": "2-a-atom-01",
+        "alias": "2-disc-2"
+      },
+      {
+        "name": "2-disc-album",
+        "resolved": "2-currency",
+        "alias": "2-disc-album"
+      },
+      {
+        "name": "2-discount",
+        "resolved": "2-coupon-02",
+        "alias": "2-discount"
+      },
+      {
+        "name": "2-discover-square",
+        "resolved": "2-discover-circle",
+        "alias": "2-discover-square"
+      },
+      {
+        "name": "2-distribute-horizontal-right",
+        "resolved": "2-distribute-horizontal-left",
+        "alias": "2-distribute-horizontal-right"
+      },
+      {
+        "name": "2-divide-sign-square",
+        "resolved": "2-divide-sign-circle",
+        "alias": "2-divide-sign-square"
+      },
+      {
+        "name": "2-dollar-02",
+        "resolved": "2-align-left",
+        "alias": "2-dollar-02"
+      },
+      {
+        "name": "2-dollar-square",
+        "resolved": "2-dollar-circle",
+        "alias": "2-dollar-square"
+      },
+      {
+        "name": "2-download-05",
+        "resolved": "2-download-03",
+        "alias": "2-download-05"
+      },
+      {
+        "name": "2-download-square-02",
+        "resolved": "2-download-circle-02",
+        "alias": "2-download-square-02"
+      },
+      {
+        "name": "2-drag-right-03",
+        "resolved": "2-drag-right-02",
+        "alias": "2-drag-right-03"
+      },
+      {
+        "name": "2-eco-lab",
+        "resolved": "2-eco-lab-01",
+        "alias": "2-eco-lab"
+      },
+      {
+        "name": "2-eco-lab-02",
+        "resolved": "2-eco-lab",
+        "alias": "2-eco-lab-02"
+      },
+      {
+        "name": "2-energy-rectangle",
+        "resolved": "2-energy-ellipse",
+        "alias": "2-energy-rectangle"
+      },
+      {
+        "name": "2-equal-sign-square",
+        "resolved": "2-equal-sign-circle",
+        "alias": "2-equal-sign-square"
+      },
+      {
+        "name": "2-eraser-add",
+        "resolved": "2-add-circle",
+        "alias": "2-eraser-add"
+      },
+      {
+        "name": "2-ethereum-rectangle",
+        "resolved": "2-ethereum-ellipse",
+        "alias": "2-ethereum-rectangle"
+      },
+      {
+        "name": "2-euro-square",
+        "resolved": "2-euro-circle",
+        "alias": "2-euro-square"
+      },
+      {
+        "name": "2-exclamation-mark-slash",
+        "resolved": "2-e-exclamation-mark-slash",
+        "alias": "2-exclamation-mark-slash"
+      },
+      {
+        "name": "2-fahrenheit",
+        "resolved": "2-celsius",
+        "alias": "2-fahrenheit"
+      },
+      {
+        "name": "2-file-attachment",
+        "resolved": "2-file-add",
+        "alias": "2-file-attachment"
+      },
+      {
+        "name": "2-file-minus",
+        "resolved": "2-file-link",
+        "alias": "2-file-minus"
+      },
+      {
+        "name": "2-file-music",
+        "resolved": "2-file-locked",
+        "alias": "2-file-music"
+      },
+      {
+        "name": "2-file-paste",
+        "resolved": "2-file-link",
+        "alias": "2-file-paste"
+      },
+      {
+        "name": "2-file-pin",
+        "resolved": "2-file-audio",
+        "alias": "2-file-pin"
+      },
+      {
+        "name": "2-file-remove",
+        "resolved": "2-file-cloud",
+        "alias": "2-file-remove"
+      },
+      {
+        "name": "2-file-script",
+        "resolved": "2-file-import",
+        "alias": "2-file-script"
+      },
+      {
+        "name": "2-file-sync",
+        "resolved": "2-file-star",
+        "alias": "2-file-sync"
+      },
+      {
+        "name": "2-file-upload",
+        "resolved": "2-file-unknown",
+        "alias": "2-file-upload"
+      },
+      {
+        "name": "2-file-video",
+        "resolved": "2-file-star",
+        "alias": "2-file-video"
+      },
+      {
+        "name": "2-first-bracket-square",
+        "resolved": "2-first-bracket-circle",
+        "alias": "2-first-bracket-square"
+      },
+      {
+        "name": "2-five-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-five-circle"
+      },
+      {
+        "name": "2-five-square",
+        "resolved": "2-eight-square",
+        "alias": "2-five-square"
+      },
+      {
+        "name": "2-folder-import",
+        "resolved": "2-folder-export",
+        "alias": "2-folder-import"
+      },
+      {
+        "name": "2-folder-search",
+        "resolved": "2-folder-remove",
+        "alias": "2-folder-search"
+      },
+      {
+        "name": "2-folder-unlocked",
+        "resolved": "2-folder-shared-01",
+        "alias": "2-folder-unlocked"
+      },
+      {
+        "name": "2-folder-view",
+        "resolved": "2-folder-video",
+        "alias": "2-folder-view"
+      },
+      {
+        "name": "2-forward-01",
+        "resolved": "2-backward-01",
+        "alias": "2-forward-01"
+      },
+      {
+        "name": "2-four-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-four-circle"
+      },
+      {
+        "name": "2-four-square",
+        "resolved": "2-eight-square",
+        "alias": "2-four-square"
+      },
+      {
+        "name": "2-gif-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-gif-01"
+      },
+      {
+        "name": "2-go-forward-five-sec",
+        "resolved": "2-go-backward-five-sec",
+        "alias": "2-go-forward-five-sec"
+      },
+      {
+        "name": "2-greater-than-square",
+        "resolved": "2-greater-than-circle",
+        "alias": "2-greater-than-square"
+      },
+      {
+        "name": "2-group-layers",
+        "resolved": "2-group-items",
+        "alias": "2-group-layers"
+      },
+      {
+        "name": "2-h-help-circle",
+        "resolved": "2-b-bubble-chat-question",
+        "alias": "2-h-help-circle"
+      },
+      {
+        "name": "2-h-help-square",
+        "resolved": "2-b-bubble-chat-question",
+        "alias": "2-h-help-square"
+      },
+      {
+        "name": "2-hdr-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-hdr-01"
+      },
+      {
+        "name": "2-hdr-02",
+        "resolved": "2-gif-02",
+        "alias": "2-hdr-02"
+      },
+      {
+        "name": "2-hold-locked-02",
+        "resolved": "2-hold-locked-01",
+        "alias": "2-hold-locked-02"
+      },
+      {
+        "name": "2-home-06",
+        "resolved": "2-home-05",
+        "alias": "2-home-06"
+      },
+      {
+        "name": "2-horizonal-scroll-point",
+        "resolved": "2-diagonal-scroll-point-02",
+        "alias": "2-horizonal-scroll-point"
+      },
+      {
+        "name": "2-html-file-02",
+        "resolved": "2-css-file-02",
+        "alias": "2-html-file-02"
+      },
+      {
+        "name": "2-i-image-rotation-clockwise",
+        "resolved": "2-i-image-counter-clockwise",
+        "alias": "2-i-image-rotation-clockwise"
+      },
+      {
+        "name": "2-i-infant",
+        "resolved": "2-c-child",
+        "alias": "2-i-infant"
+      },
+      {
+        "name": "2-i-information-circle",
+        "resolved": "2-badge-info",
+        "alias": "2-i-information-circle"
+      },
+      {
+        "name": "2-i-information-diamond",
+        "resolved": "2-badge-info",
+        "alias": "2-i-information-diamond"
+      },
+      {
+        "name": "2-i-information-square",
+        "resolved": "2-badge-info",
+        "alias": "2-i-information-square"
+      },
+      {
+        "name": "2-image-add-02",
+        "resolved": "2-image-02",
+        "alias": "2-image-add-02"
+      },
+      {
+        "name": "2-image-crop",
+        "resolved": "2-image-composition",
+        "alias": "2-image-crop"
+      },
+      {
+        "name": "2-image-download-02",
+        "resolved": "2-image-delete-02",
+        "alias": "2-image-download-02"
+      },
+      {
+        "name": "2-image-remove-02",
+        "resolved": "2-image-delete-02",
+        "alias": "2-image-remove-02"
+      },
+      {
+        "name": "2-image-upload",
+        "resolved": "2-image-02",
+        "alias": "2-image-upload"
+      },
+      {
+        "name": "2-infinity-square",
+        "resolved": "2-infinity-circle",
+        "alias": "2-infinity-square"
+      },
+      {
+        "name": "2-insert-column",
+        "resolved": "2-add-circle",
+        "alias": "2-insert-column"
+      },
+      {
+        "name": "2-insert-row",
+        "resolved": "2-folder-add",
+        "alias": "2-insert-row"
+      },
+      {
+        "name": "2-internet-antenna-02",
+        "resolved": "2-internet-antenna-01",
+        "alias": "2-internet-antenna-02"
+      },
+      {
+        "name": "2-internet-antenna-03",
+        "resolved": "2-internet-antenna-01",
+        "alias": "2-internet-antenna-03"
+      },
+      {
+        "name": "2-jpg-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-jpg-01"
+      },
+      {
+        "name": "2-jpg-02",
+        "resolved": "2-gif-02",
+        "alias": "2-jpg-02"
+      },
+      {
+        "name": "2-jsx-02",
+        "resolved": "2-file-shredder",
+        "alias": "2-jsx-02"
+      },
+      {
+        "name": "2-jsx-03",
+        "resolved": "2-gif-02",
+        "alias": "2-jsx-03"
+      },
+      {
+        "name": "2-keyframes-double-remove",
+        "resolved": "2-desk-02",
+        "alias": "2-keyframes-double-remove"
+      },
+      {
+        "name": "2-label",
+        "resolved": "2-label-important",
+        "alias": "2-label"
+      },
+      {
+        "name": "2-lamp-02",
+        "resolved": "2-lamp-01",
+        "alias": "2-lamp-02"
+      },
+      {
+        "name": "2-language-square",
+        "resolved": "2-language-circle",
+        "alias": "2-language-square"
+      },
+      {
+        "name": "2-laurel-wreath-first-02",
+        "resolved": "2-laurel-wreath-02",
+        "alias": "2-laurel-wreath-first-02"
+      },
+      {
+        "name": "2-layout-03",
+        "resolved": "2-layout-01",
+        "alias": "2-layout-03"
+      },
+      {
+        "name": "2-less-than-square",
+        "resolved": "2-less-than-circle",
+        "alias": "2-less-than-square"
+      },
+      {
+        "name": "2-location-06",
+        "resolved": "2-location-01",
+        "alias": "2-location-06"
+      },
+      {
+        "name": "2-location-add-02",
+        "resolved": "2-location-add-01",
+        "alias": "2-location-add-02"
+      },
+      {
+        "name": "2-location-offline-02",
+        "resolved": "2-location-offline-01",
+        "alias": "2-location-offline-02"
+      },
+      {
+        "name": "2-location-remove-02",
+        "resolved": "2-location-remove-01",
+        "alias": "2-location-remove-02"
+      },
+      {
+        "name": "2-m-maps-location-02",
+        "resolved": "2-m-map-pinpoint-01",
+        "alias": "2-m-maps-location-02"
+      },
+      {
+        "name": "2-m-message-add-02",
+        "resolved": "2-c-chat-add-01",
+        "alias": "2-m-message-add-02"
+      },
+      {
+        "name": "2-m-message-secure-02",
+        "resolved": "2-c-computer-protection",
+        "alias": "2-m-message-secure-02"
+      },
+      {
+        "name": "2-m-more-horizontal-square-02",
+        "resolved": "2-m-more-horizontal-circle-02",
+        "alias": "2-m-more-horizontal-square-02"
+      },
+      {
+        "name": "2-mail-account-02",
+        "resolved": "2-mail-account-01",
+        "alias": "2-mail-account-02"
+      },
+      {
+        "name": "2-mail-add-02",
+        "resolved": "2-folder-add",
+        "alias": "2-mail-add-02"
+      },
+      {
+        "name": "2-mail-block-02",
+        "resolved": "2-mail-block-01",
+        "alias": "2-mail-block-02"
+      },
+      {
+        "name": "2-mail-download-02",
+        "resolved": "2-mail-download-01",
+        "alias": "2-mail-download-02"
+      },
+      {
+        "name": "2-mail-minus-02",
+        "resolved": "2-folder-minus",
+        "alias": "2-mail-minus-02"
+      },
+      {
+        "name": "2-mail-receive-02",
+        "resolved": "2-mail-receive-01",
+        "alias": "2-mail-receive-02"
+      },
+      {
+        "name": "2-mail-remove-02",
+        "resolved": "2-mail-remove-01",
+        "alias": "2-mail-remove-02"
+      },
+      {
+        "name": "2-mail-secure-02",
+        "resolved": "2-mail-secure-01",
+        "alias": "2-mail-secure-02"
+      },
+      {
+        "name": "2-mail-send-02",
+        "resolved": "2-mail-send-01",
+        "alias": "2-mail-send-02"
+      },
+      {
+        "name": "2-mail-setting-02",
+        "resolved": "2-mail-setting-01",
+        "alias": "2-mail-setting-02"
+      },
+      {
+        "name": "2-mail-upload-02",
+        "resolved": "2-mail-upload-01",
+        "alias": "2-mail-upload-02"
+      },
+      {
+        "name": "2-mail-warning",
+        "resolved": "2-cloud-alert",
+        "alias": "2-mail-warning"
+      },
+      {
+        "name": "2-maps-location-02",
+        "resolved": "2-map-pinpoint-01",
+        "alias": "2-maps-location-02"
+      },
+      {
+        "name": "2-menu-01",
+        "resolved": "2-add-01",
+        "alias": "2-menu-01"
+      },
+      {
+        "name": "2-menu-02",
+        "resolved": "2-add-01",
+        "alias": "2-menu-02"
+      },
+      {
+        "name": "2-menu-03",
+        "resolved": "2-add-01",
+        "alias": "2-menu-03"
+      },
+      {
+        "name": "2-menu-04",
+        "resolved": "2-add-01",
+        "alias": "2-menu-04"
+      },
+      {
+        "name": "2-menu-05",
+        "resolved": "2-add-01",
+        "alias": "2-menu-05"
+      },
+      {
+        "name": "2-message-add-02",
+        "resolved": "2-keyframe-add",
+        "alias": "2-message-add-02"
+      },
+      {
+        "name": "2-message-cancel-01",
+        "resolved": "2-gps-disconnected",
+        "alias": "2-message-cancel-01"
+      },
+      {
+        "name": "2-message-cancel-02",
+        "resolved": "2-gps-disconnected",
+        "alias": "2-message-cancel-02"
+      },
+      {
+        "name": "2-message-delay-02",
+        "resolved": "2-message-delay-01",
+        "alias": "2-message-delay-02"
+      },
+      {
+        "name": "2-message-download-02",
+        "resolved": "2-message-download-01",
+        "alias": "2-message-download-02"
+      },
+      {
+        "name": "2-message-edit-02",
+        "resolved": "2-message-edit-01",
+        "alias": "2-message-edit-02"
+      },
+      {
+        "name": "2-message-notification-01",
+        "resolved": "2-inbox-unread",
+        "alias": "2-message-notification-01"
+      },
+      {
+        "name": "2-message-programming",
+        "resolved": "2-computer-programming-01",
+        "alias": "2-message-programming"
+      },
+      {
+        "name": "2-minus-plus-square-01",
+        "resolved": "2-minus-plus-circle-01",
+        "alias": "2-minus-plus-square-01"
+      },
+      {
+        "name": "2-minus-sign-square",
+        "resolved": "2-minus-sign-circle",
+        "alias": "2-minus-sign-square"
+      },
+      {
+        "name": "2-mobile-protection",
+        "resolved": "2-computer-protection",
+        "alias": "2-mobile-protection"
+      },
+      {
+        "name": "2-money-remove-01",
+        "resolved": "2-money-add-01",
+        "alias": "2-money-remove-01"
+      },
+      {
+        "name": "2-money-send-01",
+        "resolved": "2-money-receive-01",
+        "alias": "2-money-send-01"
+      },
+      {
+        "name": "2-money-send-02",
+        "resolved": "2-money-receive-02",
+        "alias": "2-money-send-02"
+      },
+      {
+        "name": "2-more-vertical",
+        "resolved": "2-more-horizontal",
+        "alias": "2-more-vertical"
+      },
+      {
+        "name": "2-more-vertical-circle-01",
+        "resolved": "2-more-horizontal-circle-01",
+        "alias": "2-more-vertical-circle-01"
+      },
+      {
+        "name": "2-more-vertical-square-01",
+        "resolved": "2-more-horizontal-square-01",
+        "alias": "2-more-vertical-square-01"
+      },
+      {
+        "name": "2-mouse-09",
+        "resolved": "2-mouse-01",
+        "alias": "2-mouse-09"
+      },
+      {
+        "name": "2-mouse-22",
+        "resolved": "2-mouse-10",
+        "alias": "2-mouse-22"
+      },
+      {
+        "name": "2-mouse-23",
+        "resolved": "2-mouse-01",
+        "alias": "2-mouse-23"
+      },
+      {
+        "name": "2-move-right",
+        "resolved": "2-gps-01",
+        "alias": "2-move-right"
+      },
+      {
+        "name": "2-mp-four-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-mp-four-01"
+      },
+      {
+        "name": "2-mp-four-02",
+        "resolved": "2-gif-02",
+        "alias": "2-mp-four-02"
+      },
+      {
+        "name": "2-mp-three-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-mp-three-01"
+      },
+      {
+        "name": "2-mp-three-02",
+        "resolved": "2-gif-02",
+        "alias": "2-mp-three-02"
+      },
+      {
+        "name": "2-new-twitter-rectangle",
+        "resolved": "2-new-twitter-ellipse",
+        "alias": "2-new-twitter-rectangle"
+      },
+      {
+        "name": "2-next",
+        "resolved": "2-backward-01",
+        "alias": "2-next"
+      },
+      {
+        "name": "2-nine-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-nine-circle"
+      },
+      {
+        "name": "2-nine-square",
+        "resolved": "2-eight-square",
+        "alias": "2-nine-square"
+      },
+      {
+        "name": "2-node-move-up",
+        "resolved": "2-node-move-down",
+        "alias": "2-node-move-up"
+      },
+      {
+        "name": "2-not-equal-sign-square",
+        "resolved": "2-not-equal-sign-circle",
+        "alias": "2-not-equal-sign-square"
+      },
+      {
+        "name": "2-one-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-one-circle"
+      },
+      {
+        "name": "2-one-square",
+        "resolved": "2-eight-square",
+        "alias": "2-one-square"
+      },
+      {
+        "name": "2-panel-right",
+        "resolved": "2-panel-left",
+        "alias": "2-panel-right"
+      },
+      {
+        "name": "2-panel-right-close",
+        "resolved": "2-panel-left-close",
+        "alias": "2-panel-right-close"
+      },
+      {
+        "name": "2-panel-right-dashed",
+        "resolved": "2-panel-left-dashed",
+        "alias": "2-panel-right-dashed"
+      },
+      {
+        "name": "2-panel-right-open",
+        "resolved": "2-panel-left-open",
+        "alias": "2-panel-right-open"
+      },
+      {
+        "name": "2-parking-area-square",
+        "resolved": "2-parking-area-circle",
+        "alias": "2-parking-area-square"
+      },
+      {
+        "name": "2-pathfinder-intersect",
+        "resolved": "2-pathfinder-crop",
+        "alias": "2-pathfinder-intersect"
+      },
+      {
+        "name": "2-pathfinder-unite",
+        "resolved": "2-pathfinder-merge",
+        "alias": "2-pathfinder-unite"
+      },
+      {
+        "name": "2-pc-case",
+        "resolved": "2-p-pc-case",
+        "alias": "2-pc-case"
+      },
+      {
+        "name": "2-pdf-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-pdf-01"
+      },
+      {
+        "name": "2-pdf-02",
+        "resolved": "2-gif-02",
+        "alias": "2-pdf-02"
+      },
+      {
+        "name": "2-percent-square",
+        "resolved": "2-percent-circle",
+        "alias": "2-percent-square"
+      },
+      {
+        "name": "2-physics",
+        "resolved": "2-diagonal-scroll-point-01",
+        "alias": "2-physics"
+      },
+      {
+        "name": "2-pi-square",
+        "resolved": "2-pi-circle",
+        "alias": "2-pi-square"
+      },
+      {
+        "name": "2-play-list-minus",
+        "resolved": "2-mail-minus-01",
+        "alias": "2-play-list-minus"
+      },
+      {
+        "name": "2-play-square",
+        "resolved": "2-play-circle",
+        "alias": "2-play-square"
+      },
+      {
+        "name": "2-plus-minus-square-01",
+        "resolved": "2-plus-minus-circle-01",
+        "alias": "2-plus-minus-square-01"
+      },
+      {
+        "name": "2-plus-sign",
+        "resolved": "2-add-01",
+        "alias": "2-plus-sign"
+      },
+      {
+        "name": "2-plus-sign-circle",
+        "resolved": "2-add-circle",
+        "alias": "2-plus-sign-circle"
+      },
+      {
+        "name": "2-plus-sign-square",
+        "resolved": "2-add-circle",
+        "alias": "2-plus-sign-square"
+      },
+      {
+        "name": "2-png-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-png-01"
+      },
+      {
+        "name": "2-png-02",
+        "resolved": "2-gif-02",
+        "alias": "2-png-02"
+      },
+      {
+        "name": "2-pointing-left-03",
+        "resolved": "2-pointing-left-02",
+        "alias": "2-pointing-left-03"
+      },
+      {
+        "name": "2-pointing-left-04",
+        "resolved": "2-pointing-left-02",
+        "alias": "2-pointing-left-04"
+      },
+      {
+        "name": "2-pointing-left-05",
+        "resolved": "2-pointing-left-02",
+        "alias": "2-pointing-left-05"
+      },
+      {
+        "name": "2-pointing-left-07",
+        "resolved": "2-pointing-left-02",
+        "alias": "2-pointing-left-07"
+      },
+      {
+        "name": "2-pointing-left-08",
+        "resolved": "2-pointing-left-06",
+        "alias": "2-pointing-left-08"
+      },
+      {
+        "name": "2-pointing-right-03",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-pointing-right-03"
+      },
+      {
+        "name": "2-pointing-right-04",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-pointing-right-04"
+      },
+      {
+        "name": "2-pointing-right-05",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-pointing-right-05"
+      },
+      {
+        "name": "2-pointing-right-07",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-pointing-right-07"
+      },
+      {
+        "name": "2-pointing-right-08",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-pointing-right-08"
+      },
+      {
+        "name": "2-ppt-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-ppt-01"
+      },
+      {
+        "name": "2-ppt-02",
+        "resolved": "2-gif-02",
+        "alias": "2-ppt-02"
+      },
+      {
+        "name": "2-presentation-02",
+        "resolved": "2-presentation-01",
+        "alias": "2-presentation-02"
+      },
+      {
+        "name": "2-presentation-06",
+        "resolved": "2-presentation-05",
+        "alias": "2-presentation-06"
+      },
+      {
+        "name": "2-presentation-bar-chart-02",
+        "resolved": "2-presentation-bar-chart-01",
+        "alias": "2-presentation-bar-chart-02"
+      },
+      {
+        "name": "2-presentation-line-chart-02",
+        "resolved": "2-presentation-line-chart-01",
+        "alias": "2-presentation-line-chart-02"
+      },
+      {
+        "name": "2-pumpkin",
+        "resolved": "2-apricot",
+        "alias": "2-pumpkin"
+      },
+      {
+        "name": "2-quiz-01",
+        "resolved": "2-help-circle",
+        "alias": "2-quiz-01"
+      },
+      {
+        "name": "2-qwen",
+        "resolved": "2-component-1",
+        "alias": "2-qwen"
+      },
+      {
+        "name": "2-r-riyal",
+        "resolved": "2-r-riyal-rectangle",
+        "alias": "2-r-riyal"
+      },
+      {
+        "name": "2-r-rss-error",
+        "resolved": "2-r-rss-connected-02",
+        "alias": "2-r-rss-error"
+      },
+      {
+        "name": "2-r-rss-unlocked",
+        "resolved": "2-r-rss-locked",
+        "alias": "2-r-rss-unlocked"
+      },
+      {
+        "name": "2-raw-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-raw-01"
+      },
+      {
+        "name": "2-raw-02",
+        "resolved": "2-gif-02",
+        "alias": "2-raw-02"
+      },
+      {
+        "name": "2-receipt-cent",
+        "resolved": "2-badge-cent",
+        "alias": "2-receipt-cent"
+      },
+      {
+        "name": "2-reduce-paragraph",
+        "resolved": "2-expand-paragraph",
+        "alias": "2-reduce-paragraph"
+      },
+      {
+        "name": "2-refresh-dot",
+        "resolved": "2-refresh-03",
+        "alias": "2-refresh-dot"
+      },
+      {
+        "name": "2-remove-01",
+        "resolved": "2-add-01",
+        "alias": "2-remove-01"
+      },
+      {
+        "name": "2-remove-circle-half-dot",
+        "resolved": "2-cancel-circle-half-dot",
+        "alias": "2-remove-circle-half-dot"
+      },
+      {
+        "name": "2-remove-square",
+        "resolved": "2-remove-circle",
+        "alias": "2-remove-square"
+      },
+      {
+        "name": "2-restaurant-01",
+        "resolved": "2-cafe",
+        "alias": "2-restaurant-01"
+      },
+      {
+        "name": "2-reverse-withdrawal-01",
+        "resolved": "2-bitcoin-withdraw",
+        "alias": "2-reverse-withdrawal-01"
+      },
+      {
+        "name": "2-riyal",
+        "resolved": "2-riyal-rectangle",
+        "alias": "2-riyal"
+      },
+      {
+        "name": "2-rotate-01",
+        "resolved": "2-refresh",
+        "alias": "2-rotate-01"
+      },
+      {
+        "name": "2-rotate-right-04",
+        "resolved": "2-rotate-right-03",
+        "alias": "2-rotate-right-04"
+      },
+      {
+        "name": "2-rotate-right-06",
+        "resolved": "2-rotate-right-03",
+        "alias": "2-rotate-right-06"
+      },
+      {
+        "name": "2-rss-error",
+        "resolved": "2-rss-connected-02",
+        "alias": "2-rss-error"
+      },
+      {
+        "name": "2-rub-el-hizb",
+        "resolved": "2-diagonal-scroll-point-01",
+        "alias": "2-rub-el-hizb"
+      },
+      {
+        "name": "2-s-share-location-02",
+        "resolved": "2-s-share-location-01",
+        "alias": "2-s-share-location-02"
+      },
+      {
+        "name": "2-s-spam",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-s-spam"
+      },
+      {
+        "name": "2-s-sun-01",
+        "resolved": "2-currency",
+        "alias": "2-s-sun-01"
+      },
+      {
+        "name": "2-safe-box",
+        "resolved": "2-a-atom-01",
+        "alias": "2-safe-box"
+      },
+      {
+        "name": "2-sakura",
+        "resolved": "2-nuclear-power",
+        "alias": "2-sakura"
+      },
+      {
+        "name": "2-save-money-euro",
+        "resolved": "2-save-money-dollar",
+        "alias": "2-save-money-euro"
+      },
+      {
+        "name": "2-save-money-pound",
+        "resolved": "2-save-money-dollar",
+        "alias": "2-save-money-pound"
+      },
+      {
+        "name": "2-save-money-yen",
+        "resolved": "2-save-money-dollar",
+        "alias": "2-save-money-yen"
+      },
+      {
+        "name": "2-screen-add-to-home",
+        "resolved": "2-screen-add-to-home-02",
+        "alias": "2-screen-add-to-home"
+      },
+      {
+        "name": "2-scroll-horizontal",
+        "resolved": "2-diagonal-scroll-point-01",
+        "alias": "2-scroll-horizontal"
+      },
+      {
+        "name": "2-scroll-vertical",
+        "resolved": "2-diagonal-scroll-point-01",
+        "alias": "2-scroll-vertical"
+      },
+      {
+        "name": "2-second-bracket-square",
+        "resolved": "2-second-bracket-circle",
+        "alias": "2-second-bracket-square"
+      },
+      {
+        "name": "2-security-key-usb",
+        "resolved": "2-device-access",
+        "alias": "2-security-key-usb"
+      },
+      {
+        "name": "2-security-warning",
+        "resolved": "2-s-security-warning",
+        "alias": "2-security-warning"
+      },
+      {
+        "name": "2-setting-done-04",
+        "resolved": "2-setting-done-03",
+        "alias": "2-setting-done-04"
+      },
+      {
+        "name": "2-settings-01",
+        "resolved": "2-setting-07",
+        "alias": "2-settings-01"
+      },
+      {
+        "name": "2-settings-02",
+        "resolved": "2-setting-07",
+        "alias": "2-settings-02"
+      },
+      {
+        "name": "2-settings-03",
+        "resolved": "2-setting-07",
+        "alias": "2-settings-03"
+      },
+      {
+        "name": "2-settings-error-01",
+        "resolved": "2-setting-error-03",
+        "alias": "2-settings-error-01"
+      },
+      {
+        "name": "2-settings-error-02",
+        "resolved": "2-setting-error-03",
+        "alias": "2-settings-error-02"
+      },
+      {
+        "name": "2-seven-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-seven-circle"
+      },
+      {
+        "name": "2-seven-square",
+        "resolved": "2-eight-square",
+        "alias": "2-seven-square"
+      },
+      {
+        "name": "2-share-location-02",
+        "resolved": "2-share-location-01",
+        "alias": "2-share-location-02"
+      },
+      {
+        "name": "2-sheriff-02",
+        "resolved": "2-gps-01",
+        "alias": "2-sheriff-02"
+      },
+      {
+        "name": "2-shipping-truck-01",
+        "resolved": "2-container-truck-01",
+        "alias": "2-shipping-truck-01"
+      },
+      {
+        "name": "2-shipping-truck-02",
+        "resolved": "2-container-truck-02",
+        "alias": "2-shipping-truck-02"
+      },
+      {
+        "name": "2-sidebar-right",
+        "resolved": "2-sidebar-left",
+        "alias": "2-sidebar-right"
+      },
+      {
+        "name": "2-six-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-six-circle"
+      },
+      {
+        "name": "2-six-square",
+        "resolved": "2-eight-square",
+        "alias": "2-six-square"
+      },
+      {
+        "name": "2-sort-by-up-01",
+        "resolved": "2-sort-by-down-01",
+        "alias": "2-sort-by-up-01"
+      },
+      {
+        "name": "2-source-code-circle",
+        "resolved": "2-mobile-programming-01",
+        "alias": "2-source-code-circle"
+      },
+      {
+        "name": "2-source-code-square",
+        "resolved": "2-mobile-programming-01",
+        "alias": "2-source-code-square"
+      },
+      {
+        "name": "2-speed-train-02",
+        "resolved": "2-speed-train-01",
+        "alias": "2-speed-train-02"
+      },
+      {
+        "name": "2-square",
+        "resolved": "2-border-all-02",
+        "alias": "2-square"
+      },
+      {
+        "name": "2-square-arrow-down-02",
+        "resolved": "2-circle-arrow-down-02",
+        "alias": "2-square-arrow-down-02"
+      },
+      {
+        "name": "2-square-arrow-down-03",
+        "resolved": "2-circle-arrow-down-03",
+        "alias": "2-square-arrow-down-03"
+      },
+      {
+        "name": "2-square-arrow-left-03",
+        "resolved": "2-circle-arrow-left-03",
+        "alias": "2-square-arrow-left-03"
+      },
+      {
+        "name": "2-square-arrow-right-03",
+        "resolved": "2-circle-arrow-right-03",
+        "alias": "2-square-arrow-right-03"
+      },
+      {
+        "name": "2-square-arrow-up-03",
+        "resolved": "2-circle-arrow-up-03",
+        "alias": "2-square-arrow-up-03"
+      },
+      {
+        "name": "2-square-mouse-pointer",
+        "resolved": "2-spline-pointer",
+        "alias": "2-square-mouse-pointer"
+      },
+      {
+        "name": "2-star-square",
+        "resolved": "2-star-circle",
+        "alias": "2-star-square"
+      },
+      {
+        "name": "2-step-over",
+        "resolved": "2-pencil-edit-01",
+        "alias": "2-step-over"
+      },
+      {
+        "name": "2-stroke-outside",
+        "resolved": "2-gps-01",
+        "alias": "2-stroke-outside"
+      },
+      {
+        "name": "2-structure-check",
+        "resolved": "2-structure-add",
+        "alias": "2-structure-check"
+      },
+      {
+        "name": "2-structure-fail",
+        "resolved": "2-structure-add",
+        "alias": "2-structure-fail"
+      },
+      {
+        "name": "2-study-desk",
+        "resolved": "2-computer-desk-01",
+        "alias": "2-study-desk"
+      },
+      {
+        "name": "2-summation-circle",
+        "resolved": "2-summation-02",
+        "alias": "2-summation-circle"
+      },
+      {
+        "name": "2-summation-square",
+        "resolved": "2-summation-02",
+        "alias": "2-summation-square"
+      },
+      {
+        "name": "2-sunset",
+        "resolved": "2-sunrise",
+        "alias": "2-sunset"
+      },
+      {
+        "name": "2-svg-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-svg-01"
+      },
+      {
+        "name": "2-svg-02",
+        "resolved": "2-gif-02",
+        "alias": "2-svg-02"
+      },
+      {
+        "name": "2-swipe-down-05",
+        "resolved": "2-swipe-down-03",
+        "alias": "2-swipe-down-05"
+      },
+      {
+        "name": "2-swipe-down-06",
+        "resolved": "2-swipe-down-02",
+        "alias": "2-swipe-down-06"
+      },
+      {
+        "name": "2-swipe-down-07",
+        "resolved": "2-swipe-down-03",
+        "alias": "2-swipe-down-07"
+      },
+      {
+        "name": "2-swipe-left-02",
+        "resolved": "2-swipe-left-01",
+        "alias": "2-swipe-left-02"
+      },
+      {
+        "name": "2-swipe-left-03",
+        "resolved": "2-swipe-left-01",
+        "alias": "2-swipe-left-03"
+      },
+      {
+        "name": "2-swipe-left-05",
+        "resolved": "2-swipe-left-01",
+        "alias": "2-swipe-left-05"
+      },
+      {
+        "name": "2-swipe-left-06",
+        "resolved": "2-swipe-left-01",
+        "alias": "2-swipe-left-06"
+      },
+      {
+        "name": "2-swipe-left-07",
+        "resolved": "2-swipe-left-01",
+        "alias": "2-swipe-left-07"
+      },
+      {
+        "name": "2-swipe-right-01",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-swipe-right-01"
+      },
+      {
+        "name": "2-swipe-right-02",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-swipe-right-02"
+      },
+      {
+        "name": "2-swipe-right-03",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-swipe-right-03"
+      },
+      {
+        "name": "2-swipe-right-04",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-swipe-right-04"
+      },
+      {
+        "name": "2-swipe-right-05",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-swipe-right-05"
+      },
+      {
+        "name": "2-swipe-right-06",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-swipe-right-06"
+      },
+      {
+        "name": "2-swipe-right-07",
+        "resolved": "2-pointing-right-02",
+        "alias": "2-swipe-right-07"
+      },
+      {
+        "name": "2-swipe-up-02",
+        "resolved": "2-swipe-up-01",
+        "alias": "2-swipe-up-02"
+      },
+      {
+        "name": "2-swipe-up-05",
+        "resolved": "2-swipe-up-03",
+        "alias": "2-swipe-up-05"
+      },
+      {
+        "name": "2-swipe-up-06",
+        "resolved": "2-swipe-up-01",
+        "alias": "2-swipe-up-06"
+      },
+      {
+        "name": "2-swipe-up-07",
+        "resolved": "2-swipe-up-03",
+        "alias": "2-swipe-up-07"
+      },
+      {
+        "name": "2-system-update-02",
+        "resolved": "2-system-update-01",
+        "alias": "2-system-update-02"
+      },
+      {
+        "name": "2-t-tablet-01",
+        "resolved": "2-s-smart-phone-01",
+        "alias": "2-t-tablet-01"
+      },
+      {
+        "name": "2-t-task-daily-02",
+        "resolved": "2-n-note-03",
+        "alias": "2-t-task-daily-02"
+      },
+      {
+        "name": "2-table-01",
+        "resolved": "2-camper",
+        "alias": "2-table-01"
+      },
+      {
+        "name": "2-tally-3",
+        "resolved": "2-previous",
+        "alias": "2-tally-3"
+      },
+      {
+        "name": "2-tally-5",
+        "resolved": "2-tally-4",
+        "alias": "2-tally-5"
+      },
+      {
+        "name": "2-tap-04",
+        "resolved": "2-tap-03",
+        "alias": "2-tap-04"
+      },
+      {
+        "name": "2-task-daily-01",
+        "resolved": "2-note-03",
+        "alias": "2-task-daily-01"
+      },
+      {
+        "name": "2-task-daily-02",
+        "resolved": "2-note-03",
+        "alias": "2-task-daily-02"
+      },
+      {
+        "name": "2-task-done-02",
+        "resolved": "2-note-done",
+        "alias": "2-task-done-02"
+      },
+      {
+        "name": "2-text-centerline-left",
+        "resolved": "2-paragraph-bullets-point-02",
+        "alias": "2-text-centerline-left"
+      },
+      {
+        "name": "2-text-centerline-right",
+        "resolved": "2-paragraph-bullets-point-02",
+        "alias": "2-text-centerline-right"
+      },
+      {
+        "name": "2-text-firstline-right",
+        "resolved": "2-text-firstline-left",
+        "alias": "2-text-firstline-right"
+      },
+      {
+        "name": "2-text-underline",
+        "resolved": "2-text-color",
+        "alias": "2-text-underline"
+      },
+      {
+        "name": "2-third-bracket-square",
+        "resolved": "2-third-bracket-circle",
+        "alias": "2-third-bracket-square"
+      },
+      {
+        "name": "2-three-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-three-circle"
+      },
+      {
+        "name": "2-three-square",
+        "resolved": "2-eight-square",
+        "alias": "2-three-square"
+      },
+      {
+        "name": "2-tiff-01",
+        "resolved": "2-seven-z-01",
+        "alias": "2-tiff-01"
+      },
+      {
+        "name": "2-tiff-02",
+        "resolved": "2-seven-z-02",
+        "alias": "2-tiff-02"
+      },
+      {
+        "name": "2-time-02",
+        "resolved": "2-time-01",
+        "alias": "2-time-02"
+      },
+      {
+        "name": "2-time-management",
+        "resolved": "2-hierarchy-square-07",
+        "alias": "2-time-management"
+      },
+      {
+        "name": "2-time-setting-02",
+        "resolved": "2-time-setting-01",
+        "alias": "2-time-setting-02"
+      },
+      {
+        "name": "2-time-setting-03",
+        "resolved": "2-time-setting-01",
+        "alias": "2-time-setting-03"
+      },
+      {
+        "name": "2-timeline-list",
+        "resolved": "2-panel-left",
+        "alias": "2-timeline-list"
+      },
+      {
+        "name": "2-toggle-off",
+        "resolved": "2-gps-01",
+        "alias": "2-toggle-off"
+      },
+      {
+        "name": "2-toggle-on",
+        "resolved": "2-gps-01",
+        "alias": "2-toggle-on"
+      },
+      {
+        "name": "2-token-square",
+        "resolved": "2-token-circle",
+        "alias": "2-token-square"
+      },
+      {
+        "name": "2-touch-interaction-03",
+        "resolved": "2-touch-interaction-02",
+        "alias": "2-touch-interaction-03"
+      },
+      {
+        "name": "2-touch-locked-03",
+        "resolved": "2-hold-locked-01",
+        "alias": "2-touch-locked-03"
+      },
+      {
+        "name": "2-touch-locked-04",
+        "resolved": "2-touch-locked-02",
+        "alias": "2-touch-locked-04"
+      },
+      {
+        "name": "2-trapezoid-line-horizontal",
+        "resolved": "2-arrow-horizontal",
+        "alias": "2-trapezoid-line-horizontal"
+      },
+      {
+        "name": "2-tropical-storm-tracks-01",
+        "resolved": "2-gps-01",
+        "alias": "2-tropical-storm-tracks-01"
+      },
+      {
+        "name": "2-two-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-two-circle"
+      },
+      {
+        "name": "2-two-square",
+        "resolved": "2-eight-square",
+        "alias": "2-two-square"
+      },
+      {
+        "name": "2-txt-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-txt-01"
+      },
+      {
+        "name": "2-txt-02",
+        "resolved": "2-gif-02",
+        "alias": "2-txt-02"
+      },
+      {
+        "name": "2-typescript-02",
+        "resolved": "2-file-shredder",
+        "alias": "2-typescript-02"
+      },
+      {
+        "name": "2-unlink-04",
+        "resolved": "2-link-04",
+        "alias": "2-unlink-04"
+      },
+      {
+        "name": "2-unlink-06",
+        "resolved": "2-link-06",
+        "alias": "2-unlink-06"
+      },
+      {
+        "name": "2-upload-05",
+        "resolved": "2-upload-03",
+        "alias": "2-upload-05"
+      },
+      {
+        "name": "2-upload-square-01",
+        "resolved": "2-upload-circle-01",
+        "alias": "2-upload-square-01"
+      },
+      {
+        "name": "2-user-story",
+        "resolved": "2-user-circle",
+        "alias": "2-user-story"
+      },
+      {
+        "name": "2-vertical-scroll-point",
+        "resolved": "2-diagonal-scroll-point-01",
+        "alias": "2-vertical-scroll-point"
+      },
+      {
+        "name": "2-view-sidebar-right",
+        "resolved": "2-view-sidebar-left",
+        "alias": "2-view-sidebar-right"
+      },
+      {
+        "name": "2-w-wifi-location",
+        "resolved": "2-w-wifi-circle",
+        "alias": "2-w-wifi-location"
+      },
+      {
+        "name": "2-w-wifi-square",
+        "resolved": "2-w-wifi-circle",
+        "alias": "2-w-wifi-square"
+      },
+      {
+        "name": "2-waste-restore",
+        "resolved": "2-restore-bin",
+        "alias": "2-waste-restore"
+      },
+      {
+        "name": "2-watch-02",
+        "resolved": "2-watch-01",
+        "alias": "2-watch-02"
+      },
+      {
+        "name": "2-wav-01",
+        "resolved": "2-rar-01",
+        "alias": "2-wav-01"
+      },
+      {
+        "name": "2-wifi-location",
+        "resolved": "2-security-wifi",
+        "alias": "2-wifi-location"
+      },
+      {
+        "name": "2-wifi-square",
+        "resolved": "2-wifi-circle",
+        "alias": "2-wifi-square"
+      },
+      {
+        "name": "2-workflow-square-06",
+        "resolved": "2-workflow-circle-03",
+        "alias": "2-workflow-square-06"
+      },
+      {
+        "name": "2-workflow-square-08",
+        "resolved": "2-workflow-circle-06",
+        "alias": "2-workflow-square-08"
+      },
+      {
+        "name": "2-xls-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-xls-01"
+      },
+      {
+        "name": "2-xls-02",
+        "resolved": "2-gif-02",
+        "alias": "2-xls-02"
+      },
+      {
+        "name": "2-xml-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-xml-01"
+      },
+      {
+        "name": "2-xml-02",
+        "resolved": "2-gif-02",
+        "alias": "2-xml-02"
+      },
+      {
+        "name": "2-xsl-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-xsl-01"
+      },
+      {
+        "name": "2-xsl-02",
+        "resolved": "2-gif-02",
+        "alias": "2-xsl-02"
+      },
+      {
+        "name": "2-yen-square",
+        "resolved": "2-yen-circle",
+        "alias": "2-yen-square"
+      },
+      {
+        "name": "2-zero-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-zero-circle"
+      },
+      {
+        "name": "2-zero-square",
+        "resolved": "2-eight-square",
+        "alias": "2-zero-square"
+      },
+      {
+        "name": "2-zip-01",
+        "resolved": "2-file-shredder",
+        "alias": "2-zip-01"
+      },
+      {
+        "name": "2-zip-02",
+        "resolved": "2-gif-02",
+        "alias": "2-zip-02"
+      },
+      {
+        "name": "2-zoom-in-area",
+        "resolved": "2-search-area",
+        "alias": "2-zoom-in-area"
+      },
+      {
+        "name": "2-zoom-out-area",
+        "resolved": "2-search-area",
+        "alias": "2-zoom-out-area"
+      },
+      {
+        "name": "2-zoom-square",
+        "resolved": "2-zoom-circle",
+        "alias": "2-zoom-square"
+      }
+    ],
+    "secondary_equals_primary": []
+  }
+}

@@ -1,0 +1,6935 @@
+{
+  "font": "hugeicons-bulk-rounded.otf",
+  "entries": 5497,
+  "ligatures": 11120,
+  "ligature_targets": 10850,
+  "centered_targets": 0,
+  "color_pairs": 5351,
+  "vertical_drift_count": 0,
+  "vertical_metrics_match": true,
+  "errors": {
+    "missing_primary_glyph": [],
+    "missing_secondary_glyph": [],
+    "empty_primary_svg": [],
+    "empty_secondary_svg": [],
+    "missing_cmap": [],
+    "invalid_ligature_name": [],
+    "ligature_conflicts": [],
+    "invalid_primary_resolution": [],
+    "color_pair_conflicts": [],
+    "uncentered_targets": [],
+    "vertical_metric_drift": []
+  },
+  "warnings": {
+    "secondary_fallbacks": [
+      "apple-vision-pro",
+      "archive-04",
+      "arrow-down-02",
+      "arrow-down-big",
+      "arrow-down-left-01",
+      "arrow-down-right-01",
+      "arrow-left-02",
+      "arrow-left-big",
+      "arrow-right-02",
+      "arrow-right-big",
+      "arrow-up-02",
+      "arrow-up-big",
+      "arrow-up-left-01",
+      "arrow-up-right-01",
+      "asterisk-02",
+      "badge",
+      "bluesky",
+      "bone-01",
+      "book-dashed",
+      "c-child",
+      "c-code",
+      "call",
+      "call-02",
+      "camel",
+      "circle-small",
+      "claude",
+      "cloud",
+      "comment-02",
+      "coordinate-01",
+      "coupon-03",
+      "dental-broken-tooth",
+      "dental-tooth",
+      "dress-06",
+      "e-exclamation-mark",
+      "egg",
+      "exchange-bitcoin",
+      "favourite",
+      "folder-01",
+      "four-finger-02",
+      "four-finger-03",
+      "full-signal",
+      "fullscreen",
+      "gift-card-02",
+      "greater-than",
+      "hand-grab",
+      "hand-pointing-down-01",
+      "hand-pointing-down-02",
+      "hand-pointing-down-03",
+      "hand-pointing-down-04",
+      "hand-pointing-left-01",
+      "hand-pointing-left-02",
+      "hand-pointing-left-03",
+      "hand-pointing-left-04",
+      "hand-pointing-right-01",
+      "hand-pointing-right-02",
+      "hand-pointing-right-03",
+      "hand-pointing-right-04",
+      "hijab",
+      "hold-01",
+      "hold-02",
+      "hold-03",
+      "hold-04",
+      "hold-05",
+      "horse-head",
+      "hyperbole",
+      "iteration-ccw",
+      "iteration-cw",
+      "join-bevel",
+      "join-round",
+      "join-straight",
+      "label",
+      "label-important",
+      "less-than",
+      "liver",
+      "m-more-01",
+      "m-more-02",
+      "m-more-03",
+      "m-more-horizontal",
+      "m-more-horizontal-circle-01",
+      "m-more-horizontal-square-01",
+      "m-more-vertical",
+      "m-more-vertical-circle-01",
+      "m-more-vertical-square-01",
+      "message-square-dashed",
+      "minus-sign",
+      "moon-02",
+      "mouse-left-click-03",
+      "mouse-right-click-03",
+      "navigation",
+      "navigation-2",
+      "no-signal",
+      "nose",
+      "notification-snooze-02",
+      "ok-finger",
+      "p-projector",
+      "pathfinder-merge",
+      "pie-chart-06",
+      "progress-01",
+      "pulse-01",
+      "pulse-02",
+      "punch",
+      "q-qq-plot",
+      "r-reminder",
+      "rain-drop",
+      "shaka-01",
+      "shaka-02",
+      "shield-01",
+      "shirt-01",
+      "sign-language-c",
+      "smart-phone-02",
+      "smart-phone-landscape-02",
+      "stairs-01",
+      "stripe",
+      "tally-1",
+      "tap-08",
+      "three-finger-01",
+      "three-finger-02",
+      "three-finger-03",
+      "three-finger-04",
+      "three-finger-05",
+      "tiktok",
+      "touch-01",
+      "touch-02",
+      "touch-03",
+      "touch-04",
+      "touch-05",
+      "touch-06",
+      "touch-07",
+      "touch-08",
+      "touch-09",
+      "triangle-right",
+      "two-finger-01",
+      "two-finger-02",
+      "two-finger-03",
+      "two-finger-04",
+      "two-finger-05",
+      "unfold-more",
+      "uv-01",
+      "victory-finger-01",
+      "victory-finger-02",
+      "victory-finger-03",
+      "volume-mute-01",
+      "zap"
+    ],
+    "deduped_primary": [
+      {
+        "name": "a-alert-diamond",
+        "resolved": "a-alert-circle",
+        "alias": "a-alert-diamond"
+      },
+      {
+        "name": "a-alert-square",
+        "resolved": "a-alert-circle",
+        "alias": "a-alert-square"
+      },
+      {
+        "name": "a-arrow-up",
+        "resolved": "a-arrow-down",
+        "alias": "a-arrow-up"
+      },
+      {
+        "name": "account-setting-03",
+        "resolved": "account-setting-01",
+        "alias": "account-setting-03"
+      },
+      {
+        "name": "add-circle",
+        "resolved": "add-circle-half-dot",
+        "alias": "add-circle"
+      },
+      {
+        "name": "add-square",
+        "resolved": "add-circle",
+        "alias": "add-square"
+      },
+      {
+        "name": "ai-chat-01",
+        "resolved": "ai-brain-02",
+        "alias": "ai-chat-01"
+      },
+      {
+        "name": "ai-folder-02",
+        "resolved": "ai-cloud-01",
+        "alias": "ai-folder-02"
+      },
+      {
+        "name": "ai-laptop",
+        "resolved": "ai-computer",
+        "alias": "ai-laptop"
+      },
+      {
+        "name": "ai-mail-02",
+        "resolved": "ai-cloud",
+        "alias": "ai-mail-02"
+      },
+      {
+        "name": "ai-security-02",
+        "resolved": "ai-brain-03",
+        "alias": "ai-security-02"
+      },
+      {
+        "name": "airplane-take-off-01",
+        "resolved": "airplane-landing-01",
+        "alias": "airplane-take-off-01"
+      },
+      {
+        "name": "airplane-take-off-02",
+        "resolved": "airplane-landing-02",
+        "alias": "airplane-take-off-02"
+      },
+      {
+        "name": "alert-diamond",
+        "resolved": "alert-circle",
+        "alias": "alert-diamond"
+      },
+      {
+        "name": "alert-square",
+        "resolved": "alert-circle",
+        "alias": "alert-square"
+      },
+      {
+        "name": "align-horizontal-center",
+        "resolved": "2-dollar-02",
+        "alias": "align-horizontal-center"
+      },
+      {
+        "name": "align-horizontal-distribute-start",
+        "resolved": "align-horizontal-distribute-end",
+        "alias": "align-horizontal-distribute-start"
+      },
+      {
+        "name": "align-horizontal-justify-start",
+        "resolved": "align-horizontal-justify-end",
+        "alias": "align-horizontal-justify-start"
+      },
+      {
+        "name": "align-horizontal-space-between",
+        "resolved": "align-horizontal-space-around",
+        "alias": "align-horizontal-space-between"
+      },
+      {
+        "name": "align-left",
+        "resolved": "align-horizontal-center",
+        "alias": "align-left"
+      },
+      {
+        "name": "align-right",
+        "resolved": "align-horizontal-center",
+        "alias": "align-right"
+      },
+      {
+        "name": "alpha-square",
+        "resolved": "alpha-circle",
+        "alias": "alpha-square"
+      },
+      {
+        "name": "approximately-equal-square",
+        "resolved": "approximately-equal-circle",
+        "alias": "approximately-equal-square"
+      },
+      {
+        "name": "arrange-by-letters-z-a",
+        "resolved": "arrange-by-letters-a-z",
+        "alias": "arrange-by-letters-z-a"
+      },
+      {
+        "name": "arrange-by-numbers-nine-1",
+        "resolved": "arrange-by-letters-a-z",
+        "alias": "arrange-by-numbers-nine-1"
+      },
+      {
+        "name": "arrange-by-numbers-one-9",
+        "resolved": "arrange-by-letters-a-z",
+        "alias": "arrange-by-numbers-one-9"
+      },
+      {
+        "name": "arrow-down-05",
+        "resolved": "arrow-down-03",
+        "alias": "arrow-down-05"
+      },
+      {
+        "name": "arrow-right-03",
+        "resolved": "arrow-left-03",
+        "alias": "arrow-right-03"
+      },
+      {
+        "name": "arrow-right-05",
+        "resolved": "arrow-left-05",
+        "alias": "arrow-right-05"
+      },
+      {
+        "name": "arrow-up-05",
+        "resolved": "arrow-up-03",
+        "alias": "arrow-up-05"
+      },
+      {
+        "name": "arrow-up-one-0",
+        "resolved": "arrow-up-narrow-wide",
+        "alias": "arrow-up-one-0"
+      },
+      {
+        "name": "arrow-up-wide-narrow",
+        "resolved": "arrow-up-narrow-wide",
+        "alias": "arrow-up-wide-narrow"
+      },
+      {
+        "name": "arrow-up-z-a",
+        "resolved": "arrow-up-narrow-wide",
+        "alias": "arrow-up-z-a"
+      },
+      {
+        "name": "arrow-up-zero-1",
+        "resolved": "arrow-up-narrow-wide",
+        "alias": "arrow-up-zero-1"
+      },
+      {
+        "name": "artificial-intelligence-02",
+        "resolved": "ai-book",
+        "alias": "artificial-intelligence-02"
+      },
+      {
+        "name": "artificial-intelligence-06",
+        "resolved": "ai-brain-03",
+        "alias": "artificial-intelligence-06"
+      },
+      {
+        "name": "attachment-square",
+        "resolved": "attachment-circle",
+        "alias": "attachment-square"
+      },
+      {
+        "name": "backward-02",
+        "resolved": "2-backward-02",
+        "alias": "backward-02"
+      },
+      {
+        "name": "badge",
+        "resolved": "2-badge-cent",
+        "alias": "badge"
+      },
+      {
+        "name": "bitcoin-receipt",
+        "resolved": "bitcoin-invoice",
+        "alias": "bitcoin-receipt"
+      },
+      {
+        "name": "bitcoin-rectangle",
+        "resolved": "bitcoin-ellipse",
+        "alias": "bitcoin-rectangle"
+      },
+      {
+        "name": "bitcoin-send",
+        "resolved": "bitcoin-receive",
+        "alias": "bitcoin-send"
+      },
+      {
+        "name": "bitcoin-square",
+        "resolved": "bitcoin-circle",
+        "alias": "bitcoin-square"
+      },
+      {
+        "name": "bluetooth-square",
+        "resolved": "bluetooth-circle",
+        "alias": "bluetooth-square"
+      },
+      {
+        "name": "bookmark-add-02",
+        "resolved": "bookmark-add-01",
+        "alias": "bookmark-add-02"
+      },
+      {
+        "name": "bookmark-remove-02",
+        "resolved": "bookmark-remove-01",
+        "alias": "bookmark-remove-02"
+      },
+      {
+        "name": "border-all-01",
+        "resolved": "2-border-all-02",
+        "alias": "border-all-01"
+      },
+      {
+        "name": "border-full",
+        "resolved": "align-box-middle-left",
+        "alias": "border-full"
+      },
+      {
+        "name": "bulb",
+        "resolved": "bulb-charging",
+        "alias": "bulb"
+      },
+      {
+        "name": "c-chart-minimum",
+        "resolved": "c-chart-maximum",
+        "alias": "c-chart-minimum"
+      },
+      {
+        "name": "c-chart-scatter",
+        "resolved": "c-chart-maximum",
+        "alias": "c-chart-scatter"
+      },
+      {
+        "name": "c-chat",
+        "resolved": "c-chat-feedback",
+        "alias": "c-chat"
+      },
+      {
+        "name": "c-code-square",
+        "resolved": "c-code-circle",
+        "alias": "c-code-square"
+      },
+      {
+        "name": "call",
+        "resolved": "2-call-add",
+        "alias": "call"
+      },
+      {
+        "name": "call-02",
+        "resolved": "2-call-add-02",
+        "alias": "call-02"
+      },
+      {
+        "name": "call-spark-02",
+        "resolved": "call-spark-01",
+        "alias": "call-spark-02"
+      },
+      {
+        "name": "car-alert",
+        "resolved": "c-car-alert",
+        "alias": "car-alert"
+      },
+      {
+        "name": "car-time",
+        "resolved": "c-car-time",
+        "alias": "car-time"
+      },
+      {
+        "name": "cashback-euro",
+        "resolved": "cashback-bitcoin",
+        "alias": "cashback-euro"
+      },
+      {
+        "name": "cashback-pound",
+        "resolved": "cashback-bitcoin",
+        "alias": "cashback-pound"
+      },
+      {
+        "name": "center-focus",
+        "resolved": "2-focus-point",
+        "alias": "center-focus"
+      },
+      {
+        "name": "chart-03",
+        "resolved": "bar-chart-horizontal",
+        "alias": "chart-03"
+      },
+      {
+        "name": "chart-bar-big",
+        "resolved": "chart-area",
+        "alias": "chart-bar-big"
+      },
+      {
+        "name": "chart-bar-decreasing",
+        "resolved": "chart-area",
+        "alias": "chart-bar-decreasing"
+      },
+      {
+        "name": "chart-bar-increasing",
+        "resolved": "chart-area",
+        "alias": "chart-bar-increasing"
+      },
+      {
+        "name": "chart-column",
+        "resolved": "chart-area",
+        "alias": "chart-column"
+      },
+      {
+        "name": "chart-column-big",
+        "resolved": "chart-area",
+        "alias": "chart-column-big"
+      },
+      {
+        "name": "chart-column-decreasing",
+        "resolved": "chart-area",
+        "alias": "chart-column-decreasing"
+      },
+      {
+        "name": "chart-evaluation",
+        "resolved": "chart-decrease",
+        "alias": "chart-evaluation"
+      },
+      {
+        "name": "chart-gantt",
+        "resolved": "axis-three-d",
+        "alias": "chart-gantt"
+      },
+      {
+        "name": "chart-high-low",
+        "resolved": "chart-decrease",
+        "alias": "chart-high-low"
+      },
+      {
+        "name": "chart-increase",
+        "resolved": "chart-decrease",
+        "alias": "chart-increase"
+      },
+      {
+        "name": "chart-line-data-01",
+        "resolved": "chart-decrease",
+        "alias": "chart-line-data-01"
+      },
+      {
+        "name": "chart-line-data-03",
+        "resolved": "chart-decrease",
+        "alias": "chart-line-data-03"
+      },
+      {
+        "name": "chart-medium",
+        "resolved": "chart-average",
+        "alias": "chart-medium"
+      },
+      {
+        "name": "chat-feedback-01",
+        "resolved": "chat-01",
+        "alias": "chat-feedback-01"
+      },
+      {
+        "name": "chat-spark-01",
+        "resolved": "c-chat-spark-01",
+        "alias": "chat-spark-01"
+      },
+      {
+        "name": "check-unread-02",
+        "resolved": "check-unread-01",
+        "alias": "check-unread-02"
+      },
+      {
+        "name": "check-unread-03",
+        "resolved": "check-unread-01",
+        "alias": "check-unread-03"
+      },
+      {
+        "name": "check-unread-04",
+        "resolved": "check-unread-01",
+        "alias": "check-unread-04"
+      },
+      {
+        "name": "checkmark-square-02",
+        "resolved": "checkmark-circle-02",
+        "alias": "checkmark-square-02"
+      },
+      {
+        "name": "chrome",
+        "resolved": "2-diagonal-scroll-point-01",
+        "alias": "chrome"
+      },
+      {
+        "name": "circle-arrow-shrink-02",
+        "resolved": "circle-arrow-shrink-01",
+        "alias": "circle-arrow-shrink-02"
+      },
+      {
+        "name": "clock-02",
+        "resolved": "clock-01",
+        "alias": "clock-02"
+      },
+      {
+        "name": "clock-03",
+        "resolved": "clock-01",
+        "alias": "clock-03"
+      },
+      {
+        "name": "code-square",
+        "resolved": "code-circle",
+        "alias": "code-square"
+      },
+      {
+        "name": "coins-02",
+        "resolved": "2-coins-bitcoin",
+        "alias": "coins-02"
+      },
+      {
+        "name": "coins-swap",
+        "resolved": "2-card-exchange-01",
+        "alias": "coins-swap"
+      },
+      {
+        "name": "colors",
+        "resolved": "2-gravity",
+        "alias": "colors"
+      },
+      {
+        "name": "computer-desk-03",
+        "resolved": "computer-desk-02",
+        "alias": "computer-desk-03"
+      },
+      {
+        "name": "computer-dollar",
+        "resolved": "2-computer-programming-01",
+        "alias": "computer-dollar"
+      },
+      {
+        "name": "computer-video-call",
+        "resolved": "computer-dollar",
+        "alias": "computer-video-call"
+      },
+      {
+        "name": "copy-02",
+        "resolved": "copy-01",
+        "alias": "copy-02"
+      },
+      {
+        "name": "coupon-03",
+        "resolved": "2-coupon-percent",
+        "alias": "coupon-03"
+      },
+      {
+        "name": "crown-03",
+        "resolved": "crown-02",
+        "alias": "crown-03"
+      },
+      {
+        "name": "d-discount",
+        "resolved": "c-coupon-percent",
+        "alias": "d-discount"
+      },
+      {
+        "name": "delete-put-back",
+        "resolved": "delete-01",
+        "alias": "delete-put-back"
+      },
+      {
+        "name": "dental-tooth",
+        "resolved": "2-dental-braces",
+        "alias": "dental-tooth"
+      },
+      {
+        "name": "diamond-percent",
+        "resolved": "c-coupon-02",
+        "alias": "diamond-percent"
+      },
+      {
+        "name": "dice-faces-01",
+        "resolved": "d-dice-faces-01",
+        "alias": "dice-faces-01"
+      },
+      {
+        "name": "digital-clock",
+        "resolved": "d-digital-clock",
+        "alias": "digital-clock"
+      },
+      {
+        "name": "direction-right-01",
+        "resolved": "direction-left-01",
+        "alias": "direction-right-01"
+      },
+      {
+        "name": "disc",
+        "resolved": "2-scroll-horizontal",
+        "alias": "disc"
+      },
+      {
+        "name": "discover-square",
+        "resolved": "discover-circle",
+        "alias": "discover-square"
+      },
+      {
+        "name": "distribute-horizontal-right",
+        "resolved": "distribute-horizontal-left",
+        "alias": "distribute-horizontal-right"
+      },
+      {
+        "name": "dollar-receive-02",
+        "resolved": "dollar-receive-01",
+        "alias": "dollar-receive-02"
+      },
+      {
+        "name": "dollar-send-01",
+        "resolved": "dollar-receive-01",
+        "alias": "dollar-send-01"
+      },
+      {
+        "name": "dollar-send-02",
+        "resolved": "dollar-receive-01",
+        "alias": "dollar-send-02"
+      },
+      {
+        "name": "dollar-square",
+        "resolved": "dollar-circle",
+        "alias": "dollar-square"
+      },
+      {
+        "name": "download-square-01",
+        "resolved": "download-circle-01",
+        "alias": "download-square-01"
+      },
+      {
+        "name": "download-square-02",
+        "resolved": "download-circle-02",
+        "alias": "download-square-02"
+      },
+      {
+        "name": "drag-04",
+        "resolved": "drag-02",
+        "alias": "drag-04"
+      },
+      {
+        "name": "eight-square",
+        "resolved": "eight-circle",
+        "alias": "eight-square"
+      },
+      {
+        "name": "energy-rectangle",
+        "resolved": "energy-ellipse",
+        "alias": "energy-rectangle"
+      },
+      {
+        "name": "equal-sign-square",
+        "resolved": "equal-sign-circle",
+        "alias": "equal-sign-square"
+      },
+      {
+        "name": "eraser-01",
+        "resolved": "cancel-circle",
+        "alias": "eraser-01"
+      },
+      {
+        "name": "eraser-add",
+        "resolved": "add-circle",
+        "alias": "eraser-add"
+      },
+      {
+        "name": "ethereum-rectangle",
+        "resolved": "ethereum-ellipse",
+        "alias": "ethereum-rectangle"
+      },
+      {
+        "name": "euro-send",
+        "resolved": "euro-receive",
+        "alias": "euro-send"
+      },
+      {
+        "name": "euro-square",
+        "resolved": "euro-circle",
+        "alias": "euro-square"
+      },
+      {
+        "name": "fahrenheit",
+        "resolved": "celsius",
+        "alias": "fahrenheit"
+      },
+      {
+        "name": "fingerprint-scan",
+        "resolved": "face-id",
+        "alias": "fingerprint-scan"
+      },
+      {
+        "name": "first-bracket-square",
+        "resolved": "first-bracket-circle",
+        "alias": "first-bracket-square"
+      },
+      {
+        "name": "forward-01",
+        "resolved": "backward-01",
+        "alias": "forward-01"
+      },
+      {
+        "name": "forward-02",
+        "resolved": "2-forward-02",
+        "alias": "forward-02"
+      },
+      {
+        "name": "go-forward-10-sec",
+        "resolved": "go-backward-10-sec",
+        "alias": "go-forward-10-sec"
+      },
+      {
+        "name": "go-forward-15-sec",
+        "resolved": "go-backward-15-sec",
+        "alias": "go-forward-15-sec"
+      },
+      {
+        "name": "go-forward-30-sec",
+        "resolved": "go-backward-30-sec",
+        "alias": "go-forward-30-sec"
+      },
+      {
+        "name": "go-forward-60-sec",
+        "resolved": "go-backward-60-sec",
+        "alias": "go-forward-60-sec"
+      },
+      {
+        "name": "go-forward-five-sec",
+        "resolved": "go-backward-five-sec",
+        "alias": "go-forward-five-sec"
+      },
+      {
+        "name": "gps-02",
+        "resolved": "gps-01",
+        "alias": "gps-02"
+      },
+      {
+        "name": "gps-off-02",
+        "resolved": "gps-01",
+        "alias": "gps-off-02"
+      },
+      {
+        "name": "gps-signal-01",
+        "resolved": "gps-disconnected",
+        "alias": "gps-signal-01"
+      },
+      {
+        "name": "gps-signal-02",
+        "resolved": "gps-disconnected",
+        "alias": "gps-signal-02"
+      },
+      {
+        "name": "greater-than-square",
+        "resolved": "greater-than-circle",
+        "alias": "greater-than-square"
+      },
+      {
+        "name": "h-help-square",
+        "resolved": "h-help-circle",
+        "alias": "h-help-square"
+      },
+      {
+        "name": "heading-02",
+        "resolved": "heading-01",
+        "alias": "heading-02"
+      },
+      {
+        "name": "heading-03",
+        "resolved": "heading-01",
+        "alias": "heading-03"
+      },
+      {
+        "name": "heading-04",
+        "resolved": "heading-01",
+        "alias": "heading-04"
+      },
+      {
+        "name": "heading-05",
+        "resolved": "heading-01",
+        "alias": "heading-05"
+      },
+      {
+        "name": "heading-06",
+        "resolved": "heading-01",
+        "alias": "heading-06"
+      },
+      {
+        "name": "home-06",
+        "resolved": "home-05",
+        "alias": "home-06"
+      },
+      {
+        "name": "i-information-diamond",
+        "resolved": "i-information-circle",
+        "alias": "i-information-diamond"
+      },
+      {
+        "name": "i-information-square",
+        "resolved": "i-information-circle",
+        "alias": "i-information-square"
+      },
+      {
+        "name": "inequality-square-01",
+        "resolved": "inequality-circle-01",
+        "alias": "inequality-square-01"
+      },
+      {
+        "name": "infinity-02",
+        "resolved": "absolute",
+        "alias": "infinity-02"
+      },
+      {
+        "name": "infinity-square",
+        "resolved": "infinity-circle",
+        "alias": "infinity-square"
+      },
+      {
+        "name": "information-square",
+        "resolved": "information-diamond",
+        "alias": "information-square"
+      },
+      {
+        "name": "keyframe-align-horizontal",
+        "resolved": "keyframe-align-center",
+        "alias": "keyframe-align-horizontal"
+      },
+      {
+        "name": "keyframe-align-vertical",
+        "resolved": "keyframe-align-center",
+        "alias": "keyframe-align-vertical"
+      },
+      {
+        "name": "keyframe-remove",
+        "resolved": "keyframe-add",
+        "alias": "keyframe-remove"
+      },
+      {
+        "name": "knife-01",
+        "resolved": "k-knife-01",
+        "alias": "knife-01"
+      },
+      {
+        "name": "language-square",
+        "resolved": "language-circle",
+        "alias": "language-square"
+      },
+      {
+        "name": "layout-05",
+        "resolved": "layout-01",
+        "alias": "layout-05"
+      },
+      {
+        "name": "leaving-geo-fence",
+        "resolved": "entering-geo-fence",
+        "alias": "leaving-geo-fence"
+      },
+      {
+        "name": "left-to-right-block-quote",
+        "resolved": "2-arrow-vertical",
+        "alias": "left-to-right-block-quote"
+      },
+      {
+        "name": "less-than-square",
+        "resolved": "less-than-circle",
+        "alias": "less-than-square"
+      },
+      {
+        "name": "link-square-01",
+        "resolved": "link-circle",
+        "alias": "link-square-01"
+      },
+      {
+        "name": "link-square-02",
+        "resolved": "link-circle-02",
+        "alias": "link-square-02"
+      },
+      {
+        "name": "location-06",
+        "resolved": "location-01",
+        "alias": "location-06"
+      },
+      {
+        "name": "logout-circle-02",
+        "resolved": "login-circle-02",
+        "alias": "logout-circle-02"
+      },
+      {
+        "name": "logout-square-01",
+        "resolved": "login-square-01",
+        "alias": "logout-square-01"
+      },
+      {
+        "name": "m-maps-square-01",
+        "resolved": "m-maps-circle-01",
+        "alias": "m-maps-square-01"
+      },
+      {
+        "name": "m-maps-square-02",
+        "resolved": "m-maps-circle-02",
+        "alias": "m-maps-square-02"
+      },
+      {
+        "name": "m-more-horizontal-square-02",
+        "resolved": "m-more-horizontal-circle-02",
+        "alias": "m-more-horizontal-square-02"
+      },
+      {
+        "name": "mail-setting-01",
+        "resolved": "folder-management",
+        "alias": "mail-setting-01"
+      },
+      {
+        "name": "mail-unlock-01",
+        "resolved": "mail-lock-01",
+        "alias": "mail-unlock-01"
+      },
+      {
+        "name": "map-pinpoint-01",
+        "resolved": "m-map-pinpoint-01",
+        "alias": "map-pinpoint-01"
+      },
+      {
+        "name": "maps-location-02",
+        "resolved": "m-maps-location-02",
+        "alias": "maps-location-02"
+      },
+      {
+        "name": "matrix",
+        "resolved": "absolute",
+        "alias": "matrix"
+      },
+      {
+        "name": "maximize-04",
+        "resolved": "maximize-03",
+        "alias": "maximize-04"
+      },
+      {
+        "name": "meal-scan",
+        "resolved": "barcode-scan",
+        "alias": "meal-scan"
+      },
+      {
+        "name": "medal-04",
+        "resolved": "2-medal-02",
+        "alias": "medal-04"
+      },
+      {
+        "name": "menu-06",
+        "resolved": "menu-01",
+        "alias": "menu-06"
+      },
+      {
+        "name": "minus-plus-square-01",
+        "resolved": "minus-plus-circle-01",
+        "alias": "minus-plus-square-01"
+      },
+      {
+        "name": "minus-sign-square",
+        "resolved": "minus-sign-circle",
+        "alias": "minus-sign-square"
+      },
+      {
+        "name": "mollie",
+        "resolved": "2-mollie",
+        "alias": "mollie"
+      },
+      {
+        "name": "mortarboard-02",
+        "resolved": "mortarboard-01",
+        "alias": "mortarboard-02"
+      },
+      {
+        "name": "mouse-09",
+        "resolved": "mouse-01",
+        "alias": "mouse-09"
+      },
+      {
+        "name": "mouse-scroll-02",
+        "resolved": "mouse-scroll-01",
+        "alias": "mouse-scroll-02"
+      },
+      {
+        "name": "new-twitter-rectangle",
+        "resolved": "new-twitter-ellipse",
+        "alias": "new-twitter-rectangle"
+      },
+      {
+        "name": "nine-square",
+        "resolved": "nine-circle",
+        "alias": "nine-square"
+      },
+      {
+        "name": "not-equal-sign-square",
+        "resolved": "not-equal-sign-circle",
+        "alias": "not-equal-sign-square"
+      },
+      {
+        "name": "parking-area-square",
+        "resolved": "parking-area-circle",
+        "alias": "parking-area-square"
+      },
+      {
+        "name": "pause",
+        "resolved": "2-pause",
+        "alias": "pause"
+      },
+      {
+        "name": "pc-case",
+        "resolved": "p-pc-case",
+        "alias": "pc-case"
+      },
+      {
+        "name": "percent-square",
+        "resolved": "percent-circle",
+        "alias": "percent-square"
+      },
+      {
+        "name": "perspective",
+        "resolved": "2-calculator",
+        "alias": "perspective"
+      },
+      {
+        "name": "pi-square",
+        "resolved": "pi-circle",
+        "alias": "pi-square"
+      },
+      {
+        "name": "picture-in-picture-on",
+        "resolved": "picture-in-picture-exit",
+        "alias": "picture-in-picture-on"
+      },
+      {
+        "name": "plus-minus-02",
+        "resolved": "minus-plus-02",
+        "alias": "plus-minus-02"
+      },
+      {
+        "name": "plus-minus-square-01",
+        "resolved": "plus-minus-circle-01",
+        "alias": "plus-minus-square-01"
+      },
+      {
+        "name": "plus-sign",
+        "resolved": "add-01",
+        "alias": "plus-sign"
+      },
+      {
+        "name": "plus-sign-circle",
+        "resolved": "add-circle",
+        "alias": "plus-sign-circle"
+      },
+      {
+        "name": "plus-sign-square",
+        "resolved": "add-circle",
+        "alias": "plus-sign-square"
+      },
+      {
+        "name": "pointing-left-02",
+        "resolved": "pointing-left-01",
+        "alias": "pointing-left-02"
+      },
+      {
+        "name": "pointing-left-03",
+        "resolved": "pointing-left-01",
+        "alias": "pointing-left-03"
+      },
+      {
+        "name": "pointing-left-04",
+        "resolved": "pointing-left-01",
+        "alias": "pointing-left-04"
+      },
+      {
+        "name": "pointing-left-05",
+        "resolved": "pointing-left-01",
+        "alias": "pointing-left-05"
+      },
+      {
+        "name": "pointing-left-06",
+        "resolved": "pointing-left-01",
+        "alias": "pointing-left-06"
+      },
+      {
+        "name": "pointing-left-07",
+        "resolved": "pointing-left-01",
+        "alias": "pointing-left-07"
+      },
+      {
+        "name": "pointing-right-02",
+        "resolved": "pointing-right-01",
+        "alias": "pointing-right-02"
+      },
+      {
+        "name": "pointing-right-03",
+        "resolved": "pointing-right-01",
+        "alias": "pointing-right-03"
+      },
+      {
+        "name": "pointing-right-04",
+        "resolved": "pointing-right-01",
+        "alias": "pointing-right-04"
+      },
+      {
+        "name": "pointing-right-05",
+        "resolved": "pointing-right-01",
+        "alias": "pointing-right-05"
+      },
+      {
+        "name": "pointing-right-06",
+        "resolved": "pointing-right-01",
+        "alias": "pointing-right-06"
+      },
+      {
+        "name": "pointing-right-07",
+        "resolved": "pointing-right-01",
+        "alias": "pointing-right-07"
+      },
+      {
+        "name": "previous",
+        "resolved": "next",
+        "alias": "previous"
+      },
+      {
+        "name": "progress-01",
+        "resolved": "2-progress-02",
+        "alias": "progress-01"
+      },
+      {
+        "name": "qr-code-scan",
+        "resolved": "barcode-scan",
+        "alias": "qr-code-scan"
+      },
+      {
+        "name": "quote-up-square",
+        "resolved": "quote-up-circle",
+        "alias": "quote-up-square"
+      },
+      {
+        "name": "r-riyal",
+        "resolved": "r-riyal-rectangle",
+        "alias": "r-riyal"
+      },
+      {
+        "name": "rain-drop",
+        "resolved": "2-blood-pressure",
+        "alias": "rain-drop"
+      },
+      {
+        "name": "ramadhan-01",
+        "resolved": "eid-mubarak",
+        "alias": "ramadhan-01"
+      },
+      {
+        "name": "remove-square",
+        "resolved": "remove-circle",
+        "alias": "remove-square"
+      },
+      {
+        "name": "right-to-left-block-quote",
+        "resolved": "left-to-right-block-quote",
+        "alias": "right-to-left-block-quote"
+      },
+      {
+        "name": "right-to-left-list-bullet",
+        "resolved": "left-to-right-list-bullet",
+        "alias": "right-to-left-list-bullet"
+      },
+      {
+        "name": "right-to-left-list-dash",
+        "resolved": "left-to-right-list-dash",
+        "alias": "right-to-left-list-dash"
+      },
+      {
+        "name": "riyal",
+        "resolved": "riyal-rectangle",
+        "alias": "riyal"
+      },
+      {
+        "name": "root-third-bracket",
+        "resolved": "2-code",
+        "alias": "root-third-bracket"
+      },
+      {
+        "name": "rotate-left-04",
+        "resolved": "rotate-left-03",
+        "alias": "rotate-left-04"
+      },
+      {
+        "name": "rotate-left-05",
+        "resolved": "rotate-left-03",
+        "alias": "rotate-left-05"
+      },
+      {
+        "name": "rotate-left-06",
+        "resolved": "rotate-left-03",
+        "alias": "rotate-left-06"
+      },
+      {
+        "name": "rotate-right-04",
+        "resolved": "rotate-right-03",
+        "alias": "rotate-right-04"
+      },
+      {
+        "name": "rotate-right-05",
+        "resolved": "rotate-right-03",
+        "alias": "rotate-right-05"
+      },
+      {
+        "name": "rotate-right-06",
+        "resolved": "rotate-right-03",
+        "alias": "rotate-right-06"
+      },
+      {
+        "name": "rub-el-hizb",
+        "resolved": "2-scroll-vertical",
+        "alias": "rub-el-hizb"
+      },
+      {
+        "name": "s-spam",
+        "resolved": "a-alert-circle",
+        "alias": "s-spam"
+      },
+      {
+        "name": "safety-pin-02",
+        "resolved": "safety-pin-01",
+        "alias": "safety-pin-02"
+      },
+      {
+        "name": "security-warning",
+        "resolved": "s-security-warning",
+        "alias": "security-warning"
+      },
+      {
+        "name": "setting-error-04",
+        "resolved": "setting-error-03",
+        "alias": "setting-error-04"
+      },
+      {
+        "name": "settings-02",
+        "resolved": "settings-01",
+        "alias": "settings-02"
+      },
+      {
+        "name": "settings-03",
+        "resolved": "settings-01",
+        "alias": "settings-03"
+      },
+      {
+        "name": "settings-error-02",
+        "resolved": "settings-error-01",
+        "alias": "settings-error-02"
+      },
+      {
+        "name": "setup-02",
+        "resolved": "setup-01",
+        "alias": "setup-02"
+      },
+      {
+        "name": "shield-01",
+        "resolved": "2-blocked",
+        "alias": "shield-01"
+      },
+      {
+        "name": "sorting-02",
+        "resolved": "sorting-01",
+        "alias": "sorting-02"
+      },
+      {
+        "name": "sorting-03",
+        "resolved": "sorting-01",
+        "alias": "sorting-03"
+      },
+      {
+        "name": "sorting-nine-1",
+        "resolved": "sorting-a-z-02",
+        "alias": "sorting-nine-1"
+      },
+      {
+        "name": "sorting-one-9",
+        "resolved": "sorting-a-z-02",
+        "alias": "sorting-one-9"
+      },
+      {
+        "name": "sorting-z-a-01",
+        "resolved": "sorting-a-z-02",
+        "alias": "sorting-z-a-01"
+      },
+      {
+        "name": "square-arrow-data-transfer-diagonal",
+        "resolved": "circle-arrow-data-transfer-diagonal",
+        "alias": "square-arrow-data-transfer-diagonal"
+      },
+      {
+        "name": "square-arrow-down-01",
+        "resolved": "circle-arrow-down-01",
+        "alias": "square-arrow-down-01"
+      },
+      {
+        "name": "square-arrow-down-double",
+        "resolved": "circle-arrow-down-double",
+        "alias": "square-arrow-down-double"
+      },
+      {
+        "name": "square-arrow-down-left",
+        "resolved": "circle-arrow-down-left",
+        "alias": "square-arrow-down-left"
+      },
+      {
+        "name": "square-arrow-expand-01",
+        "resolved": "circle-arrow-expand-01",
+        "alias": "square-arrow-expand-01"
+      },
+      {
+        "name": "square-arrow-expand-02",
+        "resolved": "circle-arrow-expand-02",
+        "alias": "square-arrow-expand-02"
+      },
+      {
+        "name": "square-arrow-left-01",
+        "resolved": "circle-arrow-left-01",
+        "alias": "square-arrow-left-01"
+      },
+      {
+        "name": "square-arrow-left-02",
+        "resolved": "circle-arrow-left-02",
+        "alias": "square-arrow-left-02"
+      },
+      {
+        "name": "square-arrow-left-double",
+        "resolved": "circle-arrow-left-double",
+        "alias": "square-arrow-left-double"
+      },
+      {
+        "name": "square-arrow-left-right",
+        "resolved": "circle-arrow-left-right",
+        "alias": "square-arrow-left-right"
+      },
+      {
+        "name": "square-arrow-right-01",
+        "resolved": "circle-arrow-right-01",
+        "alias": "square-arrow-right-01"
+      },
+      {
+        "name": "square-arrow-right-02",
+        "resolved": "circle-arrow-right-02",
+        "alias": "square-arrow-right-02"
+      },
+      {
+        "name": "square-arrow-right-double",
+        "resolved": "circle-arrow-right-double",
+        "alias": "square-arrow-right-double"
+      },
+      {
+        "name": "square-arrow-shrink-02",
+        "resolved": "circle-arrow-shrink-01",
+        "alias": "square-arrow-shrink-02"
+      },
+      {
+        "name": "square-arrow-up-01",
+        "resolved": "circle-arrow-up-01",
+        "alias": "square-arrow-up-01"
+      },
+      {
+        "name": "square-arrow-up-02",
+        "resolved": "circle-arrow-up-02",
+        "alias": "square-arrow-up-02"
+      },
+      {
+        "name": "square-arrow-up-double",
+        "resolved": "circle-arrow-up-double",
+        "alias": "square-arrow-up-double"
+      },
+      {
+        "name": "square-arrow-up-down",
+        "resolved": "circle-arrow-up-down",
+        "alias": "square-arrow-up-down"
+      },
+      {
+        "name": "square-arrow-up-left",
+        "resolved": "circle-arrow-up-left",
+        "alias": "square-arrow-up-left"
+      },
+      {
+        "name": "square-arrow-up-right",
+        "resolved": "circle-arrow-up-right",
+        "alias": "square-arrow-up-right"
+      },
+      {
+        "name": "star-square",
+        "resolved": "star-circle",
+        "alias": "star-square"
+      },
+      {
+        "name": "stroke-outside",
+        "resolved": "camera-lens",
+        "alias": "stroke-outside"
+      },
+      {
+        "name": "stroke-right",
+        "resolved": "left-to-right-block-quote",
+        "alias": "stroke-right"
+      },
+      {
+        "name": "summation-02",
+        "resolved": "root-02",
+        "alias": "summation-02"
+      },
+      {
+        "name": "swipe-down-02",
+        "resolved": "swipe-down-01",
+        "alias": "swipe-down-02"
+      },
+      {
+        "name": "swipe-down-03",
+        "resolved": "swipe-down-01",
+        "alias": "swipe-down-03"
+      },
+      {
+        "name": "swipe-down-04",
+        "resolved": "swipe-down-01",
+        "alias": "swipe-down-04"
+      },
+      {
+        "name": "swipe-down-06",
+        "resolved": "swipe-down-01",
+        "alias": "swipe-down-06"
+      },
+      {
+        "name": "swipe-left-02",
+        "resolved": "swipe-left-01",
+        "alias": "swipe-left-02"
+      },
+      {
+        "name": "swipe-left-03",
+        "resolved": "pointing-left-01",
+        "alias": "swipe-left-03"
+      },
+      {
+        "name": "swipe-left-04",
+        "resolved": "swipe-left-01",
+        "alias": "swipe-left-04"
+      },
+      {
+        "name": "swipe-left-06",
+        "resolved": "pointing-left-01",
+        "alias": "swipe-left-06"
+      },
+      {
+        "name": "swipe-left-07",
+        "resolved": "pointing-left-08",
+        "alias": "swipe-left-07"
+      },
+      {
+        "name": "swipe-left-09",
+        "resolved": "swipe-left-08",
+        "alias": "swipe-left-09"
+      },
+      {
+        "name": "swipe-right-01",
+        "resolved": "pointing-right-01",
+        "alias": "swipe-right-01"
+      },
+      {
+        "name": "swipe-right-02",
+        "resolved": "pointing-right-01",
+        "alias": "swipe-right-02"
+      },
+      {
+        "name": "swipe-right-03",
+        "resolved": "pointing-right-01",
+        "alias": "swipe-right-03"
+      },
+      {
+        "name": "swipe-right-04",
+        "resolved": "pointing-right-01",
+        "alias": "swipe-right-04"
+      },
+      {
+        "name": "swipe-right-06",
+        "resolved": "pointing-right-01",
+        "alias": "swipe-right-06"
+      },
+      {
+        "name": "swipe-right-07",
+        "resolved": "pointing-right-08",
+        "alias": "swipe-right-07"
+      },
+      {
+        "name": "swipe-right-08",
+        "resolved": "pointing-right-08",
+        "alias": "swipe-right-08"
+      },
+      {
+        "name": "swipe-right-09",
+        "resolved": "pointing-right-08",
+        "alias": "swipe-right-09"
+      },
+      {
+        "name": "swipe-up-02",
+        "resolved": "swipe-up-01",
+        "alias": "swipe-up-02"
+      },
+      {
+        "name": "swipe-up-03",
+        "resolved": "swipe-up-01",
+        "alias": "swipe-up-03"
+      },
+      {
+        "name": "swipe-up-04",
+        "resolved": "swipe-up-01",
+        "alias": "swipe-up-04"
+      },
+      {
+        "name": "swipe-up-06",
+        "resolved": "swipe-up-01",
+        "alias": "swipe-up-06"
+      },
+      {
+        "name": "swiss-franc",
+        "resolved": "layout-align-bottom",
+        "alias": "swiss-franc"
+      },
+      {
+        "name": "system-update-02",
+        "resolved": "system-update-01",
+        "alias": "system-update-02"
+      },
+      {
+        "name": "t-tablet-01",
+        "resolved": "s-smart-phone-01",
+        "alias": "t-tablet-01"
+      },
+      {
+        "name": "tally-1",
+        "resolved": "2-tally-2",
+        "alias": "tally-1"
+      },
+      {
+        "name": "tally-3",
+        "resolved": "2-tally-4",
+        "alias": "tally-3"
+      },
+      {
+        "name": "tally-4",
+        "resolved": "tally-3",
+        "alias": "tally-4"
+      },
+      {
+        "name": "tap-04",
+        "resolved": "tap-03",
+        "alias": "tap-04"
+      },
+      {
+        "name": "tap-05",
+        "resolved": "tap-03",
+        "alias": "tap-05"
+      },
+      {
+        "name": "tap-06",
+        "resolved": "tap-02",
+        "alias": "tap-06"
+      },
+      {
+        "name": "target-dollar",
+        "resolved": "target-03",
+        "alias": "target-dollar"
+      },
+      {
+        "name": "text-align-left",
+        "resolved": "text-align-center",
+        "alias": "text-align-left"
+      },
+      {
+        "name": "text-align-left-01",
+        "resolved": "stroke-left",
+        "alias": "text-align-left-01"
+      },
+      {
+        "name": "text-align-right",
+        "resolved": "text-align-center",
+        "alias": "text-align-right"
+      },
+      {
+        "name": "text-align-right-01",
+        "resolved": "left-to-right-block-quote",
+        "alias": "text-align-right-01"
+      },
+      {
+        "name": "text-centerline-middle",
+        "resolved": "text-centerline-left",
+        "alias": "text-centerline-middle"
+      },
+      {
+        "name": "text-centerline-right",
+        "resolved": "text-centerline-left",
+        "alias": "text-centerline-right"
+      },
+      {
+        "name": "text-indent-less",
+        "resolved": "left-to-right-block-quote",
+        "alias": "text-indent-less"
+      },
+      {
+        "name": "text-indent-more",
+        "resolved": "left-to-right-block-quote",
+        "alias": "text-indent-more"
+      },
+      {
+        "name": "text-square",
+        "resolved": "text-circle",
+        "alias": "text-square"
+      },
+      {
+        "name": "text-strikethrough",
+        "resolved": "2-menu-01",
+        "alias": "text-strikethrough"
+      },
+      {
+        "name": "text-underline",
+        "resolved": "text-color",
+        "alias": "text-underline"
+      },
+      {
+        "name": "threads-rectangle",
+        "resolved": "threads-ellipse",
+        "alias": "threads-rectangle"
+      },
+      {
+        "name": "time-02",
+        "resolved": "time-01",
+        "alias": "time-02"
+      },
+      {
+        "name": "time-setting-02",
+        "resolved": "time-setting-01",
+        "alias": "time-setting-02"
+      },
+      {
+        "name": "time-setting-03",
+        "resolved": "time-setting-01",
+        "alias": "time-setting-03"
+      },
+      {
+        "name": "toggle-on",
+        "resolved": "git-commit",
+        "alias": "toggle-on"
+      },
+      {
+        "name": "token-square",
+        "resolved": "token-circle",
+        "alias": "token-square"
+      },
+      {
+        "name": "touch-01",
+        "resolved": "2-drag-01",
+        "alias": "touch-01"
+      },
+      {
+        "name": "touch-02",
+        "resolved": "2-swipe-down-02",
+        "alias": "touch-02"
+      },
+      {
+        "name": "touch-08",
+        "resolved": "tap-08",
+        "alias": "touch-08"
+      },
+      {
+        "name": "touch-interaction-02",
+        "resolved": "touch-interaction-01",
+        "alias": "touch-interaction-02"
+      },
+      {
+        "name": "touch-locked-02",
+        "resolved": "touch-locked-01",
+        "alias": "touch-locked-02"
+      },
+      {
+        "name": "touch-locked-03",
+        "resolved": "touch-locked-01",
+        "alias": "touch-locked-03"
+      },
+      {
+        "name": "touch-locked-04",
+        "resolved": "touch-locked-01",
+        "alias": "touch-locked-04"
+      },
+      {
+        "name": "touchpad-02",
+        "resolved": "touchpad-01",
+        "alias": "touchpad-02"
+      },
+      {
+        "name": "tree-02",
+        "resolved": "tree-01",
+        "alias": "tree-02"
+      },
+      {
+        "name": "tree-03",
+        "resolved": "tree-01",
+        "alias": "tree-03"
+      },
+      {
+        "name": "tree-04",
+        "resolved": "tree-01",
+        "alias": "tree-04"
+      },
+      {
+        "name": "tree-05",
+        "resolved": "tree-01",
+        "alias": "tree-05"
+      },
+      {
+        "name": "tree-06",
+        "resolved": "tree-01",
+        "alias": "tree-06"
+      },
+      {
+        "name": "umbrella",
+        "resolved": "umbrella-dollar",
+        "alias": "umbrella"
+      },
+      {
+        "name": "unfold-more-down",
+        "resolved": "2-unfold-more-up",
+        "alias": "unfold-more-down"
+      },
+      {
+        "name": "unfold-more-up",
+        "resolved": "2-unfold-more-down",
+        "alias": "unfold-more-up"
+      },
+      {
+        "name": "unlink-01",
+        "resolved": "link-01",
+        "alias": "unlink-01"
+      },
+      {
+        "name": "unlink-02",
+        "resolved": "link-02",
+        "alias": "unlink-02"
+      },
+      {
+        "name": "unlink-05",
+        "resolved": "link-05",
+        "alias": "unlink-05"
+      },
+      {
+        "name": "upload-01",
+        "resolved": "download-01",
+        "alias": "upload-01"
+      },
+      {
+        "name": "upload-02",
+        "resolved": "download-04",
+        "alias": "upload-02"
+      },
+      {
+        "name": "upload-square-02",
+        "resolved": "upload-circle-02",
+        "alias": "upload-square-02"
+      },
+      {
+        "name": "user-time-02",
+        "resolved": "user-time-01",
+        "alias": "user-time-02"
+      },
+      {
+        "name": "user-time-03",
+        "resolved": "user-time-01",
+        "alias": "user-time-03"
+      },
+      {
+        "name": "volume-mute-01",
+        "resolved": "2-volume-high",
+        "alias": "volume-mute-01"
+      },
+      {
+        "name": "w-wifi-location",
+        "resolved": "w-wifi-circle",
+        "alias": "w-wifi-location"
+      },
+      {
+        "name": "w-wifi-square",
+        "resolved": "w-wifi-circle",
+        "alias": "w-wifi-square"
+      },
+      {
+        "name": "washing-machine",
+        "resolved": "w-washing-machine",
+        "alias": "washing-machine"
+      },
+      {
+        "name": "wellness",
+        "resolved": "2-give-blood",
+        "alias": "wellness"
+      },
+      {
+        "name": "wifi-square",
+        "resolved": "wifi-circle",
+        "alias": "wifi-square"
+      },
+      {
+        "name": "woman",
+        "resolved": "man",
+        "alias": "woman"
+      },
+      {
+        "name": "workout-squats",
+        "resolved": "workout-sport",
+        "alias": "workout-squats"
+      },
+      {
+        "name": "workout-stretching",
+        "resolved": "workout-kicking",
+        "alias": "workout-stretching"
+      },
+      {
+        "name": "wudu",
+        "resolved": "wellness",
+        "alias": "wudu"
+      },
+      {
+        "name": "yen-square",
+        "resolved": "yen-circle",
+        "alias": "yen-square"
+      },
+      {
+        "name": "zakat",
+        "resolved": "wellness",
+        "alias": "zakat"
+      },
+      {
+        "name": "zoom-square",
+        "resolved": "zoom-circle",
+        "alias": "zoom-square"
+      }
+    ],
+    "deduped_secondary": [
+      {
+        "name": "2-a-alert-02",
+        "resolved": "2-a-alert-01",
+        "alias": "2-a-alert-02"
+      },
+      {
+        "name": "2-activity-circle",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-activity-circle"
+      },
+      {
+        "name": "2-add-square",
+        "resolved": "2-abacus",
+        "alias": "2-add-square"
+      },
+      {
+        "name": "2-adobe-after-effect",
+        "resolved": "2-abacus",
+        "alias": "2-adobe-after-effect"
+      },
+      {
+        "name": "2-adobe-illustrator",
+        "resolved": "2-abacus",
+        "alias": "2-adobe-illustrator"
+      },
+      {
+        "name": "2-adobe-indesign",
+        "resolved": "2-abacus",
+        "alias": "2-adobe-indesign"
+      },
+      {
+        "name": "2-adobe-photoshop",
+        "resolved": "2-abacus",
+        "alias": "2-adobe-photoshop"
+      },
+      {
+        "name": "2-adobe-premier",
+        "resolved": "2-abacus",
+        "alias": "2-adobe-premier"
+      },
+      {
+        "name": "2-adobe-xd",
+        "resolved": "2-abacus",
+        "alias": "2-adobe-xd"
+      },
+      {
+        "name": "2-ai-brain-03",
+        "resolved": "2-ai-brain-02",
+        "alias": "2-ai-brain-03"
+      },
+      {
+        "name": "2-ai-brain-04",
+        "resolved": "2-ai-brain-01",
+        "alias": "2-ai-brain-04"
+      },
+      {
+        "name": "2-ai-chat-02",
+        "resolved": "2-ai-chat-01",
+        "alias": "2-ai-chat-02"
+      },
+      {
+        "name": "2-ai-innovation-03",
+        "resolved": "2-ai-innovation-02",
+        "alias": "2-ai-innovation-03"
+      },
+      {
+        "name": "2-ai-security-02",
+        "resolved": "2-ai-security-01",
+        "alias": "2-ai-security-02"
+      },
+      {
+        "name": "2-alert-02",
+        "resolved": "2-alert-01",
+        "alias": "2-alert-02"
+      },
+      {
+        "name": "2-align-box-bottom-right",
+        "resolved": "2-align-box-bottom-left",
+        "alias": "2-align-box-bottom-right"
+      },
+      {
+        "name": "2-align-box-middle-center",
+        "resolved": "2-align-box-bottom-left",
+        "alias": "2-align-box-middle-center"
+      },
+      {
+        "name": "2-align-box-middle-left",
+        "resolved": "2-align-box-bottom-left",
+        "alias": "2-align-box-middle-left"
+      },
+      {
+        "name": "2-align-box-middle-right",
+        "resolved": "2-align-box-bottom-left",
+        "alias": "2-align-box-middle-right"
+      },
+      {
+        "name": "2-align-box-top-center",
+        "resolved": "2-align-box-bottom-left",
+        "alias": "2-align-box-top-center"
+      },
+      {
+        "name": "2-align-box-top-left",
+        "resolved": "2-align-box-bottom-left",
+        "alias": "2-align-box-top-left"
+      },
+      {
+        "name": "2-align-box-top-right",
+        "resolved": "2-align-box-bottom-left",
+        "alias": "2-align-box-top-right"
+      },
+      {
+        "name": "2-align-vertical-distribute-end",
+        "resolved": "2-align-vertical-distribute-center",
+        "alias": "2-align-vertical-distribute-end"
+      },
+      {
+        "name": "2-align-vertical-distribute-start",
+        "resolved": "2-align-vertical-distribute-center",
+        "alias": "2-align-vertical-distribute-start"
+      },
+      {
+        "name": "2-align-vertical-justify-start",
+        "resolved": "2-align-vertical-distribute-center",
+        "alias": "2-align-vertical-justify-start"
+      },
+      {
+        "name": "2-align-vertical-space-between",
+        "resolved": "2-align-vertical-distribute-center",
+        "alias": "2-align-vertical-space-between"
+      },
+      {
+        "name": "2-alpha-square",
+        "resolved": "2-abacus",
+        "alias": "2-alpha-square"
+      },
+      {
+        "name": "2-analytics-01",
+        "resolved": "2-abacus",
+        "alias": "2-analytics-01"
+      },
+      {
+        "name": "2-analytics-down",
+        "resolved": "2-abacus",
+        "alias": "2-analytics-down"
+      },
+      {
+        "name": "2-analytics-up",
+        "resolved": "2-abacus",
+        "alias": "2-analytics-up"
+      },
+      {
+        "name": "2-api",
+        "resolved": "2-abacus",
+        "alias": "2-api"
+      },
+      {
+        "name": "2-app-store",
+        "resolved": "2-abacus",
+        "alias": "2-app-store"
+      },
+      {
+        "name": "2-apple-reminder",
+        "resolved": "2-abacus",
+        "alias": "2-apple-reminder"
+      },
+      {
+        "name": "2-approximately-equal-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-approximately-equal-circle"
+      },
+      {
+        "name": "2-approximately-equal-square",
+        "resolved": "2-abacus",
+        "alias": "2-approximately-equal-square"
+      },
+      {
+        "name": "2-archive-restore",
+        "resolved": "2-archive-03",
+        "alias": "2-archive-restore"
+      },
+      {
+        "name": "2-audio-book-02",
+        "resolved": "2-audio-book-01",
+        "alias": "2-audio-book-02"
+      },
+      {
+        "name": "2-audio-book-03",
+        "resolved": "2-audio-book-01",
+        "alias": "2-audio-book-03"
+      },
+      {
+        "name": "2-automotive-battery-02",
+        "resolved": "2-automotive-battery-01",
+        "alias": "2-automotive-battery-02"
+      },
+      {
+        "name": "2-b-bacteria",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-b-bacteria"
+      },
+      {
+        "name": "2-b-bowling-ball",
+        "resolved": "2-alpha-circle",
+        "alias": "2-b-bowling-ball"
+      },
+      {
+        "name": "2-b-bubble-chat",
+        "resolved": "2-b-bubble-chat-preview",
+        "alias": "2-b-bubble-chat"
+      },
+      {
+        "name": "2-b-bubble-chat-question",
+        "resolved": "2-b-bubble-chat",
+        "alias": "2-b-bubble-chat-question"
+      },
+      {
+        "name": "2-baby-01",
+        "resolved": "2-alpha-circle",
+        "alias": "2-baby-01"
+      },
+      {
+        "name": "2-bacteria",
+        "resolved": "2-alpha-circle",
+        "alias": "2-bacteria"
+      },
+      {
+        "name": "2-badge-dollar-sign",
+        "resolved": "2-badge-cent",
+        "alias": "2-badge-dollar-sign"
+      },
+      {
+        "name": "2-badge-euro",
+        "resolved": "2-badge-cent",
+        "alias": "2-badge-euro"
+      },
+      {
+        "name": "2-badge-indian-rupee",
+        "resolved": "2-badge-alert",
+        "alias": "2-badge-indian-rupee"
+      },
+      {
+        "name": "2-badge-info",
+        "resolved": "2-badge-cent",
+        "alias": "2-badge-info"
+      },
+      {
+        "name": "2-badge-japanese-yen",
+        "resolved": "2-badge-alert",
+        "alias": "2-badge-japanese-yen"
+      },
+      {
+        "name": "2-badge-pound-sterling",
+        "resolved": "2-badge-alert",
+        "alias": "2-badge-pound-sterling"
+      },
+      {
+        "name": "2-badge-russian-ruble",
+        "resolved": "2-badge-alert",
+        "alias": "2-badge-russian-ruble"
+      },
+      {
+        "name": "2-badge-swiss-franc",
+        "resolved": "2-badge-alert",
+        "alias": "2-badge-swiss-franc"
+      },
+      {
+        "name": "2-badge-turkish-lira",
+        "resolved": "2-badge-alert",
+        "alias": "2-badge-turkish-lira"
+      },
+      {
+        "name": "2-basketball-02",
+        "resolved": "2-baseball",
+        "alias": "2-basketball-02"
+      },
+      {
+        "name": "2-battery-full",
+        "resolved": "2-battery-charging-01",
+        "alias": "2-battery-full"
+      },
+      {
+        "name": "2-battery-low",
+        "resolved": "2-battery-charging-01",
+        "alias": "2-battery-low"
+      },
+      {
+        "name": "2-battery-medium-01",
+        "resolved": "2-battery-charging-01",
+        "alias": "2-battery-medium-01"
+      },
+      {
+        "name": "2-battery-medium-02",
+        "resolved": "2-battery-charging-01",
+        "alias": "2-battery-medium-02"
+      },
+      {
+        "name": "2-battery-warning",
+        "resolved": "2-battery-plus",
+        "alias": "2-battery-warning"
+      },
+      {
+        "name": "2-bed-single-02",
+        "resolved": "2-bed-single-01",
+        "alias": "2-bed-single-02"
+      },
+      {
+        "name": "2-behance-02",
+        "resolved": "2-abacus",
+        "alias": "2-behance-02"
+      },
+      {
+        "name": "2-billiard-02",
+        "resolved": "2-alpha-circle",
+        "alias": "2-billiard-02"
+      },
+      {
+        "name": "2-biometric-access",
+        "resolved": "2-ai-lock",
+        "alias": "2-biometric-access"
+      },
+      {
+        "name": "2-bitcoin-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-bitcoin-circle"
+      },
+      {
+        "name": "2-bitcoin-down-02",
+        "resolved": "2-bitcoin-04",
+        "alias": "2-bitcoin-down-02"
+      },
+      {
+        "name": "2-bitcoin-ellipse",
+        "resolved": "2-alpha-circle",
+        "alias": "2-bitcoin-ellipse"
+      },
+      {
+        "name": "2-bitcoin-lock",
+        "resolved": "2-ai-lock",
+        "alias": "2-bitcoin-lock"
+      },
+      {
+        "name": "2-bitcoin-setting",
+        "resolved": "2-artificial-intelligence-06",
+        "alias": "2-bitcoin-setting"
+      },
+      {
+        "name": "2-bitcoin-shield",
+        "resolved": "2-ai-security-01",
+        "alias": "2-bitcoin-shield"
+      },
+      {
+        "name": "2-bitcoin-square",
+        "resolved": "2-abacus",
+        "alias": "2-bitcoin-square"
+      },
+      {
+        "name": "2-bitcoin-up-02",
+        "resolved": "2-bitcoin-up-01",
+        "alias": "2-bitcoin-up-02"
+      },
+      {
+        "name": "2-bitcoin-withdraw",
+        "resolved": "2-atm-01",
+        "alias": "2-bitcoin-withdraw"
+      },
+      {
+        "name": "2-blogger",
+        "resolved": "2-abacus",
+        "alias": "2-blogger"
+      },
+      {
+        "name": "2-blood-type",
+        "resolved": "2-blood-pressure",
+        "alias": "2-blood-type"
+      },
+      {
+        "name": "2-bluetooth-circle",
+        "resolved": "2-attachment-circle",
+        "alias": "2-bluetooth-circle"
+      },
+      {
+        "name": "2-bluetooth-square",
+        "resolved": "2-abacus",
+        "alias": "2-bluetooth-square"
+      },
+      {
+        "name": "2-book-02",
+        "resolved": "2-audio-book-04",
+        "alias": "2-book-02"
+      },
+      {
+        "name": "2-book-alert",
+        "resolved": "2-book-a",
+        "alias": "2-book-alert"
+      },
+      {
+        "name": "2-book-download",
+        "resolved": "2-audio-book-04",
+        "alias": "2-book-download"
+      },
+      {
+        "name": "2-book-minus",
+        "resolved": "2-book-a",
+        "alias": "2-book-minus"
+      },
+      {
+        "name": "2-book-plus",
+        "resolved": "2-book-a",
+        "alias": "2-book-plus"
+      },
+      {
+        "name": "2-book-type",
+        "resolved": "2-book-a",
+        "alias": "2-book-type"
+      },
+      {
+        "name": "2-book-upload",
+        "resolved": "2-audio-book-04",
+        "alias": "2-book-upload"
+      },
+      {
+        "name": "2-book-user",
+        "resolved": "2-book-a",
+        "alias": "2-book-user"
+      },
+      {
+        "name": "2-book-x",
+        "resolved": "2-book-a",
+        "alias": "2-book-x"
+      },
+      {
+        "name": "2-bookmark-check-01",
+        "resolved": "2-bookmark-01",
+        "alias": "2-bookmark-check-01"
+      },
+      {
+        "name": "2-border-full",
+        "resolved": "2-align-box-bottom-center",
+        "alias": "2-border-full"
+      },
+      {
+        "name": "2-border-none-01",
+        "resolved": "2-border-all-01",
+        "alias": "2-border-none-01"
+      },
+      {
+        "name": "2-briefcase-09",
+        "resolved": "2-briefcase-08",
+        "alias": "2-briefcase-09"
+      },
+      {
+        "name": "2-bubble-chat",
+        "resolved": "2-bubble-chat-done",
+        "alias": "2-bubble-chat"
+      },
+      {
+        "name": "2-bubble-chat-cancel",
+        "resolved": "2-bubble-chat-add",
+        "alias": "2-bubble-chat-cancel"
+      },
+      {
+        "name": "2-bubble-chat-delay",
+        "resolved": "2-bubble-chat-add",
+        "alias": "2-bubble-chat-delay"
+      },
+      {
+        "name": "2-bubble-chat-edit",
+        "resolved": "2-bubble-chat-add",
+        "alias": "2-bubble-chat-edit"
+      },
+      {
+        "name": "2-bubble-chat-favourite",
+        "resolved": "2-bubble-chat-add",
+        "alias": "2-bubble-chat-favourite"
+      },
+      {
+        "name": "2-bubble-chat-income",
+        "resolved": "2-bubble-chat",
+        "alias": "2-bubble-chat-income"
+      },
+      {
+        "name": "2-bubble-chat-lock",
+        "resolved": "2-bubble-chat",
+        "alias": "2-bubble-chat-lock"
+      },
+      {
+        "name": "2-bubble-chat-outcome",
+        "resolved": "2-bubble-chat-add",
+        "alias": "2-bubble-chat-outcome"
+      },
+      {
+        "name": "2-bubble-chat-preview",
+        "resolved": "2-bubble-chat-download-02",
+        "alias": "2-bubble-chat-preview"
+      },
+      {
+        "name": "2-bubble-chat-search",
+        "resolved": "2-bubble-chat-download-02",
+        "alias": "2-bubble-chat-search"
+      },
+      {
+        "name": "2-bubble-chat-secure",
+        "resolved": "2-bubble-chat-download-02",
+        "alias": "2-bubble-chat-secure"
+      },
+      {
+        "name": "2-bubble-chat-spark",
+        "resolved": "2-bubble-chat-question",
+        "alias": "2-bubble-chat-spark"
+      },
+      {
+        "name": "2-bubble-chat-translate",
+        "resolved": "2-bubble-chat-question",
+        "alias": "2-bubble-chat-translate"
+      },
+      {
+        "name": "2-bubble-chat-unlock",
+        "resolved": "2-bubble-chat-add",
+        "alias": "2-bubble-chat-unlock"
+      },
+      {
+        "name": "2-bubble-chat-upload",
+        "resolved": "2-bubble-chat-download-02",
+        "alias": "2-bubble-chat-upload"
+      },
+      {
+        "name": "2-bubble-chat-user",
+        "resolved": "2-bubble-chat-download-02",
+        "alias": "2-bubble-chat-user"
+      },
+      {
+        "name": "2-c-car-time",
+        "resolved": "2-c-car-alert",
+        "alias": "2-c-car-time"
+      },
+      {
+        "name": "2-c-chat",
+        "resolved": "2-c-chat-preview",
+        "alias": "2-c-chat"
+      },
+      {
+        "name": "2-c-chat-question",
+        "resolved": "2-c-chat",
+        "alias": "2-c-chat-question"
+      },
+      {
+        "name": "2-c-chat-unlock-01",
+        "resolved": "2-c-chat-lock-01",
+        "alias": "2-c-chat-unlock-01"
+      },
+      {
+        "name": "2-c-circle-password",
+        "resolved": "2-c-circle-lock-01",
+        "alias": "2-c-circle-password"
+      },
+      {
+        "name": "2-c-code-circle",
+        "resolved": "2-angry",
+        "alias": "2-c-code-circle"
+      },
+      {
+        "name": "2-c-programming",
+        "resolved": "2-abacus",
+        "alias": "2-c-programming"
+      },
+      {
+        "name": "2-calendar-02",
+        "resolved": "2-calendar-01",
+        "alias": "2-calendar-02"
+      },
+      {
+        "name": "2-calendar-03",
+        "resolved": "2-calendar-01",
+        "alias": "2-calendar-03"
+      },
+      {
+        "name": "2-calendar-04",
+        "resolved": "2-calendar-01",
+        "alias": "2-calendar-04"
+      },
+      {
+        "name": "2-calendar-add-02",
+        "resolved": "2-appointment-02",
+        "alias": "2-calendar-add-02"
+      },
+      {
+        "name": "2-calendar-block-02",
+        "resolved": "2-calendar-01",
+        "alias": "2-calendar-block-02"
+      },
+      {
+        "name": "2-calendar-check-in-02",
+        "resolved": "2-calendar-01",
+        "alias": "2-calendar-check-in-02"
+      },
+      {
+        "name": "2-calendar-check-out-02",
+        "resolved": "2-calendar-01",
+        "alias": "2-calendar-check-out-02"
+      },
+      {
+        "name": "2-calendar-download-02",
+        "resolved": "2-appointment-02",
+        "alias": "2-calendar-download-02"
+      },
+      {
+        "name": "2-calendar-favorite-02",
+        "resolved": "2-appointment-02",
+        "alias": "2-calendar-favorite-02"
+      },
+      {
+        "name": "2-calendar-lock-02",
+        "resolved": "2-appointment-02",
+        "alias": "2-calendar-lock-02"
+      },
+      {
+        "name": "2-calendar-remove-02",
+        "resolved": "2-appointment-02",
+        "alias": "2-calendar-remove-02"
+      },
+      {
+        "name": "2-calendar-setting-02",
+        "resolved": "2-appointment-02",
+        "alias": "2-calendar-setting-02"
+      },
+      {
+        "name": "2-calendar-upload-02",
+        "resolved": "2-appointment-02",
+        "alias": "2-calendar-upload-02"
+      },
+      {
+        "name": "2-call-blocked",
+        "resolved": "2-call-add",
+        "alias": "2-call-blocked"
+      },
+      {
+        "name": "2-call-blocked-02",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-blocked-02"
+      },
+      {
+        "name": "2-call-done",
+        "resolved": "2-call-add",
+        "alias": "2-call-done"
+      },
+      {
+        "name": "2-call-done-02",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-done-02"
+      },
+      {
+        "name": "2-call-end-01",
+        "resolved": "2-call-add",
+        "alias": "2-call-end-01"
+      },
+      {
+        "name": "2-call-end-03",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-end-03"
+      },
+      {
+        "name": "2-call-incoming-01",
+        "resolved": "2-call-add",
+        "alias": "2-call-incoming-01"
+      },
+      {
+        "name": "2-call-incoming-02",
+        "resolved": "2-call-add",
+        "alias": "2-call-incoming-02"
+      },
+      {
+        "name": "2-call-incoming-03",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-incoming-03"
+      },
+      {
+        "name": "2-call-incoming-04",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-incoming-04"
+      },
+      {
+        "name": "2-call-internal",
+        "resolved": "2-call-add",
+        "alias": "2-call-internal"
+      },
+      {
+        "name": "2-call-internal-02",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-internal-02"
+      },
+      {
+        "name": "2-call-locked",
+        "resolved": "2-call-add",
+        "alias": "2-call-locked"
+      },
+      {
+        "name": "2-call-locked-02",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-locked-02"
+      },
+      {
+        "name": "2-call-minus",
+        "resolved": "2-call-add",
+        "alias": "2-call-minus"
+      },
+      {
+        "name": "2-call-minus-02",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-minus-02"
+      },
+      {
+        "name": "2-call-missed-03",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-missed-03"
+      },
+      {
+        "name": "2-call-outgoing-02",
+        "resolved": "2-call-add",
+        "alias": "2-call-outgoing-02"
+      },
+      {
+        "name": "2-call-outgoing-03",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-outgoing-03"
+      },
+      {
+        "name": "2-call-outgoing-04",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-outgoing-04"
+      },
+      {
+        "name": "2-call-paused",
+        "resolved": "2-call-add",
+        "alias": "2-call-paused"
+      },
+      {
+        "name": "2-call-paused-02",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-paused-02"
+      },
+      {
+        "name": "2-call-received",
+        "resolved": "2-call-add",
+        "alias": "2-call-received"
+      },
+      {
+        "name": "2-call-received-02",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-received-02"
+      },
+      {
+        "name": "2-call-ringing-01",
+        "resolved": "2-call-missed-02",
+        "alias": "2-call-ringing-01"
+      },
+      {
+        "name": "2-call-ringing-02",
+        "resolved": "2-call-add",
+        "alias": "2-call-ringing-02"
+      },
+      {
+        "name": "2-call-ringing-03",
+        "resolved": "2-call-missed-04",
+        "alias": "2-call-ringing-03"
+      },
+      {
+        "name": "2-call-ringing-04",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-ringing-04"
+      },
+      {
+        "name": "2-call-unlocked",
+        "resolved": "2-call-add",
+        "alias": "2-call-unlocked"
+      },
+      {
+        "name": "2-call-unlocked-02",
+        "resolved": "2-call-add-02",
+        "alias": "2-call-unlocked-02"
+      },
+      {
+        "name": "2-calling",
+        "resolved": "2-call-add",
+        "alias": "2-calling"
+      },
+      {
+        "name": "2-calling-02",
+        "resolved": "2-call-add-02",
+        "alias": "2-calling-02"
+      },
+      {
+        "name": "2-camera-automatically-02",
+        "resolved": "2-camera-02",
+        "alias": "2-camera-automatically-02"
+      },
+      {
+        "name": "2-camera-microphone-01",
+        "resolved": "2-camera-01",
+        "alias": "2-camera-microphone-01"
+      },
+      {
+        "name": "2-camera-microphone-02",
+        "resolved": "2-camera-02",
+        "alias": "2-camera-microphone-02"
+      },
+      {
+        "name": "2-camera-night-mode-01",
+        "resolved": "2-camera-01",
+        "alias": "2-camera-night-mode-01"
+      },
+      {
+        "name": "2-camera-night-mode-02",
+        "resolved": "2-camera-02",
+        "alias": "2-camera-night-mode-02"
+      },
+      {
+        "name": "2-camera-rotated-01",
+        "resolved": "2-camera-01",
+        "alias": "2-camera-rotated-01"
+      },
+      {
+        "name": "2-camera-rotated-02",
+        "resolved": "2-camera-02",
+        "alias": "2-camera-rotated-02"
+      },
+      {
+        "name": "2-camera-smile-01",
+        "resolved": "2-camera-01",
+        "alias": "2-camera-smile-01"
+      },
+      {
+        "name": "2-camera-smile-02",
+        "resolved": "2-camera-02",
+        "alias": "2-camera-smile-02"
+      },
+      {
+        "name": "2-cancel-circle",
+        "resolved": "2-add-circle",
+        "alias": "2-cancel-circle"
+      },
+      {
+        "name": "2-capcut-rectangle",
+        "resolved": "2-abacus",
+        "alias": "2-capcut-rectangle"
+      },
+      {
+        "name": "2-cards-02",
+        "resolved": "2-cards-01",
+        "alias": "2-cards-02"
+      },
+      {
+        "name": "2-cd",
+        "resolved": "2-alpha-circle",
+        "alias": "2-cd"
+      },
+      {
+        "name": "2-center-focus",
+        "resolved": "2-atom-01",
+        "alias": "2-center-focus"
+      },
+      {
+        "name": "2-chart-bar-stacked",
+        "resolved": "2-chart-bar-big",
+        "alias": "2-chart-bar-stacked"
+      },
+      {
+        "name": "2-chart-column-stacked",
+        "resolved": "2-chart-column-big",
+        "alias": "2-chart-column-stacked"
+      },
+      {
+        "name": "2-chat",
+        "resolved": "2-chat-01",
+        "alias": "2-chat"
+      },
+      {
+        "name": "2-chat-cancel",
+        "resolved": "2-chat-add",
+        "alias": "2-chat-cancel"
+      },
+      {
+        "name": "2-chat-delay",
+        "resolved": "2-chat-add",
+        "alias": "2-chat-delay"
+      },
+      {
+        "name": "2-chat-done",
+        "resolved": "2-chat-add",
+        "alias": "2-chat-done"
+      },
+      {
+        "name": "2-chat-edit",
+        "resolved": "2-chat-add",
+        "alias": "2-chat-edit"
+      },
+      {
+        "name": "2-chat-favourite",
+        "resolved": "2-chat-add",
+        "alias": "2-chat-favourite"
+      },
+      {
+        "name": "2-chat-feedback-01",
+        "resolved": "2-c-chat-feedback",
+        "alias": "2-chat-feedback-01"
+      },
+      {
+        "name": "2-chat-income",
+        "resolved": "2-chat-add",
+        "alias": "2-chat-income"
+      },
+      {
+        "name": "2-chat-lock",
+        "resolved": "2-chat-download",
+        "alias": "2-chat-lock"
+      },
+      {
+        "name": "2-chat-outcome",
+        "resolved": "2-chat-download",
+        "alias": "2-chat-outcome"
+      },
+      {
+        "name": "2-chat-preview",
+        "resolved": "2-chat-download",
+        "alias": "2-chat-preview"
+      },
+      {
+        "name": "2-chat-question-01",
+        "resolved": "2-c-chat-question-01",
+        "alias": "2-chat-question-01"
+      },
+      {
+        "name": "2-chat-search",
+        "resolved": "2-chat-download",
+        "alias": "2-chat-search"
+      },
+      {
+        "name": "2-chat-secure",
+        "resolved": "2-chat-download",
+        "alias": "2-chat-secure"
+      },
+      {
+        "name": "2-chat-spark",
+        "resolved": "2-chat-question",
+        "alias": "2-chat-spark"
+      },
+      {
+        "name": "2-chat-translate",
+        "resolved": "2-chat-question",
+        "alias": "2-chat-translate"
+      },
+      {
+        "name": "2-chat-unlock",
+        "resolved": "2-chat-download",
+        "alias": "2-chat-unlock"
+      },
+      {
+        "name": "2-chat-unlock-01",
+        "resolved": "2-chat-lock-01",
+        "alias": "2-chat-unlock-01"
+      },
+      {
+        "name": "2-chat-upload",
+        "resolved": "2-chat-download",
+        "alias": "2-chat-upload"
+      },
+      {
+        "name": "2-chat-user",
+        "resolved": "2-chat-download",
+        "alias": "2-chat-user"
+      },
+      {
+        "name": "2-checkmark-badge-02",
+        "resolved": "2-checkmark-badge-01",
+        "alias": "2-checkmark-badge-02"
+      },
+      {
+        "name": "2-checkmark-badge-03",
+        "resolved": "2-checkmark-badge-01",
+        "alias": "2-checkmark-badge-03"
+      },
+      {
+        "name": "2-checkmark-circle-01",
+        "resolved": "2-add-circle",
+        "alias": "2-checkmark-circle-01"
+      },
+      {
+        "name": "2-checkmark-circle-03",
+        "resolved": "2-add-circle",
+        "alias": "2-checkmark-circle-03"
+      },
+      {
+        "name": "2-checkmark-circle-04",
+        "resolved": "2-add-circle",
+        "alias": "2-checkmark-circle-04"
+      },
+      {
+        "name": "2-checkmark-square-02",
+        "resolved": "2-checkmark-square-01",
+        "alias": "2-checkmark-square-02"
+      },
+      {
+        "name": "2-checkmark-square-03",
+        "resolved": "2-checkmark-square-01",
+        "alias": "2-checkmark-square-03"
+      },
+      {
+        "name": "2-checkmark-square-04",
+        "resolved": "2-checkmark-square-01",
+        "alias": "2-checkmark-square-04"
+      },
+      {
+        "name": "2-chip",
+        "resolved": "2-bitcoin-cpu",
+        "alias": "2-chip"
+      },
+      {
+        "name": "2-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle"
+      },
+      {
+        "name": "2-circle-arrow-data-transfer-diagonal",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle-arrow-data-transfer-diagonal"
+      },
+      {
+        "name": "2-circle-arrow-data-transfer-horizontal",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle-arrow-data-transfer-horizontal"
+      },
+      {
+        "name": "2-circle-arrow-data-transfer-vertical",
+        "resolved": "2-checkmark-circle-02",
+        "alias": "2-circle-arrow-data-transfer-vertical"
+      },
+      {
+        "name": "2-circle-arrow-diagonal-01",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle-arrow-diagonal-01"
+      },
+      {
+        "name": "2-circle-arrow-down-01",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle-arrow-down-01"
+      },
+      {
+        "name": "2-circle-arrow-down-02",
+        "resolved": "2-angry",
+        "alias": "2-circle-arrow-down-02"
+      },
+      {
+        "name": "2-circle-arrow-down-03",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle-arrow-down-03"
+      },
+      {
+        "name": "2-circle-arrow-down-double",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-circle-arrow-down-double"
+      },
+      {
+        "name": "2-circle-arrow-down-left",
+        "resolved": "2-angry",
+        "alias": "2-circle-arrow-down-left"
+      },
+      {
+        "name": "2-circle-arrow-down-right",
+        "resolved": "2-angry",
+        "alias": "2-circle-arrow-down-right"
+      },
+      {
+        "name": "2-circle-arrow-expand-01",
+        "resolved": "2-circle-arrow-diagonal-02",
+        "alias": "2-circle-arrow-expand-01"
+      },
+      {
+        "name": "2-circle-arrow-expand-02",
+        "resolved": "2-circle-arrow-diagonal-02",
+        "alias": "2-circle-arrow-expand-02"
+      },
+      {
+        "name": "2-circle-arrow-horizontal",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle-arrow-horizontal"
+      },
+      {
+        "name": "2-circle-arrow-left-01",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-circle-arrow-left-01"
+      },
+      {
+        "name": "2-circle-arrow-left-02",
+        "resolved": "2-angry",
+        "alias": "2-circle-arrow-left-02"
+      },
+      {
+        "name": "2-circle-arrow-left-03",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-circle-arrow-left-03"
+      },
+      {
+        "name": "2-circle-arrow-left-double",
+        "resolved": "2-circle-arrow-diagonal-02",
+        "alias": "2-circle-arrow-left-double"
+      },
+      {
+        "name": "2-circle-arrow-left-right",
+        "resolved": "2-angry",
+        "alias": "2-circle-arrow-left-right"
+      },
+      {
+        "name": "2-circle-arrow-move-down-right",
+        "resolved": "2-add-circle",
+        "alias": "2-circle-arrow-move-down-right"
+      },
+      {
+        "name": "2-circle-arrow-move-left-down",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle-arrow-move-left-down"
+      },
+      {
+        "name": "2-circle-arrow-move-right-down",
+        "resolved": "2-circle-arrow-diagonal-02",
+        "alias": "2-circle-arrow-move-right-down"
+      },
+      {
+        "name": "2-circle-arrow-move-up-left",
+        "resolved": "2-circle-arrow-diagonal-02",
+        "alias": "2-circle-arrow-move-up-left"
+      },
+      {
+        "name": "2-circle-arrow-move-up-right",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle-arrow-move-up-right"
+      },
+      {
+        "name": "2-circle-arrow-reload-01",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle-arrow-reload-01"
+      },
+      {
+        "name": "2-circle-arrow-reload-02",
+        "resolved": "2-circle-arrow-diagonal-02",
+        "alias": "2-circle-arrow-reload-02"
+      },
+      {
+        "name": "2-circle-arrow-right-01",
+        "resolved": "2-checkmark-circle-02",
+        "alias": "2-circle-arrow-right-01"
+      },
+      {
+        "name": "2-circle-arrow-right-02",
+        "resolved": "2-angry",
+        "alias": "2-circle-arrow-right-02"
+      },
+      {
+        "name": "2-circle-arrow-right-03",
+        "resolved": "2-checkmark-circle-02",
+        "alias": "2-circle-arrow-right-03"
+      },
+      {
+        "name": "2-circle-arrow-right-double",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle-arrow-right-double"
+      },
+      {
+        "name": "2-circle-arrow-shrink-01",
+        "resolved": "2-circle-arrow-diagonal-02",
+        "alias": "2-circle-arrow-shrink-01"
+      },
+      {
+        "name": "2-circle-arrow-shrink-02",
+        "resolved": "2-circle-arrow-diagonal-02",
+        "alias": "2-circle-arrow-shrink-02"
+      },
+      {
+        "name": "2-circle-arrow-up-01",
+        "resolved": "2-circle-arrow-move-down-left",
+        "alias": "2-circle-arrow-up-01"
+      },
+      {
+        "name": "2-circle-arrow-up-02",
+        "resolved": "2-angry",
+        "alias": "2-circle-arrow-up-02"
+      },
+      {
+        "name": "2-circle-arrow-up-03",
+        "resolved": "2-circle-arrow-move-down-left",
+        "alias": "2-circle-arrow-up-03"
+      },
+      {
+        "name": "2-circle-arrow-up-double",
+        "resolved": "2-checkmark-circle-02",
+        "alias": "2-circle-arrow-up-double"
+      },
+      {
+        "name": "2-circle-arrow-up-down",
+        "resolved": "2-alpha-circle",
+        "alias": "2-circle-arrow-up-down"
+      },
+      {
+        "name": "2-circle-arrow-up-left",
+        "resolved": "2-angry",
+        "alias": "2-circle-arrow-up-left"
+      },
+      {
+        "name": "2-circle-arrow-up-right",
+        "resolved": "2-angry",
+        "alias": "2-circle-arrow-up-right"
+      },
+      {
+        "name": "2-circle-arrow-vertical",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-circle-arrow-vertical"
+      },
+      {
+        "name": "2-circle-lock-01",
+        "resolved": "2-c-circle-unlock-01",
+        "alias": "2-circle-lock-01"
+      },
+      {
+        "name": "2-circle-lock-02",
+        "resolved": "2-c-circle-unlock-01",
+        "alias": "2-circle-lock-02"
+      },
+      {
+        "name": "2-circle-lock-check-02",
+        "resolved": "2-circle-lock-add-02",
+        "alias": "2-circle-lock-check-02"
+      },
+      {
+        "name": "2-circle-lock-minus-02",
+        "resolved": "2-circle-lock-add-02",
+        "alias": "2-circle-lock-minus-02"
+      },
+      {
+        "name": "2-circle-lock-remove-02",
+        "resolved": "2-circle-lock-add-02",
+        "alias": "2-circle-lock-remove-02"
+      },
+      {
+        "name": "2-circle-password",
+        "resolved": "2-c-circle-unlock-01",
+        "alias": "2-circle-password"
+      },
+      {
+        "name": "2-circle-unlock-01",
+        "resolved": "2-c-circle-unlock-01",
+        "alias": "2-circle-unlock-01"
+      },
+      {
+        "name": "2-circle-unlock-02",
+        "resolved": "2-c-circle-unlock-01",
+        "alias": "2-circle-unlock-02"
+      },
+      {
+        "name": "2-clock-01",
+        "resolved": "2-alpha-circle",
+        "alias": "2-clock-01"
+      },
+      {
+        "name": "2-code-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-code-circle"
+      },
+      {
+        "name": "2-code-square",
+        "resolved": "2-abacus",
+        "alias": "2-code-square"
+      },
+      {
+        "name": "2-coins-dollar",
+        "resolved": "2-coins-bitcoin",
+        "alias": "2-coins-dollar"
+      },
+      {
+        "name": "2-coins-euro",
+        "resolved": "2-coins-bitcoin",
+        "alias": "2-coins-euro"
+      },
+      {
+        "name": "2-coins-pound",
+        "resolved": "2-coins-bitcoin",
+        "alias": "2-coins-pound"
+      },
+      {
+        "name": "2-coins-yen",
+        "resolved": "2-coins-bitcoin",
+        "alias": "2-coins-yen"
+      },
+      {
+        "name": "2-command-line",
+        "resolved": "2-browser",
+        "alias": "2-command-line"
+      },
+      {
+        "name": "2-comment-add-03",
+        "resolved": "2-comment-03",
+        "alias": "2-comment-add-03"
+      },
+      {
+        "name": "2-comment-remove-03",
+        "resolved": "2-comment-block-03",
+        "alias": "2-comment-remove-03"
+      },
+      {
+        "name": "2-computer",
+        "resolved": "2-computer-add",
+        "alias": "2-computer"
+      },
+      {
+        "name": "2-computer-arrow-up",
+        "resolved": "2-computer-activity",
+        "alias": "2-computer-arrow-up"
+      },
+      {
+        "name": "2-computer-chart-down",
+        "resolved": "2-computer-activity",
+        "alias": "2-computer-chart-down"
+      },
+      {
+        "name": "2-computer-chart-up",
+        "resolved": "2-computer-activity",
+        "alias": "2-computer-chart-up"
+      },
+      {
+        "name": "2-computer-check",
+        "resolved": "2-computer",
+        "alias": "2-computer-check"
+      },
+      {
+        "name": "2-computer-cloud",
+        "resolved": "2-computer",
+        "alias": "2-computer-cloud"
+      },
+      {
+        "name": "2-computer-remove",
+        "resolved": "2-computer",
+        "alias": "2-computer-remove"
+      },
+      {
+        "name": "2-computer-screen-share",
+        "resolved": "2-computer-activity",
+        "alias": "2-computer-screen-share"
+      },
+      {
+        "name": "2-computer-settings",
+        "resolved": "2-computer-activity",
+        "alias": "2-computer-settings"
+      },
+      {
+        "name": "2-computer-user",
+        "resolved": "2-computer-activity",
+        "alias": "2-computer-user"
+      },
+      {
+        "name": "2-computer-video",
+        "resolved": "2-computer",
+        "alias": "2-computer-video"
+      },
+      {
+        "name": "2-confused",
+        "resolved": "2-angry",
+        "alias": "2-confused"
+      },
+      {
+        "name": "2-congruent-to-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-congruent-to-circle"
+      },
+      {
+        "name": "2-congruent-to-square",
+        "resolved": "2-abacus",
+        "alias": "2-congruent-to-square"
+      },
+      {
+        "name": "2-contact-book",
+        "resolved": "2-address-book",
+        "alias": "2-contact-book"
+      },
+      {
+        "name": "2-copy-minus",
+        "resolved": "2-copy-check",
+        "alias": "2-copy-minus"
+      },
+      {
+        "name": "2-copy-plus",
+        "resolved": "2-copy-check",
+        "alias": "2-copy-plus"
+      },
+      {
+        "name": "2-copy-slash",
+        "resolved": "2-copy-check",
+        "alias": "2-copy-slash"
+      },
+      {
+        "name": "2-copyleft",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-copyleft"
+      },
+      {
+        "name": "2-covid-info",
+        "resolved": "2-alpha-circle",
+        "alias": "2-covid-info"
+      },
+      {
+        "name": "2-cpp",
+        "resolved": "2-abacus",
+        "alias": "2-cpp"
+      },
+      {
+        "name": "2-crazy",
+        "resolved": "2-angry",
+        "alias": "2-crazy"
+      },
+      {
+        "name": "2-creative-commons",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-creative-commons"
+      },
+      {
+        "name": "2-crying",
+        "resolved": "2-angry",
+        "alias": "2-crying"
+      },
+      {
+        "name": "2-cursor-progress-04",
+        "resolved": "2-cursor-disabled-02",
+        "alias": "2-cursor-progress-04"
+      },
+      {
+        "name": "2-d-dice-faces-02",
+        "resolved": "2-d-dice-faces-01",
+        "alias": "2-d-dice-faces-02"
+      },
+      {
+        "name": "2-d-dice-faces-03",
+        "resolved": "2-d-dice-faces-01",
+        "alias": "2-d-dice-faces-03"
+      },
+      {
+        "name": "2-d-dice-faces-04",
+        "resolved": "2-d-dice-faces-01",
+        "alias": "2-d-dice-faces-04"
+      },
+      {
+        "name": "2-d-dice-faces-05",
+        "resolved": "2-d-dice-faces-01",
+        "alias": "2-d-dice-faces-05"
+      },
+      {
+        "name": "2-d-dice-faces-06",
+        "resolved": "2-d-dice-faces-01",
+        "alias": "2-d-dice-faces-06"
+      },
+      {
+        "name": "2-d-dirham",
+        "resolved": "2-alpha-circle",
+        "alias": "2-d-dirham"
+      },
+      {
+        "name": "2-d-discover-circle",
+        "resolved": "2-angry",
+        "alias": "2-d-discover-circle"
+      },
+      {
+        "name": "2-dashboard-speed-01",
+        "resolved": "2-abacus",
+        "alias": "2-dashboard-speed-01"
+      },
+      {
+        "name": "2-dashboard-square-add",
+        "resolved": "2-dashboard-square-01",
+        "alias": "2-dashboard-square-add"
+      },
+      {
+        "name": "2-dashboard-square-remove",
+        "resolved": "2-dashboard-square-edit",
+        "alias": "2-dashboard-square-remove"
+      },
+      {
+        "name": "2-dead",
+        "resolved": "2-angry",
+        "alias": "2-dead"
+      },
+      {
+        "name": "2-delete-02",
+        "resolved": "2-delete-01",
+        "alias": "2-delete-02"
+      },
+      {
+        "name": "2-delete-03",
+        "resolved": "2-delete-01",
+        "alias": "2-delete-03"
+      },
+      {
+        "name": "2-delete-column",
+        "resolved": "2-bitcoin-rectangle",
+        "alias": "2-delete-column"
+      },
+      {
+        "name": "2-delivery-sent-01",
+        "resolved": "2-container-truck-01",
+        "alias": "2-delivery-sent-01"
+      },
+      {
+        "name": "2-delivery-sent-02",
+        "resolved": "2-container-truck-02",
+        "alias": "2-delivery-sent-02"
+      },
+      {
+        "name": "2-delivery-view-01",
+        "resolved": "2-d-delivery-view-01",
+        "alias": "2-delivery-view-01"
+      },
+      {
+        "name": "2-delivery-view-02",
+        "resolved": "2-d-delivery-view-02",
+        "alias": "2-delivery-view-02"
+      },
+      {
+        "name": "2-diameter",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-diameter"
+      },
+      {
+        "name": "2-dice-faces-02",
+        "resolved": "2-dice-faces-01",
+        "alias": "2-dice-faces-02"
+      },
+      {
+        "name": "2-dice-faces-03",
+        "resolved": "2-dice-faces-01",
+        "alias": "2-dice-faces-03"
+      },
+      {
+        "name": "2-dice-faces-04",
+        "resolved": "2-dice-faces-01",
+        "alias": "2-dice-faces-04"
+      },
+      {
+        "name": "2-dice-faces-05",
+        "resolved": "2-dice-faces-01",
+        "alias": "2-dice-faces-05"
+      },
+      {
+        "name": "2-dice-faces-06",
+        "resolved": "2-dice-faces-01",
+        "alias": "2-dice-faces-06"
+      },
+      {
+        "name": "2-dirham",
+        "resolved": "2-copyright",
+        "alias": "2-dirham"
+      },
+      {
+        "name": "2-disc",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-disc"
+      },
+      {
+        "name": "2-disc-2",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-disc-2"
+      },
+      {
+        "name": "2-disc-3",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-disc-3"
+      },
+      {
+        "name": "2-disc-album",
+        "resolved": "2-c-code-square",
+        "alias": "2-disc-album"
+      },
+      {
+        "name": "2-discover-circle",
+        "resolved": "2-attachment-circle",
+        "alias": "2-discover-circle"
+      },
+      {
+        "name": "2-discover-square",
+        "resolved": "2-attachment-square",
+        "alias": "2-discover-square"
+      },
+      {
+        "name": "2-displeased",
+        "resolved": "2-angry",
+        "alias": "2-displeased"
+      },
+      {
+        "name": "2-divide-sign-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-divide-sign-circle"
+      },
+      {
+        "name": "2-divide-sign-square",
+        "resolved": "2-abacus",
+        "alias": "2-divide-sign-square"
+      },
+      {
+        "name": "2-doc-01",
+        "resolved": "2-csv-01",
+        "alias": "2-doc-01"
+      },
+      {
+        "name": "2-doc-02",
+        "resolved": "2-csv-02",
+        "alias": "2-doc-02"
+      },
+      {
+        "name": "2-doctor-03",
+        "resolved": "2-doctor-01",
+        "alias": "2-doctor-03"
+      },
+      {
+        "name": "2-dollar-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-dollar-circle"
+      },
+      {
+        "name": "2-download-circle-02",
+        "resolved": "2-download-circle-01",
+        "alias": "2-download-circle-02"
+      },
+      {
+        "name": "2-drag-right-02",
+        "resolved": "2-drag-left-02",
+        "alias": "2-drag-right-02"
+      },
+      {
+        "name": "2-drag-right-04",
+        "resolved": "2-drag-left-04",
+        "alias": "2-drag-right-04"
+      },
+      {
+        "name": "2-drawing-mode",
+        "resolved": "2-copy-01",
+        "alias": "2-drawing-mode"
+      },
+      {
+        "name": "2-dress-07",
+        "resolved": "2-dress-05",
+        "alias": "2-dress-07"
+      },
+      {
+        "name": "2-droplet",
+        "resolved": "2-blood-pressure",
+        "alias": "2-droplet"
+      },
+      {
+        "name": "2-energy-ellipse",
+        "resolved": "2-alpha-circle",
+        "alias": "2-energy-ellipse"
+      },
+      {
+        "name": "2-equal-sign-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-equal-sign-circle"
+      },
+      {
+        "name": "2-equal-sign-square",
+        "resolved": "2-abacus",
+        "alias": "2-equal-sign-square"
+      },
+      {
+        "name": "2-eraser-add",
+        "resolved": "2-eraser-01",
+        "alias": "2-eraser-add"
+      },
+      {
+        "name": "2-ethereum-ellipse",
+        "resolved": "2-alpha-circle",
+        "alias": "2-ethereum-ellipse"
+      },
+      {
+        "name": "2-euro-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-euro-circle"
+      },
+      {
+        "name": "2-euro-square",
+        "resolved": "2-dollar-square",
+        "alias": "2-euro-square"
+      },
+      {
+        "name": "2-exclamation-mark-slash",
+        "resolved": "2-e-exclamation-mark-slash",
+        "alias": "2-exclamation-mark-slash"
+      },
+      {
+        "name": "2-facebook-01",
+        "resolved": "2-attachment-square",
+        "alias": "2-facebook-01"
+      },
+      {
+        "name": "2-file-02",
+        "resolved": "2-csv-02",
+        "alias": "2-file-02"
+      },
+      {
+        "name": "2-file-chart-column",
+        "resolved": "2-file-axis-three-d",
+        "alias": "2-file-chart-column"
+      },
+      {
+        "name": "2-file-chart-column-increasing",
+        "resolved": "2-file-axis-three-d",
+        "alias": "2-file-chart-column-increasing"
+      },
+      {
+        "name": "2-file-code",
+        "resolved": "2-file-axis-three-d",
+        "alias": "2-file-code"
+      },
+      {
+        "name": "2-file-corrupt",
+        "resolved": "2-csv-02",
+        "alias": "2-file-corrupt"
+      },
+      {
+        "name": "2-file-dollar",
+        "resolved": "2-file-bitcoin",
+        "alias": "2-file-dollar"
+      },
+      {
+        "name": "2-file-down",
+        "resolved": "2-file-archive",
+        "alias": "2-file-down"
+      },
+      {
+        "name": "2-file-image",
+        "resolved": "2-file-archive",
+        "alias": "2-file-image"
+      },
+      {
+        "name": "2-file-plus",
+        "resolved": "2-file-exclamation-point",
+        "alias": "2-file-plus"
+      },
+      {
+        "name": "2-file-search",
+        "resolved": "2-file-archive",
+        "alias": "2-file-search"
+      },
+      {
+        "name": "2-file-sliders",
+        "resolved": "2-file-braces",
+        "alias": "2-file-sliders"
+      },
+      {
+        "name": "2-file-spreadsheet",
+        "resolved": "2-file-axis-three-d",
+        "alias": "2-file-spreadsheet"
+      },
+      {
+        "name": "2-file-yen",
+        "resolved": "2-file-bitcoin",
+        "alias": "2-file-yen"
+      },
+      {
+        "name": "2-film-02",
+        "resolved": "2-film-01",
+        "alias": "2-film-02"
+      },
+      {
+        "name": "2-filter-mail-circle",
+        "resolved": "2-checkmark-circle-02",
+        "alias": "2-filter-mail-circle"
+      },
+      {
+        "name": "2-finger-print-check",
+        "resolved": "2-finger-print-add",
+        "alias": "2-finger-print-check"
+      },
+      {
+        "name": "2-finger-print-minus",
+        "resolved": "2-finger-print-add",
+        "alias": "2-finger-print-minus"
+      },
+      {
+        "name": "2-finger-print-remove",
+        "resolved": "2-finger-print-add",
+        "alias": "2-finger-print-remove"
+      },
+      {
+        "name": "2-first-bracket-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-first-bracket-circle"
+      },
+      {
+        "name": "2-first-bracket-square",
+        "resolved": "2-abacus",
+        "alias": "2-first-bracket-square"
+      },
+      {
+        "name": "2-five-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-five-circle"
+      },
+      {
+        "name": "2-flickr",
+        "resolved": "2-alpha-circle",
+        "alias": "2-flickr"
+      },
+      {
+        "name": "2-flushed",
+        "resolved": "2-angry",
+        "alias": "2-flushed"
+      },
+      {
+        "name": "2-four-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-four-circle"
+      },
+      {
+        "name": "2-fry",
+        "resolved": "2-f-fry",
+        "alias": "2-fry"
+      },
+      {
+        "name": "2-function-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-function-circle"
+      },
+      {
+        "name": "2-function-square",
+        "resolved": "2-abacus",
+        "alias": "2-function-square"
+      },
+      {
+        "name": "2-gameboy",
+        "resolved": "2-align-box-bottom-center",
+        "alias": "2-gameboy"
+      },
+      {
+        "name": "2-gif-01",
+        "resolved": "2-csv-01",
+        "alias": "2-gif-01"
+      },
+      {
+        "name": "2-github-01",
+        "resolved": "2-alpha-circle",
+        "alias": "2-github-01"
+      },
+      {
+        "name": "2-global-refresh",
+        "resolved": "2-global-editing",
+        "alias": "2-global-refresh"
+      },
+      {
+        "name": "2-global-search",
+        "resolved": "2-global-editing",
+        "alias": "2-global-search"
+      },
+      {
+        "name": "2-globe-02",
+        "resolved": "2-alpha-circle",
+        "alias": "2-globe-02"
+      },
+      {
+        "name": "2-go-backward-15-sec",
+        "resolved": "2-go-backward-10-sec",
+        "alias": "2-go-backward-15-sec"
+      },
+      {
+        "name": "2-go-backward-30-sec",
+        "resolved": "2-go-backward-10-sec",
+        "alias": "2-go-backward-30-sec"
+      },
+      {
+        "name": "2-go-backward-60-sec",
+        "resolved": "2-go-backward-10-sec",
+        "alias": "2-go-backward-60-sec"
+      },
+      {
+        "name": "2-go-backward-five-sec",
+        "resolved": "2-go-backward-10-sec",
+        "alias": "2-go-backward-five-sec"
+      },
+      {
+        "name": "2-go-forward-15-sec",
+        "resolved": "2-go-forward-10-sec",
+        "alias": "2-go-forward-15-sec"
+      },
+      {
+        "name": "2-go-forward-30-sec",
+        "resolved": "2-go-forward-10-sec",
+        "alias": "2-go-forward-30-sec"
+      },
+      {
+        "name": "2-go-forward-60-sec",
+        "resolved": "2-go-forward-10-sec",
+        "alias": "2-go-forward-60-sec"
+      },
+      {
+        "name": "2-go-forward-five-sec",
+        "resolved": "2-go-forward-10-sec",
+        "alias": "2-go-forward-five-sec"
+      },
+      {
+        "name": "2-google",
+        "resolved": "2-alpha-circle",
+        "alias": "2-google"
+      },
+      {
+        "name": "2-google-sheet",
+        "resolved": "2-google-doc",
+        "alias": "2-google-sheet"
+      },
+      {
+        "name": "2-greater-than-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-greater-than-circle"
+      },
+      {
+        "name": "2-greater-than-square",
+        "resolved": "2-abacus",
+        "alias": "2-greater-than-square"
+      },
+      {
+        "name": "2-grimacing",
+        "resolved": "2-angry",
+        "alias": "2-grimacing"
+      },
+      {
+        "name": "2-h-help-circle",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-h-help-circle"
+      },
+      {
+        "name": "2-h-help-square",
+        "resolved": "2-a-alert-square",
+        "alias": "2-h-help-square"
+      },
+      {
+        "name": "2-halal",
+        "resolved": "2-allah",
+        "alias": "2-halal"
+      },
+      {
+        "name": "2-happy",
+        "resolved": "2-angry",
+        "alias": "2-happy"
+      },
+      {
+        "name": "2-happy-01",
+        "resolved": "2-angry",
+        "alias": "2-happy-01"
+      },
+      {
+        "name": "2-hard-drive-upload",
+        "resolved": "2-hard-drive-download",
+        "alias": "2-hard-drive-upload"
+      },
+      {
+        "name": "2-hdr-01",
+        "resolved": "2-csv-01",
+        "alias": "2-hdr-01"
+      },
+      {
+        "name": "2-healtcare",
+        "resolved": "2-give-blood",
+        "alias": "2-healtcare"
+      },
+      {
+        "name": "2-health",
+        "resolved": "2-cardiogram-02",
+        "alias": "2-health"
+      },
+      {
+        "name": "2-help-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-help-circle"
+      },
+      {
+        "name": "2-help-square",
+        "resolved": "2-alert-square",
+        "alias": "2-help-square"
+      },
+      {
+        "name": "2-home-02",
+        "resolved": "2-home-01",
+        "alias": "2-home-02"
+      },
+      {
+        "name": "2-home-04",
+        "resolved": "2-home-01",
+        "alias": "2-home-04"
+      },
+      {
+        "name": "2-home-05",
+        "resolved": "2-home-01",
+        "alias": "2-home-05"
+      },
+      {
+        "name": "2-home-06",
+        "resolved": "2-home-01",
+        "alias": "2-home-06"
+      },
+      {
+        "name": "2-home-08",
+        "resolved": "2-home-01",
+        "alias": "2-home-08"
+      },
+      {
+        "name": "2-horizonal-scroll-point",
+        "resolved": "2-diagonal-scroll-point-01",
+        "alias": "2-horizonal-scroll-point"
+      },
+      {
+        "name": "2-i-information-circle",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-i-information-circle"
+      },
+      {
+        "name": "2-i-information-diamond",
+        "resolved": "2-a-alert-diamond",
+        "alias": "2-i-information-diamond"
+      },
+      {
+        "name": "2-i-information-square",
+        "resolved": "2-a-alert-square",
+        "alias": "2-i-information-square"
+      },
+      {
+        "name": "2-ico",
+        "resolved": "2-alpha-circle",
+        "alias": "2-ico"
+      },
+      {
+        "name": "2-id-verified",
+        "resolved": "2-id-not-verified",
+        "alias": "2-id-verified"
+      },
+      {
+        "name": "2-important-book",
+        "resolved": "2-address-book",
+        "alias": "2-important-book"
+      },
+      {
+        "name": "2-inbox-upload",
+        "resolved": "2-inbox-download",
+        "alias": "2-inbox-upload"
+      },
+      {
+        "name": "2-inequality-circle-01",
+        "resolved": "2-alpha-circle",
+        "alias": "2-inequality-circle-01"
+      },
+      {
+        "name": "2-inequality-circle-02",
+        "resolved": "2-circle-arrow-diagonal-02",
+        "alias": "2-inequality-circle-02"
+      },
+      {
+        "name": "2-inequality-square-01",
+        "resolved": "2-abacus",
+        "alias": "2-inequality-square-01"
+      },
+      {
+        "name": "2-inequality-square-02",
+        "resolved": "2-abacus",
+        "alias": "2-inequality-square-02"
+      },
+      {
+        "name": "2-infinity-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-infinity-circle"
+      },
+      {
+        "name": "2-infinity-square",
+        "resolved": "2-abacus",
+        "alias": "2-infinity-square"
+      },
+      {
+        "name": "2-information-diamond",
+        "resolved": "2-alert-diamond",
+        "alias": "2-information-diamond"
+      },
+      {
+        "name": "2-information-square",
+        "resolved": "2-alert-square",
+        "alias": "2-information-square"
+      },
+      {
+        "name": "2-input-text",
+        "resolved": "2-input-numeric",
+        "alias": "2-input-text"
+      },
+      {
+        "name": "2-insert-column",
+        "resolved": "2-bitcoin-rectangle",
+        "alias": "2-insert-column"
+      },
+      {
+        "name": "2-insert-column-left",
+        "resolved": "2-bitcoin-rectangle",
+        "alias": "2-insert-column-left"
+      },
+      {
+        "name": "2-insert-row",
+        "resolved": "2-delete-row",
+        "alias": "2-insert-row"
+      },
+      {
+        "name": "2-insert-row-down",
+        "resolved": "2-delete-row",
+        "alias": "2-insert-row-down"
+      },
+      {
+        "name": "2-instagram",
+        "resolved": "2-abacus",
+        "alias": "2-instagram"
+      },
+      {
+        "name": "2-internet-antenna-03",
+        "resolved": "2-internet-antenna-01",
+        "alias": "2-internet-antenna-03"
+      },
+      {
+        "name": "2-invoice-02",
+        "resolved": "2-invoice-01",
+        "alias": "2-invoice-02"
+      },
+      {
+        "name": "2-java-script",
+        "resolved": "2-abacus",
+        "alias": "2-java-script"
+      },
+      {
+        "name": "2-jpg-01",
+        "resolved": "2-csv-01",
+        "alias": "2-jpg-01"
+      },
+      {
+        "name": "2-jsx-01",
+        "resolved": "2-bitcoin-rectangle",
+        "alias": "2-jsx-01"
+      },
+      {
+        "name": "2-jsx-02",
+        "resolved": "2-csv-01",
+        "alias": "2-jsx-02"
+      },
+      {
+        "name": "2-keyboard",
+        "resolved": "2-game",
+        "alias": "2-keyboard"
+      },
+      {
+        "name": "2-kickstarter-02",
+        "resolved": "2-abacus",
+        "alias": "2-kickstarter-02"
+      },
+      {
+        "name": "2-kid",
+        "resolved": "2-angry",
+        "alias": "2-kid"
+      },
+      {
+        "name": "2-l-linkedin-01",
+        "resolved": "2-i-instagram",
+        "alias": "2-l-linkedin-01"
+      },
+      {
+        "name": "2-language-circle",
+        "resolved": "2-attachment-circle",
+        "alias": "2-language-circle"
+      },
+      {
+        "name": "2-language-square",
+        "resolved": "2-attachment-square",
+        "alias": "2-language-square"
+      },
+      {
+        "name": "2-laptop-cloud",
+        "resolved": "2-laptop-add",
+        "alias": "2-laptop-cloud"
+      },
+      {
+        "name": "2-laptop-issue",
+        "resolved": "2-laptop-check",
+        "alias": "2-laptop-issue"
+      },
+      {
+        "name": "2-laptop-performance",
+        "resolved": "2-laptop-charging",
+        "alias": "2-laptop-performance"
+      },
+      {
+        "name": "2-laptop-remove",
+        "resolved": "2-laptop-check",
+        "alias": "2-laptop-remove"
+      },
+      {
+        "name": "2-laptop-settings",
+        "resolved": "2-laptop-check",
+        "alias": "2-laptop-settings"
+      },
+      {
+        "name": "2-last-fm",
+        "resolved": "2-abacus",
+        "alias": "2-last-fm"
+      },
+      {
+        "name": "2-laurel-wreath-first-01",
+        "resolved": "2-laurel-wreath-01",
+        "alias": "2-laurel-wreath-first-01"
+      },
+      {
+        "name": "2-laurel-wreath-first-02",
+        "resolved": "2-laurel-wreath-02",
+        "alias": "2-laurel-wreath-first-02"
+      },
+      {
+        "name": "2-layer-mask-01",
+        "resolved": "2-attachment-circle",
+        "alias": "2-layer-mask-01"
+      },
+      {
+        "name": "2-layer-mask-02",
+        "resolved": "2-attachment-circle",
+        "alias": "2-layer-mask-02"
+      },
+      {
+        "name": "2-layout-align-left",
+        "resolved": "2-layout-align-bottom",
+        "alias": "2-layout-align-left"
+      },
+      {
+        "name": "2-layout-align-right",
+        "resolved": "2-layout-align-bottom",
+        "alias": "2-layout-align-right"
+      },
+      {
+        "name": "2-layout-align-top",
+        "resolved": "2-layout-align-bottom",
+        "alias": "2-layout-align-top"
+      },
+      {
+        "name": "2-left-to-right-list-dash",
+        "resolved": "2-left-to-right-list-bullet",
+        "alias": "2-left-to-right-list-dash"
+      },
+      {
+        "name": "2-less-than-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-less-than-circle"
+      },
+      {
+        "name": "2-less-than-square",
+        "resolved": "2-abacus",
+        "alias": "2-less-than-square"
+      },
+      {
+        "name": "2-link-square-02",
+        "resolved": "2-link-square-01",
+        "alias": "2-link-square-02"
+      },
+      {
+        "name": "2-linkedin-01",
+        "resolved": "2-attachment-square",
+        "alias": "2-linkedin-01"
+      },
+      {
+        "name": "2-litecoin",
+        "resolved": "2-alpha-circle",
+        "alias": "2-litecoin"
+      },
+      {
+        "name": "2-location-02",
+        "resolved": "2-location-01",
+        "alias": "2-location-02"
+      },
+      {
+        "name": "2-location-04",
+        "resolved": "2-location-03",
+        "alias": "2-location-04"
+      },
+      {
+        "name": "2-location-05",
+        "resolved": "2-location-03",
+        "alias": "2-location-05"
+      },
+      {
+        "name": "2-location-07",
+        "resolved": "2-location-06",
+        "alias": "2-location-07"
+      },
+      {
+        "name": "2-location-09",
+        "resolved": "2-location-08",
+        "alias": "2-location-09"
+      },
+      {
+        "name": "2-location-10",
+        "resolved": "2-location-08",
+        "alias": "2-location-10"
+      },
+      {
+        "name": "2-location-add-01",
+        "resolved": "2-location-01",
+        "alias": "2-location-add-01"
+      },
+      {
+        "name": "2-location-add-02",
+        "resolved": "2-location-06",
+        "alias": "2-location-add-02"
+      },
+      {
+        "name": "2-location-check-01",
+        "resolved": "2-location-01",
+        "alias": "2-location-check-01"
+      },
+      {
+        "name": "2-location-check-02",
+        "resolved": "2-location-06",
+        "alias": "2-location-check-02"
+      },
+      {
+        "name": "2-location-favourite-01",
+        "resolved": "2-location-01",
+        "alias": "2-location-favourite-01"
+      },
+      {
+        "name": "2-location-favourite-02",
+        "resolved": "2-location-06",
+        "alias": "2-location-favourite-02"
+      },
+      {
+        "name": "2-location-remove-01",
+        "resolved": "2-location-01",
+        "alias": "2-location-remove-01"
+      },
+      {
+        "name": "2-location-remove-02",
+        "resolved": "2-location-06",
+        "alias": "2-location-remove-02"
+      },
+      {
+        "name": "2-location-star-01",
+        "resolved": "2-location-01",
+        "alias": "2-location-star-01"
+      },
+      {
+        "name": "2-location-star-02",
+        "resolved": "2-location-06",
+        "alias": "2-location-star-02"
+      },
+      {
+        "name": "2-location-update-02",
+        "resolved": "2-location-update-01",
+        "alias": "2-location-update-02"
+      },
+      {
+        "name": "2-location-user-03",
+        "resolved": "2-location-user-02",
+        "alias": "2-location-user-03"
+      },
+      {
+        "name": "2-location-user-04",
+        "resolved": "2-location-user-02",
+        "alias": "2-location-user-04"
+      },
+      {
+        "name": "2-lock",
+        "resolved": "2-alpha-circle",
+        "alias": "2-lock"
+      },
+      {
+        "name": "2-lock-password",
+        "resolved": "2-ai-lock",
+        "alias": "2-lock-password"
+      },
+      {
+        "name": "2-lock-sync-02",
+        "resolved": "2-lock-sync-01",
+        "alias": "2-lock-sync-02"
+      },
+      {
+        "name": "2-locked",
+        "resolved": "2-finger-print-scan",
+        "alias": "2-locked"
+      },
+      {
+        "name": "2-logout-circle-01",
+        "resolved": "2-login-circle-01",
+        "alias": "2-logout-circle-01"
+      },
+      {
+        "name": "2-logout-square-02",
+        "resolved": "2-login-square-02",
+        "alias": "2-logout-square-02"
+      },
+      {
+        "name": "2-look-bottom",
+        "resolved": "2-angry",
+        "alias": "2-look-bottom"
+      },
+      {
+        "name": "2-look-left",
+        "resolved": "2-angry",
+        "alias": "2-look-left"
+      },
+      {
+        "name": "2-look-right",
+        "resolved": "2-angry",
+        "alias": "2-look-right"
+      },
+      {
+        "name": "2-look-top",
+        "resolved": "2-angry",
+        "alias": "2-look-top"
+      },
+      {
+        "name": "2-m-maps-circle-02",
+        "resolved": "2-m-maps-circle-01",
+        "alias": "2-m-maps-circle-02"
+      },
+      {
+        "name": "2-m-message-question",
+        "resolved": "2-m-message-02",
+        "alias": "2-m-message-question"
+      },
+      {
+        "name": "2-m-message-unlock-02",
+        "resolved": "2-m-message-lock-02",
+        "alias": "2-m-message-unlock-02"
+      },
+      {
+        "name": "2-m-mobile-navigator-01",
+        "resolved": "2-b-bitcoin-smartphone-02",
+        "alias": "2-m-mobile-navigator-01"
+      },
+      {
+        "name": "2-m-mobile-navigator-02",
+        "resolved": "2-b-bitcoin-smartphone-02",
+        "alias": "2-m-mobile-navigator-02"
+      },
+      {
+        "name": "2-m-modern-tv",
+        "resolved": "2-m-modern-tv-four-k",
+        "alias": "2-m-modern-tv"
+      },
+      {
+        "name": "2-m-more-horizontal-circle-02",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-m-more-horizontal-circle-02"
+      },
+      {
+        "name": "2-m-more-horizontal-square-02",
+        "resolved": "2-c-code-square",
+        "alias": "2-m-more-horizontal-square-02"
+      },
+      {
+        "name": "2-m-more-vertical-circle-02",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-m-more-vertical-circle-02"
+      },
+      {
+        "name": "2-mail-open",
+        "resolved": "2-ai-mail",
+        "alias": "2-mail-open"
+      },
+      {
+        "name": "2-mail-send-01",
+        "resolved": "2-mail-receive-01",
+        "alias": "2-mail-send-01"
+      },
+      {
+        "name": "2-mail-setting-01",
+        "resolved": "2-mail-search-01",
+        "alias": "2-mail-setting-01"
+      },
+      {
+        "name": "2-maps-circle-02",
+        "resolved": "2-maps-circle-01",
+        "alias": "2-maps-circle-02"
+      },
+      {
+        "name": "2-maps-global-02",
+        "resolved": "2-maps-global-01",
+        "alias": "2-maps-global-02"
+      },
+      {
+        "name": "2-maps-location-02",
+        "resolved": "2-maps-location-01",
+        "alias": "2-maps-location-02"
+      },
+      {
+        "name": "2-maps-square-02",
+        "resolved": "2-maps-square-01",
+        "alias": "2-maps-square-02"
+      },
+      {
+        "name": "2-math",
+        "resolved": "2-abacus",
+        "alias": "2-math"
+      },
+      {
+        "name": "2-maze",
+        "resolved": "2-abacus",
+        "alias": "2-maze"
+      },
+      {
+        "name": "2-medal-06",
+        "resolved": "2-asteroid-02",
+        "alias": "2-medal-06"
+      },
+      {
+        "name": "2-medal-07",
+        "resolved": "2-gravity",
+        "alias": "2-medal-07"
+      },
+      {
+        "name": "2-medal-second-place",
+        "resolved": "2-medal-first-place",
+        "alias": "2-medal-second-place"
+      },
+      {
+        "name": "2-medal-third-place",
+        "resolved": "2-medal-first-place",
+        "alias": "2-medal-third-place"
+      },
+      {
+        "name": "2-medical-mask",
+        "resolved": "2-angry",
+        "alias": "2-medical-mask"
+      },
+      {
+        "name": "2-medicine-syrup",
+        "resolved": "2-medicine-bottle-01",
+        "alias": "2-medicine-syrup"
+      },
+      {
+        "name": "2-medium-square",
+        "resolved": "2-abacus",
+        "alias": "2-medium-square"
+      },
+      {
+        "name": "2-meh",
+        "resolved": "2-angry",
+        "alias": "2-meh"
+      },
+      {
+        "name": "2-menu-02",
+        "resolved": "2-menu-01",
+        "alias": "2-menu-02"
+      },
+      {
+        "name": "2-menu-03",
+        "resolved": "2-menu-01",
+        "alias": "2-menu-03"
+      },
+      {
+        "name": "2-menu-04",
+        "resolved": "2-menu-01",
+        "alias": "2-menu-04"
+      },
+      {
+        "name": "2-menu-05",
+        "resolved": "2-menu-01",
+        "alias": "2-menu-05"
+      },
+      {
+        "name": "2-menu-11",
+        "resolved": "2-arrow-right-04",
+        "alias": "2-menu-11"
+      },
+      {
+        "name": "2-message-add-02",
+        "resolved": "2-message-add-01",
+        "alias": "2-message-add-02"
+      },
+      {
+        "name": "2-message-circle-reply",
+        "resolved": "2-b-bubble-chat",
+        "alias": "2-message-circle-reply"
+      },
+      {
+        "name": "2-message-delay-02",
+        "resolved": "2-message-delay-01",
+        "alias": "2-message-delay-02"
+      },
+      {
+        "name": "2-message-download-02",
+        "resolved": "2-message-download-01",
+        "alias": "2-message-download-02"
+      },
+      {
+        "name": "2-message-outgoing-02",
+        "resolved": "2-message-outgoing-01",
+        "alias": "2-message-outgoing-02"
+      },
+      {
+        "name": "2-message-question",
+        "resolved": "2-message-02",
+        "alias": "2-message-question"
+      },
+      {
+        "name": "2-message-search-02",
+        "resolved": "2-message-search-01",
+        "alias": "2-message-search-02"
+      },
+      {
+        "name": "2-message-square-diff",
+        "resolved": "2-message-square-code",
+        "alias": "2-message-square-diff"
+      },
+      {
+        "name": "2-message-unlock-01",
+        "resolved": "2-message-lock-01",
+        "alias": "2-message-unlock-01"
+      },
+      {
+        "name": "2-message-unlock-02",
+        "resolved": "2-message-lock-02",
+        "alias": "2-message-unlock-02"
+      },
+      {
+        "name": "2-message-upload-02",
+        "resolved": "2-message-upload-01",
+        "alias": "2-message-upload-02"
+      },
+      {
+        "name": "2-mic-02",
+        "resolved": "2-mic-01",
+        "alias": "2-mic-02"
+      },
+      {
+        "name": "2-minimize-03",
+        "resolved": "2-maximize-03",
+        "alias": "2-minimize-03"
+      },
+      {
+        "name": "2-minimize-04",
+        "resolved": "2-maximize-04",
+        "alias": "2-minimize-04"
+      },
+      {
+        "name": "2-minus-plus-circle-01",
+        "resolved": "2-alpha-circle",
+        "alias": "2-minus-plus-circle-01"
+      },
+      {
+        "name": "2-minus-plus-circle-02",
+        "resolved": "2-alpha-circle",
+        "alias": "2-minus-plus-circle-02"
+      },
+      {
+        "name": "2-minus-plus-square-01",
+        "resolved": "2-abacus",
+        "alias": "2-minus-plus-square-01"
+      },
+      {
+        "name": "2-minus-plus-square-02",
+        "resolved": "2-abacus",
+        "alias": "2-minus-plus-square-02"
+      },
+      {
+        "name": "2-minus-sign-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-minus-sign-circle"
+      },
+      {
+        "name": "2-minus-sign-square",
+        "resolved": "2-abacus",
+        "alias": "2-minus-sign-square"
+      },
+      {
+        "name": "2-mobile-navigator-02",
+        "resolved": "2-mobile-navigator-01",
+        "alias": "2-mobile-navigator-02"
+      },
+      {
+        "name": "2-modern-tv",
+        "resolved": "2-modern-tv-issue",
+        "alias": "2-modern-tv"
+      },
+      {
+        "name": "2-money-04",
+        "resolved": "2-money-03",
+        "alias": "2-money-04"
+      },
+      {
+        "name": "2-money-bag-01",
+        "resolved": "2-bitcoin-bag",
+        "alias": "2-money-bag-01"
+      },
+      {
+        "name": "2-money-bag-02",
+        "resolved": "2-bitcoin-bag",
+        "alias": "2-money-bag-02"
+      },
+      {
+        "name": "2-money-send-circle",
+        "resolved": "2-money-receive-circle",
+        "alias": "2-money-send-circle"
+      },
+      {
+        "name": "2-money-send-square",
+        "resolved": "2-money-receive-square",
+        "alias": "2-money-send-square"
+      },
+      {
+        "name": "2-monitor-speaker",
+        "resolved": "2-gallery-horizontal-end",
+        "alias": "2-monitor-speaker"
+      },
+      {
+        "name": "2-monitor-stop",
+        "resolved": "2-monitor-pause",
+        "alias": "2-monitor-stop"
+      },
+      {
+        "name": "2-monocle-01",
+        "resolved": "2-angry",
+        "alias": "2-monocle-01"
+      },
+      {
+        "name": "2-monster",
+        "resolved": "2-m-monster",
+        "alias": "2-monster"
+      },
+      {
+        "name": "2-moon-eclipse",
+        "resolved": "2-alpha-circle",
+        "alias": "2-moon-eclipse"
+      },
+      {
+        "name": "2-more-horizontal-circle-02",
+        "resolved": "2-alpha-circle",
+        "alias": "2-more-horizontal-circle-02"
+      },
+      {
+        "name": "2-more-horizontal-square-02",
+        "resolved": "2-abacus",
+        "alias": "2-more-horizontal-square-02"
+      },
+      {
+        "name": "2-more-or-less-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-more-or-less-circle"
+      },
+      {
+        "name": "2-more-or-less-square",
+        "resolved": "2-abacus",
+        "alias": "2-more-or-less-square"
+      },
+      {
+        "name": "2-more-vertical",
+        "resolved": "2-more-horizontal",
+        "alias": "2-more-vertical"
+      },
+      {
+        "name": "2-more-vertical-circle-01",
+        "resolved": "2-more-horizontal-circle-01",
+        "alias": "2-more-vertical-circle-01"
+      },
+      {
+        "name": "2-more-vertical-circle-02",
+        "resolved": "2-alpha-circle",
+        "alias": "2-more-vertical-circle-02"
+      },
+      {
+        "name": "2-more-vertical-square-01",
+        "resolved": "2-more-horizontal-square-01",
+        "alias": "2-more-vertical-square-01"
+      },
+      {
+        "name": "2-mouse-08",
+        "resolved": "2-mouse-07",
+        "alias": "2-mouse-08"
+      },
+      {
+        "name": "2-mouse-14",
+        "resolved": "2-mouse-13",
+        "alias": "2-mouse-14"
+      },
+      {
+        "name": "2-mouse-16",
+        "resolved": "2-mouse-15",
+        "alias": "2-mouse-16"
+      },
+      {
+        "name": "2-mouse-20",
+        "resolved": "2-mouse-18",
+        "alias": "2-mouse-20"
+      },
+      {
+        "name": "2-mouse-21",
+        "resolved": "2-mouse-19",
+        "alias": "2-mouse-21"
+      },
+      {
+        "name": "2-mouse-left-click-04",
+        "resolved": "2-mouse-09",
+        "alias": "2-mouse-left-click-04"
+      },
+      {
+        "name": "2-mouse-scroll-01",
+        "resolved": "2-mouse-01",
+        "alias": "2-mouse-scroll-01"
+      },
+      {
+        "name": "2-mouse-scroll-02",
+        "resolved": "2-mouse-09",
+        "alias": "2-mouse-scroll-02"
+      },
+      {
+        "name": "2-mp-four-01",
+        "resolved": "2-csv-01",
+        "alias": "2-mp-four-01"
+      },
+      {
+        "name": "2-mp-three-01",
+        "resolved": "2-csv-01",
+        "alias": "2-mp-three-01"
+      },
+      {
+        "name": "2-mp-three-02",
+        "resolved": "2-mp-four-02",
+        "alias": "2-mp-three-02"
+      },
+      {
+        "name": "2-multiplication-sign-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-multiplication-sign-circle"
+      },
+      {
+        "name": "2-multiplication-sign-square",
+        "resolved": "2-abacus",
+        "alias": "2-multiplication-sign-square"
+      },
+      {
+        "name": "2-music-note-square-01",
+        "resolved": "2-abacus",
+        "alias": "2-music-note-square-01"
+      },
+      {
+        "name": "2-music-note-square-02",
+        "resolved": "2-abacus",
+        "alias": "2-music-note-square-02"
+      },
+      {
+        "name": "2-mute",
+        "resolved": "2-angry",
+        "alias": "2-mute"
+      },
+      {
+        "name": "2-n-navigation-05",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-n-navigation-05"
+      },
+      {
+        "name": "2-n-th-root-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-n-th-root-circle"
+      },
+      {
+        "name": "2-n-th-root-square",
+        "resolved": "2-abacus",
+        "alias": "2-n-th-root-square"
+      },
+      {
+        "name": "2-navigation-04",
+        "resolved": "2-alpha-circle",
+        "alias": "2-navigation-04"
+      },
+      {
+        "name": "2-nerd",
+        "resolved": "2-angry",
+        "alias": "2-nerd"
+      },
+      {
+        "name": "2-neutral",
+        "resolved": "2-angry",
+        "alias": "2-neutral"
+      },
+      {
+        "name": "2-new-twitter-ellipse",
+        "resolved": "2-alpha-circle",
+        "alias": "2-new-twitter-ellipse"
+      },
+      {
+        "name": "2-new-twitter-rectangle",
+        "resolved": "2-abacus",
+        "alias": "2-new-twitter-rectangle"
+      },
+      {
+        "name": "2-next",
+        "resolved": "2-forward-01",
+        "alias": "2-next"
+      },
+      {
+        "name": "2-nine-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-nine-circle"
+      },
+      {
+        "name": "2-nine-square",
+        "resolved": "2-eight-square",
+        "alias": "2-nine-square"
+      },
+      {
+        "name": "2-node-remove",
+        "resolved": "2-node-add",
+        "alias": "2-node-remove"
+      },
+      {
+        "name": "2-not-equal-sign-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-not-equal-sign-circle"
+      },
+      {
+        "name": "2-not-equal-sign-square",
+        "resolved": "2-abacus",
+        "alias": "2-not-equal-sign-square"
+      },
+      {
+        "name": "2-note",
+        "resolved": "2-clipboard",
+        "alias": "2-note"
+      },
+      {
+        "name": "2-note-03",
+        "resolved": "2-note-01",
+        "alias": "2-note-03"
+      },
+      {
+        "name": "2-notebook-01",
+        "resolved": "2-legal-document-01",
+        "alias": "2-notebook-01"
+      },
+      {
+        "name": "2-notion-01",
+        "resolved": "2-abacus",
+        "alias": "2-notion-01"
+      },
+      {
+        "name": "2-npm",
+        "resolved": "2-bitcoin-rectangle",
+        "alias": "2-npm"
+      },
+      {
+        "name": "2-o-online-learning-02",
+        "resolved": "2-book-a",
+        "alias": "2-o-online-learning-02"
+      },
+      {
+        "name": "2-one-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-one-circle"
+      },
+      {
+        "name": "2-online-learning-02",
+        "resolved": "2-audio-book-04",
+        "alias": "2-online-learning-02"
+      },
+      {
+        "name": "2-options-call",
+        "resolved": "2-brick-wall",
+        "alias": "2-options-call"
+      },
+      {
+        "name": "2-package-01",
+        "resolved": "2-delivery-box-01",
+        "alias": "2-package-01"
+      },
+      {
+        "name": "2-package-sent",
+        "resolved": "2-package-receive",
+        "alias": "2-package-sent"
+      },
+      {
+        "name": "2-pacman-01",
+        "resolved": "2-p-pacman-01",
+        "alias": "2-pacman-01"
+      },
+      {
+        "name": "2-pacman-02",
+        "resolved": "2-p-pacman-02",
+        "alias": "2-pacman-02"
+      },
+      {
+        "name": "2-panel-left",
+        "resolved": "2-panel-left-close",
+        "alias": "2-panel-left"
+      },
+      {
+        "name": "2-panel-left-dashed",
+        "resolved": "2-brick-wall",
+        "alias": "2-panel-left-dashed"
+      },
+      {
+        "name": "2-panel-left-open",
+        "resolved": "2-panel-left",
+        "alias": "2-panel-left-open"
+      },
+      {
+        "name": "2-panel-right",
+        "resolved": "2-panel-right-close",
+        "alias": "2-panel-right"
+      },
+      {
+        "name": "2-panel-right-dashed",
+        "resolved": "2-brick-wall",
+        "alias": "2-panel-right-dashed"
+      },
+      {
+        "name": "2-panel-right-open",
+        "resolved": "2-panel-right",
+        "alias": "2-panel-right-open"
+      },
+      {
+        "name": "2-parabola-03",
+        "resolved": "2-parabola-02",
+        "alias": "2-parabola-03"
+      },
+      {
+        "name": "2-parking-area-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-parking-area-circle"
+      },
+      {
+        "name": "2-parking-area-square",
+        "resolved": "2-dollar-square",
+        "alias": "2-parking-area-square"
+      },
+      {
+        "name": "2-passport",
+        "resolved": "2-advertisiment",
+        "alias": "2-passport"
+      },
+      {
+        "name": "2-path",
+        "resolved": "2-attachment-square",
+        "alias": "2-path"
+      },
+      {
+        "name": "2-pathfinder-unite",
+        "resolved": "2-pathfinder-trim",
+        "alias": "2-pathfinder-unite"
+      },
+      {
+        "name": "2-pc-case",
+        "resolved": "2-p-pc-case",
+        "alias": "2-pc-case"
+      },
+      {
+        "name": "2-pdf-01",
+        "resolved": "2-csv-01",
+        "alias": "2-pdf-01"
+      },
+      {
+        "name": "2-pdf-02",
+        "resolved": "2-hdr-02",
+        "alias": "2-pdf-02"
+      },
+      {
+        "name": "2-pen-connect-usb",
+        "resolved": "2-pen-connect-bluetooth",
+        "alias": "2-pen-connect-usb"
+      },
+      {
+        "name": "2-pensive",
+        "resolved": "2-angry",
+        "alias": "2-pensive"
+      },
+      {
+        "name": "2-percent-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-percent-circle"
+      },
+      {
+        "name": "2-percent-square",
+        "resolved": "2-abacus",
+        "alias": "2-percent-square"
+      },
+      {
+        "name": "2-permanent-job",
+        "resolved": "2-new-office",
+        "alias": "2-permanent-job"
+      },
+      {
+        "name": "2-phone-arrow-up",
+        "resolved": "2-phone-arrow-down",
+        "alias": "2-phone-arrow-up"
+      },
+      {
+        "name": "2-php",
+        "resolved": "2-abacus",
+        "alias": "2-php"
+      },
+      {
+        "name": "2-pi-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-pi-circle"
+      },
+      {
+        "name": "2-pi-square",
+        "resolved": "2-abacus",
+        "alias": "2-pi-square"
+      },
+      {
+        "name": "2-pie-chart-square",
+        "resolved": "2-dollar-square",
+        "alias": "2-pie-chart-square"
+      },
+      {
+        "name": "2-pin-location-02",
+        "resolved": "2-pin-location-01",
+        "alias": "2-pin-location-02"
+      },
+      {
+        "name": "2-pin-location-03",
+        "resolved": "2-pin-location-01",
+        "alias": "2-pin-location-03"
+      },
+      {
+        "name": "2-pinterest",
+        "resolved": "2-attachment-circle",
+        "alias": "2-pinterest"
+      },
+      {
+        "name": "2-plaxo",
+        "resolved": "2-attachment-circle",
+        "alias": "2-plaxo"
+      },
+      {
+        "name": "2-play-circle",
+        "resolved": "2-attachment-circle",
+        "alias": "2-play-circle"
+      },
+      {
+        "name": "2-play-circle-02",
+        "resolved": "2-attachment-circle",
+        "alias": "2-play-circle-02"
+      },
+      {
+        "name": "2-play-store",
+        "resolved": "2-abacus",
+        "alias": "2-play-store"
+      },
+      {
+        "name": "2-plug-02",
+        "resolved": "2-alpha-circle",
+        "alias": "2-plug-02"
+      },
+      {
+        "name": "2-plus-minus-circle-01",
+        "resolved": "2-alpha-circle",
+        "alias": "2-plus-minus-circle-01"
+      },
+      {
+        "name": "2-plus-minus-circle-02",
+        "resolved": "2-alpha-circle",
+        "alias": "2-plus-minus-circle-02"
+      },
+      {
+        "name": "2-plus-minus-square-01",
+        "resolved": "2-abacus",
+        "alias": "2-plus-minus-square-01"
+      },
+      {
+        "name": "2-plus-minus-square-02",
+        "resolved": "2-abacus",
+        "alias": "2-plus-minus-square-02"
+      },
+      {
+        "name": "2-plus-sign-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-plus-sign-circle"
+      },
+      {
+        "name": "2-plus-sign-square",
+        "resolved": "2-abacus",
+        "alias": "2-plus-sign-square"
+      },
+      {
+        "name": "2-png-01",
+        "resolved": "2-csv-01",
+        "alias": "2-png-01"
+      },
+      {
+        "name": "2-png-02",
+        "resolved": "2-hdr-02",
+        "alias": "2-png-02"
+      },
+      {
+        "name": "2-pound-circle",
+        "resolved": "2-attachment-circle",
+        "alias": "2-pound-circle"
+      },
+      {
+        "name": "2-ppt-01",
+        "resolved": "2-csv-01",
+        "alias": "2-ppt-01"
+      },
+      {
+        "name": "2-ppt-02",
+        "resolved": "2-hdr-02",
+        "alias": "2-ppt-02"
+      },
+      {
+        "name": "2-presentation-06",
+        "resolved": "2-presentation-02",
+        "alias": "2-presentation-06"
+      },
+      {
+        "name": "2-presentation-07",
+        "resolved": "2-presentation-04",
+        "alias": "2-presentation-07"
+      },
+      {
+        "name": "2-presentation-line-chart-02",
+        "resolved": "2-presentation-line-chart-01",
+        "alias": "2-presentation-line-chart-02"
+      },
+      {
+        "name": "2-previous",
+        "resolved": "2-backward-01",
+        "alias": "2-previous"
+      },
+      {
+        "name": "2-profile-02",
+        "resolved": "2-advertisiment",
+        "alias": "2-profile-02"
+      },
+      {
+        "name": "2-progress-03",
+        "resolved": "2-pause-circle",
+        "alias": "2-progress-03"
+      },
+      {
+        "name": "2-progress-04",
+        "resolved": "2-pause-circle",
+        "alias": "2-progress-04"
+      },
+      {
+        "name": "2-pulse-rectangle-01",
+        "resolved": "2-activity-03",
+        "alias": "2-pulse-rectangle-01"
+      },
+      {
+        "name": "2-pulse-rectangle-02",
+        "resolved": "2-activity-03",
+        "alias": "2-pulse-rectangle-02"
+      },
+      {
+        "name": "2-q-question",
+        "resolved": "2-c-complaint",
+        "alias": "2-q-question"
+      },
+      {
+        "name": "2-question",
+        "resolved": "2-complaint",
+        "alias": "2-question"
+      },
+      {
+        "name": "2-quote-up-circle",
+        "resolved": "2-angry",
+        "alias": "2-quote-up-circle"
+      },
+      {
+        "name": "2-quote-up-square",
+        "resolved": "2-attachment-square",
+        "alias": "2-quote-up-square"
+      },
+      {
+        "name": "2-r-re",
+        "resolved": "2-a-alert-square",
+        "alias": "2-r-re"
+      },
+      {
+        "name": "2-r-right-to-left-list-bullet",
+        "resolved": "2-l-left-to-right-list-bullet",
+        "alias": "2-r-right-to-left-list-bullet"
+      },
+      {
+        "name": "2-r-riyal",
+        "resolved": "2-angry",
+        "alias": "2-r-riyal"
+      },
+      {
+        "name": "2-r-rss-error",
+        "resolved": "2-r-rss-connected-02",
+        "alias": "2-r-rss-error"
+      },
+      {
+        "name": "2-r-rss-unlocked",
+        "resolved": "2-r-rss-locked",
+        "alias": "2-r-rss-unlocked"
+      },
+      {
+        "name": "2-radar-02",
+        "resolved": "2-add-circle",
+        "alias": "2-radar-02"
+      },
+      {
+        "name": "2-radius",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-radius"
+      },
+      {
+        "name": "2-raw-01",
+        "resolved": "2-csv-01",
+        "alias": "2-raw-01"
+      },
+      {
+        "name": "2-re",
+        "resolved": "2-abacus",
+        "alias": "2-re"
+      },
+      {
+        "name": "2-receipt-euro",
+        "resolved": "2-receipt-cent",
+        "alias": "2-receipt-euro"
+      },
+      {
+        "name": "2-receipt-indian-rupee",
+        "resolved": "2-receipt-cent",
+        "alias": "2-receipt-indian-rupee"
+      },
+      {
+        "name": "2-receipt-japanese-yen",
+        "resolved": "2-receipt-cent",
+        "alias": "2-receipt-japanese-yen"
+      },
+      {
+        "name": "2-receipt-swiss-franc",
+        "resolved": "2-receipt-russian-ruble",
+        "alias": "2-receipt-swiss-franc"
+      },
+      {
+        "name": "2-receipt-text",
+        "resolved": "2-receipt-russian-ruble",
+        "alias": "2-receipt-text"
+      },
+      {
+        "name": "2-receipt-turkish-lira",
+        "resolved": "2-receipt-russian-ruble",
+        "alias": "2-receipt-turkish-lira"
+      },
+      {
+        "name": "2-reduce-paragraph",
+        "resolved": "2-expand-paragraph",
+        "alias": "2-reduce-paragraph"
+      },
+      {
+        "name": "2-refresh-dot",
+        "resolved": "2-refresh-03",
+        "alias": "2-refresh-dot"
+      },
+      {
+        "name": "2-register",
+        "resolved": "2-alpha-circle",
+        "alias": "2-register"
+      },
+      {
+        "name": "2-registered",
+        "resolved": "2-alpha-circle",
+        "alias": "2-registered"
+      },
+      {
+        "name": "2-relieved-01",
+        "resolved": "2-angry",
+        "alias": "2-relieved-01"
+      },
+      {
+        "name": "2-relieved-02",
+        "resolved": "2-angry",
+        "alias": "2-relieved-02"
+      },
+      {
+        "name": "2-remove-01",
+        "resolved": "2-add-01",
+        "alias": "2-remove-01"
+      },
+      {
+        "name": "2-remove-circle",
+        "resolved": "2-add-circle",
+        "alias": "2-remove-circle"
+      },
+      {
+        "name": "2-remove-pi",
+        "resolved": "2-insert-pi",
+        "alias": "2-remove-pi"
+      },
+      {
+        "name": "2-remove-square",
+        "resolved": "2-abacus",
+        "alias": "2-remove-square"
+      },
+      {
+        "name": "2-repeat-off",
+        "resolved": "2-link-05",
+        "alias": "2-repeat-off"
+      },
+      {
+        "name": "2-resize-01",
+        "resolved": "2-drag-01",
+        "alias": "2-resize-01"
+      },
+      {
+        "name": "2-resize-02",
+        "resolved": "2-drag-03",
+        "alias": "2-resize-02"
+      },
+      {
+        "name": "2-resources-remove",
+        "resolved": "2-resources-add",
+        "alias": "2-resources-remove"
+      },
+      {
+        "name": "2-restaurant-01",
+        "resolved": "2-cafe",
+        "alias": "2-restaurant-01"
+      },
+      {
+        "name": "2-reverse-withdrawal-01",
+        "resolved": "2-atm-01",
+        "alias": "2-reverse-withdrawal-01"
+      },
+      {
+        "name": "2-right-to-left-list-bullet",
+        "resolved": "2-left-to-right-list-bullet",
+        "alias": "2-right-to-left-list-bullet"
+      },
+      {
+        "name": "2-right-to-left-list-dash",
+        "resolved": "2-left-to-right-list-bullet",
+        "alias": "2-right-to-left-list-dash"
+      },
+      {
+        "name": "2-ripple",
+        "resolved": "2-alpha-circle",
+        "alias": "2-ripple"
+      },
+      {
+        "name": "2-riyal",
+        "resolved": "2-alpha-circle",
+        "alias": "2-riyal"
+      },
+      {
+        "name": "2-road-location-02",
+        "resolved": "2-road-location-01",
+        "alias": "2-road-location-02"
+      },
+      {
+        "name": "2-root-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-root-circle"
+      },
+      {
+        "name": "2-root-second-bracket",
+        "resolved": "2-root-first-bracket",
+        "alias": "2-root-second-bracket"
+      },
+      {
+        "name": "2-route-03",
+        "resolved": "2-route-02",
+        "alias": "2-route-03"
+      },
+      {
+        "name": "2-route-block",
+        "resolved": "2-route-01",
+        "alias": "2-route-block"
+      },
+      {
+        "name": "2-rss-error",
+        "resolved": "2-rss-connected-02",
+        "alias": "2-rss-error"
+      },
+      {
+        "name": "2-s-security-password",
+        "resolved": "2-blocked",
+        "alias": "2-s-security-password"
+      },
+      {
+        "name": "2-s-security-warning",
+        "resolved": "2-blocked",
+        "alias": "2-s-security-warning"
+      },
+      {
+        "name": "2-s-security-wifi",
+        "resolved": "2-rupee-shield",
+        "alias": "2-s-security-wifi"
+      },
+      {
+        "name": "2-s-shared-drive",
+        "resolved": "2-d-drive",
+        "alias": "2-s-shared-drive"
+      },
+      {
+        "name": "2-s-square-lock-01",
+        "resolved": "2-l-lock-password",
+        "alias": "2-s-square-lock-01"
+      },
+      {
+        "name": "2-s-square-lock-password",
+        "resolved": "2-l-lock-password",
+        "alias": "2-s-square-lock-password"
+      },
+      {
+        "name": "2-s-square-unlock-01",
+        "resolved": "2-l-lock-password",
+        "alias": "2-s-square-unlock-01"
+      },
+      {
+        "name": "2-s-sun-cloud-snow-02",
+        "resolved": "2-m-moon-cloud-snow",
+        "alias": "2-s-sun-cloud-snow-02"
+      },
+      {
+        "name": "2-sad-01",
+        "resolved": "2-angry",
+        "alias": "2-sad-01"
+      },
+      {
+        "name": "2-sad-02",
+        "resolved": "2-angry",
+        "alias": "2-sad-02"
+      },
+      {
+        "name": "2-sad-dizzy",
+        "resolved": "2-angry",
+        "alias": "2-sad-dizzy"
+      },
+      {
+        "name": "2-safe-box",
+        "resolved": "2-brick-wall",
+        "alias": "2-safe-box"
+      },
+      {
+        "name": "2-sale-tag-01",
+        "resolved": "2-discount-tag-01",
+        "alias": "2-sale-tag-01"
+      },
+      {
+        "name": "2-sale-tag-02",
+        "resolved": "2-discount-tag-02",
+        "alias": "2-sale-tag-02"
+      },
+      {
+        "name": "2-save-energy-01",
+        "resolved": "2-chart-bubble-02",
+        "alias": "2-save-energy-01"
+      },
+      {
+        "name": "2-save-money-euro",
+        "resolved": "2-save-money-dollar",
+        "alias": "2-save-money-euro"
+      },
+      {
+        "name": "2-save-money-pound",
+        "resolved": "2-save-money-dollar",
+        "alias": "2-save-money-pound"
+      },
+      {
+        "name": "2-save-money-yen",
+        "resolved": "2-save-money-dollar",
+        "alias": "2-save-money-yen"
+      },
+      {
+        "name": "2-school-report-card",
+        "resolved": "2-align-box-bottom-left",
+        "alias": "2-school-report-card"
+      },
+      {
+        "name": "2-scissor-01",
+        "resolved": "2-abacus",
+        "alias": "2-scissor-01"
+      },
+      {
+        "name": "2-scissor-rectangle",
+        "resolved": "2-attachment-square",
+        "alias": "2-scissor-rectangle"
+      },
+      {
+        "name": "2-scooter-electric",
+        "resolved": "2-scooter-04",
+        "alias": "2-scooter-electric"
+      },
+      {
+        "name": "2-search-circle",
+        "resolved": "2-pause-circle",
+        "alias": "2-search-circle"
+      },
+      {
+        "name": "2-search-remove",
+        "resolved": "2-search-minus",
+        "alias": "2-search-remove"
+      },
+      {
+        "name": "2-search-square",
+        "resolved": "2-five-square",
+        "alias": "2-search-square"
+      },
+      {
+        "name": "2-second-bracket-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-second-bracket-circle"
+      },
+      {
+        "name": "2-second-bracket-square",
+        "resolved": "2-abacus",
+        "alias": "2-second-bracket-square"
+      },
+      {
+        "name": "2-security-check",
+        "resolved": "2-blocked",
+        "alias": "2-security-check"
+      },
+      {
+        "name": "2-security-lock",
+        "resolved": "2-blocked",
+        "alias": "2-security-lock"
+      },
+      {
+        "name": "2-security-password",
+        "resolved": "2-blocked",
+        "alias": "2-security-password"
+      },
+      {
+        "name": "2-security-warning",
+        "resolved": "2-rupee-shield",
+        "alias": "2-security-warning"
+      },
+      {
+        "name": "2-senseless",
+        "resolved": "2-angry",
+        "alias": "2-senseless"
+      },
+      {
+        "name": "2-setting-07",
+        "resolved": "2-account-setting-03",
+        "alias": "2-setting-07"
+      },
+      {
+        "name": "2-setting-error-03",
+        "resolved": "2-setting-done-03",
+        "alias": "2-setting-error-03"
+      },
+      {
+        "name": "2-setting-error-04",
+        "resolved": "2-setting-done-04",
+        "alias": "2-setting-error-04"
+      },
+      {
+        "name": "2-settings-02",
+        "resolved": "2-artificial-intelligence-06",
+        "alias": "2-settings-02"
+      },
+      {
+        "name": "2-settings-03",
+        "resolved": "2-setting-06",
+        "alias": "2-settings-03"
+      },
+      {
+        "name": "2-settings-04",
+        "resolved": "2-abacus",
+        "alias": "2-settings-04"
+      },
+      {
+        "name": "2-settings-error-02",
+        "resolved": "2-setting-done-02",
+        "alias": "2-settings-error-02"
+      },
+      {
+        "name": "2-seven-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-seven-circle"
+      },
+      {
+        "name": "2-seven-square",
+        "resolved": "2-eight-square",
+        "alias": "2-seven-square"
+      },
+      {
+        "name": "2-seven-z-01",
+        "resolved": "2-rar-01",
+        "alias": "2-seven-z-01"
+      },
+      {
+        "name": "2-shadcn-square",
+        "resolved": "2-c-code-square",
+        "alias": "2-shadcn-square"
+      },
+      {
+        "name": "2-shared-drive",
+        "resolved": "2-drive",
+        "alias": "2-shared-drive"
+      },
+      {
+        "name": "2-shield-02",
+        "resolved": "2-blocked",
+        "alias": "2-shield-02"
+      },
+      {
+        "name": "2-shield-blockchain",
+        "resolved": "2-ai-security-01",
+        "alias": "2-shield-blockchain"
+      },
+      {
+        "name": "2-shield-energy",
+        "resolved": "2-ai-security-01",
+        "alias": "2-shield-energy"
+      },
+      {
+        "name": "2-shield-key",
+        "resolved": "2-blocked",
+        "alias": "2-shield-key"
+      },
+      {
+        "name": "2-shield-minus",
+        "resolved": "2-blocked",
+        "alias": "2-shield-minus"
+      },
+      {
+        "name": "2-shield-plus",
+        "resolved": "2-blocked",
+        "alias": "2-shield-plus"
+      },
+      {
+        "name": "2-shield-question-mark",
+        "resolved": "2-blocked",
+        "alias": "2-shield-question-mark"
+      },
+      {
+        "name": "2-shield-user",
+        "resolved": "2-blocked",
+        "alias": "2-shield-user"
+      },
+      {
+        "name": "2-shipping-truck-01",
+        "resolved": "2-container-truck-01",
+        "alias": "2-shipping-truck-01"
+      },
+      {
+        "name": "2-shipping-truck-02",
+        "resolved": "2-container-truck-02",
+        "alias": "2-shipping-truck-02"
+      },
+      {
+        "name": "2-shocked",
+        "resolved": "2-angry",
+        "alias": "2-shocked"
+      },
+      {
+        "name": "2-shuffle-square",
+        "resolved": "2-abacus",
+        "alias": "2-shuffle-square"
+      },
+      {
+        "name": "2-shutterstock",
+        "resolved": "2-abacus",
+        "alias": "2-shutterstock"
+      },
+      {
+        "name": "2-silence",
+        "resolved": "2-angry",
+        "alias": "2-silence"
+      },
+      {
+        "name": "2-sing-left",
+        "resolved": "2-angry",
+        "alias": "2-sing-left"
+      },
+      {
+        "name": "2-sing-right",
+        "resolved": "2-angry",
+        "alias": "2-sing-right"
+      },
+      {
+        "name": "2-six-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-six-circle"
+      },
+      {
+        "name": "2-six-square",
+        "resolved": "2-five-square",
+        "alias": "2-six-square"
+      },
+      {
+        "name": "2-smart",
+        "resolved": "2-angry",
+        "alias": "2-smart"
+      },
+      {
+        "name": "2-smartphone-wifi",
+        "resolved": "2-smartphone-lost-wifi",
+        "alias": "2-smartphone-wifi"
+      },
+      {
+        "name": "2-smile",
+        "resolved": "2-angry",
+        "alias": "2-smile"
+      },
+      {
+        "name": "2-smile-dizzy",
+        "resolved": "2-angry",
+        "alias": "2-smile-dizzy"
+      },
+      {
+        "name": "2-sofa-02",
+        "resolved": "2-sofa-01",
+        "alias": "2-sofa-02"
+      },
+      {
+        "name": "2-software-license",
+        "resolved": "2-browser",
+        "alias": "2-software-license"
+      },
+      {
+        "name": "2-sort-by-up-01",
+        "resolved": "2-sort-by-down-01",
+        "alias": "2-sort-by-up-01"
+      },
+      {
+        "name": "2-sorting-a-z-02",
+        "resolved": "2-arrange-by-letters-a-z",
+        "alias": "2-sorting-a-z-02"
+      },
+      {
+        "name": "2-sorting-z-a-01",
+        "resolved": "2-arrange-by-letters-z-a",
+        "alias": "2-sorting-z-a-01"
+      },
+      {
+        "name": "2-source-code-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-source-code-circle"
+      },
+      {
+        "name": "2-source-code-square",
+        "resolved": "2-abacus",
+        "alias": "2-source-code-square"
+      },
+      {
+        "name": "2-spotify",
+        "resolved": "2-alpha-circle",
+        "alias": "2-spotify"
+      },
+      {
+        "name": "2-sql",
+        "resolved": "2-abacus",
+        "alias": "2-sql"
+      },
+      {
+        "name": "2-square",
+        "resolved": "2-abacus",
+        "alias": "2-square"
+      },
+      {
+        "name": "2-square-arrow-data-transfer-diagonal",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-data-transfer-diagonal"
+      },
+      {
+        "name": "2-square-arrow-data-transfer-horizontal",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-data-transfer-horizontal"
+      },
+      {
+        "name": "2-square-arrow-data-transfer-vertical",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-data-transfer-vertical"
+      },
+      {
+        "name": "2-square-arrow-diagonal-01",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-diagonal-01"
+      },
+      {
+        "name": "2-square-arrow-down-01",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-down-01"
+      },
+      {
+        "name": "2-square-arrow-down-double",
+        "resolved": "2-settings-05",
+        "alias": "2-square-arrow-down-double"
+      },
+      {
+        "name": "2-square-arrow-down-left",
+        "resolved": "2-square-arrow-down-02",
+        "alias": "2-square-arrow-down-left"
+      },
+      {
+        "name": "2-square-arrow-down-right",
+        "resolved": "2-c-code-square",
+        "alias": "2-square-arrow-down-right"
+      },
+      {
+        "name": "2-square-arrow-expand-01",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-expand-01"
+      },
+      {
+        "name": "2-square-arrow-expand-02",
+        "resolved": "2-square-arrow-diagonal-02",
+        "alias": "2-square-arrow-expand-02"
+      },
+      {
+        "name": "2-square-arrow-horizontal",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-horizontal"
+      },
+      {
+        "name": "2-square-arrow-left-01",
+        "resolved": "2-settings-05",
+        "alias": "2-square-arrow-left-01"
+      },
+      {
+        "name": "2-square-arrow-left-02",
+        "resolved": "2-square-arrow-down-02",
+        "alias": "2-square-arrow-left-02"
+      },
+      {
+        "name": "2-square-arrow-left-03",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-left-03"
+      },
+      {
+        "name": "2-square-arrow-left-double",
+        "resolved": "2-square-arrow-diagonal-02",
+        "alias": "2-square-arrow-left-double"
+      },
+      {
+        "name": "2-square-arrow-left-right",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-left-right"
+      },
+      {
+        "name": "2-square-arrow-move-left-down",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-move-left-down"
+      },
+      {
+        "name": "2-square-arrow-move-left-up",
+        "resolved": "2-square-arrow-diagonal-02",
+        "alias": "2-square-arrow-move-left-up"
+      },
+      {
+        "name": "2-square-arrow-move-right-down",
+        "resolved": "2-square-arrow-diagonal-02",
+        "alias": "2-square-arrow-move-right-down"
+      },
+      {
+        "name": "2-square-arrow-move-right-up",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-move-right-up"
+      },
+      {
+        "name": "2-square-arrow-reload-01",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-reload-01"
+      },
+      {
+        "name": "2-square-arrow-reload-02",
+        "resolved": "2-square-arrow-diagonal-02",
+        "alias": "2-square-arrow-reload-02"
+      },
+      {
+        "name": "2-square-arrow-right-01",
+        "resolved": "2-square-arrow-down-03",
+        "alias": "2-square-arrow-right-01"
+      },
+      {
+        "name": "2-square-arrow-right-02",
+        "resolved": "2-square-arrow-down-02",
+        "alias": "2-square-arrow-right-02"
+      },
+      {
+        "name": "2-square-arrow-right-03",
+        "resolved": "2-square-arrow-move-down-left",
+        "alias": "2-square-arrow-right-03"
+      },
+      {
+        "name": "2-square-arrow-right-double",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-right-double"
+      },
+      {
+        "name": "2-square-arrow-shrink-01",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-shrink-01"
+      },
+      {
+        "name": "2-square-arrow-shrink-02",
+        "resolved": "2-square-arrow-diagonal-02",
+        "alias": "2-square-arrow-shrink-02"
+      },
+      {
+        "name": "2-square-arrow-up-01",
+        "resolved": "2-square-arrow-move-down-left",
+        "alias": "2-square-arrow-up-01"
+      },
+      {
+        "name": "2-square-arrow-up-02",
+        "resolved": "2-square-arrow-down-02",
+        "alias": "2-square-arrow-up-02"
+      },
+      {
+        "name": "2-square-arrow-up-03",
+        "resolved": "2-settings-05",
+        "alias": "2-square-arrow-up-03"
+      },
+      {
+        "name": "2-square-arrow-up-double",
+        "resolved": "2-square-arrow-down-03",
+        "alias": "2-square-arrow-up-double"
+      },
+      {
+        "name": "2-square-arrow-up-down",
+        "resolved": "2-abacus",
+        "alias": "2-square-arrow-up-down"
+      },
+      {
+        "name": "2-square-arrow-up-left",
+        "resolved": "2-square-arrow-down-02",
+        "alias": "2-square-arrow-up-left"
+      },
+      {
+        "name": "2-square-arrow-up-right",
+        "resolved": "2-square-arrow-down-02",
+        "alias": "2-square-arrow-up-right"
+      },
+      {
+        "name": "2-square-arrow-vertical",
+        "resolved": "2-settings-05",
+        "alias": "2-square-arrow-vertical"
+      },
+      {
+        "name": "2-square-asterisk",
+        "resolved": "2-a-alert-square",
+        "alias": "2-square-asterisk"
+      },
+      {
+        "name": "2-square-chart-gantt",
+        "resolved": "2-a-alert-square",
+        "alias": "2-square-chart-gantt"
+      },
+      {
+        "name": "2-square-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-square-circle"
+      },
+      {
+        "name": "2-square-f",
+        "resolved": "2-brick-wall",
+        "alias": "2-square-f"
+      },
+      {
+        "name": "2-square-lock-01",
+        "resolved": "2-ai-lock",
+        "alias": "2-square-lock-01"
+      },
+      {
+        "name": "2-square-lock-02",
+        "resolved": "2-ai-lock",
+        "alias": "2-square-lock-02"
+      },
+      {
+        "name": "2-square-lock-check-02",
+        "resolved": "2-square-lock-add-02",
+        "alias": "2-square-lock-check-02"
+      },
+      {
+        "name": "2-square-lock-minus-02",
+        "resolved": "2-square-lock-add-02",
+        "alias": "2-square-lock-minus-02"
+      },
+      {
+        "name": "2-square-lock-password",
+        "resolved": "2-ai-lock",
+        "alias": "2-square-lock-password"
+      },
+      {
+        "name": "2-square-lock-remove-02",
+        "resolved": "2-square-lock-add-02",
+        "alias": "2-square-lock-remove-02"
+      },
+      {
+        "name": "2-square-mouse-pointer",
+        "resolved": "2-spline-pointer",
+        "alias": "2-square-mouse-pointer"
+      },
+      {
+        "name": "2-square-power",
+        "resolved": "2-a-alert-square",
+        "alias": "2-square-power"
+      },
+      {
+        "name": "2-square-root-square",
+        "resolved": "2-abacus",
+        "alias": "2-square-root-square"
+      },
+      {
+        "name": "2-square-square",
+        "resolved": "2-panel-top-bottom-dashed",
+        "alias": "2-square-square"
+      },
+      {
+        "name": "2-square-unlock-01",
+        "resolved": "2-ai-lock",
+        "alias": "2-square-unlock-01"
+      },
+      {
+        "name": "2-square-unlock-02",
+        "resolved": "2-ai-lock",
+        "alias": "2-square-unlock-02"
+      },
+      {
+        "name": "2-stake",
+        "resolved": "2-bitcoin-04",
+        "alias": "2-stake"
+      },
+      {
+        "name": "2-star-award-02",
+        "resolved": "2-star-award-01",
+        "alias": "2-star-award-02"
+      },
+      {
+        "name": "2-star-circle",
+        "resolved": "2-add-circle",
+        "alias": "2-star-circle"
+      },
+      {
+        "name": "2-star-face",
+        "resolved": "2-angry",
+        "alias": "2-star-face"
+      },
+      {
+        "name": "2-star-square",
+        "resolved": "2-abacus",
+        "alias": "2-star-square"
+      },
+      {
+        "name": "2-steering",
+        "resolved": "2-alpha-circle",
+        "alias": "2-steering"
+      },
+      {
+        "name": "2-stop-watch",
+        "resolved": "2-coming-soon-02",
+        "alias": "2-stop-watch"
+      },
+      {
+        "name": "2-store-remove-02",
+        "resolved": "2-store-add-02",
+        "alias": "2-store-remove-02"
+      },
+      {
+        "name": "2-structure-check",
+        "resolved": "2-structure-add",
+        "alias": "2-structure-check"
+      },
+      {
+        "name": "2-structure-fail",
+        "resolved": "2-structure-add",
+        "alias": "2-structure-fail"
+      },
+      {
+        "name": "2-stumbleupon",
+        "resolved": "2-abacus",
+        "alias": "2-stumbleupon"
+      },
+      {
+        "name": "2-subnode-delete",
+        "resolved": "2-subnode-add",
+        "alias": "2-subnode-delete"
+      },
+      {
+        "name": "2-subtitle",
+        "resolved": "2-abacus",
+        "alias": "2-subtitle"
+      },
+      {
+        "name": "2-summation-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-summation-circle"
+      },
+      {
+        "name": "2-summation-square",
+        "resolved": "2-abacus",
+        "alias": "2-summation-square"
+      },
+      {
+        "name": "2-sun-03",
+        "resolved": "2-sun-02",
+        "alias": "2-sun-03"
+      },
+      {
+        "name": "2-sun-cloud-little-rain-02",
+        "resolved": "2-moon-cloud-little-rain",
+        "alias": "2-sun-cloud-little-rain-02"
+      },
+      {
+        "name": "2-sun-cloud-slow-wind-02",
+        "resolved": "2-moon-cloud-slow-wind",
+        "alias": "2-sun-cloud-slow-wind-02"
+      },
+      {
+        "name": "2-sun-cloud-snow-02",
+        "resolved": "2-moon-cloud-snow",
+        "alias": "2-sun-cloud-snow-02"
+      },
+      {
+        "name": "2-sunglasses",
+        "resolved": "2-angry",
+        "alias": "2-sunglasses"
+      },
+      {
+        "name": "2-sunset",
+        "resolved": "2-sunrise",
+        "alias": "2-sunset"
+      },
+      {
+        "name": "2-surprise",
+        "resolved": "2-angry",
+        "alias": "2-surprise"
+      },
+      {
+        "name": "2-suspicious",
+        "resolved": "2-angry",
+        "alias": "2-suspicious"
+      },
+      {
+        "name": "2-svg-01",
+        "resolved": "2-csv-01",
+        "alias": "2-svg-01"
+      },
+      {
+        "name": "2-swipe-down-01",
+        "resolved": "2-drag-01",
+        "alias": "2-swipe-down-01"
+      },
+      {
+        "name": "2-swipe-left-01",
+        "resolved": "2-drag-01",
+        "alias": "2-swipe-left-01"
+      },
+      {
+        "name": "2-swipe-left-02",
+        "resolved": "2-swipe-down-02",
+        "alias": "2-swipe-left-02"
+      },
+      {
+        "name": "2-swipe-left-03",
+        "resolved": "2-swipe-down-03",
+        "alias": "2-swipe-left-03"
+      },
+      {
+        "name": "2-swipe-left-04",
+        "resolved": "2-swipe-down-04",
+        "alias": "2-swipe-left-04"
+      },
+      {
+        "name": "2-swipe-left-06",
+        "resolved": "2-swipe-down-06",
+        "alias": "2-swipe-left-06"
+      },
+      {
+        "name": "2-swipe-left-07",
+        "resolved": "2-swipe-down-07",
+        "alias": "2-swipe-left-07"
+      },
+      {
+        "name": "2-swipe-left-08",
+        "resolved": "2-swipe-down-08",
+        "alias": "2-swipe-left-08"
+      },
+      {
+        "name": "2-swipe-right-01",
+        "resolved": "2-drag-01",
+        "alias": "2-swipe-right-01"
+      },
+      {
+        "name": "2-swipe-right-02",
+        "resolved": "2-swipe-down-02",
+        "alias": "2-swipe-right-02"
+      },
+      {
+        "name": "2-swipe-right-03",
+        "resolved": "2-swipe-down-03",
+        "alias": "2-swipe-right-03"
+      },
+      {
+        "name": "2-swipe-right-04",
+        "resolved": "2-swipe-down-04",
+        "alias": "2-swipe-right-04"
+      },
+      {
+        "name": "2-swipe-right-05",
+        "resolved": "2-swipe-left-05",
+        "alias": "2-swipe-right-05"
+      },
+      {
+        "name": "2-swipe-right-06",
+        "resolved": "2-swipe-down-06",
+        "alias": "2-swipe-right-06"
+      },
+      {
+        "name": "2-swipe-right-07",
+        "resolved": "2-swipe-down-07",
+        "alias": "2-swipe-right-07"
+      },
+      {
+        "name": "2-swipe-right-08",
+        "resolved": "2-swipe-down-08",
+        "alias": "2-swipe-right-08"
+      },
+      {
+        "name": "2-swipe-right-09",
+        "resolved": "2-swipe-left-09",
+        "alias": "2-swipe-right-09"
+      },
+      {
+        "name": "2-swipe-up-01",
+        "resolved": "2-drag-01",
+        "alias": "2-swipe-up-01"
+      },
+      {
+        "name": "2-swipe-up-02",
+        "resolved": "2-swipe-down-02",
+        "alias": "2-swipe-up-02"
+      },
+      {
+        "name": "2-swipe-up-03",
+        "resolved": "2-swipe-down-03",
+        "alias": "2-swipe-up-03"
+      },
+      {
+        "name": "2-swipe-up-04",
+        "resolved": "2-swipe-down-04",
+        "alias": "2-swipe-up-04"
+      },
+      {
+        "name": "2-swipe-up-05",
+        "resolved": "2-swipe-down-05",
+        "alias": "2-swipe-up-05"
+      },
+      {
+        "name": "2-swipe-up-06",
+        "resolved": "2-swipe-down-06",
+        "alias": "2-swipe-up-06"
+      },
+      {
+        "name": "2-swipe-up-07",
+        "resolved": "2-swipe-down-07",
+        "alias": "2-swipe-up-07"
+      },
+      {
+        "name": "2-swipe-up-08",
+        "resolved": "2-swipe-down-08",
+        "alias": "2-swipe-up-08"
+      },
+      {
+        "name": "2-t-tablet-02",
+        "resolved": "2-t-tablet-01",
+        "alias": "2-t-tablet-02"
+      },
+      {
+        "name": "2-t-target-03",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-t-target-03"
+      },
+      {
+        "name": "2-tablet-02",
+        "resolved": "2-tablet-01",
+        "alias": "2-tablet-02"
+      },
+      {
+        "name": "2-tablet-connected-usb",
+        "resolved": "2-tablet-connected-bluetooth",
+        "alias": "2-tablet-connected-usb"
+      },
+      {
+        "name": "2-tablet-connected-wifi",
+        "resolved": "2-tablet-connected-bluetooth",
+        "alias": "2-tablet-connected-wifi"
+      },
+      {
+        "name": "2-taco-02",
+        "resolved": "2-taco-01",
+        "alias": "2-taco-02"
+      },
+      {
+        "name": "2-tag-01",
+        "resolved": "2-bitcoin-tag",
+        "alias": "2-tag-01"
+      },
+      {
+        "name": "2-tally-3",
+        "resolved": "2-tally-2",
+        "alias": "2-tally-3"
+      },
+      {
+        "name": "2-tally-5",
+        "resolved": "2-tally-4",
+        "alias": "2-tally-5"
+      },
+      {
+        "name": "2-task-daily-01",
+        "resolved": "2-task-01",
+        "alias": "2-task-daily-01"
+      },
+      {
+        "name": "2-task-daily-02",
+        "resolved": "2-task-02",
+        "alias": "2-task-daily-02"
+      },
+      {
+        "name": "2-taxi",
+        "resolved": "2-police-car",
+        "alias": "2-taxi"
+      },
+      {
+        "name": "2-tea",
+        "resolved": "2-coffee-02",
+        "alias": "2-tea"
+      },
+      {
+        "name": "2-teamviewer",
+        "resolved": "2-abacus",
+        "alias": "2-teamviewer"
+      },
+      {
+        "name": "2-text",
+        "resolved": "2-arrow-vertical",
+        "alias": "2-text"
+      },
+      {
+        "name": "2-text-align-justify-center",
+        "resolved": "2-text-align-center",
+        "alias": "2-text-align-justify-center"
+      },
+      {
+        "name": "2-text-align-left",
+        "resolved": "2-text-align-center",
+        "alias": "2-text-align-left"
+      },
+      {
+        "name": "2-text-align-right",
+        "resolved": "2-text-align-center",
+        "alias": "2-text-align-right"
+      },
+      {
+        "name": "2-text-circle",
+        "resolved": "2-attachment-circle",
+        "alias": "2-text-circle"
+      },
+      {
+        "name": "2-text-select",
+        "resolved": "2-square-dashed-kanban",
+        "alias": "2-text-select"
+      },
+      {
+        "name": "2-text-superscript",
+        "resolved": "2-text-footnote",
+        "alias": "2-text-superscript"
+      },
+      {
+        "name": "2-third-bracket-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-third-bracket-circle"
+      },
+      {
+        "name": "2-third-bracket-square",
+        "resolved": "2-abacus",
+        "alias": "2-third-bracket-square"
+      },
+      {
+        "name": "2-threads-ellipse",
+        "resolved": "2-attachment-circle",
+        "alias": "2-threads-ellipse"
+      },
+      {
+        "name": "2-threads-rectangle",
+        "resolved": "2-profile",
+        "alias": "2-threads-rectangle"
+      },
+      {
+        "name": "2-three-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-three-circle"
+      },
+      {
+        "name": "2-three-d-view",
+        "resolved": "2-discount-01",
+        "alias": "2-three-d-view"
+      },
+      {
+        "name": "2-thumbs-down-ellipse",
+        "resolved": "2-add-circle",
+        "alias": "2-thumbs-down-ellipse"
+      },
+      {
+        "name": "2-thumbs-down-rectangle",
+        "resolved": "2-abacus",
+        "alias": "2-thumbs-down-rectangle"
+      },
+      {
+        "name": "2-thumbs-up-ellipse",
+        "resolved": "2-add-circle",
+        "alias": "2-thumbs-up-ellipse"
+      },
+      {
+        "name": "2-thumbs-up-rectangle",
+        "resolved": "2-abacus",
+        "alias": "2-thumbs-up-rectangle"
+      },
+      {
+        "name": "2-ticket-star",
+        "resolved": "2-ticket-03",
+        "alias": "2-ticket-star"
+      },
+      {
+        "name": "2-time-01",
+        "resolved": "2-abacus",
+        "alias": "2-time-01"
+      },
+      {
+        "name": "2-time-02",
+        "resolved": "2-alpha-circle",
+        "alias": "2-time-02"
+      },
+      {
+        "name": "2-time-03",
+        "resolved": "2-abacus",
+        "alias": "2-time-03"
+      },
+      {
+        "name": "2-time-04",
+        "resolved": "2-alpha-circle",
+        "alias": "2-time-04"
+      },
+      {
+        "name": "2-time-setting-03",
+        "resolved": "2-account-setting-03",
+        "alias": "2-time-setting-03"
+      },
+      {
+        "name": "2-tired-01",
+        "resolved": "2-angry",
+        "alias": "2-tired-01"
+      },
+      {
+        "name": "2-tired-02",
+        "resolved": "2-angry",
+        "alias": "2-tired-02"
+      },
+      {
+        "name": "2-tissue-paper",
+        "resolved": "2-t-tissue-paper",
+        "alias": "2-tissue-paper"
+      },
+      {
+        "name": "2-token-circle",
+        "resolved": "2-stop-circle",
+        "alias": "2-token-circle"
+      },
+      {
+        "name": "2-tongue-01",
+        "resolved": "2-angry",
+        "alias": "2-tongue-01"
+      },
+      {
+        "name": "2-tongue-wink-right",
+        "resolved": "2-tongue-wink-left",
+        "alias": "2-tongue-wink-right"
+      },
+      {
+        "name": "2-touch-interaction-03",
+        "resolved": "2-drag-left-03",
+        "alias": "2-touch-interaction-03"
+      },
+      {
+        "name": "2-touch-interaction-04",
+        "resolved": "2-drag-left-04",
+        "alias": "2-touch-interaction-04"
+      },
+      {
+        "name": "2-trademark",
+        "resolved": "2-advertisiment",
+        "alias": "2-trademark"
+      },
+      {
+        "name": "2-travel-bag",
+        "resolved": "2-luggage-01",
+        "alias": "2-travel-bag"
+      },
+      {
+        "name": "2-treatment",
+        "resolved": "2-give-blood",
+        "alias": "2-treatment"
+      },
+      {
+        "name": "2-tree-01",
+        "resolved": "2-coins-bitcoin",
+        "alias": "2-tree-01"
+      },
+      {
+        "name": "2-trello",
+        "resolved": "2-abacus",
+        "alias": "2-trello"
+      },
+      {
+        "name": "2-tv-issue",
+        "resolved": "2-tv-fix",
+        "alias": "2-tv-issue"
+      },
+      {
+        "name": "2-tv-smart",
+        "resolved": "2-tv-02",
+        "alias": "2-tv-smart"
+      },
+      {
+        "name": "2-twitter-square",
+        "resolved": "2-abacus",
+        "alias": "2-twitter-square"
+      },
+      {
+        "name": "2-two-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-two-circle"
+      },
+      {
+        "name": "2-txt-01",
+        "resolved": "2-csv-01",
+        "alias": "2-txt-01"
+      },
+      {
+        "name": "2-typescript-01",
+        "resolved": "2-bitcoin-rectangle",
+        "alias": "2-typescript-01"
+      },
+      {
+        "name": "2-uber",
+        "resolved": "2-circle-arrow-move-down-left",
+        "alias": "2-uber"
+      },
+      {
+        "name": "2-unamused",
+        "resolved": "2-angry",
+        "alias": "2-unamused"
+      },
+      {
+        "name": "2-ungroup-layers",
+        "resolved": "2-ungroup-items",
+        "alias": "2-ungroup-layers"
+      },
+      {
+        "name": "2-unhappy",
+        "resolved": "2-angry",
+        "alias": "2-unhappy"
+      },
+      {
+        "name": "2-universal-access-circle",
+        "resolved": "2-bowling-ball",
+        "alias": "2-universal-access-circle"
+      },
+      {
+        "name": "2-unlink-04",
+        "resolved": "2-link-04",
+        "alias": "2-unlink-04"
+      },
+      {
+        "name": "2-unlink-06",
+        "resolved": "2-link-06",
+        "alias": "2-unlink-06"
+      },
+      {
+        "name": "2-upload-03",
+        "resolved": "2-download-03",
+        "alias": "2-upload-03"
+      },
+      {
+        "name": "2-upload-05",
+        "resolved": "2-download-05",
+        "alias": "2-upload-05"
+      },
+      {
+        "name": "2-upload-circle-01",
+        "resolved": "2-download-circle-01",
+        "alias": "2-upload-circle-01"
+      },
+      {
+        "name": "2-upload-circle-02",
+        "resolved": "2-download-circle-01",
+        "alias": "2-upload-circle-02"
+      },
+      {
+        "name": "2-upload-square-01",
+        "resolved": "2-download-square-02",
+        "alias": "2-upload-square-01"
+      },
+      {
+        "name": "2-upload-square-02",
+        "resolved": "2-download-square-02",
+        "alias": "2-upload-square-02"
+      },
+      {
+        "name": "2-user-block-02",
+        "resolved": "2-user-add-02",
+        "alias": "2-user-block-02"
+      },
+      {
+        "name": "2-user-check-02",
+        "resolved": "2-user-add-02",
+        "alias": "2-user-check-02"
+      },
+      {
+        "name": "2-user-circle",
+        "resolved": "2-pause-circle",
+        "alias": "2-user-circle"
+      },
+      {
+        "name": "2-user-love-02",
+        "resolved": "2-user-add-02",
+        "alias": "2-user-love-02"
+      },
+      {
+        "name": "2-user-minus-02",
+        "resolved": "2-user-add-02",
+        "alias": "2-user-minus-02"
+      },
+      {
+        "name": "2-user-question-02",
+        "resolved": "2-user-add-02",
+        "alias": "2-user-question-02"
+      },
+      {
+        "name": "2-user-search-02",
+        "resolved": "2-user-add-02",
+        "alias": "2-user-search-02"
+      },
+      {
+        "name": "2-user-shield-02",
+        "resolved": "2-user-add-02",
+        "alias": "2-user-shield-02"
+      },
+      {
+        "name": "2-user-unlock-02",
+        "resolved": "2-user-lock-02",
+        "alias": "2-user-unlock-02"
+      },
+      {
+        "name": "2-v-variable",
+        "resolved": "2-p-property-new",
+        "alias": "2-v-variable"
+      },
+      {
+        "name": "2-variable",
+        "resolved": "2-browser",
+        "alias": "2-variable"
+      },
+      {
+        "name": "2-vertical-scroll-point",
+        "resolved": "2-scroll-vertical",
+        "alias": "2-vertical-scroll-point"
+      },
+      {
+        "name": "2-video-02",
+        "resolved": "2-video-01",
+        "alias": "2-video-02"
+      },
+      {
+        "name": "2-video-console",
+        "resolved": "2-v-video-console",
+        "alias": "2-video-console"
+      },
+      {
+        "name": "2-view-sidebar-left",
+        "resolved": "2-panel-left",
+        "alias": "2-view-sidebar-left"
+      },
+      {
+        "name": "2-view-sidebar-right",
+        "resolved": "2-panel-right",
+        "alias": "2-view-sidebar-right"
+      },
+      {
+        "name": "2-vine-square",
+        "resolved": "2-attachment-square",
+        "alias": "2-vine-square"
+      },
+      {
+        "name": "2-vk-square",
+        "resolved": "2-attachment-square",
+        "alias": "2-vk-square"
+      },
+      {
+        "name": "2-voice",
+        "resolved": "2-abacus",
+        "alias": "2-voice"
+      },
+      {
+        "name": "2-voice-id",
+        "resolved": "2-finger-print-scan",
+        "alias": "2-voice-id"
+      },
+      {
+        "name": "2-volleyball",
+        "resolved": "2-alpha-circle",
+        "alias": "2-volleyball"
+      },
+      {
+        "name": "2-volume-low",
+        "resolved": "2-volume-high",
+        "alias": "2-volume-low"
+      },
+      {
+        "name": "2-volume-minus",
+        "resolved": "2-volume-high",
+        "alias": "2-volume-minus"
+      },
+      {
+        "name": "2-volume-mute-02",
+        "resolved": "2-volume-high",
+        "alias": "2-volume-mute-02"
+      },
+      {
+        "name": "2-volume-up",
+        "resolved": "2-volume-high",
+        "alias": "2-volume-up"
+      },
+      {
+        "name": "2-vynil-01",
+        "resolved": "2-alpha-circle",
+        "alias": "2-vynil-01"
+      },
+      {
+        "name": "2-w-web-programming",
+        "resolved": "2-p-property-new",
+        "alias": "2-w-web-programming"
+      },
+      {
+        "name": "2-w-web-security",
+        "resolved": "2-w-web-protection",
+        "alias": "2-w-web-security"
+      },
+      {
+        "name": "2-w-wifi-circle",
+        "resolved": "2-a-alert-circle",
+        "alias": "2-w-wifi-circle"
+      },
+      {
+        "name": "2-w-wifi-square",
+        "resolved": "2-a-alert-square",
+        "alias": "2-w-wifi-square"
+      },
+      {
+        "name": "2-water-energy",
+        "resolved": "2-sustainable-energy",
+        "alias": "2-water-energy"
+      },
+      {
+        "name": "2-wattpad-square",
+        "resolved": "2-abacus",
+        "alias": "2-wattpad-square"
+      },
+      {
+        "name": "2-wav-01",
+        "resolved": "2-rar-01",
+        "alias": "2-wav-01"
+      },
+      {
+        "name": "2-web-programming",
+        "resolved": "2-browser",
+        "alias": "2-web-programming"
+      },
+      {
+        "name": "2-whatsapp",
+        "resolved": "2-messenger",
+        "alias": "2-whatsapp"
+      },
+      {
+        "name": "2-whatsapp-business",
+        "resolved": "2-messenger",
+        "alias": "2-whatsapp-business"
+      },
+      {
+        "name": "2-wifi-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-wifi-circle"
+      },
+      {
+        "name": "2-wifi-location",
+        "resolved": "2-location-06",
+        "alias": "2-wifi-location"
+      },
+      {
+        "name": "2-wifi-square",
+        "resolved": "2-abacus",
+        "alias": "2-wifi-square"
+      },
+      {
+        "name": "2-wikipedia",
+        "resolved": "2-abacus",
+        "alias": "2-wikipedia"
+      },
+      {
+        "name": "2-wink",
+        "resolved": "2-angry",
+        "alias": "2-wink"
+      },
+      {
+        "name": "2-winking",
+        "resolved": "2-angry",
+        "alias": "2-winking"
+      },
+      {
+        "name": "2-wireless",
+        "resolved": "2-abacus",
+        "alias": "2-wireless"
+      },
+      {
+        "name": "2-work-history",
+        "resolved": "2-work-alert",
+        "alias": "2-work-history"
+      },
+      {
+        "name": "2-workflow-circle-03",
+        "resolved": "2-hierarchy-circle-01",
+        "alias": "2-workflow-circle-03"
+      },
+      {
+        "name": "2-workflow-circle-05",
+        "resolved": "2-workflow-circle-04",
+        "alias": "2-workflow-circle-05"
+      },
+      {
+        "name": "2-worry",
+        "resolved": "2-angry",
+        "alias": "2-worry"
+      },
+      {
+        "name": "2-wps-office-rectangle",
+        "resolved": "2-abacus",
+        "alias": "2-wps-office-rectangle"
+      },
+      {
+        "name": "2-x-variable-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-x-variable-circle"
+      },
+      {
+        "name": "2-x-variable-square",
+        "resolved": "2-abacus",
+        "alias": "2-x-variable-square"
+      },
+      {
+        "name": "2-xls-01",
+        "resolved": "2-csv-01",
+        "alias": "2-xls-01"
+      },
+      {
+        "name": "2-xml-01",
+        "resolved": "2-csv-01",
+        "alias": "2-xml-01"
+      },
+      {
+        "name": "2-xsl-01",
+        "resolved": "2-csv-01",
+        "alias": "2-xsl-01"
+      },
+      {
+        "name": "2-yen-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-yen-circle"
+      },
+      {
+        "name": "2-yen-square",
+        "resolved": "2-dollar-square",
+        "alias": "2-yen-square"
+      },
+      {
+        "name": "2-zero-circle",
+        "resolved": "2-eight-circle",
+        "alias": "2-zero-circle"
+      },
+      {
+        "name": "2-zip-01",
+        "resolved": "2-csv-01",
+        "alias": "2-zip-01"
+      },
+      {
+        "name": "2-zoom-circle",
+        "resolved": "2-alpha-circle",
+        "alias": "2-zoom-circle"
+      },
+      {
+        "name": "2-zoom-in-area",
+        "resolved": "2-search-area",
+        "alias": "2-zoom-in-area"
+      },
+      {
+        "name": "2-zoom-square",
+        "resolved": "2-abacus",
+        "alias": "2-zoom-square"
+      }
+    ],
+    "secondary_equals_primary": []
+  }
+}
