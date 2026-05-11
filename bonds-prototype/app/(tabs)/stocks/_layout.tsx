@@ -1,5 +1,5 @@
 import { Stack, useRouter, usePathname } from 'expo-router';
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import { Search01Icon, QrCodeIcon } from '@hugeicons/core-free-icons';
@@ -26,9 +26,13 @@ export default function StocksLayout() {
       <SafeAreaView edges={['top']} style={{ backgroundColor: colors.backgroundPrimary }}>
         {/* App bar */}
         <View style={styles.appBar}>
-          {/* Leading: Groww logo placeholder */}
+          {/* Leading: Groww logo */}
           <View style={styles.logoContainer}>
-            <View style={styles.logoMark} />
+            <Image
+              source={require('../../../assets/groww-logo.png')}
+              style={styles.logoImage}
+              resizeMode="contain"
+            />
           </View>
 
           <Text style={styles.appBarTitle}>Stocks</Text>
@@ -42,7 +46,10 @@ export default function StocksLayout() {
               <HugeiconsIcon icon={QrCodeIcon} size={iconSizes.medium} color={colors.contentPrimary} />
             </TouchableOpacity>
             <TouchableOpacity style={styles.avatarBtn} activeOpacity={0.7}>
-              <Text style={styles.avatarInitial}>A</Text>
+              <Image
+                source={require('../../../assets/growwdp.png')}
+                style={styles.avatarImage}
+              />
             </TouchableOpacity>
           </View>
         </View>
@@ -105,12 +112,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  logoMark: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    backgroundColor: colors.contentAccent,
-    opacity: 0.9,
+  logoImage: {
+    width: 80,
+    height: 28,
   },
   appBarTitle: {
     ...textStyles.headingBase,
@@ -137,14 +141,13 @@ const styles = StyleSheet.create({
     width: 32,
     height: 32,
     borderRadius: 16,
-    backgroundColor: colors.backgroundTertiary,
-    alignItems: 'center',
-    justifyContent: 'center',
+    overflow: 'hidden',
     marginLeft: 4,
   },
-  avatarInitial: {
-    ...textStyles.bodySmallHeavy,
-    color: colors.contentSecondary,
+  avatarImage: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
   },
   dividerLine: {
     height: 1,
