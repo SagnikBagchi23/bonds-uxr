@@ -11,7 +11,6 @@ import { useScrollBottom } from '../../../../hooks/useScrollBottom';
 
 const SUB_TABS = ['Explore', 'Holdings', 'Positions', 'Orders', 'SIPs', 'Watchlist'];
 const APP_BAR_HEIGHT = 56;
-const SUB_TAB_HEIGHT = 49; // 48px tab row + 1px divider
 
 type DataState = 0 | 1 | 2;
 
@@ -30,21 +29,11 @@ export default function HoldingsScreen() {
     (a, b) => bondFinancials[b.id].totalValue - bondFinancials[a.id].totalValue
   );
 
-  // Native-driver value drives the transform — runs on GPU, survives hard flings
-  const scrollYNative = useRef(new Animated.Value(0)).current;
-  // JS-thread value drives background color — colors can't go native
+  // Drives header elevation when content scrolls beneath the sticky header
   const scrollYJS = useRef(new Animated.Value(0)).current;
 
-  // Sub-tab bar rides up with scroll until it hits the top — GPU-accelerated via native driver
-  const subtabTranslateY = scrollYNative.interpolate({
-    inputRange: [0, APP_BAR_HEIGHT],
-    outputRange: [APP_BAR_HEIGHT, 0],
-    extrapolate: 'clamp',
-  });
-
-  // Background snaps at threshold; driven by JS value so color can animate
-  const subtabBg = scrollYJS.interpolate({
-    inputRange: [APP_BAR_HEIGHT - 1, APP_BAR_HEIGHT],
+  const headerBg = scrollYJS.interpolate({
+    inputRange: [0, 1],
     outputRange: [colors.backgroundPrimary, colors.backgroundSurfaceZ1],
     extrapolate: 'clamp',
   });
@@ -53,17 +42,14 @@ export default function HoldingsScreen() {
     setDataState((s) => ((s + 1) % 3) as DataState);
   };
 
-  // useNativeDriver: true keeps the translateY on the UI thread even during JS-thread starvation
   const handleScroll = Animated.event(
-    [{ nativeEvent: { contentOffset: { y: scrollYNative } } }],
+    [{ nativeEvent: { contentOffset: { y: scrollYJS } } }],
     {
-      useNativeDriver: true,
+      useNativeDriver: false,
       listener: (e: any) => {
         const { contentOffset, contentSize, layoutMeasurement } = e.nativeEvent;
         const y = contentOffset.y;
-        // Sync JS-thread value for color and context state
-        scrollYJS.setValue(y);
-        setScrolledPastHeader(y >= APP_BAR_HEIGHT);
+        setScrolledPastHeader(y > 0);
         setHasContentBelow(y + layoutMeasurement.height < contentSize.height - 2);
       },
     }
@@ -71,16 +57,30 @@ export default function HoldingsScreen() {
 
   return (
     <View style={styles.root}>
-      {/* Sub-tab bar — absolute overlay, translateY driven by scrollY */}
-      <Animated.View
-        style={[
-          styles.subTabContainer,
-          {
-            transform: [{ translateY: subtabTranslateY }],
-            backgroundColor: subtabBg,
-          },
-        ]}
-      >
+      {/* Sticky header — app bar + sub-tabs as one unit, never scrolls away */}
+      <Animated.View style={[styles.stickyHeader, { backgroundColor: headerBg }]}>
+        <View style={styles.appBar}>
+          <View style={styles.logoContainer}>
+            <Image
+              source={require('../../../../assets/groww-logo.png')}
+              style={styles.logoImage}
+              resizeMode="contain"
+            />
+          </View>
+          <Text style={styles.appBarTitle}>Stocks</Text>
+          <View style={styles.trailingIcons}>
+            <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
+              <HugeiconsIcon icon={Search01Icon} size={iconSizes.medium} color={colors.contentPrimary} />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
+              <HugeiconsIcon icon={QrCodeIcon} size={iconSizes.medium} color={colors.contentPrimary} />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.avatarBtn} activeOpacity={0.7}>
+              <Image source={require('../../../../assets/growwdp.png')} style={styles.avatarImage} />
+            </TouchableOpacity>
+          </View>
+        </View>
+        <View style={styles.dividerLine} />
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
@@ -108,34 +108,6 @@ export default function HoldingsScreen() {
         onScroll={handleScroll}
         scrollEventThrottle={16}
       >
-        {/* App bar — scrolls away naturally */}
-        <View>
-          <View style={styles.appBar}>
-            <View style={styles.logoContainer}>
-              <Image
-                source={require('../../../../assets/groww-logo.png')}
-                style={styles.logoImage}
-                resizeMode="contain"
-              />
-            </View>
-            <Text style={styles.appBarTitle}>Stocks</Text>
-            <View style={styles.trailingIcons}>
-              <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
-                <HugeiconsIcon icon={Search01Icon} size={iconSizes.medium} color={colors.contentPrimary} />
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
-                <HugeiconsIcon icon={QrCodeIcon} size={iconSizes.medium} color={colors.contentPrimary} />
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.avatarBtn} activeOpacity={0.7}>
-                <Image source={require('../../../../assets/growwdp.png')} style={styles.avatarImage} />
-              </TouchableOpacity>
-            </View>
-          </View>
-          <View style={styles.dividerLine} />
-        </View>
-
-        {/* Spacer: reserves sub-tab bar height in scroll flow so content doesn't hide behind it */}
-        <View style={styles.subTabSpacer} />
 
         {/* Main content */}
         <View>
@@ -224,13 +196,9 @@ const styles = StyleSheet.create({
   contentContainer: {
     backgroundColor: colors.backgroundPrimary,
   },
-  // Sub-tab bar (absolute, scroll-driven)
-  subTabContainer: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    zIndex: 10,
+  // Sub-tab bar
+  stickyHeader: {
+    // elevated background on scroll via headerBg interpolation
   },
   subTabContent: {
     paddingHorizontal: 16,
@@ -259,16 +227,12 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
   },
-  subTabSpacer: {
-    height: SUB_TAB_HEIGHT,
-  },
   // App bar
   appBar: {
     flexDirection: 'row',
     alignItems: 'center',
     height: APP_BAR_HEIGHT,
     paddingHorizontal: 12,
-    backgroundColor: colors.backgroundPrimary,
   },
   logoContainer: {
     width: 40,

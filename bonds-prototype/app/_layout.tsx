@@ -70,15 +70,33 @@ export default function RootLayout() {
 
   return (
     <ScrollBottomProvider>
-      <SafeAreaProvider
-        initialMetrics={{
-          insets: { top: STATUS_BAR_H, right: 0, bottom: HOME_INDICATOR_H, left: 0 },
-          frame: { width: SCREEN_W, height: SCREEN_H, x: 0, y: 0 },
-        }}
-      >
-        <PhoneMockup>{innerContent}</PhoneMockup>
-      </SafeAreaProvider>
+      <MobileOrDesktopShell>{innerContent}</MobileOrDesktopShell>
     </ScrollBottomProvider>
+  );
+}
+
+function MobileOrDesktopShell({ children }: { children: React.ReactNode }) {
+  const { width: winW } = useWindowDimensions();
+  // On narrow viewports (real mobile browsers), skip the phone mockup entirely
+  const isMobileViewport = winW <= 480;
+
+  if (isMobileViewport) {
+    return (
+      <SafeAreaProvider>
+        <>{children}</>
+      </SafeAreaProvider>
+    );
+  }
+
+  return (
+    <SafeAreaProvider
+      initialMetrics={{
+        insets: { top: STATUS_BAR_H, right: 0, bottom: HOME_INDICATOR_H, left: 0 },
+        frame: { width: SCREEN_W, height: SCREEN_H, x: 0, y: 0 },
+      }}
+    >
+      <PhoneMockup>{children}</PhoneMockup>
+    </SafeAreaProvider>
   );
 }
 
