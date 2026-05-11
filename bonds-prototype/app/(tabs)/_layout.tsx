@@ -8,6 +8,7 @@ import {
   Money03Icon,
 } from '@hugeicons/core-free-icons';
 import { colors, textStyles, iconSizes } from '../../theme/tokens';
+import { useScrollBottom } from '../../hooks/useScrollBottom';
 
 const TABS = [
   { name: 'stocks', label: 'Stocks', icon: Activity01Icon },
@@ -31,8 +32,9 @@ export default function TabsLayout() {
 }
 
 function CustomTabBar({ state, navigation }: any) {
+  const { hasContentBelow } = useScrollBottom();
   return (
-    <View style={styles.tabBar}>
+    <View style={[styles.tabBar, hasContentBelow && styles.tabBarFilled]}>
       {TABS.map((tab, index) => {
         const isFocused = state.index === index;
         return (
@@ -60,9 +62,12 @@ function CustomTabBar({ state, navigation }: any) {
 const styles = StyleSheet.create({
   tabBar: {
     flexDirection: 'row',
-    height: 72,
+    height: 64,
     alignItems: 'center',
     backgroundColor: colors.backgroundPrimary,
+  },
+  tabBarFilled: {
+    backgroundColor: colors.backgroundSurfaceZ1,
   },
   tab: {
     flex: 1,
