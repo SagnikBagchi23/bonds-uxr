@@ -1,5 +1,13 @@
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
+import { HugeiconsIcon } from '@hugeicons/react-native';
+import {
+  EyeIcon,
+  ViewOffSlashIcon,
+  Calendar03Icon,
+  MoreVerticalIcon,
+  InformationCircleIcon,
+} from '@hugeicons/core-free-icons';
 import { colors, textStyles, iconSizes } from '../theme/tokens';
 import { useHideValues } from '../hooks/useHideValues';
 
@@ -17,15 +25,15 @@ function formatINR(value: number): string {
 }
 
 function IconCircleBtn({
-  label,
+  children,
   onPress,
 }: {
-  label: string;
+  children: React.ReactNode;
   onPress?: () => void;
 }) {
   return (
     <TouchableOpacity style={styles.iconCircle} onPress={onPress} activeOpacity={0.7}>
-      <Text style={styles.iconCircleText}>{label}</Text>
+      {children}
     </TouchableOpacity>
   );
 }
@@ -48,14 +56,36 @@ export function BondSummaryCard({
         <View style={styles.valueBlock}>
           <View style={styles.labelRow}>
             <Text style={styles.eyebrow}>TOTAL VALUE ({bondCount})</Text>
-            <Text style={styles.infoIcon}>ⓘ</Text>
+            <HugeiconsIcon
+              icon={InformationCircleIcon}
+              size={iconSizes.small}
+              color={colors.contentSecondary}
+            />
           </View>
           <Text style={styles.totalValue}>{mask(formatINR(totalValue))}</Text>
         </View>
         <View style={styles.iconGroup}>
-          <IconCircleBtn label="◉" onPress={toggle} />
-          <IconCircleBtn label="⊟" onPress={() => router.push('/payout-schedule')} />
-          <IconCircleBtn label="⋯" />
+          <IconCircleBtn onPress={toggle}>
+            <HugeiconsIcon
+              icon={hidden ? ViewOffSlashIcon : EyeIcon}
+              size={iconSizes.medium}
+              color={colors.contentSecondary}
+            />
+          </IconCircleBtn>
+          <IconCircleBtn onPress={() => router.push('/payout-schedule')}>
+            <HugeiconsIcon
+              icon={Calendar03Icon}
+              size={iconSizes.medium}
+              color={colors.contentSecondary}
+            />
+          </IconCircleBtn>
+          <IconCircleBtn>
+            <HugeiconsIcon
+              icon={MoreVerticalIcon}
+              size={iconSizes.medium}
+              color={colors.contentSecondary}
+            />
+          </IconCircleBtn>
         </View>
       </View>
 
@@ -117,11 +147,6 @@ const styles = StyleSheet.create({
     color: colors.contentSecondary,
     textTransform: 'uppercase',
   },
-  infoIcon: {
-    fontSize: iconSizes.xsmall,
-    color: colors.contentSecondary,
-    lineHeight: iconSizes.small,
-  },
   totalValue: {
     ...textStyles.headingLarge,
     color: colors.contentPrimary,
@@ -139,11 +164,6 @@ const styles = StyleSheet.create({
     borderColor: colors.borderPrimary,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  iconCircleText: {
-    fontSize: iconSizes.medium,
-    color: colors.contentSecondary,
-    lineHeight: iconSizes.large,
   },
   divider: {
     height: 1,

@@ -2,6 +2,8 @@ import { View, Text, ScrollView, TouchableOpacity, Modal, StyleSheet } from 'rea
 import { useState } from 'react';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { HugeiconsIcon } from '@hugeicons/react-native';
+import { InformationCircleIcon } from '@hugeicons/core-free-icons';
 import { colors, textStyles, iconSizes } from '../../theme/tokens';
 import { useHideValues } from '../../hooks/useHideValues';
 import { bonds } from '../../data/bonds';
@@ -42,7 +44,7 @@ function InfoTooltip({ id }: { id: string }) {
   return (
     <>
       <TouchableOpacity onPress={() => setVisible(true)} style={styles.infoBtn} activeOpacity={0.7}>
-        <Text style={styles.infoIcon}>ⓘ</Text>
+        <HugeiconsIcon icon={InformationCircleIcon} size={iconSizes.small} color={colors.contentDisabled} />
       </TouchableOpacity>
       <Modal visible={visible} transparent animationType="fade">
         <TouchableOpacity style={styles.modalOverlay} onPress={() => setVisible(false)} activeOpacity={1}>
@@ -326,10 +328,6 @@ const styles = StyleSheet.create({
   },
   infoBtn: {
     padding: 2,
-  },
-  infoIcon: {
-    fontSize: textStyles.bodyBase.fontSize,
-    color: colors.contentDisabled,
   },
   payoutRow: {
     flexDirection: 'row',
