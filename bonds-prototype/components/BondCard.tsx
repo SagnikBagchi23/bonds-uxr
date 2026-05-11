@@ -43,8 +43,8 @@ export function BondCard({ bond, financials, dataState, showDivider }: BondCardP
     secondaryValue = '';
     primaryColor = colors.contentPositive;
   } else {
-    primaryValue = mask(formatINR(financials.marketPrice));
-    secondaryValue = mask(formatINR(bond.faceValue * bond.units));
+    primaryValue = mask(formatINR(financials.marketPricePerUnit));
+    secondaryValue = mask(formatINR(bond.faceValue));
     primaryColor = colors.contentPrimary;
   }
 

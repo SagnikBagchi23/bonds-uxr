@@ -135,9 +135,9 @@ export function groupPayoutsByMonth(payouts: Payout[]): { monthKey: string; labe
 export interface BondFinancials {
   bondId: string;
   invested: number;
-  interestEarned: number; // sum of received interest payouts
-  totalValue: number;     // invested + interestEarned
-  marketPrice: number;    // approximate: close to face value for NCDs
+  interestEarned: number;     // sum of received interest payouts
+  totalValue: number;         // invested + interestEarned
+  marketPricePerUnit: number; // current per-unit price (≈ outstanding principal per unit ± small premium)
   nextPayoutDate: string | null;
   nextPayoutAmount: number;
 }
@@ -151,16 +151,20 @@ function computeFinancials(bond: Bond): BondFinancials {
   const upcoming = bondPayouts.filter((p) => !p.received).sort((a, b) => a.date.localeCompare(b.date));
   const nextPayout = upcoming[0] ?? null;
 
-  // Market price for NCDs is very close to face value; add slight premium/discount for realism
+  // Outstanding principal per unit: for staggered bonds, subtract already-returned principal per unit
+  const principalReturnedPerUnit = (bond.principalReturned ?? 0) / bond.units;
+  const outstandingPerUnit = bond.faceValue - principalReturnedPerUnit;
+
+  // Market price per unit ≈ outstanding principal + small premium/discount driven by coupon vs YTM
   const priceMultiplier = 1 + (bond.couponRate - bond.ytm) / bond.couponRate * 0.01;
-  const marketPrice = Math.round(bond.faceValue * priceMultiplier * bond.units);
+  const marketPricePerUnit = Math.round(outstandingPerUnit * priceMultiplier * 100) / 100;
 
   return {
     bondId: bond.id,
     invested,
     interestEarned: Math.round(interestEarned * 100) / 100,
     totalValue: Math.round((invested + interestEarned) * 100) / 100,
-    marketPrice,
+    marketPricePerUnit,
     nextPayoutDate: nextPayout?.date ?? null,
     nextPayoutAmount: nextPayout?.amount ?? 0,
   };
