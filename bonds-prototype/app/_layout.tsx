@@ -1,12 +1,13 @@
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { View, ActivityIndicator, StyleSheet, Platform, Text, useWindowDimensions } from 'react-native';
+import { View, ActivityIndicator, StyleSheet, Platform, Text, useWindowDimensions, Animated, Easing } from 'react-native';
+import { useRef, useEffect } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { HideValuesProvider } from '../hooks/useHideValues';
 import { ScrollBottomProvider, useScrollBottom } from '../hooks/useScrollBottom';
-import { colors, textStyles } from '../theme/tokens';
+import { colors } from '../theme/tokens';
 
 const isWeb = Platform.OS === 'web';
 
@@ -28,6 +29,10 @@ const PHONE_W = SCREEN_W + BEZEL_SIDE * 2; // 418
 const PHONE_H = SCREEN_H + BEZEL_H * 2;    // 876
 const STATUS_BAR_H = 59;
 const HOME_INDICATOR_H = 34;
+
+// Emil's strong ease-out: cubic-bezier(0.23, 1, 0.32, 1)
+const EASE_OUT = Easing.bezier(0.23, 1, 0.32, 1);
+const DURATION = 150;
 
 export default function RootLayout() {
   const [fontsLoaded, fontError] = useFonts({
@@ -79,11 +84,43 @@ export default function RootLayout() {
 
 function PhoneMockup({ children }: { children: React.ReactNode }) {
   const { height: winH, width: winW } = useWindowDimensions();
-  const { scrolledPastHeader } = useScrollBottom();
+  const { scrolledPastHeader, hasContentBelow } = useScrollBottom();
 
   const scaleH = (winH - 40) / PHONE_H;
   const scaleW = (winW - 60) / PHONE_W;
   const scale = Math.min(1, scaleH, scaleW);
+
+  // Animate status bar background when user scrolls past the app bar
+  const scrollAnim = useRef(new Animated.Value(0)).current;
+  useEffect(() => {
+    Animated.timing(scrollAnim, {
+      toValue: scrolledPastHeader ? 1 : 0,
+      duration: DURATION,
+      easing: EASE_OUT,
+      useNativeDriver: false,
+    }).start();
+  }, [scrolledPastHeader]);
+
+  // Animate home indicator area to match the bottom nav background
+  const contentAnim = useRef(new Animated.Value(0)).current;
+  useEffect(() => {
+    Animated.timing(contentAnim, {
+      toValue: hasContentBelow ? 1 : 0,
+      duration: DURATION,
+      easing: EASE_OUT,
+      useNativeDriver: false,
+    }).start();
+  }, [hasContentBelow]);
+
+  const statusBg = scrollAnim.interpolate({
+    inputRange: [0, 1],
+    outputRange: [colors.backgroundPrimary, colors.backgroundSurfaceZ1],
+  });
+
+  const homeAreaBg = contentAnim.interpolate({
+    inputRange: [0, 1],
+    outputRange: [colors.backgroundPrimary, colors.backgroundSurfaceZ1],
+  });
 
   return (
     <View style={styles.webBg}>
@@ -97,7 +134,7 @@ function PhoneMockup({ children }: { children: React.ReactNode }) {
         {/* Screen */}
         <View style={styles.screen}>
           {/* Status bar */}
-          <View style={[styles.statusBar, scrolledPastHeader && { backgroundColor: colors.backgroundSurfaceZ1 }]}>
+          <Animated.View style={[styles.statusBar, { backgroundColor: statusBg }]}>
             <View style={styles.dynamicIsland} />
             <Text style={styles.timeText}>9:41</Text>
             <View style={styles.statusRight}>
@@ -105,17 +142,17 @@ function PhoneMockup({ children }: { children: React.ReactNode }) {
               <Text style={styles.statusIcon}>WiFi</Text>
               <Text style={styles.statusIcon}>100%</Text>
             </View>
-          </View>
+          </Animated.View>
 
           {/* App content */}
           <View style={{ flex: 1, overflow: 'hidden' }}>
             {children}
           </View>
 
-          {/* Home indicator */}
-          <View style={styles.homeIndicatorArea}>
+          {/* Home indicator — matches bottom nav background */}
+          <Animated.View style={[styles.homeIndicatorArea, { backgroundColor: homeAreaBg }]}>
             <View style={styles.homeIndicator} />
-          </View>
+          </Animated.View>
         </View>
       </View>
 
@@ -216,7 +253,6 @@ const styles = StyleSheet.create({
     height: HOME_INDICATOR_H,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.backgroundPrimary,
   },
   homeIndicator: {
     width: 134,
