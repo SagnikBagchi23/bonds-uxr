@@ -5,6 +5,7 @@ import { View, ActivityIndicator, StyleSheet, Platform, Text, useWindowDimension
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { HideValuesProvider } from '../hooks/useHideValues';
+import { ScrollBottomProvider } from '../hooks/useScrollBottom';
 import { colors, textStyles } from '../theme/tokens';
 
 const isWeb = Platform.OS === 'web';
@@ -37,6 +38,7 @@ export default function RootLayout() {
 
   const appContent = (fontsLoaded || fontError) ? (
     <GestureHandlerRootView style={{ flex: 1 }}>
+      <ScrollBottomProvider>
       <HideValuesProvider>
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" />
@@ -47,6 +49,7 @@ export default function RootLayout() {
         </Stack>
         <StatusBar style="light" />
       </HideValuesProvider>
+      </ScrollBottomProvider>
     </GestureHandlerRootView>
   ) : (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.backgroundPrimary }}>
