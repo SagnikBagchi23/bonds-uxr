@@ -30,17 +30,20 @@ export default function HoldingsScreen() {
     (a, b) => bondFinancials[b.id].totalValue - bondFinancials[a.id].totalValue
   );
 
-  const scrollY = useRef(new Animated.Value(0)).current;
+  // Native-driver value drives the transform — runs on GPU, survives hard flings
+  const scrollYNative = useRef(new Animated.Value(0)).current;
+  // JS-thread value drives background color — colors can't go native
+  const scrollYJS = useRef(new Animated.Value(0)).current;
 
-  // Sub-tab bar rides up with scroll until it hits the top — pure transform, GPU-accelerated
-  const subtabTranslateY = scrollY.interpolate({
+  // Sub-tab bar rides up with scroll until it hits the top — GPU-accelerated via native driver
+  const subtabTranslateY = scrollYNative.interpolate({
     inputRange: [0, APP_BAR_HEIGHT],
     outputRange: [APP_BAR_HEIGHT, 0],
     extrapolate: 'clamp',
   });
 
-  // Background snaps at threshold; color delta is subtle so interpolation isn't noticeable
-  const subtabBg = scrollY.interpolate({
+  // Background snaps at threshold; driven by JS value so color can animate
+  const subtabBg = scrollYJS.interpolate({
     inputRange: [APP_BAR_HEIGHT - 1, APP_BAR_HEIGHT],
     outputRange: [colors.backgroundPrimary, colors.backgroundSurfaceZ1],
     extrapolate: 'clamp',
@@ -50,13 +53,16 @@ export default function HoldingsScreen() {
     setDataState((s) => ((s + 1) % 3) as DataState);
   };
 
+  // useNativeDriver: true keeps the translateY on the UI thread even during JS-thread starvation
   const handleScroll = Animated.event(
-    [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+    [{ nativeEvent: { contentOffset: { y: scrollYNative } } }],
     {
-      useNativeDriver: false,
+      useNativeDriver: true,
       listener: (e: any) => {
         const { contentOffset, contentSize, layoutMeasurement } = e.nativeEvent;
         const y = contentOffset.y;
+        // Sync JS-thread value for color and context state
+        scrollYJS.setValue(y);
         setScrolledPastHeader(y >= APP_BAR_HEIGHT);
         setHasContentBelow(y + layoutMeasurement.height < contentSize.height - 2);
       },
