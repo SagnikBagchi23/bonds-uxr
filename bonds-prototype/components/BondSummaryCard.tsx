@@ -166,8 +166,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   divider: {
-    height: 1,
-    backgroundColor: colors.borderPrimary,
+    height: 0,
+    borderTopWidth: 1,
+    borderTopColor: colors.borderPrimary,
+    borderStyle: 'dashed',
     marginHorizontal: 16,
   },
   listContainer: {
