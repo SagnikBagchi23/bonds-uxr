@@ -9,13 +9,25 @@ interface BondSummaryCardProps {
   totalInterest: number;
   hasStaggered: boolean;
   principalReturned: number;
+  bondCount: number;
 }
 
 function formatINR(value: number): string {
-  if (value >= 100000) {
-    return `₹${(value / 100000).toFixed(2)}L`;
-  }
-  return `₹${value.toLocaleString('en-IN')}`;
+  return '₹' + value.toLocaleString('en-IN');
+}
+
+function IconCircleBtn({
+  label,
+  onPress,
+}: {
+  label: string;
+  onPress?: () => void;
+}) {
+  return (
+    <TouchableOpacity style={styles.iconCircle} onPress={onPress} activeOpacity={0.7}>
+      <Text style={styles.iconCircleText}>{label}</Text>
+    </TouchableOpacity>
+  );
 }
 
 export function BondSummaryCard({
@@ -24,63 +36,52 @@ export function BondSummaryCard({
   totalInterest,
   hasStaggered,
   principalReturned,
+  bondCount,
 }: BondSummaryCardProps) {
   const { hidden, toggle, mask } = useHideValues();
   const router = useRouter();
 
   return (
     <View style={styles.card}>
-      {/* Top row: label + eye icon */}
-      <View style={styles.topRow}>
-        <Text style={styles.sectionLabel}>Current Value</Text>
-        <TouchableOpacity onPress={toggle} style={styles.eyeButton} activeOpacity={0.7}>
-          <Text style={styles.eyeIcon}>{hidden ? '👁️‍🗨️' : '👁️'}</Text>
-        </TouchableOpacity>
-      </View>
-
-      {/* Total value */}
-      <Text style={styles.totalValue}>{mask(formatINR(totalValue))}</Text>
-
-      {/* Invested + Interest row */}
-      <View style={styles.metricsRow}>
-        <View style={styles.metric}>
-          <Text style={styles.metricLabel}>Invested</Text>
-          <Text style={styles.metricValue}>{mask(formatINR(totalInvested))}</Text>
+      {/* Top section: value label + large number + icon buttons */}
+      <View style={styles.topSection}>
+        <View style={styles.valueBlock}>
+          <View style={styles.labelRow}>
+            <Text style={styles.eyebrow}>TOTAL VALUE ({bondCount})</Text>
+            <Text style={styles.infoIcon}>ⓘ</Text>
+          </View>
+          <Text style={styles.totalValue}>{mask(formatINR(totalValue))}</Text>
         </View>
-        <View style={styles.metricDivider} />
-        <View style={styles.metric}>
-          <Text style={styles.metricLabel}>Interest earned</Text>
-          <Text style={[styles.metricValue, { color: colors.contentPositive }]}>
-            {mask(formatINR(totalInterest))}
-          </Text>
+        <View style={styles.iconGroup}>
+          <IconCircleBtn label="◉" onPress={toggle} />
+          <IconCircleBtn label="⊟" onPress={() => router.push('/payout-schedule')} />
+          <IconCircleBtn label="⋯" />
         </View>
       </View>
 
-      {/* Staggered principal callout */}
-      {hasStaggered && !hidden && (
-        <View style={styles.principalBanner}>
-          <Text style={styles.principalBannerText}>
-            + {formatINR(principalReturned)} principal returned early across bonds
-          </Text>
-        </View>
-      )}
+      {/* Divider */}
+      <View style={styles.divider} />
 
-      {/* Action buttons */}
-      <View style={styles.actionsRow}>
-        <TouchableOpacity
-          style={styles.actionBtn}
-          onPress={() => router.push('/payout-schedule')}
-          activeOpacity={0.7}
-        >
-          <Text style={styles.actionBtnText}>View Payouts</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.actionBtn}
-          onPress={() => router.push('/matured-bonds')}
-          activeOpacity={0.7}
-        >
-          <Text style={styles.actionBtnText}>Matured Bonds</Text>
-        </TouchableOpacity>
+      {/* List rows */}
+      <View style={styles.listContainer}>
+        <View style={styles.listRow}>
+          <Text style={styles.listLabel}>Invested</Text>
+          <Text style={styles.listValuePrimary}>{mask(formatINR(totalInvested))}</Text>
+        </View>
+        <View style={styles.listRow}>
+          <Text style={styles.listLabel}>Interest earned</Text>
+          <Text style={styles.listValuePositive}>+{mask(formatINR(totalInterest))}</Text>
+        </View>
+
+        {hasStaggered && (
+          <>
+            <View style={styles.divider} />
+            <View style={styles.listRow}>
+              <Text style={styles.listLabel}>Principal returned</Text>
+              <Text style={styles.listValuePrimary}>{mask(formatINR(principalReturned))}</Text>
+            </View>
+          </>
+        )}
       </View>
     </View>
   );
@@ -88,81 +89,87 @@ export function BondSummaryCard({
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: colors.backgroundPrimary,
+    backgroundColor: colors.backgroundSurfaceZ1,
     marginHorizontal: 16,
-    marginTop: 16,
-    borderRadius: 12,
+    borderRadius: 16,
     borderWidth: 1,
     borderColor: colors.borderPrimary,
-    padding: 16,
-    gap: 12,
+    overflow: 'hidden',
   },
-  topRow: {
+  topSection: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingTop: 20,
+    paddingBottom: 16,
   },
-  sectionLabel: {
-    ...textStyles.bodySmall,
+  valueBlock: {
+    flex: 1,
+    gap: 4,
+  },
+  labelRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+  },
+  eyebrow: {
+    ...textStyles.headingEyebrow,
     color: colors.contentSecondary,
+    textTransform: 'uppercase',
   },
-  eyeButton: {
-    padding: 4,
-  },
-  eyeIcon: {
-    fontSize: 18,
+  infoIcon: {
+    fontSize: 12,
+    color: colors.contentSecondary,
+    lineHeight: 14,
   },
   totalValue: {
-    ...textStyles.displayBase,
+    ...textStyles.headingLarge,
     color: colors.contentPrimary,
   },
-  metricsRow: {
+  iconGroup: {
+    flexDirection: 'row',
+    gap: 8,
+    alignItems: 'center',
+  },
+  iconCircle: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: colors.borderPrimary,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  iconCircleText: {
+    fontSize: 16,
+    color: colors.contentSecondary,
+    lineHeight: 18,
+  },
+  divider: {
+    height: 1,
+    backgroundColor: colors.borderPrimary,
+    marginHorizontal: 16,
+  },
+  listContainer: {
+    paddingHorizontal: 16,
+    paddingVertical: 16,
+    gap: 16,
+  },
+  listRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
+    justifyContent: 'space-between',
   },
-  metric: {
-    flex: 1,
-    gap: 2,
-  },
-  metricLabel: {
-    ...textStyles.bodySmall,
+  listLabel: {
+    ...textStyles.bodyBase,
     color: colors.contentSecondary,
   },
-  metricValue: {
+  listValuePrimary: {
     ...textStyles.bodyBaseHeavy,
     color: colors.contentPrimary,
   },
-  metricDivider: {
-    width: 1,
-    height: 32,
-    backgroundColor: colors.borderPrimary,
-  },
-  principalBanner: {
-    backgroundColor: colors.backgroundAccentSubtle,
-    borderRadius: 8,
-    paddingHorizontal: 12,
-    paddingVertical: 8,
-  },
-  principalBannerText: {
-    ...textStyles.bodySmall,
-    color: colors.contentOnAccentSubtle,
-  },
-  actionsRow: {
-    flexDirection: 'row',
-    gap: 8,
-    marginTop: 4,
-  },
-  actionBtn: {
-    flex: 1,
-    borderWidth: 1,
-    borderColor: colors.borderPrimary,
-    borderRadius: 8,
-    paddingVertical: 8,
-    alignItems: 'center',
-  },
-  actionBtnText: {
-    ...textStyles.bodySmall,
-    color: colors.contentPrimary,
+  listValuePositive: {
+    ...textStyles.bodyBaseHeavy,
+    color: colors.contentPositive,
   },
 });

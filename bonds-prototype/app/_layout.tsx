@@ -36,7 +36,7 @@ export default function RootLayout() {
           <Stack.Screen name="payout-schedule" options={{ presentation: 'card' }} />
           <Stack.Screen name="matured-bonds" options={{ presentation: 'card' }} />
         </Stack>
-        <StatusBar style="dark" />
+        <StatusBar style="light" />
       </HideValuesProvider>
     </GestureHandlerRootView>
   ) : (
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
   timeText: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#1C1C1E',
+    color: '#F2F5F7',
     letterSpacing: -0.3,
   },
   statusRight: {
@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
   },
   statusIcon: {
     fontSize: 10,
-    color: '#1C1C1E',
+    color: '#F2F5F7',
     fontWeight: '600',
   },
   homeIndicatorArea: {

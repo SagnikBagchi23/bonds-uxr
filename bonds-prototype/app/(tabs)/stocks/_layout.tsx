@@ -17,17 +17,36 @@ export default function StocksLayout() {
   const pathname = usePathname();
 
   const activeIndex = SUB_TABS.findIndex((t) => pathname.includes(t.label.toLowerCase()));
-  const effectiveIndex = activeIndex >= 0 ? activeIndex : 1; // default to Holdings
+  const effectiveIndex = activeIndex >= 0 ? activeIndex : 1;
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.backgroundPrimary }}>
       <SafeAreaView edges={['top']} style={{ backgroundColor: colors.backgroundPrimary }}>
-        {/* App header */}
-        <View style={styles.header}>
-          <Text style={styles.headerTitle}>Groww</Text>
+        {/* App bar */}
+        <View style={styles.appBar}>
+          {/* Leading: Groww logo placeholder */}
+          <View style={styles.logoContainer}>
+            <View style={styles.logoMark} />
+          </View>
+
+          <Text style={styles.appBarTitle}>Stocks</Text>
+
+          {/* Trailing: search, QR, avatar */}
+          <View style={styles.trailingIcons}>
+            <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
+              <Text style={styles.iconText}>⌕</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
+              <Text style={styles.iconText}>⊞</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.avatarBtn} activeOpacity={0.7}>
+              <Text style={styles.avatarInitial}>A</Text>
+            </TouchableOpacity>
+          </View>
         </View>
 
         {/* Sub-tab bar */}
+        <View style={styles.dividerLine} />
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
@@ -55,7 +74,7 @@ export default function StocksLayout() {
             );
           })}
         </ScrollView>
-        <View style={styles.divider} />
+        <View style={styles.dividerLine} />
       </SafeAreaView>
 
       <Stack screenOptions={{ headerShown: false }}>
@@ -71,46 +90,92 @@ export default function StocksLayout() {
 }
 
 const styles = StyleSheet.create({
-  header: {
-    paddingHorizontal: 16,
-    paddingVertical: 12,
+  appBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    height: 56,
+    paddingHorizontal: 12,
+    backgroundColor: colors.backgroundPrimary,
   },
-  headerTitle: {
+  logoContainer: {
+    width: 40,
+    height: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  logoMark: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    backgroundColor: colors.contentAccent,
+    opacity: 0.9,
+  },
+  appBarTitle: {
     ...textStyles.headingBase,
-    color: colors.contentAccent,
+    color: colors.contentPrimary,
+    flex: 1,
+    paddingLeft: 4,
+  },
+  trailingIcons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+  },
+  iconBtn: {
+    width: 40,
+    height: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  iconText: {
+    fontSize: 20,
+    color: colors.contentPrimary,
+  },
+  avatarBtn: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    backgroundColor: colors.backgroundTertiary,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginLeft: 4,
+  },
+  avatarInitial: {
+    ...textStyles.bodySmallHeavy,
+    color: colors.contentSecondary,
+  },
+  dividerLine: {
+    height: 1,
+    backgroundColor: colors.borderPrimary,
   },
   subTabBar: {
     backgroundColor: colors.backgroundPrimary,
   },
   subTabContent: {
     paddingHorizontal: 16,
-    gap: 0,
   },
   subTab: {
-    paddingHorizontal: 14,
-    paddingVertical: 10,
+    paddingHorizontal: 16,
+    height: 48,
     alignItems: 'center',
+    justifyContent: 'center',
     position: 'relative',
   },
   subTabLabel: {
-    ...textStyles.bodyBase,
+    ...textStyles.headingSmall,
     color: colors.contentSecondary,
   },
   subTabLabelActive: {
-    ...textStyles.bodyBaseHeavy,
     color: colors.contentPrimary,
   },
   subTabIndicator: {
     position: 'absolute',
     bottom: 0,
-    left: 14,
-    right: 14,
-    height: 2,
-    backgroundColor: colors.contentPrimary,
-    borderRadius: 1,
-  },
-  divider: {
-    height: 1,
-    backgroundColor: colors.borderPrimary,
+    left: 0,
+    right: 0,
+    height: 3,
+    backgroundColor: colors.borderNeutral,
+    borderTopLeftRadius: 4,
+    borderTopRightRadius: 4,
   },
 });

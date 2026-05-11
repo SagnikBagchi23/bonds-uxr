@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
     gap: 20,
   },
   valueSummary: {
-    backgroundColor: colors.backgroundSecondary,
+    backgroundColor: colors.backgroundTertiary,
     borderRadius: 12,
     padding: 16,
     gap: 8,
@@ -394,7 +394,7 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
   tooltipCloseBtn: {
-    backgroundColor: colors.backgroundAccent,
+    backgroundColor: colors.contentAccent,
     borderRadius: 8,
     paddingVertical: 12,
     alignItems: 'center',
