@@ -38,8 +38,9 @@ export function BondCard({ bond, financials, dataState, showDivider }: BondCardP
     secondaryValue = mask(formatINR(financials.invested));
     primaryColor = colors.contentPositive;
   } else if (dataState === 1) {
-    primaryValue = `+${mask(formatINR(financials.interestEarned))}`;
-    secondaryValue = `${bond.couponRate}% coupon`;
+    const earned = mask(formatINR(financials.interestEarned));
+    primaryValue = earned.startsWith('₹') ? `+${earned}` : earned;
+    secondaryValue = '';
     primaryColor = colors.contentPositive;
   } else {
     primaryValue = mask(formatINR(financials.marketPrice));
@@ -59,9 +60,9 @@ export function BondCard({ bond, financials, dataState, showDivider }: BondCardP
             <Text style={styles.bondName} numberOfLines={1}>{displayName}</Text>
             <Text style={styles.units}>{bond.units} units</Text>
           </View>
-          <View style={styles.trailing}>
+          <View style={[styles.trailing, dataState === 1 && styles.trailingCentered]}>
             <Text style={[styles.primaryValue, { color: primaryColor }]}>{primaryValue}</Text>
-            <Text style={styles.secondaryValue}>{secondaryValue}</Text>
+            {secondaryValue ? <Text style={styles.secondaryValue}>{secondaryValue}</Text> : null}
           </View>
         </View>
         <View style={styles.spacerRight} />
@@ -109,6 +110,9 @@ const styles = StyleSheet.create({
     width: 96,
     alignItems: 'flex-end',
     gap: 2,
+  },
+  trailingCentered: {
+    justifyContent: 'center',
   },
   primaryValue: {
     ...textStyles.bodyBaseHeavy,
