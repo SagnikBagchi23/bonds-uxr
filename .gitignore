@@ -1,2 +1,8 @@
 .DS_Store
 **/.DS_Store
+
+# React Native / Expo
+bonds-prototype/node_modules/
+bonds-prototype/.expo/
+bonds-prototype/dist/
+bonds-prototype/.env*
