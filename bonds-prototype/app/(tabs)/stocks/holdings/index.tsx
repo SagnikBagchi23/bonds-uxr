@@ -70,27 +70,29 @@ export default function HoldingsScreen() {
             bondCount={activeBonds.length}
           />
 
-          {/* Bond list header */}
-          <View style={styles.listHeader}>
-            <TouchableOpacity style={styles.sortBtn} activeOpacity={0.7}>
-              <HugeiconsIcon icon={Sorting01Icon} size={iconSizes.medium} color={colors.contentSecondary} />
-            </TouchableOpacity>
-            <TouchableOpacity onPress={cycleDataState} activeOpacity={0.7} style={styles.cycleBtn}>
-              <Text style={styles.cycleBtnText}>{HEADER_LABELS[dataState]}</Text>
-            </TouchableOpacity>
-          </View>
+          <View>
+            {/* Bond list header */}
+            <View style={styles.listHeader}>
+              <TouchableOpacity style={styles.sortBtn} activeOpacity={0.7}>
+                <HugeiconsIcon icon={Sorting01Icon} size={iconSizes.medium} color={colors.contentSecondary} />
+              </TouchableOpacity>
+              <TouchableOpacity onPress={cycleDataState} activeOpacity={0.7} style={styles.cycleBtn}>
+                <Text style={styles.cycleBtnText}>{HEADER_LABELS[dataState]}</Text>
+              </TouchableOpacity>
+            </View>
 
-          {/* Bond list */}
-          <View style={styles.bondList}>
-            {activeBonds.map((bond, i) => (
-              <BondCard
-                key={bond.id}
-                bond={bond}
-                financials={bondFinancials[bond.id]}
-                dataState={dataState}
-                showDivider={i < activeBonds.length - 1}
-              />
-            ))}
+            {/* Bond list */}
+            <View style={styles.bondList}>
+              {activeBonds.map((bond, i) => (
+                <BondCard
+                  key={bond.id}
+                  bond={bond}
+                  financials={bondFinancials[bond.id]}
+                  dataState={dataState}
+                  showDivider={i < activeBonds.length - 1}
+                />
+              ))}
+            </View>
           </View>
 
           <View style={{ height: 32 }} />
