@@ -45,7 +45,7 @@ export function StockCard({ stock, financials, dataState, showDivider }: StockCa
         <View style={styles.content}>
           <View style={styles.leading}>
             <Text style={styles.stockName} numberOfLines={1}>{stock.name}</Text>
-            <Text style={styles.meta}>{stock.units} shares · {stock.ticker}</Text>
+            <Text style={styles.meta}>{stock.units} shares</Text>
           </View>
           <View style={[styles.trailing, dataState === 1 && styles.trailingCentered]}>
             <Text style={[styles.primaryValue, { color: primaryColor }, maskStyle]}>{primaryValue}</Text>

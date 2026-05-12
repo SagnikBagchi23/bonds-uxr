@@ -130,10 +130,11 @@ const styles = StyleSheet.create({
   },
   topSection: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     paddingHorizontal: 16,
     paddingTop: 20,
     paddingBottom: 16,
+    gap: 8,
   },
   valueBlock: {
     flex: 1,
@@ -155,8 +156,8 @@ const styles = StyleSheet.create({
   },
   iconGroup: {
     flexDirection: 'row',
-    gap: 8,
     alignItems: 'center',
+    gap: 8,
   },
   iconCircle: {
     width: 36,
