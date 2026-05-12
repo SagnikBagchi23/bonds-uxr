@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useRef } from 'react';
+import { useEffect, useReducer, useRef, useState } from 'react';
 import {
   View,
   Text,
@@ -48,12 +48,17 @@ export function SortBottomSheet({ visible, initial, onApply, onClose }: SortBott
   const slideAnim = useRef(new Animated.Value(400)).current;
   const bgOpacity = useRef(new Animated.Value(0)).current;
 
+  // isActive stays true while visible OR while animating out, so the sheet
+  // is never rendered when fully dismissed (avoids the visible-at-bottom flash)
+  const [isActive, setIsActive] = useState(false);
+
   // Track pending selection inside the sheet (local state via ref + force-update)
   const selectionRef = useRef<SortState>(initial);
   const [, forceUpdate] = useReducer((n: number) => n + 1, 0);
 
   useEffect(() => {
     if (visible) {
+      setIsActive(true);
       selectionRef.current = initial;
       forceUpdate();
       Animated.parallel([
@@ -64,7 +69,9 @@ export function SortBottomSheet({ visible, initial, onApply, onClose }: SortBott
       Animated.parallel([
         Animated.timing(slideAnim, { toValue: 400, duration: 260, easing: Easing.in(Easing.cubic), useNativeDriver: true }),
         Animated.timing(bgOpacity, { toValue: 0, duration: 200, useNativeDriver: true }),
-      ]).start();
+      ]).start(({ finished }) => {
+        if (finished) setIsActive(false);
+      });
     }
   }, [visible]);
 
@@ -81,6 +88,8 @@ export function SortBottomSheet({ visible, initial, onApply, onClose }: SortBott
   };
 
   const { field: selField, dir: selDir } = selectionRef.current;
+
+  if (!isActive) return null;
 
   return (
     <View style={StyleSheet.absoluteFillObject} pointerEvents="box-none">

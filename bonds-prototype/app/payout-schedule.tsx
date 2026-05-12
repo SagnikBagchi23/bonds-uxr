@@ -1,24 +1,282 @@
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import {
+  View,
+  Text,
+  ScrollView,
+  TouchableOpacity,
+  Switch,
+  StyleSheet,
+  LayoutChangeEvent,
+} from 'react-native';
 import { useState } from 'react';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { HugeiconsIcon } from '@hugeicons/react-native';
+import { ArrowLeft01Icon, FilterIcon } from '@hugeicons/core-free-icons';
 import { colors, textStyles, iconSizes } from '../theme/tokens';
 import { useHideValues } from '../hooks/useHideValues';
-import { upcomingPayouts, receivedPayouts, groupPayoutsByMonth } from '../data/payouts';
+import {
+  allPayouts,
+  upcomingPayouts,
+  receivedPayouts,
+  groupPayoutsByMonth,
+} from '../data/payouts';
+import { bonds, activeBonds } from '../data/bonds';
+
+// --- helpers ---
 
 function formatINR(value: number): string {
-  if (value >= 100000) return `₹${(value / 100000).toFixed(2)}L`;
-  return `₹${value.toLocaleString('en-IN')}`;
+  if (value >= 100000) {
+    const lakh = value / 100000;
+    return `₹${lakh % 1 === 0 ? lakh.toFixed(0) : lakh.toFixed(2)}L`;
+  }
+  if (value >= 1000) {
+    return `₹${value.toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+  }
+  return `₹${value.toFixed(2)}`;
 }
 
-function formatDate(dateStr: string): string {
+function formatPayoutDate(dateStr: string): string {
   const d = new Date(dateStr);
   return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short' });
 }
 
+function maturityLabel(dateStr: string): string {
+  const d = new Date(dateStr);
+  const month = d.toLocaleString('en-US', { month: 'short' });
+  const year = String(d.getFullYear()).slice(2);
+  return `${month} '${year}`;
+}
+
+function monthGroupLabel(monthKey: string): string {
+  const [year, month] = monthKey.split('-');
+  const d = new Date(parseInt(year), parseInt(month) - 1, 1);
+  const mon = d.toLocaleString('en-US', { month: 'short' }).toUpperCase();
+  return `${mon} '${year.slice(2)}`;
+}
+
+function companyInitials(name: string): string {
+  const words = name.trim().split(/\s+/);
+  if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+  return (words[0][0] + words[1][0]).toUpperCase();
+}
+
+const AVATAR_PALETTE = [
+  '#1A3A5C',
+  '#1A2E4A',
+  '#2C1A5C',
+  '#1A4A2E',
+  '#4A2E1A',
+  '#1A3A4A',
+  '#3A1A4A',
+  '#1A4A3A',
+];
+
+function avatarColor(name: string): string {
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) | 0;
+  return AVATAR_PALETTE[Math.abs(hash) % AVATAR_PALETTE.length];
+}
+
+// --- derived data ---
+
+const bondById = Object.fromEntries(bonds.map((b) => [b.id, b]));
+
+const totalProjectedInterest = allPayouts
+  .filter((p) => p.kind === 'interest')
+  .reduce((s, p) => s + p.amount, 0);
+
+const totalReceivedInterest = allPayouts
+  .filter((p) => p.kind === 'interest' && p.received)
+  .reduce((s, p) => s + p.amount, 0);
+
+function headerSubtitle(): string {
+  const count = activeBonds.length;
+  const freqs = new Set(activeBonds.map((b) => b.couponFrequency));
+  const freqLabel =
+    freqs.size === 1
+      ? freqs.has('monthly')
+        ? 'Monthly'
+        : freqs.has('semi-annual')
+        ? 'Semi-annual'
+        : 'Annual'
+      : 'Mixed';
+  return `${count} Bonds • ${freqLabel} interest payout`;
+}
+
+// --- sub-components ---
+
+function CompanyAvatar({ name }: { name: string }) {
+  return (
+    <View style={[styles.avatar, { backgroundColor: avatarColor(name) }]}>
+      <Text style={styles.avatarText}>{companyInitials(name)}</Text>
+    </View>
+  );
+}
+
+function InterestEarnedCard() {
+  const { mask, maskStyle } = useHideValues();
+  const [trackWidth, setTrackWidth] = useState(0);
+  const ratio = totalProjectedInterest > 0 ? totalReceivedInterest / totalProjectedInterest : 0;
+
+  const onTrackLayout = (e: LayoutChangeEvent) => {
+    setTrackWidth(e.nativeEvent.layout.width);
+  };
+
+  return (
+    <View style={styles.earnedCard}>
+      <View style={styles.earnedCardContent}>
+        <Text style={styles.earnedEyebrow}>INTEREST EARNED</Text>
+        <View style={styles.earnedAmountRow}>
+          <Text style={[styles.earnedAmount, maskStyle]}>
+            {mask(formatINR(totalReceivedInterest))}
+          </Text>
+          <Text style={styles.earnedSeparator}> / </Text>
+          <Text style={[styles.earnedTotal, maskStyle]}>
+            {mask(formatINR(totalProjectedInterest))}
+          </Text>
+        </View>
+      </View>
+      <View style={styles.progressTrack} onLayout={onTrackLayout}>
+        <View
+          style={[
+            styles.progressFill,
+            { width: trackWidth > 0 ? trackWidth * ratio : 0 },
+          ]}
+        />
+      </View>
+    </View>
+  );
+}
+
+function TabBar({
+  activeTab,
+  onTabChange,
+}: {
+  activeTab: 'upcoming' | 'received';
+  onTabChange: (t: 'upcoming' | 'received') => void;
+}) {
+  return (
+    <View style={styles.tabBar}>
+      <TouchableOpacity
+        style={[styles.tab, activeTab === 'upcoming' && styles.tabActive]}
+        onPress={() => onTabChange('upcoming')}
+        activeOpacity={0.7}
+      >
+        <Text
+          style={[
+            styles.tabLabel,
+            activeTab === 'upcoming' && styles.tabLabelActive,
+          ]}
+        >
+          Upcoming
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={[styles.tab, activeTab === 'received' && styles.tabActive]}
+        onPress={() => onTabChange('received')}
+        activeOpacity={0.7}
+      >
+        <Text
+          style={[
+            styles.tabLabel,
+            activeTab === 'received' && styles.tabLabelActive,
+          ]}
+        >
+          Received
+        </Text>
+      </TouchableOpacity>
+    </View>
+  );
+}
+
+function FilterRow({
+  tdsEnabled,
+  onToggleTds,
+}: {
+  tdsEnabled: boolean;
+  onToggleTds: (v: boolean) => void;
+}) {
+  return (
+    <View style={styles.filterRow}>
+      <HugeiconsIcon
+        icon={FilterIcon}
+        size={iconSizes.medium}
+        color={colors.contentSecondary}
+      />
+      <View style={styles.filterRight}>
+        <Text style={styles.tdsLabel}>TDS</Text>
+        <Switch
+          value={tdsEnabled}
+          onValueChange={onToggleTds}
+          trackColor={{
+            false: colors.borderPrimary,
+            true: colors.contentPositive,
+          }}
+          thumbColor={colors.contentPrimary}
+          style={styles.toggle}
+        />
+      </View>
+    </View>
+  );
+}
+
+interface PayoutRowProps {
+  issuer: string;
+  bondId: string;
+  date: string;
+  kind: 'interest' | 'principal';
+  amount: number;
+  isLast: boolean;
+}
+
+function PayoutRow({
+  issuer,
+  bondId,
+  date,
+  kind,
+  amount,
+  isLast,
+}: PayoutRowProps) {
+  const { mask, maskStyle } = useHideValues();
+  const bond = bondById[bondId];
+  const maturity = bond ? maturityLabel(bond.maturityDate) : '';
+  const subtitle = maturity ? `${issuer} ${maturity}` : issuer;
+  const amountColor =
+    kind === 'interest' ? colors.contentPositive : colors.contentPrimary;
+  const amountPrefix = kind === 'interest' ? '+' : '';
+  const typeLabel = kind === 'interest' ? 'Interest' : 'Principal';
+
+  return (
+    <>
+      <View style={styles.payoutRow}>
+        <CompanyAvatar name={issuer} />
+        <View style={styles.payoutMiddle}>
+          <Text style={styles.payoutDate} numberOfLines={1}>
+            {formatPayoutDate(date)}
+          </Text>
+          <Text style={styles.payoutSubtitle} numberOfLines={1}>
+            {subtitle}
+          </Text>
+        </View>
+        <View style={styles.payoutTrailing}>
+          <Text
+            style={[styles.payoutAmount, { color: amountColor }, maskStyle]}
+            numberOfLines={1}
+          >
+            {mask(`${amountPrefix}${formatINR(amount)}`)}
+          </Text>
+          <Text style={styles.payoutType}>{typeLabel}</Text>
+        </View>
+      </View>
+      {!isLast && <View style={styles.rowDivider} />}
+    </>
+  );
+}
+
 export default function PayoutScheduleScreen() {
   const [tab, setTab] = useState<'upcoming' | 'received'>('upcoming');
-  const { mask, maskStyle } = useHideValues();
+  const [tdsEnabled, setTdsEnabled] = useState(false);
+  const { hidden } = useHideValues();
   const router = useRouter();
 
   const payouts = tab === 'upcoming' ? upcomingPayouts : receivedPayouts;
@@ -28,35 +286,33 @@ export default function PayoutScheduleScreen() {
     <SafeAreaView style={styles.container} edges={['top']}>
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()} style={styles.backBtn} activeOpacity={0.7}>
-          <Text style={styles.backIcon}>←</Text>
+        <TouchableOpacity
+          onPress={() => router.back()}
+          style={styles.backBtn}
+          activeOpacity={0.7}
+        >
+          <HugeiconsIcon
+            icon={ArrowLeft01Icon}
+            size={iconSizes.large}
+            color={colors.contentPrimary}
+          />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Payouts</Text>
-        <View style={styles.backBtn} />
+        <View style={styles.headerTextBlock}>
+          <Text style={styles.headerTitle}>Payouts</Text>
+          <Text style={styles.headerSubtitle}>{headerSubtitle()}</Text>
+        </View>
+      </View>
+
+      {/* Interest Earned Card */}
+      <View style={styles.cardWrapper}>
+        <InterestEarnedCard />
       </View>
 
       {/* Tabs */}
-      <View style={styles.tabRow}>
-        <TouchableOpacity
-          style={[styles.tab, tab === 'upcoming' && styles.tabActive]}
-          onPress={() => setTab('upcoming')}
-          activeOpacity={0.7}
-        >
-          <Text style={[styles.tabLabel, tab === 'upcoming' && styles.tabLabelActive]}>
-            Upcoming
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.tab, tab === 'received' && styles.tabActive]}
-          onPress={() => setTab('received')}
-          activeOpacity={0.7}
-        >
-          <Text style={[styles.tabLabel, tab === 'received' && styles.tabLabelActive]}>
-            Received
-          </Text>
-        </TouchableOpacity>
-      </View>
-      <View style={styles.tabDivider} />
+      <TabBar activeTab={tab} onTabChange={setTab} />
+
+      {/* Filter row */}
+      <FilterRow tdsEnabled={tdsEnabled} onToggleTds={setTdsEnabled} />
 
       <ScrollView
         style={styles.scroll}
@@ -64,36 +320,26 @@ export default function PayoutScheduleScreen() {
         showsVerticalScrollIndicator={false}
       >
         {groups.map((group) => (
-          <View key={group.monthKey} style={styles.monthGroup}>
-            {/* Month header */}
+          <View key={group.monthKey}>
             <View style={styles.monthHeader}>
-              <Text style={styles.monthLabel}>{group.label}</Text>
-              <Text style={[styles.monthTotal, maskStyle]}>{mask(formatINR(group.total))}</Text>
+              <Text style={styles.monthLabel}>
+                {monthGroupLabel(group.monthKey)}
+              </Text>
+              <Text style={styles.monthTotal}>
+                {hidden ? 'Total: ₹••••' : `Total: ${formatINR(group.total)}`}
+              </Text>
             </View>
 
-            {/* Payout rows */}
-            {group.payouts.map((payout) => (
-              <View key={payout.id} style={styles.payoutRow}>
-                <View style={styles.payoutLeft}>
-                  <View style={[
-                    styles.kindDot,
-                    { backgroundColor: payout.kind === 'interest' ? colors.backgroundAccentSubtle : colors.backgroundWarningSubtle }
-                  ]} />
-                  <View style={styles.payoutInfo}>
-                    <Text style={styles.payoutIssuer}>{payout.issuer}</Text>
-                    <Text style={styles.payoutMeta}>
-                      {payout.kind === 'interest' ? 'Interest' : 'Principal'} · {formatDate(payout.date)}
-                    </Text>
-                  </View>
-                </View>
-                <Text style={[
-                  styles.payoutAmount,
-                  payout.kind === 'principal' && { color: colors.contentWarning },
-                  maskStyle,
-                ]}>
-                  {mask(formatINR(payout.amount))}
-                </Text>
-              </View>
+            {group.payouts.map((payout, idx) => (
+              <PayoutRow
+                key={payout.id}
+                issuer={payout.issuer}
+                bondId={payout.bondId}
+                date={payout.date}
+                kind={payout.kind}
+                amount={payout.amount}
+                isLast={idx === group.payouts.length - 1}
+              />
             ))}
           </View>
         ))}
@@ -113,114 +359,222 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.backgroundPrimary,
   },
+
+  // header
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 16,
     paddingVertical: 12,
-    justifyContent: 'space-between',
+    gap: 12,
   },
   backBtn: {
-    width: 40,
-    alignItems: 'flex-start',
+    width: 32,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  backIcon: {
-    fontSize: iconSizes.medium,
-    color: colors.contentPrimary,
+  headerTextBlock: {
+    flex: 1,
+    gap: 2,
   },
   headerTitle: {
     ...textStyles.headingSmall,
     color: colors.contentPrimary,
   },
-  tabRow: {
-    flexDirection: 'row',
+  headerSubtitle: {
+    ...textStyles.bodySmall,
+    color: colors.contentSecondary,
+  },
+
+  // interest earned card
+  cardWrapper: {
     paddingHorizontal: 16,
-    gap: 0,
+    paddingBottom: 16,
+  },
+  earnedCard: {
+    backgroundColor: colors.backgroundSurfaceZ1,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: colors.borderPrimary,
+    paddingHorizontal: 16,
+    paddingTop: 16,
+    paddingBottom: 20,
+    gap: 16,
+  },
+  earnedCardContent: {
+    gap: 4,
+  },
+  earnedEyebrow: {
+    ...textStyles.headingEyebrow,
+    color: colors.contentSecondary,
+    textTransform: 'uppercase',
+  },
+  earnedAmountRow: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+  },
+  earnedAmount: {
+    ...textStyles.displaySmall,
+    color: colors.contentPrimary,
+  },
+  earnedSeparator: {
+    ...textStyles.headingXSmall,
+    color: colors.contentTertiary,
+  },
+  earnedTotal: {
+    ...textStyles.headingXSmall,
+    color: colors.contentTertiary,
+  },
+  progressTrack: {
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: colors.borderPrimary,
+    overflow: 'hidden',
+  },
+  progressFill: {
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: colors.contentPositive,
+  },
+
+  // tabs
+  tabBar: {
+    flexDirection: 'row',
+    borderBottomWidth: 1,
+    borderBottomColor: colors.borderPrimary,
   },
   tab: {
     paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderBottomWidth: 2,
+    height: 48,
+    justifyContent: 'center',
+    borderBottomWidth: 3,
     borderBottomColor: 'transparent',
-    marginRight: 8,
   },
   tabActive: {
     borderBottomColor: colors.contentPrimary,
   },
   tabLabel: {
-    ...textStyles.bodyBase,
+    ...textStyles.headingSmall,
     color: colors.contentSecondary,
   },
   tabLabelActive: {
-    ...textStyles.bodyBaseHeavy,
     color: colors.contentPrimary,
   },
-  tabDivider: {
-    height: 1,
-    backgroundColor: colors.borderPrimary,
+
+  // filter row
+  filterRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    paddingTop: 20,
+    paddingBottom: 4,
   },
+  filterRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  tdsLabel: {
+    ...textStyles.bodySmall,
+    color: colors.contentSecondary,
+  },
+  toggle: {
+    transform: [{ scaleX: 0.8 }, { scaleY: 0.8 }],
+  },
+
+  // scroll
   scroll: {
     flex: 1,
   },
   scrollContent: {
-    padding: 16,
-    gap: 24,
     paddingBottom: 40,
   },
-  monthGroup: {
-    gap: 0,
-  },
+
+  // month group
   monthHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingVertical: 10,
+    alignItems: 'baseline',
+    paddingHorizontal: 16,
+    paddingTop: 24,
+    paddingBottom: 4,
   },
   monthLabel: {
-    ...textStyles.bodySmallHeavy,
+    ...textStyles.headingEyebrow,
     color: colors.contentSecondary,
     textTransform: 'uppercase',
-    letterSpacing: 0.5,
   },
   monthTotal: {
-    ...textStyles.bodyBaseHeavy,
-    color: colors.contentPrimary,
-  },
-  payoutRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingVertical: 12,
-    borderTopWidth: 1,
-    borderTopColor: colors.borderPrimary,
-  },
-  payoutLeft: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    flex: 1,
-  },
-  kindDot: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-  },
-  payoutInfo: {
-    flex: 1,
-    gap: 2,
-  },
-  payoutIssuer: {
-    ...textStyles.bodyBase,
-    color: colors.contentPrimary,
-  },
-  payoutMeta: {
     ...textStyles.bodySmall,
     color: colors.contentSecondary,
   },
+
+  // payout row
+  payoutRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 16,
+    gap: 16,
+    minHeight: 56,
+  },
+  rowDivider: {
+    height: 1,
+    backgroundColor: colors.borderPrimary,
+    marginLeft: 72, // 16 pad + 40 avatar + 16 gap
+  },
+
+  // avatar
+  avatar: {
+    width: 40,
+    height: 40,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: colors.borderPrimary,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexShrink: 0,
+  },
+  avatarText: {
+    ...textStyles.bodySmallHeavy,
+    color: colors.contentPrimary,
+    fontSize: 13,
+  },
+
+  // payout middle
+  payoutMiddle: {
+    flex: 1,
+    gap: 2,
+    minWidth: 0,
+  },
+  payoutDate: {
+    ...textStyles.bodyBaseHeavy,
+    color: colors.contentPrimary,
+  },
+  payoutSubtitle: {
+    ...textStyles.bodySmall,
+    color: colors.contentSecondary,
+  },
+
+  // payout trailing
+  payoutTrailing: {
+    width: 96,
+    alignItems: 'flex-end',
+    gap: 2,
+    flexShrink: 0,
+  },
   payoutAmount: {
     ...textStyles.bodyBaseHeavy,
-    color: colors.contentPositive,
+    textAlign: 'right',
   },
+  payoutType: {
+    ...textStyles.bodySmall,
+    color: colors.contentSecondary,
+    textAlign: 'right',
+  },
+
+  // empty
   emptyState: {
     paddingTop: 80,
     alignItems: 'center',
