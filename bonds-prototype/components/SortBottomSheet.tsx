@@ -7,8 +7,12 @@ import {
   StyleSheet,
   Pressable,
   Easing,
+  Modal,
+  Dimensions,
 } from 'react-native';
 import { colors, textStyles } from '../theme/tokens';
+
+const SCREEN_HEIGHT = Dimensions.get('window').height;
 
 export type SortField = 'totalValue' | 'interest' | 'mktPrice' | 'name';
 export type SortDir = 'high' | 'low' | 'az' | 'za';
@@ -45,7 +49,7 @@ function defaultDir(field: SortField): SortDir {
 }
 
 export function SortBottomSheet({ visible, initial, onApply, onClose }: SortBottomSheetProps) {
-  const slideAnim = useRef(new Animated.Value(400)).current;
+  const slideAnim = useRef(new Animated.Value(SCREEN_HEIGHT)).current;
   const bgOpacity = useRef(new Animated.Value(0)).current;
 
   // isActive stays true while visible OR while animating out, so the sheet
@@ -67,7 +71,7 @@ export function SortBottomSheet({ visible, initial, onApply, onClose }: SortBott
       ]).start();
     } else {
       Animated.parallel([
-        Animated.timing(slideAnim, { toValue: 400, duration: 260, easing: Easing.in(Easing.cubic), useNativeDriver: true }),
+        Animated.timing(slideAnim, { toValue: SCREEN_HEIGHT, duration: 260, easing: Easing.in(Easing.cubic), useNativeDriver: true }),
         Animated.timing(bgOpacity, { toValue: 0, duration: 200, useNativeDriver: true }),
       ]).start(({ finished }) => {
         if (finished) setIsActive(false);
@@ -92,7 +96,13 @@ export function SortBottomSheet({ visible, initial, onApply, onClose }: SortBott
   if (!isActive) return null;
 
   return (
-    <View style={StyleSheet.absoluteFillObject} pointerEvents="box-none">
+    <Modal
+      visible={isActive}
+      transparent
+      animationType="none"
+      statusBarTranslucent
+      onRequestClose={onClose}
+    >
       {/* Backdrop */}
       <Animated.View style={[styles.backdrop, { opacity: bgOpacity }]} pointerEvents={visible ? 'auto' : 'none'}>
         <Pressable style={StyleSheet.absoluteFill} onPress={onClose} />
@@ -164,7 +174,7 @@ export function SortBottomSheet({ visible, initial, onApply, onClose }: SortBott
           <View style={styles.homeIndicator} />
         </View>
       </Animated.View>
-    </View>
+    </Modal>
   );
 }
 
