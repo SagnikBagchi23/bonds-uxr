@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { colors, textStyles } from '../theme/tokens';
 import { useHideValues } from '../hooks/useHideValues';
 import { Sparkline } from './Sparkline';
-import { sparklineData, sparklineIsPositive } from '../data/sparklines';
+import { useLiveSparkline } from '../hooks/useLiveSparkline';
 import type { Stock, StockFinancials } from '../data/stocks';
 
 interface StockCardProps {
@@ -19,8 +19,8 @@ function formatINR(value: number): string {
 export function StockCard({ stock, financials, dataState, showDivider }: StockCardProps) {
   const { mask, maskStyle } = useHideValues();
   const isGain = financials.pnl >= 0;
-  const sparkData = sparklineData[stock.ticker] ?? [];
-  const sparkPositive = sparklineIsPositive(stock.ticker);
+  const liveData = useLiveSparkline(stock.ticker);
+  const sparkPositive = liveData.length >= 2 ? liveData[liveData.length - 1] >= liveData[0] : true;
 
   let primaryValue: string;
   let secondaryValue: string;
@@ -52,7 +52,7 @@ export function StockCard({ stock, financials, dataState, showDivider }: StockCa
             <Text style={styles.meta}>{stock.units} shares</Text>
           </View>
           <View style={styles.sparklineWrap}>
-            <Sparkline data={sparkData} positive={sparkPositive} width={80} height={28} />
+            <Sparkline data={liveData} positive={sparkPositive} width={80} height={28} />
           </View>
           <View style={[styles.trailing, dataState === 1 && styles.trailingCentered]}>
             <Text style={[styles.primaryValue, { color: primaryColor }, maskStyle]}>{primaryValue}</Text>

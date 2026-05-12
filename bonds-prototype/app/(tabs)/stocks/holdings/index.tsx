@@ -20,6 +20,8 @@ import { activeBonds } from '../../../../data/bonds';
 import { bondFinancials, portfolioSummary } from '../../../../data/payouts';
 import { stocks, stockFinancials, stockPortfolioSummary } from '../../../../data/stocks';
 import { useScrollBottom } from '../../../../hooks/useScrollBottom';
+import { SortBottomSheet } from '../../../../components/SortBottomSheet';
+import type { SortState } from '../../../../components/SortBottomSheet';
 
 const EASE_OUT = Easing.bezier(0.23, 1, 0.32, 1);
 
@@ -46,14 +48,25 @@ export default function HoldingsScreen() {
   const [activeChip, setActiveChip] = useState<'stocks' | 'bonds'>('bonds');
   const [bondsDataState, setBondsDataState] = useState<DataState>(0);
   const [stocksDataState, setStocksDataState] = useState<DataState>(0);
+  const [sortSheetVisible, setSortSheetVisible] = useState(false);
+  const [bondSort, setBondSort] = useState<SortState>({ field: 'totalValue', dir: 'high' });
   const { setHasContentBelow, setScrolledPastHeader } = useScrollBottom();
 
   const bondSummary = portfolioSummary();
   const stockSummary = stockPortfolioSummary();
 
-  const sortedBonds = [...activeBonds].sort(
-    (a, b) => bondFinancials[b.id].totalValue - bondFinancials[a.id].totalValue
-  );
+  const sortedBonds = [...activeBonds].sort((a, b) => {
+    const fa = bondFinancials[a.id];
+    const fb = bondFinancials[b.id];
+    const { field, dir } = bondSort;
+    if (field === 'name') {
+      const cmp = a.issuer.localeCompare(b.issuer);
+      return dir === 'az' ? cmp : -cmp;
+    }
+    const numA = field === 'totalValue' ? fa.totalValue : field === 'interest' ? fa.interestEarned : fa.marketPricePerUnit;
+    const numB = field === 'totalValue' ? fb.totalValue : field === 'interest' ? fb.interestEarned : fb.marketPricePerUnit;
+    return dir === 'high' ? numB - numA : numA - numB;
+  });
   const sortedStocks = [...stocks].sort(
     (a, b) => stockFinancials[b.id].currentValue - stockFinancials[a.id].currentValue
   );
@@ -245,7 +258,7 @@ export default function HoldingsScreen() {
 
               <View>
                 <View style={styles.listHeader}>
-                  <TouchableOpacity style={styles.sortBtn} activeOpacity={0.7}>
+                  <TouchableOpacity style={styles.sortBtn} activeOpacity={0.7} onPress={() => setSortSheetVisible(true)}>
                     <HugeiconsIcon icon={Sorting01Icon} size={iconSizes.small} color={colors.contentSecondary} />
                   </TouchableOpacity>
                   <TouchableOpacity onPress={cycleDataState} activeOpacity={0.7} style={styles.cycleBtn}>
@@ -319,6 +332,13 @@ export default function HoldingsScreen() {
         </ScrollView>
         <View style={styles.dividerLine} />
       </Animated.View>
+      {/* Sort sheet — bonds only */}
+      <SortBottomSheet
+        visible={sortSheetVisible}
+        initial={bondSort}
+        onApply={(state) => { setBondSort(state); setSortSheetVisible(false); }}
+        onClose={() => setSortSheetVisible(false)}
+      />
     </View>
   );
 }
