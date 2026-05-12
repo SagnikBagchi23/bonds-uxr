@@ -157,7 +157,7 @@ function TabBar({
     <View style={styles.tabBar}>
       {tabs.map((t) => {
         const active = activeTab === t.id;
-        const indicatorWidth = labelWidths[t.id] ?? 0;
+        const indicatorWidth = (labelWidths[t.id] ?? 0) + 32;
         return (
           <TouchableOpacity
             key={t.id}
@@ -438,6 +438,7 @@ const styles = StyleSheet.create({
   // tabs
   tabBar: {
     flexDirection: 'row',
+    paddingLeft: 16,
     borderBottomWidth: 1,
     borderBottomColor: colors.borderPrimary,
   },
@@ -450,6 +451,7 @@ const styles = StyleSheet.create({
   tabLabel: {
     ...textStyles.headingSmall,
     color: colors.contentSecondary,
+    textAlign: 'center',
   },
   tabLabelActive: {
     color: colors.contentPrimary,
@@ -459,10 +461,9 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    alignItems: 'flex-start',
+    alignItems: 'center',
   },
   tabIndicator: {
-    marginLeft: 16,
     height: 3,
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
