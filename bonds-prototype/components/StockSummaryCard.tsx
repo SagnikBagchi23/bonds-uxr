@@ -20,7 +20,7 @@ interface StockSummaryCardProps {
 }
 
 function formatINR(value: number): string {
-  return '₹' + Math.abs(value).toLocaleString('en-IN');
+  return '₹' + Math.abs(Math.round(value)).toLocaleString('en-IN');
 }
 
 function IconCircleBtn({ children, onPress }: { children: React.ReactNode; onPress?: () => void }) {
@@ -47,7 +47,7 @@ export function StockSummaryCard({
 
   function returnStr(amount: number, pct: number, isGain: boolean): string {
     const maskedAmt = mask(formatINR(amount));
-    const maskedPct = mask(`${Math.abs(pct).toFixed(2)}%`);
+    const maskedPct = mask(`${Math.abs(pct).toFixed(1)}%`);
     if (maskedAmt !== '••••••') {
       const sign = isGain ? '+' : '-';
       return `${sign}${maskedAmt} (${maskedPct})`;

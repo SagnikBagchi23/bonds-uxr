@@ -1,6 +1,8 @@
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { colors, textStyles } from '../theme/tokens';
 import { useHideValues } from '../hooks/useHideValues';
+import { Sparkline } from './Sparkline';
+import { sparklineData, sparklineIsPositive } from '../data/sparklines';
 import type { Stock, StockFinancials } from '../data/stocks';
 
 interface StockCardProps {
@@ -11,12 +13,14 @@ interface StockCardProps {
 }
 
 function formatINR(value: number): string {
-  return '₹' + Math.abs(value).toLocaleString('en-IN');
+  return '₹' + Math.abs(Math.round(value)).toLocaleString('en-IN');
 }
 
 export function StockCard({ stock, financials, dataState, showDivider }: StockCardProps) {
   const { mask, maskStyle } = useHideValues();
   const isGain = financials.pnl >= 0;
+  const sparkData = sparklineData[stock.ticker] ?? [];
+  const sparkPositive = sparklineIsPositive(stock.ticker);
 
   let primaryValue: string;
   let secondaryValue: string;
@@ -32,7 +36,7 @@ export function StockCard({ stock, financials, dataState, showDivider }: StockCa
     secondaryValue = '';
     primaryColor = isGain ? colors.contentPositive : colors.contentNegative;
   } else {
-    const pct = mask(`${Math.abs(financials.pnlPct).toFixed(2)}%`);
+    const pct = mask(`${Math.abs(financials.pnlPct).toFixed(1)}%`);
     primaryValue = pct.includes('%') ? (isGain ? '+' : '-') + pct : pct;
     secondaryValue = mask(formatINR(financials.currentValue));
     primaryColor = isGain ? colors.contentPositive : colors.contentNegative;
@@ -47,6 +51,7 @@ export function StockCard({ stock, financials, dataState, showDivider }: StockCa
             <Text style={styles.stockName} numberOfLines={1}>{stock.name}</Text>
             <Text style={styles.meta}>{stock.units} shares</Text>
           </View>
+          <Sparkline data={sparkData} positive={sparkPositive} width={80} height={28} />
           <View style={[styles.trailing, dataState === 1 && styles.trailingCentered]}>
             <Text style={[styles.primaryValue, { color: primaryColor }, maskStyle]}>{primaryValue}</Text>
             {secondaryValue ? <Text style={[styles.secondaryValue, maskStyle]}>{secondaryValue}</Text> : null}

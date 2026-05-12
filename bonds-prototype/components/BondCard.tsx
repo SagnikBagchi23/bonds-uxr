@@ -13,7 +13,7 @@ interface BondCardProps {
 }
 
 function formatINR(value: number): string {
-  return '₹' + value.toLocaleString('en-IN');
+  return '₹' + Math.round(value).toLocaleString('en-IN');
 }
 
 function maturityLabel(dateStr: string): string {
