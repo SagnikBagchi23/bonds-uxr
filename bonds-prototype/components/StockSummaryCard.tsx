@@ -3,7 +3,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import {
   EyeIcon,
   ViewOffSlashIcon,
-  ArrowDown01Icon,
+  ChartUpIcon,
   MoreVerticalIcon,
 } from '@hugeicons/core-free-icons';
 import { colors, textStyles, iconSizes } from '../theme/tokens';
@@ -74,7 +74,7 @@ export function StockSummaryCard({
             />
           </IconCircleBtn>
           <IconCircleBtn>
-            <HugeiconsIcon icon={ArrowDown01Icon} size={iconSizes.small} color={colors.contentSecondary} />
+            <HugeiconsIcon icon={ChartUpIcon} size={iconSizes.small} color={colors.contentSecondary} />
           </IconCircleBtn>
           <IconCircleBtn>
             <HugeiconsIcon icon={MoreVerticalIcon} size={iconSizes.small} color={colors.contentSecondary} />
