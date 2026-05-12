@@ -20,7 +20,7 @@ function formatDate(dateStr: string): string {
 }
 
 export default function MaturedBondsScreen() {
-  const { mask } = useHideValues();
+  const { mask, maskStyle } = useHideValues();
   const router = useRouter();
 
   return (
@@ -61,11 +61,11 @@ export default function MaturedBondsScreen() {
               <View style={styles.statsRow}>
                 <View style={styles.stat}>
                   <Text style={styles.statLabel}>Invested</Text>
-                  <Text style={styles.statValue}>{mask(formatINR(fin.invested))}</Text>
+                  <Text style={[styles.statValue, maskStyle]}>{mask(formatINR(fin.invested))}</Text>
                 </View>
                 <View style={styles.stat}>
                   <Text style={styles.statLabel}>Interest earned</Text>
-                  <Text style={[styles.statValue, { color: colors.contentPositive }]}>
+                  <Text style={[styles.statValue, { color: colors.contentPositive }, maskStyle]}>
                     {mask(formatINR(fin.interestEarned))}
                   </Text>
                 </View>

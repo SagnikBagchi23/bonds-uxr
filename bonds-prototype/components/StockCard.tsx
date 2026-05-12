@@ -15,7 +15,7 @@ function formatINR(value: number): string {
 }
 
 export function StockCard({ stock, financials, dataState, showDivider }: StockCardProps) {
-  const { mask } = useHideValues();
+  const { mask, maskStyle } = useHideValues();
   const isGain = financials.pnl >= 0;
 
   let primaryValue: string;
@@ -48,8 +48,8 @@ export function StockCard({ stock, financials, dataState, showDivider }: StockCa
             <Text style={styles.meta}>{stock.units} shares · {stock.ticker}</Text>
           </View>
           <View style={[styles.trailing, dataState === 1 && styles.trailingCentered]}>
-            <Text style={[styles.primaryValue, { color: primaryColor }]}>{primaryValue}</Text>
-            {secondaryValue ? <Text style={styles.secondaryValue}>{secondaryValue}</Text> : null}
+            <Text style={[styles.primaryValue, { color: primaryColor }, maskStyle]}>{primaryValue}</Text>
+            {secondaryValue ? <Text style={[styles.secondaryValue, maskStyle]}>{secondaryValue}</Text> : null}
           </View>
         </View>
         <View style={styles.spacerRight} />

@@ -24,7 +24,7 @@ function maturityLabel(dateStr: string): string {
 }
 
 export function BondCard({ bond, financials, dataState, showDivider }: BondCardProps) {
-  const { mask } = useHideValues();
+  const { mask, maskStyle } = useHideValues();
   const router = useRouter();
 
   const displayName = `${bond.issuer} ${maturityLabel(bond.maturityDate)}`;
@@ -61,8 +61,8 @@ export function BondCard({ bond, financials, dataState, showDivider }: BondCardP
             <Text style={styles.units}>{bond.units} units</Text>
           </View>
           <View style={[styles.trailing, dataState === 1 && styles.trailingCentered]}>
-            <Text style={[styles.primaryValue, { color: primaryColor }]}>{primaryValue}</Text>
-            {secondaryValue ? <Text style={styles.secondaryValue}>{secondaryValue}</Text> : null}
+            <Text style={[styles.primaryValue, { color: primaryColor }, maskStyle]}>{primaryValue}</Text>
+            {secondaryValue ? <Text style={[styles.secondaryValue, maskStyle]}>{secondaryValue}</Text> : null}
           </View>
         </View>
         <View style={styles.spacerRight} />

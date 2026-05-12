@@ -71,13 +71,14 @@ function DetailRow({ label, value, tooltipId, valueColor }: {
   tooltipId?: string;
   valueColor?: string;
 }) {
+  const { maskStyle } = useHideValues();
   return (
     <View style={styles.detailRow}>
       <View style={styles.detailLabelRow}>
         <Text style={styles.detailLabel}>{label}</Text>
         {tooltipId && <InfoTooltip id={tooltipId} />}
       </View>
-      <Text style={[styles.detailValue, valueColor ? { color: valueColor } : {}]}>{value}</Text>
+      <Text style={[styles.detailValue, valueColor ? { color: valueColor } : {}, maskStyle]}>{value}</Text>
     </View>
   );
 }
@@ -85,7 +86,7 @@ function DetailRow({ label, value, tooltipId, valueColor }: {
 export default function BondDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
-  const { mask } = useHideValues();
+  const { mask, maskStyle } = useHideValues();
 
   const bond = bonds.find((b) => b.id === id);
   if (!bond) {
@@ -119,16 +120,16 @@ export default function BondDetailScreen() {
         {/* Value summary */}
         <View style={styles.valueSummary}>
           <Text style={styles.valueSummaryLabel}>Current Value</Text>
-          <Text style={styles.valueSummaryAmount}>{mask(formatINR(fin.totalValue))}</Text>
+          <Text style={[styles.valueSummaryAmount, maskStyle]}>{mask(formatINR(fin.totalValue))}</Text>
           <View style={styles.valueBreakdown}>
             <View style={styles.valueItem}>
               <Text style={styles.valueItemLabel}>Invested</Text>
-              <Text style={styles.valueItemAmount}>{mask(formatINR(fin.invested))}</Text>
+              <Text style={[styles.valueItemAmount, maskStyle]}>{mask(formatINR(fin.invested))}</Text>
             </View>
             <Text style={styles.valuePlus}>+</Text>
             <View style={styles.valueItem}>
               <Text style={styles.valueItemLabel}>Interest earned</Text>
-              <Text style={[styles.valueItemAmount, { color: colors.contentPositive }]}>
+              <Text style={[styles.valueItemAmount, { color: colors.contentPositive }, maskStyle]}>
                 {mask(formatINR(fin.interestEarned))}
               </Text>
             </View>
@@ -196,7 +197,7 @@ export default function BondDetailScreen() {
                 </View>
               </View>
               <View style={styles.payoutRight}>
-                <Text style={[styles.payoutAmount, p.kind === 'principal' && { color: colors.contentWarning }]}>
+                <Text style={[styles.payoutAmount, p.kind === 'principal' && { color: colors.contentWarning }, maskStyle]}>
                   {mask(formatINR(p.amount))}
                 </Text>
                 {p.received && (

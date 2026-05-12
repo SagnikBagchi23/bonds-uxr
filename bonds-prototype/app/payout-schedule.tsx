@@ -18,7 +18,7 @@ function formatDate(dateStr: string): string {
 
 export default function PayoutScheduleScreen() {
   const [tab, setTab] = useState<'upcoming' | 'received'>('upcoming');
-  const { mask } = useHideValues();
+  const { mask, maskStyle } = useHideValues();
   const router = useRouter();
 
   const payouts = tab === 'upcoming' ? upcomingPayouts : receivedPayouts;
@@ -68,7 +68,7 @@ export default function PayoutScheduleScreen() {
             {/* Month header */}
             <View style={styles.monthHeader}>
               <Text style={styles.monthLabel}>{group.label}</Text>
-              <Text style={styles.monthTotal}>{mask(formatINR(group.total))}</Text>
+              <Text style={[styles.monthTotal, maskStyle]}>{mask(formatINR(group.total))}</Text>
             </View>
 
             {/* Payout rows */}
@@ -88,7 +88,8 @@ export default function PayoutScheduleScreen() {
                 </View>
                 <Text style={[
                   styles.payoutAmount,
-                  payout.kind === 'principal' && { color: colors.contentWarning }
+                  payout.kind === 'principal' && { color: colors.contentWarning },
+                  maskStyle,
                 ]}>
                   {mask(formatINR(payout.amount))}
                 </Text>

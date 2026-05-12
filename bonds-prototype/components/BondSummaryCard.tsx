@@ -46,7 +46,7 @@ export function BondSummaryCard({
   principalReturned,
   bondCount,
 }: BondSummaryCardProps) {
-  const { hidden, toggle, mask } = useHideValues();
+  const { hidden, toggle, mask, maskStyle } = useHideValues();
   const router = useRouter();
 
   return (
@@ -62,7 +62,7 @@ export function BondSummaryCard({
               color={colors.contentSecondary}
             />
           </View>
-          <Text style={styles.totalValue}>{mask(formatINR(totalValue))}</Text>
+          <Text style={[styles.totalValue, maskStyle]}>{mask(formatINR(totalValue))}</Text>
         </View>
         <View style={styles.iconGroup}>
           <IconCircleBtn onPress={toggle}>
@@ -96,11 +96,11 @@ export function BondSummaryCard({
       <View style={styles.listContainer}>
         <View style={styles.listRow}>
           <Text style={styles.listLabel}>Invested</Text>
-          <Text style={styles.listValuePrimary}>{mask(formatINR(totalInvested))}</Text>
+          <Text style={[styles.listValuePrimary, maskStyle]}>{mask(formatINR(totalInvested))}</Text>
         </View>
         <View style={styles.listRow}>
           <Text style={styles.listLabel}>Interest earned</Text>
-          <Text style={styles.listValuePositive}>+{mask(formatINR(totalInterest))}</Text>
+          <Text style={[styles.listValuePositive, maskStyle]}>{hidden ? mask(formatINR(totalInterest)) : `+${formatINR(totalInterest)}`}</Text>
         </View>
       </View>
 
@@ -110,7 +110,7 @@ export function BondSummaryCard({
           <View style={styles.listContainer}>
             <View style={styles.listRow}>
               <Text style={styles.listLabel}>Principal returned</Text>
-              <Text style={styles.listValuePrimary}>{mask(formatINR(principalReturned))}</Text>
+              <Text style={[styles.listValuePrimary, maskStyle]}>{mask(formatINR(principalReturned))}</Text>
             </View>
           </View>
         </>

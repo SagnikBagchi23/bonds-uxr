@@ -35,7 +35,7 @@ export function StockSummaryCard({
   totalPnlPct,
   stockCount,
 }: StockSummaryCardProps) {
-  const { hidden, toggle, mask } = useHideValues();
+  const { hidden, toggle, mask, maskStyle } = useHideValues();
   const isGain = totalPnl >= 0;
 
   const maskedPnl = mask(formatINR(totalPnl));
@@ -51,7 +51,7 @@ export function StockSummaryCard({
             <Text style={styles.eyebrow}>TOTAL VALUE ({stockCount})</Text>
             <HugeiconsIcon icon={InformationCircleIcon} size={iconSizes.xsmall} color={colors.contentSecondary} />
           </View>
-          <Text style={styles.totalValue}>{mask(formatINR(totalValue))}</Text>
+          <Text style={[styles.totalValue, maskStyle]}>{mask(formatINR(totalValue))}</Text>
         </View>
         <IconCircleBtn onPress={toggle}>
           <HugeiconsIcon
@@ -67,15 +67,15 @@ export function StockSummaryCard({
       <View style={styles.listContainer}>
         <View style={styles.listRow}>
           <Text style={styles.listLabel}>Invested</Text>
-          <Text style={styles.listValuePrimary}>{mask(formatINR(totalInvested))}</Text>
+          <Text style={[styles.listValuePrimary, maskStyle]}>{mask(formatINR(totalInvested))}</Text>
         </View>
         <View style={styles.listRow}>
           <Text style={styles.listLabel}>P&amp;L</Text>
           <View style={styles.pnlCell}>
-            <Text style={[styles.listValuePnl, { color: isGain ? colors.contentPositive : colors.contentNegative }]}>
+            <Text style={[styles.listValuePnl, { color: isGain ? colors.contentPositive : colors.contentNegative }, maskStyle]}>
               {pnlStr}
             </Text>
-            <Text style={[styles.pnlPct, { color: isGain ? colors.contentPositive : colors.contentNegative }]}>
+            <Text style={[styles.pnlPct, { color: isGain ? colors.contentPositive : colors.contentNegative }, maskStyle]}>
               {pnlPctWithSign}
             </Text>
           </View>

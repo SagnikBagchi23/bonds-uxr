@@ -25,6 +25,8 @@ const EASE_OUT = Easing.bezier(0.23, 1, 0.32, 1);
 
 const SUB_TABS = ['Explore', 'Holdings', 'Positions', 'Orders', 'SIPs', 'Watchlist'];
 const APP_BAR_HEIGHT = 56;
+// appBar(56) + divider(1) + subTabs(48) + divider(1)
+const HEADER_FULL_HEIGHT = 106;
 
 type DataState = 0 | 1 | 2;
 
@@ -68,11 +70,16 @@ export default function HoldingsScreen() {
     }
   };
 
-  // Scroll-driven header elevation
+  // Scroll-driven header collapse: app bar slides off, sub-tabs stay pinned
   const scrollYJS = useRef(new Animated.Value(0)).current;
   const headerBg = scrollYJS.interpolate({
     inputRange: [0, 1],
     outputRange: [colors.backgroundPrimary, colors.backgroundSurfaceZ1],
+    extrapolate: 'clamp',
+  });
+  const headerTranslateY = scrollYJS.interpolate({
+    inputRange: [0, APP_BAR_HEIGHT],
+    outputRange: [0, -APP_BAR_HEIGHT],
     extrapolate: 'clamp',
   });
   const handleScroll = Animated.event(
@@ -137,51 +144,9 @@ export default function HoldingsScreen() {
 
   return (
     <View style={styles.root}>
-      {/* Sticky header */}
-      <Animated.View style={[styles.stickyHeader, { backgroundColor: headerBg }]}>
-        <View style={styles.appBar}>
-          <View style={styles.logoContainer}>
-            <Image
-              source={require('../../../../assets/groww-logo.png')}
-              style={styles.logoImage}
-              resizeMode="contain"
-            />
-          </View>
-          <Text style={styles.appBarTitle}>Stocks</Text>
-          <View style={styles.trailingIcons}>
-            <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
-              <HugeiconsIcon icon={Search01Icon} size={iconSizes.medium} color={colors.contentPrimary} />
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
-              <HugeiconsIcon icon={QrCodeIcon} size={iconSizes.medium} color={colors.contentPrimary} />
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.avatarBtn} activeOpacity={0.7}>
-              <Image source={require('../../../../assets/growwdp.png')} style={styles.avatarImage} />
-            </TouchableOpacity>
-          </View>
-        </View>
-        <View style={styles.dividerLine} />
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.subTabContent}
-        >
-          {SUB_TABS.map((tab) => {
-            const isActive = tab === 'Holdings';
-            return (
-              <TouchableOpacity key={tab} style={styles.subTab} activeOpacity={0.7}>
-                <Text style={[styles.subTabLabel, isActive && styles.subTabLabelActive]}>{tab}</Text>
-                {isActive && <View style={styles.subTabIndicator} />}
-              </TouchableOpacity>
-            );
-          })}
-        </ScrollView>
-        <View style={styles.dividerLine} />
-      </Animated.View>
-
       <ScrollView
         style={styles.container}
-        contentContainerStyle={styles.contentContainer}
+        contentContainerStyle={[styles.contentContainer, { paddingTop: HEADER_FULL_HEIGHT }]}
         showsVerticalScrollIndicator={false}
         onScroll={handleScroll}
         scrollEventThrottle={16}
@@ -307,6 +272,51 @@ export default function HoldingsScreen() {
           )}
         </View>
       </ScrollView>
+
+      {/* Header: absolutely positioned so sub-tabs stick as app bar slides away */}
+      <Animated.View
+        style={[styles.stickyHeader, { backgroundColor: headerBg, transform: [{ translateY: headerTranslateY }] }]}
+        pointerEvents="box-none"
+      >
+        <View style={styles.appBar}>
+          <View style={styles.logoContainer}>
+            <Image
+              source={require('../../../../assets/groww-logo.png')}
+              style={styles.logoImage}
+              resizeMode="contain"
+            />
+          </View>
+          <Text style={styles.appBarTitle}>Stocks</Text>
+          <View style={styles.trailingIcons}>
+            <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
+              <HugeiconsIcon icon={Search01Icon} size={iconSizes.medium} color={colors.contentPrimary} />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
+              <HugeiconsIcon icon={QrCodeIcon} size={iconSizes.medium} color={colors.contentPrimary} />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.avatarBtn} activeOpacity={0.7}>
+              <Image source={require('../../../../assets/growwdp.png')} style={styles.avatarImage} />
+            </TouchableOpacity>
+          </View>
+        </View>
+        <View style={styles.dividerLine} />
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.subTabContent}
+        >
+          {SUB_TABS.map((tab) => {
+            const isActive = tab === 'Holdings';
+            return (
+              <TouchableOpacity key={tab} style={styles.subTab} activeOpacity={0.7}>
+                <Text style={[styles.subTabLabel, isActive && styles.subTabLabelActive]}>{tab}</Text>
+                {isActive && <View style={styles.subTabIndicator} />}
+              </TouchableOpacity>
+            );
+          })}
+        </ScrollView>
+        <View style={styles.dividerLine} />
+      </Animated.View>
     </View>
   );
 }
@@ -323,7 +333,13 @@ const styles = StyleSheet.create({
   contentContainer: {
     backgroundColor: colors.backgroundPrimary,
   },
-  stickyHeader: {},
+  stickyHeader: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 10,
+  },
   subTabContent: {
     paddingHorizontal: 16,
   },
