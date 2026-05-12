@@ -155,6 +155,7 @@ function TabBar({
   activeTab: 'upcoming' | 'received';
   onTabChange: (t: 'upcoming' | 'received') => void;
 }) {
+  const [labelWidths, setLabelWidths] = useState<Record<string, number>>({});
   const tabs: { id: 'upcoming' | 'received'; label: string }[] = [
     { id: 'upcoming', label: 'Upcoming' },
     { id: 'received', label: 'Received' },
@@ -163,6 +164,7 @@ function TabBar({
     <View style={styles.tabBar}>
       {tabs.map((t) => {
         const active = activeTab === t.id;
+        const indicatorWidth = (labelWidths[t.id] ?? 0) + 32;
         return (
           <TouchableOpacity
             key={t.id}
@@ -170,10 +172,19 @@ function TabBar({
             onPress={() => onTabChange(t.id)}
             activeOpacity={0.7}
           >
-            <Text style={[styles.tabLabel, active && styles.tabLabelActive]}>
+            <Text
+              style={[styles.tabLabel, active && styles.tabLabelActive]}
+              onLayout={(e) =>
+                setLabelWidths((w) => ({ ...w, [t.id]: e.nativeEvent.layout.width }))
+              }
+            >
               {t.label}
             </Text>
-            {active && <View style={styles.tabIndicator} />}
+            {active && (
+              <View style={styles.tabIndicatorAnchor}>
+                <View style={[styles.tabIndicator, { width: indicatorWidth }]} />
+              </View>
+            )}
           </TouchableOpacity>
         );
       })}
@@ -279,8 +290,9 @@ export default function PayoutScheduleScreen() {
       {/* Header */}
       <View style={styles.header}>
         <TouchableOpacity
-          onPress={() => router.back()}
+          onPress={() => router.dismiss()}
           style={styles.backBtn}
+          hitSlop={{ top: 12, bottom: 12, left: 12, right: 12 }}
           activeOpacity={0.7}
         >
           <HugeiconsIcon
@@ -362,6 +374,7 @@ const styles = StyleSheet.create({
   },
   backBtn: {
     width: 32,
+    height: 32,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -448,11 +461,14 @@ const styles = StyleSheet.create({
   tabLabelActive: {
     color: colors.contentPrimary,
   },
-  tabIndicator: {
+  tabIndicatorAnchor: {
     position: 'absolute',
     bottom: 0,
-    left: 16,
-    right: 16,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  tabIndicator: {
     height: 3,
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
