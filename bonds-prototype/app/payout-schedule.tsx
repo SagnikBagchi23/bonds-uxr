@@ -25,14 +25,7 @@ import { bonds, activeBonds } from '../data/bonds';
 // --- helpers ---
 
 function formatINR(value: number): string {
-  if (value >= 100000) {
-    const lakh = value / 100000;
-    return `₹${lakh % 1 === 0 ? lakh.toFixed(0) : lakh.toFixed(2)}L`;
-  }
-  if (value >= 1000) {
-    return `₹${value.toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-  }
-  return `₹${value.toFixed(2)}`;
+  return '₹' + Math.round(value).toLocaleString('en-IN');
 }
 
 function formatPayoutDate(dateStr: string): string {
