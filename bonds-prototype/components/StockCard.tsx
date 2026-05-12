@@ -51,7 +51,9 @@ export function StockCard({ stock, financials, dataState, showDivider }: StockCa
             <Text style={styles.stockName} numberOfLines={1}>{stock.name}</Text>
             <Text style={styles.meta}>{stock.units} shares</Text>
           </View>
-          <Sparkline data={sparkData} positive={sparkPositive} width={80} height={28} />
+          <View style={styles.sparklineWrap}>
+            <Sparkline data={sparkData} positive={sparkPositive} width={80} height={28} />
+          </View>
           <View style={[styles.trailing, dataState === 1 && styles.trailingCentered]}>
             <Text style={[styles.primaryValue, { color: primaryColor }, maskStyle]}>{primaryValue}</Text>
             {secondaryValue ? <Text style={[styles.secondaryValue, maskStyle]}>{secondaryValue}</Text> : null}
@@ -93,6 +95,10 @@ const styles = StyleSheet.create({
   meta: {
     ...textStyles.bodySmall,
     color: colors.contentSecondary,
+  },
+  sparklineWrap: {
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   trailing: {
     width: 96,
