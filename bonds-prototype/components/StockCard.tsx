@@ -25,7 +25,7 @@ export function StockCard({ stock, financials, dataState, showDivider }: StockCa
   if (dataState === 0) {
     primaryValue = mask(formatINR(financials.currentValue));
     secondaryValue = mask(formatINR(financials.invested));
-    primaryColor = colors.contentPrimary;
+    primaryColor = isGain ? colors.contentPositive : colors.contentNegative;
   } else if (dataState === 1) {
     const masked = mask(formatINR(financials.pnl));
     primaryValue = masked.startsWith('₹') ? (isGain ? '+' : '-') + masked : masked;

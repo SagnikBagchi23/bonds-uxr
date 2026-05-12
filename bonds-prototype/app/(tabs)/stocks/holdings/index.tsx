@@ -37,7 +37,7 @@ const BOND_HEADER_LABELS: Record<DataState, string> = {
 };
 
 const STOCK_HEADER_LABELS: Record<DataState, string> = {
-  0: 'Current/Cost',
+  0: 'Current (Invested)',
   1: 'P&L',
   2: 'Returns %',
 };
@@ -199,6 +199,8 @@ export default function HoldingsScreen() {
                 totalInvested={stockSummary.totalInvested}
                 totalPnl={stockSummary.totalPnl}
                 totalPnlPct={stockSummary.totalPnlPct}
+                oneDayPnl={stockSummary.oneDayPnl}
+                oneDayPnlPct={stockSummary.oneDayPnlPct}
                 stockCount={stocks.length}
               />
 

@@ -6,6 +6,7 @@ export interface Stock {
   units: number;
   avgPrice: number;
   currentPrice: number;
+  prevDayPrice: number;
 }
 
 export interface StockFinancials {
@@ -14,41 +15,47 @@ export interface StockFinancials {
   currentValue: number;
   pnl: number;
   pnlPct: number;
+  oneDayPnl: number;
+  oneDayPnlPct: number;
 }
 
 export const stocks: Stock[] = [
-  { id: 'RELIANCE',   name: 'Reliance Industries',   ticker: 'RELIANCE',   exchange: 'NSE', units: 30,  avgPrice: 2750,  currentPrice: 2940  },
-  { id: 'TCS',        name: 'Tata Consultancy Svcs', ticker: 'TCS',        exchange: 'NSE', units: 20,  avgPrice: 3800,  currentPrice: 4180  },
-  { id: 'HDFCBANK',   name: 'HDFC Bank',             ticker: 'HDFCBANK',   exchange: 'NSE', units: 100, avgPrice: 1600,  currentPrice: 1820  },
-  { id: 'INFY',       name: 'Infosys',               ticker: 'INFY',       exchange: 'NSE', units: 40,  avgPrice: 1550,  currentPrice: 1750  },
-  { id: 'ICICIBANK',  name: 'ICICI Bank',            ticker: 'ICICIBANK',  exchange: 'NSE', units: 60,  avgPrice: 1050,  currentPrice: 1240  },
-  { id: 'BHARTIARTL', name: 'Bharti Airtel',         ticker: 'BHARTIARTL', exchange: 'NSE', units: 50,  avgPrice: 1200,  currentPrice: 1520  },
-  { id: 'BAJFINANCE', name: 'Bajaj Finance',         ticker: 'BAJFINANCE', exchange: 'NSE', units: 10,  avgPrice: 6500,  currentPrice: 7200  },
-  { id: 'LT',         name: 'Larsen & Toubro',       ticker: 'LT',         exchange: 'NSE', units: 20,  avgPrice: 3400,  currentPrice: 3750  },
-  { id: 'SBIN',       name: 'State Bank of India',   ticker: 'SBIN',       exchange: 'NSE', units: 120, avgPrice: 750,   currentPrice: 870   },
-  { id: 'WIPRO',      name: 'Wipro',                 ticker: 'WIPRO',      exchange: 'NSE', units: 80,  avgPrice: 480,   currentPrice: 570   },
-  { id: 'ASIANPAINT', name: 'Asian Paints',          ticker: 'ASIANPAINT', exchange: 'NSE', units: 20,  avgPrice: 3000,  currentPrice: 2750  },
-  { id: 'MARUTI',     name: 'Maruti Suzuki',         ticker: 'MARUTI',     exchange: 'NSE', units: 5,   avgPrice: 11000, currentPrice: 13200 },
-  { id: 'HINDUNILVR', name: 'Hindustan Unilever',    ticker: 'HINDUNILVR', exchange: 'NSE', units: 20,  avgPrice: 2700,  currentPrice: 2480  },
-  { id: 'TITAN',      name: 'Titan Company',         ticker: 'TITAN',      exchange: 'NSE', units: 15,  avgPrice: 3200,  currentPrice: 3820  },
-  { id: 'ADANIPORTS', name: 'Adani Ports',           ticker: 'ADANIPORTS', exchange: 'NSE', units: 60,  avgPrice: 1100,  currentPrice: 1380  },
-  { id: 'NTPC',       name: 'NTPC',                  ticker: 'NTPC',       exchange: 'NSE', units: 200, avgPrice: 340,   currentPrice: 410   },
-  { id: 'KOTAKBANK',  name: 'Kotak Mahindra Bank',   ticker: 'KOTAKBANK',  exchange: 'NSE', units: 25,  avgPrice: 1900,  currentPrice: 2250  },
-  { id: 'DMART',      name: 'Avenue Supermarts',     ticker: 'DMART',      exchange: 'NSE', units: 10,  avgPrice: 4800,  currentPrice: 5600  },
-  { id: 'TATAMOTORS', name: 'Tata Motors',           ticker: 'TATAMOTORS', exchange: 'NSE', units: 80,  avgPrice: 1000,  currentPrice: 980   },
-  { id: 'SUNPHARMA',  name: 'Sun Pharmaceutical',    ticker: 'SUNPHARMA',  exchange: 'NSE', units: 30,  avgPrice: 1600,  currentPrice: 1850  },
+  { id: 'RELIANCE',   name: 'Reliance Industries',   ticker: 'RELIANCE',   exchange: 'NSE', units: 30,  avgPrice: 2750,  currentPrice: 2940,  prevDayPrice: 2965  },
+  { id: 'TCS',        name: 'Tata Consultancy Svcs', ticker: 'TCS',        exchange: 'NSE', units: 20,  avgPrice: 3800,  currentPrice: 4180,  prevDayPrice: 4120  },
+  { id: 'HDFCBANK',   name: 'HDFC Bank',             ticker: 'HDFCBANK',   exchange: 'NSE', units: 100, avgPrice: 1600,  currentPrice: 1820,  prevDayPrice: 1835  },
+  { id: 'INFY',       name: 'Infosys',               ticker: 'INFY',       exchange: 'NSE', units: 40,  avgPrice: 1550,  currentPrice: 1750,  prevDayPrice: 1738  },
+  { id: 'ICICIBANK',  name: 'ICICI Bank',            ticker: 'ICICIBANK',  exchange: 'NSE', units: 60,  avgPrice: 1050,  currentPrice: 1240,  prevDayPrice: 1252  },
+  { id: 'BHARTIARTL', name: 'Bharti Airtel',         ticker: 'BHARTIARTL', exchange: 'NSE', units: 50,  avgPrice: 1200,  currentPrice: 1520,  prevDayPrice: 1508  },
+  { id: 'BAJFINANCE', name: 'Bajaj Finance',         ticker: 'BAJFINANCE', exchange: 'NSE', units: 10,  avgPrice: 6500,  currentPrice: 7200,  prevDayPrice: 7180  },
+  { id: 'LT',         name: 'Larsen & Toubro',       ticker: 'LT',         exchange: 'NSE', units: 20,  avgPrice: 3400,  currentPrice: 3750,  prevDayPrice: 3770  },
+  { id: 'SBIN',       name: 'State Bank of India',   ticker: 'SBIN',       exchange: 'NSE', units: 120, avgPrice: 750,   currentPrice: 870,   prevDayPrice: 862   },
+  { id: 'WIPRO',      name: 'Wipro',                 ticker: 'WIPRO',      exchange: 'NSE', units: 80,  avgPrice: 480,   currentPrice: 445,   prevDayPrice: 450   },
+  { id: 'ASIANPAINT', name: 'Asian Paints',          ticker: 'ASIANPAINT', exchange: 'NSE', units: 20,  avgPrice: 3000,  currentPrice: 2750,  prevDayPrice: 2780  },
+  { id: 'MARUTI',     name: 'Maruti Suzuki',         ticker: 'MARUTI',     exchange: 'NSE', units: 5,   avgPrice: 11000, currentPrice: 13200, prevDayPrice: 13150 },
+  { id: 'HINDUNILVR', name: 'Hindustan Unilever',    ticker: 'HINDUNILVR', exchange: 'NSE', units: 20,  avgPrice: 2700,  currentPrice: 2480,  prevDayPrice: 2510  },
+  { id: 'TITAN',      name: 'Titan Company',         ticker: 'TITAN',      exchange: 'NSE', units: 15,  avgPrice: 3200,  currentPrice: 3820,  prevDayPrice: 3795  },
+  { id: 'ADANIPORTS', name: 'Adani Ports',           ticker: 'ADANIPORTS', exchange: 'NSE', units: 60,  avgPrice: 1100,  currentPrice: 1380,  prevDayPrice: 1365  },
+  { id: 'NTPC',       name: 'NTPC',                  ticker: 'NTPC',       exchange: 'NSE', units: 200, avgPrice: 340,   currentPrice: 318,   prevDayPrice: 322   },
+  { id: 'KOTAKBANK',  name: 'Kotak Mahindra Bank',   ticker: 'KOTAKBANK',  exchange: 'NSE', units: 25,  avgPrice: 1900,  currentPrice: 1840,  prevDayPrice: 1855  },
+  { id: 'DMART',      name: 'Avenue Supermarts',     ticker: 'DMART',      exchange: 'NSE', units: 10,  avgPrice: 4800,  currentPrice: 4650,  prevDayPrice: 4680  },
+  { id: 'TATAMOTORS', name: 'Tata Motors',           ticker: 'TATAMOTORS', exchange: 'NSE', units: 80,  avgPrice: 1000,  currentPrice: 980,   prevDayPrice: 995   },
+  { id: 'SUNPHARMA',  name: 'Sun Pharmaceutical',    ticker: 'SUNPHARMA',  exchange: 'NSE', units: 30,  avgPrice: 1600,  currentPrice: 1850,  prevDayPrice: 1840  },
 ];
 
 function computeStockFinancials(stock: Stock): StockFinancials {
   const invested = stock.units * stock.avgPrice;
   const currentValue = stock.units * stock.currentPrice;
   const pnl = currentValue - invested;
+  const prevDayValue = stock.units * stock.prevDayPrice;
+  const oneDayPnl = currentValue - prevDayValue;
   return {
     stockId: stock.id,
     invested,
     currentValue,
     pnl: Math.round(pnl * 100) / 100,
     pnlPct: Math.round((pnl / invested) * 10000) / 100,
+    oneDayPnl: Math.round(oneDayPnl * 100) / 100,
+    oneDayPnlPct: Math.round((oneDayPnl / prevDayValue) * 10000) / 100,
   };
 }
 
@@ -60,10 +67,14 @@ export function stockPortfolioSummary() {
   const totalInvested = stocks.reduce((s, st) => s + stockFinancials[st.id].invested, 0);
   const totalValue = stocks.reduce((s, st) => s + stockFinancials[st.id].currentValue, 0);
   const totalPnl = totalValue - totalInvested;
+  const oneDayPnl = stocks.reduce((s, st) => s + stockFinancials[st.id].oneDayPnl, 0);
+  const prevDayTotal = stocks.reduce((s, st) => s + st.units * st.prevDayPrice, 0);
   return {
     totalInvested,
     totalValue,
     totalPnl: Math.round(totalPnl * 100) / 100,
     totalPnlPct: Math.round((totalPnl / totalInvested) * 10000) / 100,
+    oneDayPnl: Math.round(oneDayPnl * 100) / 100,
+    oneDayPnlPct: Math.round((oneDayPnl / prevDayTotal) * 10000) / 100,
   };
 }

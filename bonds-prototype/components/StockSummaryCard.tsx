@@ -3,7 +3,8 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import {
   EyeIcon,
   ViewOffSlashIcon,
-  InformationCircleIcon,
+  ArrowDown01Icon,
+  MoreVerticalIcon,
 } from '@hugeicons/core-free-icons';
 import { colors, textStyles, iconSizes } from '../theme/tokens';
 import { useHideValues } from '../hooks/useHideValues';
@@ -13,6 +14,8 @@ interface StockSummaryCardProps {
   totalInvested: number;
   totalPnl: number;
   totalPnlPct: number;
+  oneDayPnl: number;
+  oneDayPnlPct: number;
   stockCount: number;
 }
 
@@ -33,52 +36,80 @@ export function StockSummaryCard({
   totalInvested,
   totalPnl,
   totalPnlPct,
+  oneDayPnl,
+  oneDayPnlPct,
   stockCount,
 }: StockSummaryCardProps) {
   const { hidden, toggle, mask, maskStyle } = useHideValues();
-  const isGain = totalPnl >= 0;
 
-  const maskedPnl = mask(formatINR(totalPnl));
-  const pnlStr = maskedPnl.startsWith('₹') ? (isGain ? '+' : '-') + maskedPnl : maskedPnl;
-  const pnlPctStr = mask(`${Math.abs(totalPnlPct).toFixed(2)}%`);
-  const pnlPctWithSign = pnlPctStr.includes('%') ? (isGain ? '+' : '-') + pnlPctStr : pnlPctStr;
+  const isOneDayGain = oneDayPnl >= 0;
+  const isTotalGain = totalPnl >= 0;
+
+  function returnStr(amount: number, pct: number, isGain: boolean): string {
+    const maskedAmt = mask(formatINR(amount));
+    const maskedPct = mask(`${Math.abs(pct).toFixed(2)}%`);
+    if (maskedAmt !== '••••••') {
+      const sign = isGain ? '+' : '-';
+      return `${sign}${maskedAmt} (${maskedPct})`;
+    }
+    return maskedAmt;
+  }
+
+  const oneDayStr = returnStr(oneDayPnl, oneDayPnlPct, isOneDayGain);
+  const totalStr = returnStr(totalPnl, totalPnlPct, isTotalGain);
 
   return (
     <View style={styles.card}>
       <View style={styles.topSection}>
         <View style={styles.valueBlock}>
-          <View style={styles.labelRow}>
-            <Text style={styles.eyebrow}>TOTAL VALUE ({stockCount})</Text>
-            <HugeiconsIcon icon={InformationCircleIcon} size={iconSizes.xsmall} color={colors.contentSecondary} />
-          </View>
+          <Text style={styles.eyebrow}>HOLDINGS ({stockCount})</Text>
           <Text style={[styles.totalValue, maskStyle]}>{mask(formatINR(totalValue))}</Text>
         </View>
-        <IconCircleBtn onPress={toggle}>
-          <HugeiconsIcon
-            icon={hidden ? ViewOffSlashIcon : EyeIcon}
-            size={iconSizes.small}
-            color={colors.contentSecondary}
-          />
-        </IconCircleBtn>
+        <View style={styles.iconGroup}>
+          <IconCircleBtn onPress={toggle}>
+            <HugeiconsIcon
+              icon={hidden ? ViewOffSlashIcon : EyeIcon}
+              size={iconSizes.small}
+              color={colors.contentSecondary}
+            />
+          </IconCircleBtn>
+          <IconCircleBtn>
+            <HugeiconsIcon icon={ArrowDown01Icon} size={iconSizes.small} color={colors.contentSecondary} />
+          </IconCircleBtn>
+          <IconCircleBtn>
+            <HugeiconsIcon icon={MoreVerticalIcon} size={iconSizes.small} color={colors.contentSecondary} />
+          </IconCircleBtn>
+        </View>
       </View>
 
       <View style={styles.divider} />
 
       <View style={styles.listContainer}>
         <View style={styles.listRow}>
-          <Text style={styles.listLabel}>Invested</Text>
-          <Text style={[styles.listValuePrimary, maskStyle]}>{mask(formatINR(totalInvested))}</Text>
+          <Text style={styles.listLabel}>1D returns</Text>
+          <Text style={[
+            styles.listValue,
+            { color: isOneDayGain ? colors.contentPositive : colors.contentNegative },
+            maskStyle,
+          ]}>
+            {oneDayStr}
+          </Text>
         </View>
         <View style={styles.listRow}>
-          <Text style={styles.listLabel}>P&amp;L</Text>
-          <View style={styles.pnlCell}>
-            <Text style={[styles.listValuePnl, { color: isGain ? colors.contentPositive : colors.contentNegative }, maskStyle]}>
-              {pnlStr}
-            </Text>
-            <Text style={[styles.pnlPct, { color: isGain ? colors.contentPositive : colors.contentNegative }, maskStyle]}>
-              {pnlPctWithSign}
-            </Text>
-          </View>
+          <Text style={styles.listLabel}>Total returns</Text>
+          <Text style={[
+            styles.listValue,
+            { color: isTotalGain ? colors.contentPositive : colors.contentNegative },
+            maskStyle,
+          ]}>
+            {totalStr}
+          </Text>
+        </View>
+        <View style={styles.listRow}>
+          <Text style={styles.listLabel}>Invested</Text>
+          <Text style={[styles.listValue, { color: colors.contentPrimary }, maskStyle]}>
+            {mask(formatINR(totalInvested))}
+          </Text>
         </View>
       </View>
     </View>
@@ -96,18 +127,14 @@ const styles = StyleSheet.create({
   },
   topSection: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     paddingHorizontal: 16,
     paddingTop: 20,
     paddingBottom: 16,
+    gap: 8,
   },
   valueBlock: {
     flex: 1,
-    gap: 4,
-  },
-  labelRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
     gap: 4,
   },
   eyebrow: {
@@ -118,6 +145,11 @@ const styles = StyleSheet.create({
   totalValue: {
     ...textStyles.headingLarge,
     color: colors.contentPrimary,
+  },
+  iconGroup: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
   },
   iconCircle: {
     width: 36,
@@ -149,18 +181,8 @@ const styles = StyleSheet.create({
     ...textStyles.bodyBase,
     color: colors.contentSecondary,
   },
-  listValuePrimary: {
+  listValue: {
     ...textStyles.bodyBaseHeavy,
-    color: colors.contentPrimary,
-  },
-  pnlCell: {
-    alignItems: 'flex-end',
-    gap: 2,
-  },
-  listValuePnl: {
-    ...textStyles.bodyBaseHeavy,
-  },
-  pnlPct: {
-    ...textStyles.bodySmall,
+    textAlign: 'right',
   },
 });
