@@ -1,47 +1,80 @@
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Image, Animated } from 'react-native';
-import { useRef, useState } from 'react';
+import {
+  View,
+  Text,
+  ScrollView,
+  TouchableOpacity,
+  StyleSheet,
+  Image,
+  Animated,
+  Easing,
+} from 'react-native';
+import { useRef, useState, useCallback } from 'react';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import { Sorting01Icon, Search01Icon, QrCodeIcon, ChevronDoubleCloseIcon } from '@hugeicons/core-free-icons';
 import { colors, textStyles, iconSizes } from '../../../../theme/tokens';
 import { BondSummaryCard } from '../../../../components/BondSummaryCard';
 import { BondCard } from '../../../../components/BondCard';
+import { StockSummaryCard } from '../../../../components/StockSummaryCard';
+import { StockCard } from '../../../../components/StockCard';
 import { activeBonds } from '../../../../data/bonds';
 import { bondFinancials, portfolioSummary } from '../../../../data/payouts';
+import { stocks, stockFinancials, stockPortfolioSummary } from '../../../../data/stocks';
 import { useScrollBottom } from '../../../../hooks/useScrollBottom';
+
+const EASE_OUT = Easing.bezier(0.23, 1, 0.32, 1);
 
 const SUB_TABS = ['Explore', 'Holdings', 'Positions', 'Orders', 'SIPs', 'Watchlist'];
 const APP_BAR_HEIGHT = 56;
 
 type DataState = 0 | 1 | 2;
 
-const HEADER_LABELS: Record<DataState, string> = {
+const BOND_HEADER_LABELS: Record<DataState, string> = {
   0: 'Total/Invested',
   1: 'Interest earned',
   2: 'Price/Face value',
 };
 
+const STOCK_HEADER_LABELS: Record<DataState, string> = {
+  0: 'Current/Cost',
+  1: 'P&L',
+  2: 'Returns %',
+};
+
 export default function HoldingsScreen() {
   const [activeChip, setActiveChip] = useState<'stocks' | 'bonds'>('bonds');
-  const [dataState, setDataState] = useState<DataState>(0);
+  const [bondsDataState, setBondsDataState] = useState<DataState>(0);
+  const [stocksDataState, setStocksDataState] = useState<DataState>(0);
   const { setHasContentBelow, setScrolledPastHeader } = useScrollBottom();
-  const summary = portfolioSummary();
+
+  const bondSummary = portfolioSummary();
+  const stockSummary = stockPortfolioSummary();
+
   const sortedBonds = [...activeBonds].sort(
     (a, b) => bondFinancials[b.id].totalValue - bondFinancials[a.id].totalValue
   );
+  const sortedStocks = [...stocks].sort(
+    (a, b) => stockFinancials[b.id].currentValue - stockFinancials[a.id].currentValue
+  );
 
-  // Drives header elevation when content scrolls beneath the sticky header
+  const dataState = activeChip === 'bonds' ? bondsDataState : stocksDataState;
+  const currentHeaderLabel =
+    activeChip === 'bonds' ? BOND_HEADER_LABELS[bondsDataState] : STOCK_HEADER_LABELS[stocksDataState];
+
+  const cycleDataState = () => {
+    if (activeChip === 'bonds') {
+      setBondsDataState((s) => ((s + 1) % 3) as DataState);
+    } else {
+      setStocksDataState((s) => ((s + 1) % 3) as DataState);
+    }
+  };
+
+  // Scroll-driven header elevation
   const scrollYJS = useRef(new Animated.Value(0)).current;
-
   const headerBg = scrollYJS.interpolate({
     inputRange: [0, 1],
     outputRange: [colors.backgroundPrimary, colors.backgroundSurfaceZ1],
     extrapolate: 'clamp',
   });
-
-  const cycleDataState = () => {
-    setDataState((s) => ((s + 1) % 3) as DataState);
-  };
-
   const handleScroll = Animated.event(
     [{ nativeEvent: { contentOffset: { y: scrollYJS } } }],
     {
@@ -55,9 +88,56 @@ export default function HoldingsScreen() {
     }
   );
 
+  // Animated pill for chip toggle
+  const chipRowRef = useRef<View>(null);
+  const stocksChipRef = useRef<View>(null);
+  const bondsChipRef = useRef<View>(null);
+  const pillLeftAnim = useRef(new Animated.Value(0)).current;
+  const pillWidthAnim = useRef(new Animated.Value(0)).current;
+  const [pillTop, setPillTop] = useState(0);
+  const [pillHeight, setPillHeight] = useState(0);
+  const [pillReady, setPillReady] = useState(false);
+
+  const measureChip = useCallback(
+    (chip: 'stocks' | 'bonds', animate: boolean) => {
+      const chipRef = chip === 'stocks' ? stocksChipRef.current : bondsChipRef.current;
+      const container = chipRowRef.current;
+      if (!chipRef || !container) return;
+      chipRef.measureLayout(
+        container,
+        (x: number, y: number, width: number, height: number) => {
+          if (animate) {
+            Animated.parallel([
+              Animated.timing(pillLeftAnim, { toValue: x, duration: 150, easing: EASE_OUT, useNativeDriver: false }),
+              Animated.timing(pillWidthAnim, { toValue: width, duration: 150, easing: EASE_OUT, useNativeDriver: false }),
+            ]).start();
+          } else {
+            pillLeftAnim.setValue(x);
+            pillWidthAnim.setValue(width);
+            setPillTop(y);
+            setPillHeight(height);
+            setPillReady(true);
+          }
+        },
+        () => {}
+      );
+    },
+    [pillLeftAnim, pillWidthAnim]
+  );
+
+  const handleChipRowLayout = useCallback(() => {
+    // Set initial pill position to the active chip (bonds) without animation
+    measureChip('bonds', false);
+  }, [measureChip]);
+
+  const handleChipPress = (chip: 'stocks' | 'bonds') => {
+    setActiveChip(chip);
+    measureChip(chip, true);
+  };
+
   return (
     <View style={styles.root}>
-      {/* Sticky header — app bar + sub-tabs as one unit, never scrolls away */}
+      {/* Sticky header */}
       <Animated.View style={[styles.stickyHeader, { backgroundColor: headerBg }]}>
         <View style={styles.appBar}>
           <View style={styles.logoContainer}>
@@ -90,9 +170,7 @@ export default function HoldingsScreen() {
             const isActive = tab === 'Holdings';
             return (
               <TouchableOpacity key={tab} style={styles.subTab} activeOpacity={0.7}>
-                <Text style={[styles.subTabLabel, isActive && styles.subTabLabelActive]}>
-                  {tab}
-                </Text>
+                <Text style={[styles.subTabLabel, isActive && styles.subTabLabelActive]}>{tab}</Text>
                 {isActive && <View style={styles.subTabIndicator} />}
               </TouchableOpacity>
             );
@@ -108,44 +186,93 @@ export default function HoldingsScreen() {
         onScroll={handleScroll}
         scrollEventThrottle={16}
       >
-
-        {/* Main content */}
         <View>
-          <View style={styles.chipRow}>
-            <TouchableOpacity
-              style={[styles.chip, activeChip === 'stocks' && styles.chipInactive]}
-              onPress={() => setActiveChip('stocks')}
-              activeOpacity={0.7}
-            >
-              <Text style={[styles.chipLabel, activeChip !== 'stocks' && styles.chipLabelInactive]}>
-                STOCKS
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={[styles.chip, activeChip === 'bonds' && styles.chipActive]}
-              onPress={() => setActiveChip('bonds')}
-              activeOpacity={0.7}
-            >
-              <Text style={[styles.chipLabel, activeChip !== 'bonds' && styles.chipLabelInactive]}>
-                BONDS
-              </Text>
-            </TouchableOpacity>
+          {/* Chip toggle with animated sliding pill */}
+          <View ref={chipRowRef} style={styles.chipRow} onLayout={handleChipRowLayout}>
+            {pillReady && (
+              <Animated.View
+                pointerEvents="none"
+                style={[
+                  styles.pill,
+                  {
+                    left: pillLeftAnim,
+                    top: pillTop,
+                    height: pillHeight,
+                    width: pillWidthAnim,
+                  },
+                ]}
+              />
+            )}
+            <View ref={stocksChipRef}>
+              <TouchableOpacity
+                onPress={() => handleChipPress('stocks')}
+                activeOpacity={0.7}
+                style={styles.chip}
+              >
+                <Text style={[styles.chipLabel, activeChip !== 'stocks' && styles.chipLabelInactive]}>
+                  STOCKS
+                </Text>
+              </TouchableOpacity>
+            </View>
+            <View ref={bondsChipRef}>
+              <TouchableOpacity
+                onPress={() => handleChipPress('bonds')}
+                activeOpacity={0.7}
+                style={styles.chip}
+              >
+                <Text style={[styles.chipLabel, activeChip !== 'bonds' && styles.chipLabelInactive]}>
+                  BONDS
+                </Text>
+              </TouchableOpacity>
+            </View>
           </View>
 
           {activeChip === 'stocks' ? (
-            <View style={styles.placeholder}>
-              <Text style={[textStyles.bodyBase, { color: colors.contentSecondary }]}>
-                Stocks Holdings
-              </Text>
+            <View style={styles.bondsContent}>
+              <StockSummaryCard
+                totalValue={stockSummary.totalValue}
+                totalInvested={stockSummary.totalInvested}
+                totalPnl={stockSummary.totalPnl}
+                totalPnlPct={stockSummary.totalPnlPct}
+                stockCount={stocks.length}
+              />
+
+              <View>
+                <View style={styles.listHeader}>
+                  <TouchableOpacity style={styles.sortBtn} activeOpacity={0.7}>
+                    <HugeiconsIcon icon={Sorting01Icon} size={iconSizes.small} color={colors.contentSecondary} />
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={cycleDataState} activeOpacity={0.7} style={styles.cycleBtn}>
+                    <HugeiconsIcon icon={ChevronDoubleCloseIcon} size={iconSizes.small} color={colors.contentPrimary} />
+                    <View style={styles.cycleBtnLabelFrame}>
+                      <Text style={styles.cycleBtnText}>{currentHeaderLabel}</Text>
+                    </View>
+                  </TouchableOpacity>
+                </View>
+
+                <View style={styles.bondList}>
+                  {sortedStocks.map((stock, i) => (
+                    <StockCard
+                      key={stock.id}
+                      stock={stock}
+                      financials={stockFinancials[stock.id]}
+                      dataState={stocksDataState}
+                      showDivider={i < sortedStocks.length - 1}
+                    />
+                  ))}
+                </View>
+              </View>
+
+              <View style={{ height: 32 }} />
             </View>
           ) : (
             <View style={styles.bondsContent}>
               <BondSummaryCard
-                totalValue={summary.totalValue}
-                totalInvested={summary.totalInvested}
-                totalInterest={summary.totalInterest}
-                hasStaggered={summary.hasStaggered}
-                principalReturned={summary.principalReturned}
+                totalValue={bondSummary.totalValue}
+                totalInvested={bondSummary.totalInvested}
+                totalInterest={bondSummary.totalInterest}
+                hasStaggered={bondSummary.hasStaggered}
+                principalReturned={bondSummary.principalReturned}
                 bondCount={activeBonds.length}
               />
 
@@ -157,7 +284,7 @@ export default function HoldingsScreen() {
                   <TouchableOpacity onPress={cycleDataState} activeOpacity={0.7} style={styles.cycleBtn}>
                     <HugeiconsIcon icon={ChevronDoubleCloseIcon} size={iconSizes.small} color={colors.contentPrimary} />
                     <View style={styles.cycleBtnLabelFrame}>
-                      <Text style={styles.cycleBtnText}>{HEADER_LABELS[dataState]}</Text>
+                      <Text style={styles.cycleBtnText}>{currentHeaderLabel}</Text>
                     </View>
                   </TouchableOpacity>
                 </View>
@@ -168,7 +295,7 @@ export default function HoldingsScreen() {
                       key={bond.id}
                       bond={bond}
                       financials={bondFinancials[bond.id]}
-                      dataState={dataState}
+                      dataState={bondsDataState}
                       showDivider={i < sortedBonds.length - 1}
                     />
                   ))}
@@ -196,10 +323,7 @@ const styles = StyleSheet.create({
   contentContainer: {
     backgroundColor: colors.backgroundPrimary,
   },
-  // Sub-tab bar
-  stickyHeader: {
-    // elevated background on scroll via headerBg interpolation
-  },
+  stickyHeader: {},
   subTabContent: {
     paddingHorizontal: 16,
   },
@@ -227,7 +351,6 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
   },
-  // App bar
   appBar: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -277,7 +400,6 @@ const styles = StyleSheet.create({
     height: 1,
     backgroundColor: colors.borderPrimary,
   },
-  // Chip row
   chipRow: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -285,17 +407,17 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 12,
     gap: 4,
+    position: 'relative',
+  },
+  pill: {
+    position: 'absolute',
+    borderRadius: 99,
+    backgroundColor: colors.backgroundTertiary,
   },
   chip: {
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 99,
-  },
-  chipActive: {
-    backgroundColor: colors.backgroundTertiary,
-  },
-  chipInactive: {
-    backgroundColor: 'transparent',
   },
   chipLabel: {
     ...textStyles.headingEyebrow,
@@ -336,9 +458,5 @@ const styles = StyleSheet.create({
   },
   bondList: {
     backgroundColor: colors.backgroundPrimary,
-  },
-  placeholder: {
-    alignItems: 'center',
-    paddingTop: 120,
   },
 });

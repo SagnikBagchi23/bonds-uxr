@@ -156,7 +156,7 @@ export default function BondDetailScreen() {
             tooltipId="faceValue"
           />
           <DetailRow label="Units held" value={`${bond.units}`} />
-          <DetailRow label="Market Price" value={mask(formatINR(fin.marketPrice))} />
+          <DetailRow label="Market Price" value={mask(formatINR(fin.marketPricePerUnit))} />
           <DetailRow label="Coupon frequency" value={
             bond.couponFrequency === 'monthly' ? 'Monthly'
             : bond.couponFrequency === 'semi-annual' ? 'Semi-Annual'
