@@ -164,7 +164,7 @@ function TabBar({
     <View style={styles.tabBar}>
       {tabs.map((t) => {
         const active = activeTab === t.id;
-        const indicatorWidth = (labelWidths[t.id] ?? 0) + 32;
+        const indicatorWidth = labelWidths[t.id] ?? 0;
         return (
           <TouchableOpacity
             key={t.id}
@@ -467,9 +467,9 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     alignItems: 'flex-start',
-    paddingLeft: 16,
   },
   tabIndicator: {
+    marginLeft: 16,
     height: 3,
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
