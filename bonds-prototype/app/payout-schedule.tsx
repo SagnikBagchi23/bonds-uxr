@@ -155,36 +155,28 @@ function TabBar({
   activeTab: 'upcoming' | 'received';
   onTabChange: (t: 'upcoming' | 'received') => void;
 }) {
+  const tabs: { id: 'upcoming' | 'received'; label: string }[] = [
+    { id: 'upcoming', label: 'Upcoming' },
+    { id: 'received', label: 'Received' },
+  ];
   return (
     <View style={styles.tabBar}>
-      <TouchableOpacity
-        style={[styles.tab, activeTab === 'upcoming' && styles.tabActive]}
-        onPress={() => onTabChange('upcoming')}
-        activeOpacity={0.7}
-      >
-        <Text
-          style={[
-            styles.tabLabel,
-            activeTab === 'upcoming' && styles.tabLabelActive,
-          ]}
-        >
-          Upcoming
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={[styles.tab, activeTab === 'received' && styles.tabActive]}
-        onPress={() => onTabChange('received')}
-        activeOpacity={0.7}
-      >
-        <Text
-          style={[
-            styles.tabLabel,
-            activeTab === 'received' && styles.tabLabelActive,
-          ]}
-        >
-          Received
-        </Text>
-      </TouchableOpacity>
+      {tabs.map((t) => {
+        const active = activeTab === t.id;
+        return (
+          <TouchableOpacity
+            key={t.id}
+            style={styles.tab}
+            onPress={() => onTabChange(t.id)}
+            activeOpacity={0.7}
+          >
+            <Text style={[styles.tabLabel, active && styles.tabLabelActive]}>
+              {t.label}
+            </Text>
+            {active && <View style={styles.tabIndicator} />}
+          </TouchableOpacity>
+        );
+      })}
     </View>
   );
 }
@@ -447,11 +439,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     height: 48,
     justifyContent: 'center',
-    borderBottomWidth: 3,
-    borderBottomColor: 'transparent',
-  },
-  tabActive: {
-    borderBottomColor: colors.contentPrimary,
+    position: 'relative',
   },
   tabLabel: {
     ...textStyles.headingSmall,
@@ -459,6 +447,16 @@ const styles = StyleSheet.create({
   },
   tabLabelActive: {
     color: colors.contentPrimary,
+  },
+  tabIndicator: {
+    position: 'absolute',
+    bottom: 0,
+    left: 16,
+    right: 16,
+    height: 3,
+    borderTopLeftRadius: 4,
+    borderTopRightRadius: 4,
+    backgroundColor: colors.contentPrimary,
   },
 
   // filter row
