@@ -1,6 +1,5 @@
 import { useEffect, useReducer, useRef } from 'react';
 import {
-  Modal,
   View,
   Text,
   TouchableOpacity,
@@ -84,9 +83,9 @@ export function SortBottomSheet({ visible, initial, onApply, onClose }: SortBott
   const { field: selField, dir: selDir } = selectionRef.current;
 
   return (
-    <Modal transparent visible={visible} onRequestClose={onClose} animationType="none">
+    <View style={StyleSheet.absoluteFillObject} pointerEvents="box-none">
       {/* Backdrop */}
-      <Animated.View style={[styles.backdrop, { opacity: bgOpacity }]}>
+      <Animated.View style={[styles.backdrop, { opacity: bgOpacity }]} pointerEvents={visible ? 'auto' : 'none'}>
         <Pressable style={StyleSheet.absoluteFill} onPress={onClose} />
       </Animated.View>
 
@@ -156,7 +155,7 @@ export function SortBottomSheet({ visible, initial, onApply, onClose }: SortBott
           <View style={styles.homeIndicator} />
         </View>
       </Animated.View>
-    </Modal>
+    </View>
   );
 }
 

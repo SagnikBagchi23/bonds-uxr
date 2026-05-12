@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
   sparklineWrap: {
     justifyContent: 'center',
     alignItems: 'center',
+    alignSelf: 'center',
   },
   trailing: {
     width: 96,
